@@ -166,9 +166,25 @@ Circles
 
 Теория связана с отдельным практическим слоем в [`practice/`](practice/README.md).
 
+## Topic Drills — Set 01
+
+Каждый из 25 lessons получил отдельный targeted drill:
+
+- **25 тем × 10 вопросов**;
+- всего **250 topic-specific questions**;
+- полный индекс: [`practice/topic_drills/README.md`](practice/topic_drills/README.md).
+
+Рекомендуемый quality gate:
+
+```text
+9–10/10 → mixed practice
+7–8/10  → targeted review
+≤6/10   → вернуться к lesson
+```
+
 ## Domain Question Bank — Set 01
 
-Первый пакет содержит **80 оригинальных задач** — по 20 на каждый официальный домен.
+Первый mixed-domain пакет содержит **80 оригинальных задач** — по 20 на каждый официальный домен.
 
 | Domain | Practice set | Questions |
 |---|---|---:|
@@ -176,8 +192,6 @@ Circles
 | Advanced Math | [`practice/question_bank/advanced_math_set_01.md`](practice/question_bank/advanced_math_set_01.md) | 20 |
 | Problem-Solving and Data Analysis | [`practice/question_bank/psda_set_01.md`](practice/question_bank/psda_set_01.md) | 20 |
 | Geometry and Trigonometry | [`practice/question_bank/geometry_trigonometry_set_01.md`](practice/question_bank/geometry_trigonometry_set_01.md) | 20 |
-
-Каждая задача помечается skill, difficulty, response type и рекомендацией по использованию Desmos.
 
 ## Timed Modules
 
@@ -190,7 +204,17 @@ Circles
 | [`Math Module 02 — Hard Route`](practice/timed_modules/math_module_02_hard.md) | усложнённый adaptive-style route | 22 |
 | [`Module 02 Answers`](practice/timed_modules/math_module_02_hard_answers.md) | решения + diagnostic interpretation | — |
 
-На текущем этапе практический слой содержит **124 оригинальных задания** помимо Practice Problems внутри каждого теоретического урока.
+## Текущий объём
+
+```text
+250  Topic Drill questions
+ 80  Domain Question Bank questions
+ 44  Timed Module questions
+---
+374  original practice questions
+```
+
+Это число **не включает** Practice Problems, встроенные в сами теоретические уроки.
 
 ## Учебный цикл
 
@@ -198,6 +222,8 @@ Circles
 Lesson
   ↓
 Practice Problems внутри урока
+  ↓
+Topic Drill
   ↓
 Domain Question Bank
   ↓
@@ -255,11 +281,12 @@ Angles/Triangles → Area/Volume → Right Triangles/Trig → Circles
 ## Stage 5 — Mixed Digital SAT Practice
 
 1. untimed accuracy;
-2. domain question banks;
-3. timed mixed modules;
-4. hard-route modules;
-5. full Bluebook tests;
-6. error log → targeted review → повторный тест.
+2. topic drills;
+3. domain question banks;
+4. timed mixed modules;
+5. hard-route modules;
+6. full Bluebook tests;
+7. error log → targeted review → повторный тест.
 
 ---
 
