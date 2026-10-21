@@ -10,7 +10,7 @@
 | 2 | `2` | Slope | Easy |
 | 3 | B | Linear equation/function | Easy |
 | 4 | `7` | System of equations | Easy |
-| 5 | D (`x≥3`) | Linear inequality | Medium |
+| 5 | B (`x≥-3`) | Linear inequality | Medium |
 | 6 | A | Factoring | Easy |
 | 7 | `5` | Quadratic roots | Medium |
 | 8 | B | Vertex | Easy |
@@ -63,8 +63,6 @@ Divide by `-2` and reverse the inequality:
 ```math
 x\ge-3
 ```
-
-**Correction check:** the correct choice is **B**, not D. If you selected B, count it correct.
 
 ### 6
 Find two numbers whose product is `12` and sum is `7`: `3` and `4`.
