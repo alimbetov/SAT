@@ -1,18 +1,37 @@
 # Linear Functions — линейные функции
 
-## 1. Зачем эта тема нужна на SAT
+> **Цель урока:** научиться видеть в линейной функции не формулу `y=mx+b`, а **историю о начальном значении и постоянной скорости изменения**.
 
-Линейные функции входят в официальный домен **Algebra** и связывают уравнения, таблицы, графики и реальные ситуации. На SAT часто нужно определить *slope*, найти *y-intercept*, построить модель по двум точкам или объяснить смысл коэффициента в контексте задачи.
+Главная идея:
 
-> **Главная идея:** линейная функция описывает постоянную скорость изменения.
+> **Linear function = старт + одинаковое изменение за каждый шаг.**
 
-**Вопрос перед началом:** если стоимость такси увеличивается на одну и ту же сумму за каждый километр, какой формы будет график зависимости стоимости от расстояния?
+Это одна из самых полезных идей всего SAT Math.
 
 ---
 
-## 2. Ключевые понятия и формулы
+# 1. Pattern Map
 
-### Основная форма
+| Что вижу | Паттерн | Что делаю |
+|---|---|---|
+| `y=3x+7` | read slope/intercept | `m=3`, `b=7` |
+| две точки | slope from points | `Δy/Δx` |
+| таблица с постоянным изменением | linear table | сравниваю changes |
+| slope + одна point | build equation | point-slope или `y=mx+b` |
+| две points | build equation | slope → then intercept |
+| `initial fee + per unit` | linear model | `output = rate·input + initial` |
+| function notation `f(4)` | evaluate function | подставить `x=4` |
+| сравнение двух plans | compare functions | понять смысл slope/intercept или найти intersection |
+
+Перед вычислениями спрашивайте:
+
+> **«Что здесь является стартом, а что — изменением за единицу?»**
+
+---
+
+# 2. Якорь: slope = изменение, intercept = старт
+
+Основная форма:
 
 ```math
 y=mx+b
@@ -24,95 +43,294 @@ y=mx+b
 f(x)=mx+b
 ```
 
-| Элемент | Термин | Смысл |
-|---|---|---|
-| `m` | **slope** | насколько меняется `y`, когда `x` увеличивается на 1 |
-| `b` | **y-intercept** | значение `y`, когда `x=0` |
-| `x` | input | входное значение |
-| `y` или `f(x)` | output | выходное значение |
+где:
 
-### Формула slope
+```text
+m = slope = change per 1 unit of x
+b = y-intercept = starting value when x=0
+```
 
-Для двух точек `(x_1,y_1)` и `(x_2,y_2)`:
+Визуально:
+
+```text
+output = rate × input + start
+
+   y   =  m   ×   x   +  b
+```
+
+Это та же структура, которую вы уже видели в word problems:
+
+```text
+total = fixed + rate × quantity
+```
+
+---
+
+# 3. PATTERN 1 — Read `y=mx+b`
+
+## Worked Example 1
+
+```math
+y=-3x+11
+```
+
+Сразу читаем:
+
+```text
+slope       = -3
+y-intercept = 11
+```
+
+Что означает negative slope?
+
+Когда `x` увеличивается на `1`, `y` уменьшается на `3`.
+
+---
+
+## Worked Example 2 — смысл в контексте
+
+```math
+C(h)=12h+25
+```
+
+где `C` — стоимость в долларах, `h` — количество часов.
+
+```text
+25 = начальная fixed fee
+12 = $12 за каждый час
+```
+
+Не просто называйте `12` slope.
+
+На SAT лучше мыслить:
+
+> **«12 долларов на один дополнительный час».**
+
+Units часто помогают понять ответ.
+
+---
+
+# 4. PATTERN 2 — Slope from two points
+
+Формула:
 
 ```math
 m=\frac{y_2-y_1}{x_2-x_1}
 ```
 
-### Визуальный якорь
-
-Запоминайте *slope* как:
+Визуальный якорь:
 
 ```text
-rise / run
-подъём / шаг вправо
+slope = rise / run
+      = vertical change / horizontal change
 ```
 
-То есть:
+Главное: используйте **одинаковый порядок** сверху и снизу.
 
-```math
-m=\frac{\Delta y}{\Delta x}
+---
+
+## Worked Example
+
+Points:
+
+```text
+(2,5) and (6,13)
 ```
 
-Если `m>0`, линия поднимается слева направо.  
-Если `m<0`, линия опускается.  
-Если `m=0`, линия горизонтальная.
+### Notice
 
-### Y-intercept
+Нужно найти rate of change между двумя points.
 
-В уравнении
+### Action
 
 ```math
-y=3x+7
-```
-
-при `x=0`:
-
-```math
-y=7
-```
-
-поэтому *y-intercept* равен `(0,7)`.
-
-### X-intercept
-
-Это точка, где график пересекает ось `x`, поэтому:
-
-```math
-y=0
-```
-
-Для
-
-```math
-y=2x-8
-```
-
-получаем:
-
-```math
-0=2x-8
+m=\frac{13-5}{6-2}
 ```
 
 ```math
-x=4
+m=\frac84=2
 ```
 
-Значит *x-intercept* равен `(4,0)`.
+### Meaning
 
-### Как получить уравнение по двум точкам
+Когда `x` растёт на `1`, `y` в среднем растёт на `2`.
 
-1. Найти *slope*.
-2. Подставить `m` и одну точку в `y=mx+b`.
-3. Найти `b`.
+---
 
-Например, точки `(2,5)` и `(6,13)`:
+## Error Clinic — смешать порядок
+
+Неверно:
 
 ```math
-m=\frac{13-5}{6-2}=\frac{8}{4}=2
+\frac{13-5}{2-6}
 ```
 
-Подставляем `(2,5)`:
+Почему? Сверху идём `point 1 → point 2`, а снизу вдруг наоборот.
+
+Используйте правило:
+
+```text
+same order / same order
+```
+
+Например:
+
+```math
+\frac{13-5}{6-2}
+```
+
+или
+
+```math
+\frac{5-13}{2-6}
+```
+
+Оба дадут `2`.
+
+---
+
+# 5. PATTERN 3 — Slope from a table
+
+## Как узнать linear table
+
+У linear function одинаковому изменению `x` соответствует одинаковое изменение `y`.
+
+Пример:
+
+| x | y |
+|---:|---:|
+| 1 | 5 |
+| 2 | 8 |
+| 3 | 11 |
+| 4 | 14 |
+
+Каждый раз:
+
+```text
+x +1
+y +3
+```
+
+Значит:
+
+```math
+m=3
+```
+
+---
+
+## Важная ловушка
+
+Если `x` меняется не на `1`, slope — не просто change in y.
+
+| x | y |
+|---:|---:|
+| 2 | 7 |
+| 5 | 19 |
+
+```math
+\Delta x=3
+```
+
+```math
+\Delta y=12
+```
+
+Поэтому:
+
+```math
+m=\frac{12}{3}=4
+```
+
+Не пишите slope `12`.
+
+---
+
+# 6. PATTERN 4 — Build a function from slope + point
+
+Если известны slope `m` и point `(x₁,y₁)`, удобно использовать:
+
+```math
+y-y_1=m(x-x_1)
+```
+
+Это point-slope form.
+
+---
+
+## Worked Example
+
+A line has slope `3` and passes through `(2,5)`.
+
+### Step 1
+
+Подставляем:
+
+```math
+y-5=3(x-2)
+```
+
+### Step 2
+
+Упрощаем:
+
+```math
+y-5=3x-6
+```
+
+```math
+y=3x-1
+```
+
+### Check
+
+При `x=2`:
+
+```math
+y=6-1=5
+```
+
+Point подходит.
+
+---
+
+# 7. PATTERN 5 — Build a function from two points
+
+Алгоритм:
+
+```text
+1. slope
+2. choose one point
+3. find b
+4. write equation
+5. check with second point
+```
+
+---
+
+## Worked Example
+
+Points:
+
+```text
+(2,5), (6,13)
+```
+
+### Step 1 — slope
+
+```math
+m=\frac{13-5}{6-2}=2
+```
+
+### Step 2 — write `y=mx+b`
+
+```math
+y=2x+b
+```
+
+### Step 3 — use one point
+
+Using `(2,5)`:
 
 ```math
 5=2(2)+b
@@ -122,95 +340,442 @@ m=\frac{13-5}{6-2}=\frac{8}{4}=2
 b=1
 ```
 
-Функция:
+### Step 4
 
 ```math
 y=2x+1
 ```
 
-### Линейная модель в контексте
+### Step 5 — check second point
 
-Если
+At `x=6`:
 
 ```math
-C(h)=25+12h
+y=2(6)+1=13
 ```
 
-то:
-
-- `25` — начальная стоимость;
-- `12` — стоимость за каждую дополнительную единицу `h`.
-
-> На SAT коэффициенты почти всегда имеют смысл. Не ограничивайтесь вычислением — спросите себя: «Что это число означает в задаче?»
+Correct.
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+# 8. PATTERN 6 — Linear word problem
 
-### Задача
-
-A water tank contains `120` liters of water. Water is added at a constant rate of `8` liters per minute. Which function gives the amount `W(t)` of water, in liters, after `t` minutes?
-
-### Шаг 1. Ищем начальное значение
-
-При `t=0` в баке уже есть `120` литров.
-
-Значит:
+## Самый важный шаблон
 
 ```math
-b=120
+\text{output}=\text{rate}\times\text{input}+\text{initial value}
 ```
 
-**Почему это y-intercept?**
+### SAT Language Decoder
 
-Потому что *y-intercept* — значение функции при нулевом input.
+| Phrase | Math meaning |
+|---|---|
+| `initially` | intercept / start |
+| `at time 0` | intercept |
+| `per hour` | slope |
+| `each month` | slope |
+| `increases by` | positive slope |
+| `decreases by` | negative slope |
+| `constant rate` | linear relationship |
 
-### Шаг 2. Ищем скорость изменения
+---
 
-Каждую минуту воды становится на `8` литров больше.
+## Worked Example 1 — water tank
 
-Значит:
+A water tank contains `120` liters. Water is added at a constant rate of `8` liters per minute.
 
-```math
-m=8
+Find `W(t)`.
+
+### Translate before writing formula
+
+```text
+initial = 120 liters
+rate    = +8 liters/minute
+input   = t minutes
 ```
 
-**Почему это slope?**
-
-Потому что *slope* показывает изменение output на единицу input: `8 liters / 1 minute`.
-
-### Шаг 3. Подставляем в форму `y=mx+b`
+Therefore:
 
 ```math
 W(t)=8t+120
 ```
 
-### Шаг 4. Проверяем модель
+### Check
 
-Через 5 минут:
+At `t=0`:
 
 ```math
-W(5)=8(5)+120=160
+W(0)=120
 ```
 
-Это логично: за 5 минут добавили `40` литров.
-
-**Ответ:**
+At `t=5`:
 
 ```math
-W(t)=8t+120
+W(5)=160
+```
+
+Both make sense.
+
+---
+
+## Worked Example 2 — decreasing quantity
+
+A tank starts with `500` liters and loses `12` liters per minute.
+
+```text
+initial = 500
+rate    = -12
+```
+
+So:
+
+```math
+V(t)=500-12t
+```
+
+Why negative slope?
+
+Because output decreases as time increases.
+
+---
+
+# 9. PATTERN 7 — Function notation
+
+`f(x)` is not multiplication.
+
+It means:
+
+> value of function `f` at input `x`.
+
+If:
+
+```math
+f(x)=3x+7
+```
+
+then:
+
+```math
+f(4)=3(4)+7=19
 ```
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+## Reverse question
 
-### Problem 1 — Easy — Multiple Choice
-
-What is the slope of the line represented by
+If:
 
 ```math
-y=-3x+11
+f(x)=3x+7
+```
+
+and
+
+```math
+f(x)=25,
+```
+
+then solve:
+
+```math
+3x+7=25
+```
+
+```math
+x=6
+```
+
+Функции и equations — не отдельные миры. Они постоянно переходят друг в друга.
+
+---
+
+# 10. PATTERN 8 — Compare two linear models
+
+Пример:
+
+```math
+A(x)=5x+20
+```
+
+```math
+B(x)=8x+5
+```
+
+### Что можно понять без вычислений?
+
+Plan A:
+
+```text
+higher starting cost: 20
+lower rate: 5
+```
+
+Plan B:
+
+```text
+lower starting cost: 5
+higher rate: 8
+```
+
+Если спрашивают, когда costs equal:
+
+```math
+5x+20=8x+5
+```
+
+```math
+15=3x
+```
+
+```math
+x=5
+```
+
+Это точка пересечения двух lines.
+
+### Большая идея
+
+```text
+same output
+→ set functions equal
+→ solve intersection
+```
+
+---
+
+# 11. Method Selector
+
+```text
+Вижу y=mx+b?
+→ read m and b directly
+
+Даны two points?
+→ slope first
+
+Дана table?
+→ compare Δy/Δx
+
+Дан slope + point?
+→ point-slope form
+
+Даны two points и нужно equation?
+→ slope → find b
+
+Word problem with initial/per?
+→ rate × input + initial
+
+Two plans become equal?
+→ set equations equal
+
+Graphical/intersection question?
+→ Desmos may be fastest
+```
+
+---
+
+# 12. Desmos Strategy
+
+## Find slope/intercept visually
+
+Введите:
+
+```text
+y=2x+1
+```
+
+Вы увидите:
+
+- y-intercept `(0,1)`;
+- line rising 2 for each 1 right.
+
+## Compare plans
+
+Введите:
+
+```text
+y=5x+20
+y=8x+5
+```
+
+Intersection gives the input where costs are equal.
+
+## Когда вручную быстрее
+
+Если вопрос просто:
+
+> What is the slope of `y=-4x+7`?
+
+Ответ `-4` уже виден. Desmos только замедлит.
+
+---
+
+# 13. Error Clinic
+
+## Ошибка 1 — спутать slope и intercept
+
+```math
+y=7x-3
+```
+
+```text
+slope = 7
+intercept = -3
+```
+
+Не наоборот.
+
+---
+
+## Ошибка 2 — считать y-intercept как `x=b`
+
+Y-intercept всегда имеет:
+
+```text
+x=0
+```
+
+Поэтому point:
+
+```text
+(0,b)
+```
+
+---
+
+## Ошибка 3 — читать `per` как intercept
+
+`$12 per hour` → slope, потому что это change per unit.
+
+`$25 initial fee` → intercept.
+
+---
+
+## Ошибка 4 — не смотреть на units
+
+Slope может быть:
+
+```text
+dollars/hour
+liters/minute
+miles/hour
+points/game
+```
+
+Units часто раскрывают смысл коэффициента.
+
+---
+
+# 14. Guided Practice
+
+## Level A
+
+For
+
+```math
+y=4x-9,
+```
+
+fill in:
+
+```text
+slope = ____
+y-intercept = ____
+```
+
+<details><summary>Answer</summary>
+
+`slope=4`, `y-intercept=-9`.
+
+</details>
+
+---
+
+## Level B
+
+A line passes through `(1,4)` and `(5,12)`.
+
+Before calculating, write:
+
+```text
+Δx = ____
+Δy = ____
+```
+
+<details><summary>Solution</summary>
+
+```math
+\Delta x=4
+```
+
+```math
+\Delta y=8
+```
+
+```math
+m=2
+```
+
+</details>
+
+---
+
+## Level C
+
+A phone plan costs `$30` initially and `$6` per GB used.
+
+Fill in:
+
+```text
+initial = ____
+rate = ____
+input variable = ____
+```
+
+Then write the function.
+
+<details><summary>Solution</summary>
+
+```math
+C(g)=6g+30
+```
+
+</details>
+
+---
+
+## Level D — transfer
+
+Plan A costs `$20` plus `$8` per month.
+Plan B costs `$50` plus `$5` per month.
+
+When do the plans cost the same?
+
+<details><summary>Solution</summary>
+
+```math
+8m+20=5m+50
+```
+
+```math
+3m=30
+```
+
+```math
+m=10
+```
+
+</details>
+
+---
+
+# 15. SAT-style Practice
+
+## 1 — Easy — Multiple Choice
+
+What is the slope of
+
+```math
+y=-3x+11?
 ```
 
 **A)** `-3`  
@@ -218,284 +783,90 @@ y=-3x+11
 **C)** `11`  
 **D)** `-11`
 
----
+## 2 — Easy — SPR
 
-### Problem 2 — Medium — Grid-in
+What is the y-intercept of
 
-A line passes through `(1,4)` and `(5,16)`. What is the slope of the line?
+```math
+y=5x-7?
+```
 
-Enter your answer: `_____`
+## 3 — Medium — Multiple Choice
 
----
+The line through `(2,5)` and `(6,13)` has slope:
 
-### Problem 3 — Medium — Multiple Choice
+**A)** `1/2`  
+**B)** `2`  
+**C)** `4`  
+**D)** `8`
 
-A taxi company charges `$6` to start a ride and `$2.50` per mile. Which equation models the total cost `C`, in dollars, for `m` miles?
+## 4 — Medium — SPR
 
-**A)** `C=6m+2.5`  
-**B)** `C=2.5m+6`  
-**C)** `C=8.5m`  
-**D)** `C=6-2.5m`
+A line has slope `4` and passes through `(3,14)`. Find its y-intercept.
 
----
+## 5 — Medium/Hard — Multiple Choice
 
-### Problem 4 — Hard — Grid-in
+A gym charges `$40` to join and `$15` per month. Which function models total cost `C(m)`?
 
-A linear function `f` satisfies `f(2)=9` and `f(7)=24`. What is `f(0)`?
+**A)** `C(m)=40m+15`  
+**B)** `C(m)=15m+40`  
+**C)** `C(m)=55m`  
+**D)** `C(m)=15m`
 
-Enter your answer: `_____`
+## 6 — Hard — SPR
 
----
+Functions `A(x)=7x+10` and `B(x)=4x+31` have the same output for what value of `x`?
 
-### Problem 5 — Hard — Multiple Choice
+## 7 — Hard — Multiple Choice
 
-For a linear function `g`, the value of `g(x)` increases by `18` when `x` increases by `6`. If `g(0)=-4`, which equation defines `g`?
+A linear function has `f(2)=9` and `f(5)=18`. What is `f(0)`?
 
-**A)** `g(x)=18x-4`  
-**B)** `g(x)=6x-4`  
-**C)** `g(x)=3x-4`  
-**D)** `g(x)=3x+4`
+**A)** `1`  
+**B)** `3`  
+**C)** `5`  
+**D)** `9`
+
+## 8 — 750–800 — SPR
+
+A linear function satisfies `f(3)=11` and `f(8)=26`. Find `f(20)`.
 
 <details>
-<summary><strong>Ответы и краткие решения</strong></summary>
+<summary><strong>Answers and patterns</strong></summary>
 
-### Problem 1
-
-**Ответ: A) `-3`**
-
-В форме `y=mx+b` коэффициент перед `x` — это *slope*.
-
-### Problem 2
-
-**Ответ: `3`**
-
-```math
-m=\frac{16-4}{5-1}=\frac{12}{4}=3
-```
-
-### Problem 3
-
-**Ответ: B)**
-
-`6` — фиксированная начальная стоимость, а `2.5` — стоимость одной мили:
-
-```math
-C=2.5m+6
-```
-
-### Problem 4
-
-**Ответ: `3`**
-
-Сначала slope:
-
-```math
-m=\frac{24-9}{7-2}=\frac{15}{5}=3
-```
-
-Теперь:
-
-```math
-f(x)=3x+b
-```
-
-Используем `f(2)=9`:
-
-```math
-9=3(2)+b
-```
-
-```math
-b=3
-```
-
-Следовательно:
-
-```math
-f(0)=3
-```
-
-### Problem 5
-
-**Ответ: C)**
-
-Изменение output равно `18`, изменение input — `6`:
-
-```math
-m=\frac{18}{6}=3
-```
-
-А `g(0)=-4` означает `b=-4`.
-
-```math
-g(x)=3x-4
-```
+1. **A** — read `m` directly.
+2. **`-7`** — `b=-7`.
+3. **B** — `(13-5)/(6-2)=2`.
+4. **`2`** — `14=4(3)+b → b=2`.
+5. **B** — fixed 40, rate 15.
+6. **`7`** — `7x+10=4x+31`.
+7. **B** — slope `(18-9)/(5-2)=3`; `9=3(2)+b`, so `b=3`.
+8. **`62`** — slope `(26-11)/(8-3)=3`; `f(x)=3x+2`; `f(20)=62`.
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
+# 16. Transfer Questions
 
-### Ловушка 1. Путать slope и y-intercept
-
-В
-
-```math
-y=5x-12
-```
-
-- slope = `5`;
-- y-intercept = `-12`.
-
-Визуальный якорь:
-
-```text
-y = m x + b
-    ↑     ↑
- slope  begin
-```
-
-Можно запомнить `b` как **begin** — где линия «начинается» на оси `y` при `x=0`.
-
-### Ловушка 2. Перепутать порядок вычитания
-
-Нельзя использовать разные порядки сверху и снизу:
-
-Неверно:
-
-```math
-\frac{y_2-y_1}{x_1-x_2}
-```
-
-Если начали `2 - 1` в числителе, используйте `2 - 1` и в знаменателе.
-
-### Ловушка 3. Игнорировать единицы измерения
-
-Если `x` — часы, а `y` — километры, то slope измеряется в:
-
-```text
-kilometers per hour
-```
-
-Единицы часто подсказывают смысл коэффициента.
+1. Что физически означает slope в word problem?
+2. Почему y-intercept — значение при `x=0`?
+3. Как по table доказать, что relationship linear?
+4. Почему при двух points сначала удобно искать slope?
+5. Что означает intersection двух cost functions?
+6. Чем function notation `f(4)` отличается от `f×4`?
+7. Когда Desmos полезнее ручного решения?
 
 ---
 
-## 6. Стратегия для Digital SAT
+# 17. Checklist
 
-### Desmos: быстрый поиск slope и intercept
-
-Если дано уравнение, введите его напрямую:
-
-```text
-y = 2x + 5
-```
-
-Desmos сразу показывает график и *y-intercept*.
-
-### Desmos: линия по двум точкам
-
-Можно построить две точки:
-
-```text
-(2, 5)
-(6, 13)
-```
-
-а затем проверить найденную вручную функцию:
-
-```text
-y = 2x + 1
-```
-
-### Когда лучше без Desmos
-
-Если функция уже записана как
-
-```math
-y=mx+b
-```
-
-то slope и y-intercept читаются напрямую. Не тратьте время на построение графика.
-
-### SAT-стратегия
-
-При задаче из контекста сначала найдите:
-
-```text
-что происходит при x = 0? → intercept
-что меняется на 1 единицу x? → slope
-```
-
-Эта пара вопросов часто позволяет построить функцию без длинных вычислений.
-
----
-
-## 7. Связи с другими темами
-
-### Предыдущая тема
-
-[Linear Equations](./linear_equations.md)
-
-Линейные функции используют те же преобразования уравнений, но добавляют связь между двумя переменными.
-
-### Следующие темы
-
-```text
-Linear Equations
-      ↓
-Linear Functions
-      ↓
-Systems of Equations
-      ↓
-Linear Inequalities
-```
-
-Системы уравнений используют **пересечение двух линейных функций**, а inequalities превращают линии в границы областей решений.
-
-### Вопрос для переноса навыка
-
-Если две компании имеют модели стоимости
-
-```math
-A(x)=4x+20
-```
-
-и
-
-```math
-B(x)=6x+8
-```
-
-что означает точка пересечения их графиков?
-
-Подумайте: при каком `x` обе компании стоят одинаково?
-
----
-
-## 8. Мини-чек-лист для самопроверки
-
-- [ ] Я умею находить *slope* по двум точкам.
-- [ ] Я умею определять *x-intercept* и *y-intercept*.
-- [ ] Я умею строить уравнение `y=mx+b` по графику, таблице или двум точкам.
-- [ ] Я умею объяснить смысл slope и intercept в текстовой задаче.
-
-### Контрольная микро-задача
-
-Линия проходит через `(0,-2)` и `(4,10)`. Запишите её уравнение.
-
-<details>
-<summary><strong>Проверка</strong></summary>
-
-```math
-m=\frac{10-(-2)}{4-0}=3
-```
-
-Так как при `x=0` значение `y=-2`, то:
-
-```math
-y=3x-2
-```
-
-</details>
+- [ ] Я читаю slope и intercept из `y=mx+b`.
+- [ ] Я понимаю slope как change per unit.
+- [ ] Я нахожу slope по двум points и table.
+- [ ] Я строю equation по slope + point.
+- [ ] Я строю equation по two points.
+- [ ] Я перевожу `initial` и `per` в linear model.
+- [ ] Я понимаю function notation.
+- [ ] Я сравниваю две linear models через intersection.
+- [ ] Я проверяю units и смысл coefficients.
+- [ ] Я могу объяснить, почему выбрал метод.
