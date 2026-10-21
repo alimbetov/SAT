@@ -166,25 +166,26 @@ Circles
 
 Теория связана с отдельным практическим слоем в [`practice/`](practice/README.md).
 
-## Topic Drills — Set 01
+## Topic Drills — complete baseline
 
-Каждый из 25 lessons получил отдельный targeted drill:
+Каждый из 25 lessons получил два targeted drills:
 
-- **25 тем × 10 вопросов**;
-- всего **250 topic-specific questions**;
+- `Drill 01` — 10 задач;
+- `Drill 02` — ещё 10 задач;
+- **20 вопросов на каждую тему**;
+- **500 topic-specific questions**;
 - полный индекс: [`practice/topic_drills/README.md`](practice/topic_drills/README.md).
 
-Рекомендуемый quality gate:
+Quality gates:
 
 ```text
-9–10/10 → mixed practice
-7–8/10  → targeted review
-≤6/10   → вернуться к lesson
+Drill 01: 9–10/10 → Drill 02
+Drill 02: 8–10/10 → mixed timed practice
 ```
 
 ## Domain Question Bank — Set 01
 
-Первый mixed-domain пакет содержит **80 оригинальных задач** — по 20 на каждый официальный домен.
+Mixed-domain пакет содержит **80 оригинальных задач** — по 20 на каждый официальный домен.
 
 | Domain | Practice set | Questions |
 |---|---|---:|
@@ -207,11 +208,11 @@ Circles
 ## Текущий объём
 
 ```text
-250  Topic Drill questions
+500  Topic Drill questions
  80  Domain Question Bank questions
  44  Timed Module questions
 ---
-374  original practice questions
+624  original practice questions
 ```
 
 Это число **не включает** Practice Problems, встроенные в сами теоретические уроки.
@@ -223,7 +224,11 @@ Lesson
   ↓
 Practice Problems внутри урока
   ↓
-Topic Drill
+Topic Drill 01
+  ↓
+Error review
+  ↓
+Topic Drill 02
   ↓
 Domain Question Bank
   ↓
@@ -252,8 +257,6 @@ Hard Route / повторный модуль
 
 ## Stage 1 — Foundation
 
-Закрыть Algebra до автоматизма:
-
 ```text
 Linear Equations → Linear Functions → Systems → Inequalities
 ```
@@ -281,12 +284,13 @@ Angles/Triangles → Area/Volume → Right Triangles/Trig → Circles
 ## Stage 5 — Mixed Digital SAT Practice
 
 1. untimed accuracy;
-2. topic drills;
-3. domain question banks;
-4. timed mixed modules;
-5. hard-route modules;
-6. full Bluebook tests;
-7. error log → targeted review → повторный тест.
+2. Topic Drill 01;
+3. Topic Drill 02;
+4. domain question banks;
+5. timed mixed modules;
+6. hard-route modules;
+7. full Bluebook tests;
+8. error log → targeted review → повторный тест.
 
 ---
 
