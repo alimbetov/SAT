@@ -162,6 +162,66 @@ Circles
 
 ---
 
+# Practice System
+
+Теория связана с отдельным практическим слоем в [`practice/`](practice/README.md).
+
+## Domain Question Bank — Set 01
+
+Первый пакет содержит **80 оригинальных задач** — по 20 на каждый официальный домен.
+
+| Domain | Practice set | Questions |
+|---|---|---:|
+| Algebra | [`practice/question_bank/algebra_set_01.md`](practice/question_bank/algebra_set_01.md) | 20 |
+| Advanced Math | [`practice/question_bank/advanced_math_set_01.md`](practice/question_bank/advanced_math_set_01.md) | 20 |
+| Problem-Solving and Data Analysis | [`practice/question_bank/psda_set_01.md`](practice/question_bank/psda_set_01.md) | 20 |
+| Geometry and Trigonometry | [`practice/question_bank/geometry_trigonometry_set_01.md`](practice/question_bank/geometry_trigonometry_set_01.md) | 20 |
+
+Каждая задача помечается skill, difficulty, response type и рекомендацией по использованию Desmos.
+
+## Timed Modules
+
+Собраны два самостоятельных модуля по **22 вопроса / 35 минут**.
+
+| Module | Роль | Questions |
+|---|---|---:|
+| [`Math Module 01`](practice/timed_modules/math_module_01.md) | базовый mixed module | 22 |
+| [`Module 01 Answers`](practice/timed_modules/math_module_01_answers.md) | решения + error log | — |
+| [`Math Module 02 — Hard Route`](practice/timed_modules/math_module_02_hard.md) | усложнённый adaptive-style route | 22 |
+| [`Module 02 Answers`](practice/timed_modules/math_module_02_hard_answers.md) | решения + diagnostic interpretation | — |
+
+На текущем этапе практический слой содержит **124 оригинальных задания** помимо Practice Problems внутри каждого теоретического урока.
+
+## Учебный цикл
+
+```text
+Lesson
+  ↓
+Practice Problems внутри урока
+  ↓
+Domain Question Bank
+  ↓
+Mixed Timed Module
+  ↓
+Error Log
+  ↓
+Targeted Review
+  ↓
+Hard Route / повторный модуль
+```
+
+Для каждой ошибки фиксируется причина:
+
+- Concept gap
+- Wrong model
+- Algebra/arithmetic error
+- Misread question
+- Desmos misuse
+- Time pressure
+- Careless error
+
+---
+
 # Рекомендуемый маршрут подготовки
 
 ## Stage 1 — Foundation
@@ -172,16 +232,12 @@ Circles
 Linear Equations → Linear Functions → Systems → Inequalities
 ```
 
-Цель: не терять баллы на базовой алгебре и word problems.
-
 ## Stage 2 — Advanced Math
 
 ```text
 Equivalent Expressions → Quadratics → Polynomials → Exponentials
 → Rational/Radical/Absolute Value → Nonlinear Systems
 ```
-
-Цель: построить фундамент для диапазона Math 650–800.
 
 ## Stage 3 — Data Reasoning
 
@@ -190,25 +246,20 @@ Ratios → Percentages → Statistics → Scatterplots → Probability
 → Sampling → Experimental Design
 ```
 
-Цель: научиться читать условия, таблицы, графики и статистические утверждения, а не только считать.
-
 ## Stage 4 — Geometry & Trigonometry
 
 ```text
 Angles/Triangles → Area/Volume → Right Triangles/Trig → Circles
 ```
 
-Цель: знать небольшой набор правил и быстро распознавать нужное.
-
 ## Stage 5 — Mixed Digital SAT Practice
 
-После topic practice переходить к смешанным наборам:
-
 1. untimed accuracy;
-2. timed topic sets;
-3. mixed Math modules;
-4. full Bluebook tests;
-5. error log → targeted review → повторный тест.
+2. domain question banks;
+3. timed mixed modules;
+4. hard-route modules;
+5. full Bluebook tests;
+6. error log → targeted review → повторный тест.
 
 ---
 
