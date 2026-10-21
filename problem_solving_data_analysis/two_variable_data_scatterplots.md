@@ -1,10 +1,10 @@
-# Two-Variable Data — models and scatterplots
+# Two-Variable Data — models, scatterplots, and regression
 
 ## 1. Заголовок и краткое описание
 
-Two-variable data — официальный skill Problem-Solving and Data Analysis. На SAT нужно читать scatterplots, определять association, использовать line of best fit и интерпретировать slope, intercept и residuals в контексте данных.
+Two-variable data — официальный skill Problem-Solving and Data Analysis. На SAT нужно читать scatterplots, определять association, использовать residuals и выбирать подходящую **linear, quadratic или exponential model** для данных.
 
-> **Главная идея:** scatterplot показывает связь между двумя количественными переменными, но связь сама по себе не доказывает причинность.
+> **Главная идея:** scatterplot показывает pattern двух переменных; задача — распознать форму pattern и выбрать модель, которая её объясняет.
 
 ---
 
@@ -14,11 +14,13 @@ Two-variable data — официальный skill Problem-Solving and Data Anal
 |---|---|
 | positive association | `x` растёт → `y` в среднем растёт |
 | negative association | `x` растёт → `y` в среднем уменьшается |
-| no clear association | устойчивого тренда нет |
-| line of best fit | линия, описывающая общий trend |
-| predicted value | значение модели |
+| no clear association | устойчивого trend нет |
+| line/curve of best fit | модель общего pattern |
+| predicted value | значение, которое даёт model |
 | residual | `observed - predicted` |
-| slope | изменение predicted `y` на единицу `x` |
+| linear model | примерно constant additive change |
+| exponential model | примерно constant multiplicative / percent change |
+| quadratic model | curved pattern с turning point |
 
 ### Residual
 
@@ -26,18 +28,24 @@ Two-variable data — официальный skill Problem-Solving and Data Anal
 residual=y_{observed}-y_{predicted}
 ```
 
-- positive residual → точка выше модели;
-- negative residual → точка ниже модели.
+- positive residual → point выше model;
+- negative residual → point ниже model.
+
+### Как выбрать модель
+
+**Linear:** точки идут примерно вдоль прямой.  
+**Exponential:** рост/decay ускоряется multiplicatively.  
+**Quadratic:** U-shape или inverted-U pattern.
 
 ### Визуальный якорь
 
-**Trend ≠ cause.** Корреляция может быть сильной и всё равно не доказывать причинно-следственную связь.
+**Straight → linear. Constant percent → exponential. One turn → quadratic.**
 
 ---
 
 ## 3. Пошаговый разбор — Guided Example
 
-A line of best fit for hours studied `x` and test score `y` is
+A line of best fit for hours studied `x` and score `y` is
 
 ```math
 y=4.5x+62.
@@ -45,23 +53,25 @@ y=4.5x+62.
 
 A student studied 6 hours and scored 86. Find and interpret the residual.
 
-### Шаг 1. Находим predicted score
+### Шаг 1. Predicted score
 
 ```math
-y=4.5(6)+62=89.
+4.5(6)+62=89.
 ```
 
-### Шаг 2. Вычисляем residual
+### Шаг 2. Residual
 
 ```math
 86-89=-3.
 ```
 
-### Шаг 3. Интерпретируем
+### Шаг 3. Интерпретация
 
-Фактический score оказался на 3 points **ниже**, чем предсказывает модель.
+Observed score на 3 points ниже prediction.
 
-Почему знак важен? Потому что он показывает направление ошибки prediction.
+### Шаг 4. Что означал бы pattern residuals?
+
+Если residuals случайно распределены вокруг 0, model может быть разумной. Если residuals образуют заметную curve, linear model, вероятно, не отражает pattern и стоит рассмотреть nonlinear model.
 
 ---
 
@@ -79,29 +89,27 @@ For `y=3x+10`, what value is predicted when `x=5`?
 
 ### Problem 3 — Medium — Multiple Choice
 
-A model predicts 42, but the observed value is 47. What is the residual?
+A scatterplot forms a clear U-shaped pattern. Which type of model is most plausible?
 
-**A)** -5  **B)** 0  **C)** 5  **D)** 89
+**A)** constant  **B)** linear  **C)** quadratic  **D)** no model can ever be used
 
 ### Problem 4 — Medium — Multiple Choice
 
-The slope of a best-fit line is `2.4`. Which interpretation is best?
+A quantity increases by roughly the same percentage for each equal increase in `x`. Which model is most appropriate?
 
-**A)** `y` is always 2.4  
-**B)** predicted `y` increases about 2.4 for each 1-unit increase in `x`  
-**C)** `x` causes `y` to increase by 2.4  
-**D)** intercept is 2.4
+**A)** linear  **B)** exponential  **C)** constant  **D)** random
 
 ### Problem 5 — Hard — Grid-in
 
 A model `y=12-0.8x` predicts a value for `x=5`. If the observed value is 10, what is the residual?
 
-<details><summary><strong>Ответы и краткие решения</strong></summary>
+<details>
+<summary><strong>Ответы и краткие решения</strong></summary>
 
 1. **A**.  
 2. **25**.  
-3. **C**, `47-42=5`.  
-4. **B**.  
+3. **C**, U-shape suggests quadratic behavior.  
+4. **B**, constant percent/multiplicative change suggests exponential.  
 5. **2**: predicted `8`; residual `10-8=2`.
 
 </details>
@@ -110,28 +118,51 @@ A model `y=12-0.8x` predicts a value for `x=5`. If the observed value is 10, wha
 
 ## 5. Common Traps — типичные ловушки
 
-- Вычислять residual как predicted − observed вместо observed − predicted.
-- Интерпретировать slope без units/context.
-- Делать causal conclusion только на основании scatterplot.
+### Ловушка 1. Residual с неправильным знаком
+
+Всегда:
+
+```math
+observed-predicted.
+```
+
+### Ловушка 2. Выбирать linear model просто потому, что знакома формула `y=mx+b`
+
+Смотрите на pattern. Curve требует nonlinear candidate.
+
+### Ловушка 3. Correlation = causation
+
+Даже сильная association не доказывает cause-and-effect.
 
 ---
 
 ## 6. Стратегия для Digital SAT
 
-Desmos умеет regression. Для введённых списков `x1` и `y1` можно использовать линейную регрессию вида `y1~mx1+b`. На SAT это полезно, когда требуется модель по таблице данных. Но для готовой best-fit equation обычно быстрее просто подставить значение.
+Desmos особенно полезен для regression. После ввода lists `x1` и `y1` можно сравнивать модели, например:
+
+```text
+y1 ~ mx1+b
+```
+
+или nonlinear regression, если формат задачи это допускает.
+
+Главное — не выбирать model только по красивому графику. Сверяйте context: additive change чаще linear, multiplicative/percent change чаще exponential.
 
 ---
 
 ## 7. Связи с другими темами
 
-**Опирается на:** linear functions, slope, one-variable statistics.  
-**Связано с:** observational studies, experiments, statistical claims.
+**Опирается на:** linear functions, quadratics, exponential functions, one-variable statistics.  
+**Связано с:**
+- `observational_studies_experiments.md`;
+- model interpretation;
+- residual analysis.
 
 ---
 
 ## 8. Мини-чек-лист для самопроверки
 
-- [ ] Я определяю направление association.
-- [ ] Я интерпретирую slope и intercept модели.
+- [ ] Я определяю direction and shape of association.
+- [ ] Я выбираю linear/quadratic/exponential model по pattern.
 - [ ] Я вычисляю и интерпретирую residual.
-- [ ] Я не путаю correlation с causation.
+- [ ] Я не путаю statistical association с causation.
