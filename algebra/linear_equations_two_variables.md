@@ -2,24 +2,26 @@
 
 ## 1. Заголовок и краткое описание
 
-Линейные уравнения с двумя переменными — отдельный официальный skill домена **Algebra** на Digital SAT. Здесь нужно уметь читать уравнение прямой, находить точки на графике, интерпретировать коэффициенты и переводить реальную ситуацию в модель вида `Ax + By = C` или `y = mx + b`.
+Линейные уравнения с двумя переменными — отдельный официальный skill домена **Algebra**. На Digital SAT нужно читать equations, graphs и tables, находить slope/intercepts, писать equation of a line и работать с **parallel/perpendicular lines**.
 
-> **Главная идея:** одно линейное уравнение с двумя переменными описывает не одну точку, а целую прямую.
+> **Главная идея:** одно линейное уравнение с двумя переменными описывает целую прямую, а slope определяет её направление.
 
 ---
 
 ## 2. Ключевые понятия и формулы
 
-| Понятие | Формула / смысл | Якорь для памяти |
+| Понятие | Формула / смысл | Якорь |
 |---|---|---|
-| standard form | `Ax + By = C` | «две переменные — одна прямая» |
-| slope-intercept form | `y = mx + b` | `m` = slope, `b` = y-intercept |
-| slope | `m = (y₂-y₁)/(x₂-x₁)` | **rise over run** — подъём / шаг |
-| x-intercept | точка при `y = 0` | пересечение оси `x` |
-| y-intercept | точка при `x = 0` | пересечение оси `y` |
-| solution | любая точка `(x,y)`, удовлетворяющая уравнению | подставил → равенство верно |
+| standard form | `Ax+By=C` | две переменные → одна прямая |
+| slope-intercept form | `y=mx+b` | `m` slope, `b` y-intercept |
+| slope | `m=(y₂-y₁)/(x₂-x₁)` | **rise over run** |
+| x-intercept | установить `y=0` | пересечение x-axis |
+| y-intercept | установить `x=0` | пересечение y-axis |
+| point-slope form | `y-y₁=m(x-x₁)` | линия через point с slope `m` |
+| parallel lines | одинаковые slopes | идут в одном направлении |
+| perpendicular lines | `m₁m₂=-1` для nonvertical lines | negative reciprocals |
 
-### Быстрая идея
+### Проверка точки
 
 Для
 
@@ -27,19 +29,13 @@
 y=3x+2
 ```
 
-точка `(1,5)` подходит, потому что
+точка `(1,5)` подходит:
 
 ```math
 5=3(1)+2.
 ```
 
-А `(2,5)` не подходит:
-
-```math
-5\ne3(2)+2.
-```
-
-### Как найти intercepts
+### Intercepts
 
 Для
 
@@ -47,25 +43,40 @@ y=3x+2
 2x+3y=12
 ```
 
-**x-intercept:** положите `y=0`:
+x-intercept: `y=0` → `x=6`.  
+y-intercept: `x=0` → `y=4`.
+
+### Parallel lines
 
 ```math
-2x=12\Rightarrow x=6.
+y=2x+1
 ```
 
-Точка: `(6,0)`.
-
-**y-intercept:** положите `x=0`:
+и
 
 ```math
-3y=12\Rightarrow y=4.
+y=2x-7
 ```
 
-Точка: `(0,4)`.
+parallel, потому что slope обеих линий равен `2`.
 
-### Вопрос к себе
+### Perpendicular lines
 
-Если `x` увеличивается на 1, а `y` каждый раз увеличивается на 4, чему равен slope? Ответьте до продолжения.
+Если одна линия имеет slope `2/3`, perpendicular slope:
+
+```math
+-\frac32.
+```
+
+Проверка:
+
+```math
+\frac23\cdot\left(-\frac32\right)=-1.
+```
+
+### Вопрос к читателю
+
+Какой slope имеет линия, perpendicular к линии `y=-4x+7`?
 
 ---
 
@@ -73,31 +84,52 @@ y=3x+2
 
 ### Задача
 
-A taxi ride costs a fixed `$6` plus `$2.50` per mile. Let `C` be the total cost, in dollars, for `m` miles. Which equation models the situation, and what does the coefficient of `m` represent?
-
-### Шаг 1. Находим фиксированную часть
-
-Даже при `m=0` поездка имеет стартовую стоимость `$6`.
-
-Значит, это **y-intercept / initial value**.
-
-### Шаг 2. Находим rate of change
-
-Каждая дополнительная миля добавляет `$2.50`.
-
-Значит, slope равен `2.50`.
-
-### Шаг 3. Собираем модель
+A line passes through `(2,5)` and is parallel to
 
 ```math
-C=2.5m+6
+y=3x-4.
 ```
 
-### Шаг 4. Интерпретируем коэффициент
+Find the equation of the new line.
 
-`2.5` — это не просто число перед переменной. В контексте задачи оно означает **стоимость одной дополнительной мили**.
+### Шаг 1. Используем parallel condition
 
-> На SAT часто спрашивают не вычисление, а смысл slope или intercept в контексте.
+Parallel lines имеют одинаковый slope.
+
+Значит:
+
+```math
+m=3.
+```
+
+### Шаг 2. Используем point-slope form
+
+```math
+y-y_1=m(x-x_1).
+```
+
+Подставляем `(2,5)`:
+
+```math
+y-5=3(x-2).
+```
+
+### Шаг 3. Упрощаем
+
+```math
+y-5=3x-6
+```
+
+```math
+y=3x-1.
+```
+
+### Шаг 4. Проверяем
+
+- slope нового уравнения = 3 → линии parallel;
+- точка `(2,5)` удовлетворяет: `5=6-1`.
+
+Почему нельзя просто взять исходный y-intercept `-4`? Parallel condition фиксирует slope, но intercept обычно меняется.
 
 ---
 
@@ -105,7 +137,7 @@ C=2.5m+6
 
 ### Problem 1 — Easy — Multiple Choice
 
-Which point lies on the line
+Which point lies on
 
 ```math
 y=2x+1?
@@ -137,31 +169,25 @@ A line passes through `(2,5)` and `(6,13)`. What is its slope?
 
 ### Problem 4 — Medium — Multiple Choice
 
-The equation
+Which line is parallel to `y=-2x+5`?
 
-```math
-P=18+7t
-```
-
-models the amount `P`, in dollars, paid after `t` hours. What does `18` represent?
-
-**A)** hourly rate  
-**B)** total hours  
-**C)** initial fixed amount  
-**D)** maximum payment
+**A)** `y=2x+1`  
+**B)** `y=-2x-7`  
+**C)** `y=(1/2)x+3`  
+**D)** `y=-(1/2)x+3`
 
 ### Problem 5 — Hard — Grid-in
 
-The line `ax+3y=12` passes through `(3,1)`. What is the value of `a`?
+A line is perpendicular to `y=(1/4)x+9`. What is the slope of the perpendicular line?
 
 <details>
 <summary><strong>Ответы и краткие решения</strong></summary>
 
-1. **B.** `3=2(1)+1`.  
-2. **6.** При `y=0`: `3x=18`, поэтому `x=6`.  
-3. **B.** `m=(13-5)/(6-2)=8/4=2`.  
-4. **C.** При `t=0`, `P=18`, то есть это fixed initial amount.  
-5. **3.** Подставляем `(3,1)`: `3a+3=12`, значит `3a=9`, `a=3`.
+1. **B**, `3=2(1)+1`.  
+2. **6**, при `y=0`: `3x=18`.  
+3. **B**, `(13-5)/(6-2)=2`.  
+4. **B**, same slope `-2`.  
+5. **-4**, negative reciprocal of `1/4`.
 
 </details>
 
@@ -171,55 +197,35 @@ The line `ax+3y=12` passes through `(3,1)`. What is the value of `a`?
 
 ### Ловушка 1. Перепутать slope и intercept
 
-В `y=mx+b`:
+В `y=mx+b`, `m` — rate of change, `b` — значение `y` при `x=0`.
 
-- `m` — изменение `y` на единицу `x`;
-- `b` — значение `y` при `x=0`.
+### Ловушка 2. Перепутать parallel и perpendicular slopes
 
-### Ловушка 2. Подставить ноль не в ту переменную
+- parallel → same slope;
+- perpendicular → negative reciprocal.
+
+### Ловушка 3. Неверно найти intercept
 
 - x-intercept → `y=0`;
 - y-intercept → `x=0`.
-
-### Ловушка 3. Перевернуть формулу slope
-
-Используйте один порядок и сверху, и снизу:
-
-```math
-m=\frac{y_2-y_1}{x_2-x_1}.
-```
-
-Нельзя менять порядок только в числителе.
 
 ---
 
 ## 6. Стратегия для Digital SAT
 
-### Desmos
-
-Введите уравнение напрямую, например:
+Desmos удобно использовать для проверки:
 
 ```text
 y=2x+1
 ```
 
-Чтобы проверить, лежит ли точка на прямой, можно либо подставить координаты вручную, либо построить точку в Desmos.
+и второй candidate line. По графику легко увидеть parallel/perpendicular relationship.
 
-Для standard form:
+Но для slope questions algebra обычно быстрее:
 
-```text
-3x+2y=18
-```
-
-Desmos сразу построит прямую. Пересечения с осями можно увидеть на графике.
-
-### Экзаменационная стратегия
-
-Если вопрос просит **смысл коэффициента**, не спешите считать. Сначала спросите:
-
-> Что изменяется на единицу чего?
-
-Это часто быстрее любого вычисления.
+1. приведите equation к `y=mx+b`;
+2. прочитайте `m`;
+3. примените same slope или negative reciprocal.
 
 ---
 
@@ -227,19 +233,20 @@ Desmos сразу построит прямую. Пересечения с ос�
 
 **Опирается на:**
 - `linear_equations.md`;
-- координатную плоскость;
-- пропорции и rates.
+- coordinate plane;
+- ratios/rates.
 
 **Связано с:**
-- `linear_functions.md` — функция как интерпретация прямой;
-- `systems_of_equations.md` — пересечение двух прямых;
-- `linear_inequalities.md` — области по одну сторону прямой.
+- `linear_functions.md`;
+- `systems_of_equations.md` — intersections;
+- `linear_inequalities.md` — boundary lines;
+- geometry — perpendicular/parallel relationships.
 
 ---
 
 ## 8. Мини-чек-лист для самопроверки
 
-- [ ] Я умею проверять, лежит ли точка на прямой.
-- [ ] Я умею находить `x-intercept` и `y-intercept`.
-- [ ] Я умею находить *slope* по двум точкам.
-- [ ] Я умею объяснить смысл коэффициентов линейной модели в контексте задачи.
+- [ ] Я проверяю, лежит ли point на line.
+- [ ] Я нахожу slope и intercepts.
+- [ ] Я пишу equation по point и slope.
+- [ ] Я нахожу equations/slopes parallel и perpendicular lines.
