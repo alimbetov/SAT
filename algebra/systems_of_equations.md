@@ -1,18 +1,34 @@
 # Systems of Equations — системы линейных уравнений
 
-## 1. Зачем эта тема нужна на SAT
+> **Цель урока:** научиться видеть систему как **две условия, которые должны выполняться одновременно**, и быстро выбирать между substitution, elimination и graphing.
 
-Системы двух линейных уравнений входят в официальный домен **Algebra**. На SAT нужно уметь находить точку пересечения двух линий, выбирать между substitution и elimination, распознавать отсутствие решения или бесконечно много решений и строить систему по текстовой ситуации.
+Главная идея:
 
-> **Главная идея:** решение системы — значение, которое одновременно удовлетворяет обоим уравнениям.
-
-**Вопрос перед началом:** если две прямые пересекаются в одной точке, сколько решений имеет соответствующая система?
+> **Solution of a system = точка, которая подходит обоим уравнениям сразу.**
 
 ---
 
-## 2. Ключевые понятия и формулы
+# 1. Pattern Map
 
-Система обычно записывается так:
+| Что вижу | Паттерн | Лучший старт |
+|---|---|---|
+| `y=...` уже выражено | substitution-ready | подставить выражение |
+| коэффициенты `+y` и `-y` | elimination-ready | сложить equations |
+| коэффициенты можно легко сделать opposite | scale + elimination | умножить одно equation |
+| две lines на graph | intersection | читать точку пересечения |
+| same slope, different intercept | parallel | no solution |
+| same line written differently | same line | infinitely many solutions |
+| two quantities + total/count constraints | word-problem system | определить variables и написать 2 equations |
+
+Перед вычислениями спросите:
+
+> **«Какой variable проще всего убрать?»**
+
+---
+
+# 2. Что означает system
+
+Пример:
 
 ```math
 \begin{cases}
@@ -21,19 +37,53 @@ x-y=1
 \end{cases}
 ```
 
-### Что означает решение
+Нужно найти такие `x` и `y`, которые делают **оба** равенства верными.
 
-Если решение равно `(x,y)=(4,3)`, то эта пара должна сделать **оба** уравнения верными.
+Геометрически каждое equation — линия.
 
-### Три метода
+Solution system — их intersection.
 
-| Метод | Когда удобен | Идея |
-|---|---|---|
-| **substitution** | одна переменная уже выражена | подставить одно выражение в другое уравнение |
-| **elimination** | коэффициенты легко сократить | сложить/вычесть уравнения и убрать переменную |
-| **graphing** | нужен быстрый визуальный ответ | найти точку пересечения графиков |
+```text
+line 1  \ /
+         X   ← solution
+line 2  / \
+```
 
-### Substitution
+---
+
+# 3. Три геометрических случая
+
+| Lines | Solutions | Почему |
+|---|---:|---|
+| пересекаются | 1 | одна общая point |
+| parallel | 0 | никогда не встречаются |
+| same line | infinitely many | каждая point общая |
+
+Якорь:
+
+```text
+CROSS → ONE
+PARALLEL → NONE
+SAME → INFINITE
+```
+
+---
+
+# 4. PATTERN 1 — Substitution
+
+## Когда выбирать
+
+Одна variable уже выражена:
+
+```math
+y=2x+1
+```
+
+или её очень легко выразить.
+
+---
+
+## Worked Example 1
 
 ```math
 \begin{cases}
@@ -42,10 +92,20 @@ y=2x+1\\
 \end{cases}
 ```
 
-Подставляем `y=2x+1` во второе уравнение:
+### Notice
+
+Первое equation уже говорит, чему равен `y`.
+
+### Decision
+
+Вместо `y` во втором equation подставляем `2x+1`.
 
 ```math
 3x+(2x+1)=16
+```
+
+```math
+5x+1=16
 ```
 
 ```math
@@ -56,13 +116,76 @@ y=2x+1\\
 x=3
 ```
 
-Затем:
+Теперь возвращаемся:
 
 ```math
 y=2(3)+1=7
 ```
 
-### Elimination
+Solution:
+
+```math
+(3,7)
+```
+
+### Check
+
+Second equation:
+
+```math
+3(3)+7=16
+```
+
+Correct.
+
+---
+
+## Worked Example 2 — express first
+
+```math
+\begin{cases}
+x+y=10\\
+2x+3y=24
+\end{cases}
+```
+
+Из первого equation очень легко:
+
+```math
+y=10-x
+```
+
+Подставляем:
+
+```math
+2x+3(10-x)=24
+```
+
+```math
+2x+30-3x=24
+```
+
+```math
+-x=-6
+```
+
+```math
+x=6
+```
+
+```math
+y=4
+```
+
+---
+
+# 5. PATTERN 2 — Elimination
+
+## Когда выбирать
+
+Coefficients уже opposite или легко становятся opposite.
+
+Пример:
 
 ```math
 \begin{cases}
@@ -71,7 +194,13 @@ y=2(3)+1=7
 \end{cases}
 ```
 
-Складываем уравнения:
+`+y` и `-y` уничтожатся при сложении.
+
+---
+
+## Worked Example 1
+
+Складываем equations:
 
 ```math
 5x=15
@@ -81,27 +210,115 @@ y=2(3)+1=7
 x=3
 ```
 
-Потом находим `y`.
+Подставляем в первое:
 
-### Геометрический смысл
-
-| Линии | Число решений системы |
-|---|---:|
-| пересекаются | 1 |
-| параллельны | 0 |
-| совпадают | бесконечно много |
-
-Визуальный якорь:
-
-```text
-пересеклись → ONE
-параллельны → NONE
-совпали → INFINITE
+```math
+2(3)+y=9
 ```
 
-### Одинаковый slope
+```math
+y=3
+```
 
-Если две линии имеют одинаковый slope, но разные intercepts:
+Solution:
+
+```math
+(3,3)
+```
+
+---
+
+## PATTERN CARD — elimination
+
+```text
+1. choose variable to eliminate
+2. make coefficients opposite if needed
+3. add equations
+4. solve one variable
+5. back-substitute
+6. check both equations
+```
+
+---
+
+## Worked Example 2 — сначала умножить
+
+```math
+\begin{cases}
+2x+3y=12\\
+4x-y=10
+\end{cases}
+```
+
+### Notice
+
+`y` coefficients: `3` and `-1`.
+
+Если второе equation умножить на `3`:
+
+```math
+12x-3y=30
+```
+
+Теперь:
+
+```math
+\begin{cases}
+2x+3y=12\\
+12x-3y=30
+\end{cases}
+```
+
+Складываем:
+
+```math
+14x=42
+```
+
+```math
+x=3
+```
+
+Подставляем:
+
+```math
+4(3)-y=10
+```
+
+```math
+y=2
+```
+
+---
+
+# 6. Method Selector — substitution или elimination?
+
+```text
+Variable already isolated?
+→ substitution
+
+Coefficients already opposite?
+→ elimination
+
+One coefficient = 1 or -1?
+→ substitution often easy
+
+Can multiply one equation by small number to eliminate?
+→ elimination
+
+Graph/intersection given?
+→ graphing / Desmos
+```
+
+Не существует «всегда лучшего» метода.
+
+SAT проверяет гибкость выбора.
+
+---
+
+# 7. PATTERN 3 — No solution / infinitely many solutions
+
+## Case A — parallel lines
 
 ```math
 y=2x+3
@@ -111,66 +328,105 @@ y=2x+3
 y=2x-5
 ```
 
-они параллельны → **no solution**.
+Same slope, different intercept.
 
-Если совпадают и slope, и intercept:
+```text
+parallel → no solution
+```
+
+---
+
+## Case B — same line
 
 ```math
 y=2x+3
 ```
 
+и
+
 ```math
 2y=4x+6
 ```
 
-это одна и та же линия → **infinitely many solutions**.
+Второе делим на `2`:
+
+```math
+y=2x+3
+```
+
+Это одна и та же line.
+
+```text
+same line → infinitely many solutions
+```
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+## Algebraic signal
 
-### Задача
+При elimination variable может исчезнуть.
 
-A school sold `120` tickets to a performance. Student tickets cost `$6` and adult tickets cost `$10`. Total revenue was `$920`. How many student tickets were sold?
+Если осталось:
 
-Пусть:
+```math
+0=7
+```
 
-- `s` — число student tickets;
-- `a` — число adult tickets.
+→ no solution.
 
-### Шаг 1. Строим уравнение количества
+Если:
 
-Всего продано 120 билетов:
+```math
+0=0
+```
+
+→ infinitely many solutions.
+
+Это тот же pattern, что в linear equations.
+
+---
+
+# 8. PATTERN 4 — Word Problems: count + value
+
+Очень частый SAT pattern:
+
+```text
+number of items total
++
+value/cost total
+```
+
+Например tickets, coins, products, memberships.
+
+---
+
+## Worked Example — tickets
+
+A school sold `120` tickets.
+Student tickets cost `$6`, adult tickets `$10`.
+Total revenue was `$920`.
+How many student tickets?
+
+### Step 1 — define variables
+
+```text
+s = student tickets
+a = adult tickets
+```
+
+### Step 2 — count equation
 
 ```math
 s+a=120
 ```
 
-**Почему?**
-
-Потому что каждая продажа относится либо к student, либо к adult ticket.
-
-### Шаг 2. Строим уравнение стоимости
-
-Доход от student tickets:
-
-```math
-6s
-```
-
-Доход от adult tickets:
-
-```math
-10a
-```
-
-Общий доход:
+### Step 3 — money equation
 
 ```math
 6s+10a=920
 ```
 
-Получаем систему:
+System:
 
 ```math
 \begin{cases}
@@ -179,17 +435,15 @@ s+a=120\\
 \end{cases}
 ```
 
-### Шаг 3. Выбираем метод
+### Step 4 — choose method
 
-Из первого уравнения легко выразить:
+First equation makes substitution easy:
 
 ```math
 a=120-s
 ```
 
-Поэтому substitution здесь естественнее.
-
-### Шаг 4. Подставляем
+### Step 5
 
 ```math
 6s+10(120-s)=920
@@ -207,64 +461,86 @@ a=120-s
 s=70
 ```
 
-### Шаг 5. Проверяем
-
-Adult tickets:
+Then:
 
 ```math
-a=120-70=50
+a=50
 ```
 
-Доход:
+### Check
 
 ```math
 6(70)+10(50)=420+500=920
 ```
 
-**Ответ: `70` student tickets.**
+Correct.
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+# 9. SAT Language Decoder for systems
 
-### Problem 1 — Easy — Multiple Choice
+| Phrase | Model clue |
+|---|---|
+| `a total of 120 items` | count equation |
+| `total revenue/cost/value` | weighted value equation |
+| `combined` | often sum |
+| `both plans cost the same` | set outputs equal |
+| `intersection` | common solution |
+| `satisfies both equations` | system solution |
 
-What is the solution to the system?
+---
+
+# 10. PATTERN 5 — Compare two linear models
+
+Suppose:
 
 ```math
-\begin{cases}
-x+y=9\\
-x-y=3
-\end{cases}
+A(x)=5x+40
 ```
-
-**A)** `(3,6)`  
-**B)** `(6,3)`  
-**C)** `(9,3)`  
-**D)** `(6,6)`
-
----
-
-### Problem 2 — Medium — Grid-in
 
 ```math
-\begin{cases}
-y=3x-2\\
-2x+y=18
-\end{cases}
+B(x)=8x+10
 ```
 
-What is the value of `x`?
+When are costs equal?
 
-Enter your answer: `_____`
+System perspective:
+
+```math
+y=5x+40
+```
+
+```math
+y=8x+10
+```
+
+At intersection:
+
+```math
+5x+40=8x+10
+```
+
+```math
+30=3x
+```
+
+```math
+x=10
+```
+
+This is both:
+
+- solving an equation;
+- solving a system;
+- finding graph intersection.
+
+SAT often tests the same concept through different representations.
 
 ---
 
-### Problem 3 — Medium — Multiple Choice
+# 11. Desmos Strategy
 
-Which system has **no solution**?
-
-**A)**
+For:
 
 ```math
 \begin{cases}
@@ -273,67 +549,119 @@ y=-x+7
 \end{cases}
 ```
 
-**B)**
+enter:
+
+```text
+y=2x+1
+y=-x+7
+```
+
+Click intersection.
+
+You get:
+
+```text
+(2,5)
+```
+
+## When Desmos is strong
+
+- messy coefficients;
+- both equations already in graph form;
+- question asks intersection;
+- nonlinear system later in Advanced Math.
+
+## When manual is faster
 
 ```math
 \begin{cases}
-y=4x+3\\
-y=4x-5
+x+y=10\\
+x-y=2
 \end{cases}
 ```
 
-**C)**
+Add equations instantly:
 
 ```math
-\begin{cases}
-x+y=8\\
+2x=12
+```
+
+No reason to graph.
+
+---
+
+# 12. Error Clinic
+
+## Error 1 — solve one equation only
+
+System solution must satisfy **both** equations.
+
+Always check pair `(x,y)`.
+
+---
+
+## Error 2 — substitution without parentheses
+
+If:
+
+```math
+y=5-x
+```
+
+and second equation has `3y`, then:
+
+```math
+3(5-x)
+```
+
+not
+
+```math
+15-x
+```
+
+---
+
+## Error 3 — elimination changes only one term
+
+If multiplying equation by `3`, multiply **every term**.
+
+```math
 2x-y=4
-\end{cases}
 ```
 
-**D)**
+becomes:
 
 ```math
-\begin{cases}
-y=x\\
-y=2x
-\end{cases}
+6x-3y=12
 ```
 
 ---
 
-### Problem 4 — Hard — Grid-in
+## Error 4 — confuse no solution with `(0,0)`
 
-A café sold `50` drinks. Small drinks cost `$3` and large drinks cost `$5`. Total sales were `$190`. How many large drinks were sold?
+Parallel lines do not intersect.
 
-Enter your answer: `_____`
+No solution does **not** mean `(0,0)`.
 
 ---
 
-### Problem 5 — Hard — Multiple Choice
+# 13. Guided Practice
 
-For what value of `k` does the system have infinitely many solutions?
+## Level A — method given
+
+Use elimination:
 
 ```math
 \begin{cases}
-2x+4y=10\\
-kx+8y=20
+x+y=9\\
+x-y=3
 \end{cases}
 ```
 
-**A)** `2`  
-**B)** `4`  
-**C)** `8`  
-**D)** `10`
+<details><summary>Solution</summary>
 
-<details>
-<summary><strong>Ответы и краткие решения</strong></summary>
-
-### Problem 1
-
-**Ответ: B) `(6,3)`**
-
-Складываем уравнения:
+Add:
 
 ```math
 2x=12
@@ -343,230 +671,198 @@ kx+8y=20
 x=6
 ```
 
-Тогда `y=3`.
-
-### Problem 2
-
-**Ответ: `4`**
-
-```math
-2x+(3x-2)=18
-```
-
-```math
-5x=20
-```
-
-```math
-x=4
-```
-
-### Problem 3
-
-**Ответ: B**
-
-Обе линии имеют slope `4`, но разные y-intercepts: `3` и `-5`. Они параллельны.
-
-### Problem 4
-
-**Ответ: `20`**
-
-Пусть `s` — small, `l` — large:
-
-```math
-s+l=50
-```
-
-```math
-3s+5l=190
-```
-
-Из `s=50-l`:
-
-```math
-3(50-l)+5l=190
-```
-
-```math
-150+2l=190
-```
-
-```math
-l=20
-```
-
-### Problem 5
-
-**Ответ: B) `4`**
-
-Чтобы второе уравнение было удвоением первого:
-
-```math
-2(2x+4y=10)
-```
-
-получаем:
-
-```math
-4x+8y=20
-```
-
-Следовательно `k=4`.
+Then `y=3`.
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
-
-### Ловушка 1. Найти только `x` и забыть про `y`
-
-Если вопрос просит ordered pair, ответ должен быть `(x,y)`, а не только одно число.
-
-### Ловушка 2. Ошибка знака при elimination
-
-Если вычитаете целое уравнение, знак меняется у **каждого** члена.
-
-Например:
-
-```math
--(2x-3y=5)
-```
-
-становится:
-
-```math
--2x+3y=-5
-```
-
-### Ловушка 3. Считать одинаковый slope признаком бесконечных решений
-
-Одинаковый slope означает либо:
-
-- параллельные линии → no solution;
-- одну и ту же линию → infinitely many solutions.
-
-Нужно проверить intercept или эквивалентность всего уравнения.
-
----
-
-## 6. Стратегия для Digital SAT
-
-### Desmos — сильный инструмент для систем
-
-Введите оба уравнения:
-
-```text
-y = 2x + 3
-y = -x + 9
-```
-
-Точка пересечения показывает решение системы.
-
-Это особенно удобно, если коэффициенты дробные или десятичные.
-
-### Но elimination часто быстрее
-
-Для системы
+## Level B — choose method
 
 ```math
 \begin{cases}
-4x+y=12\\
-2x-y=6
+y=3x-2\\
+2x+y=13
 \end{cases}
 ```
 
-достаточно сложить уравнения. Здесь Desmos будет медленнее ручного решения.
-
-### Как выбирать метод
+Write first:
 
 ```text
-переменная уже выражена? → substitution
-коэффициенты легко сокращаются? → elimination
-неудобные числа / нужен визуальный контроль? → Desmos
+Best method: __________
+Why: __________________
 ```
 
-### SAT word problems
+<details><summary>Solution</summary>
 
-В текстовой задаче сначала определите две неизвестные и найдите **два независимых факта**. Именно они обычно превращаются в два уравнения.
+Substitution, because `y` is already isolated.
+
+```math
+2x+(3x-2)=13
+```
+
+```math
+5x=15
+```
+
+```math
+x=3,\quad y=7
+```
+
+</details>
 
 ---
 
-## 7. Связи с другими темами
-
-### Предыдущие темы
-
-- [Linear Equations](./linear_equations.md)
-- [Linear Functions](./linear_functions.md)
-
-Система объединяет сразу две линейные модели.
-
-### Следующая тема
-
-[Linear Inequalities](./linear_inequalities.md)
-
-В inequalities вместо одной точки решения часто появляется целый диапазон или область допустимых значений.
-
-### Связь с Advanced Math
-
-Позже системы встречаются и с нелинейными функциями, например:
+## Level C — classify without solving
 
 ```math
-\begin{cases}
-y=x^2\\
-y=2x+3
-\end{cases}
+y=-4x+2
 ```
 
-Тогда решения — точки пересечения параболы и прямой.
+```math
+y=-4x-9
+```
+
+How many solutions?
+
+<details><summary>Answer</summary>
+
+No solution: same slope, different intercepts.
+
+</details>
 
 ---
 
-## 8. Мини-чек-лист для самопроверки
+## Level D — word problem
 
-- [ ] Я умею решать систему методом substitution.
-- [ ] Я умею решать систему методом elimination.
-- [ ] Я понимаю геометрический смысл one/no/infinite solutions.
-- [ ] Я умею составить систему из текстовой задачи и проверить ответ.
+There are `40` coins, all quarters and dimes, worth `$7.00` total.
 
-### Контрольная микро-задача
+Define variables and write a system before solving.
+
+<details><summary>Setup</summary>
+
+Let `q` quarters, `d` dimes.
+
+```math
+q+d=40
+```
+
+```math
+0.25q+0.10d=7
+```
+
+</details>
+
+---
+
+# 14. SAT-style Practice
+
+## 1 — Easy — Multiple Choice
+
+Solve:
 
 ```math
 \begin{cases}
-3x+y=14\\
+x+y=10\\
 x-y=2
 \end{cases}
 ```
 
-Найдите `(x,y)`.
+What is `x`?
+
+**A)** `4`  
+**B)** `5`  
+**C)** `6`  
+**D)** `8`
+
+## 2 — Medium — SPR
+
+```math
+\begin{cases}
+y=2x+1\\
+y=-x+10
+\end{cases}
+```
+
+Find `x`.
+
+## 3 — Medium — Multiple Choice
+
+Which system has no solution?
+
+**A)** `y=2x+1`, `y=-2x+1`  
+**B)** `y=3x+4`, `y=3x-2`  
+**C)** `y=x`, `y=2x`  
+**D)** `y=5`, `x=5`
+
+## 4 — Medium/Hard — SPR
+
+```math
+\begin{cases}
+2x+3y=19\\
+2x-y=7
+\end{cases}
+```
+
+Find `y`.
+
+## 5 — Hard — Multiple Choice
+
+The system
+
+```math
+\begin{cases}
+y=kx+4\\
+y=3x-8
+\end{cases}
+```
+
+has no solution. Which value could `k` be?
+
+**A)** `-3`  
+**B)** `0`  
+**C)** `3`  
+**D)** `8`
+
+## 6 — 750–800 — SPR
+
+A theater sold `200` tickets. Adult tickets cost `$12`, student tickets `$8`, and total revenue was `$2,080`. How many adult tickets were sold?
 
 <details>
-<summary><strong>Проверка</strong></summary>
+<summary><strong>Answers</strong></summary>
 
-Складываем:
-
-```math
-4x=16
-```
-
-```math
-x=4
-```
-
-Подставляем:
-
-```math
-4-y=2
-```
-
-```math
-y=2
-```
-
-Ответ:
-
-```math
-(4,2)
-```
+1. **C, 6** — add equations.
+2. **`3`** — `2x+1=-x+10`.
+3. **B** — same slope, different intercept.
+4. **`3`** — subtract/eliminate `x`: `4y=12`.
+5. **C** — parallel requires same slope `3`; intercepts differ.
+6. **`120`** — `a+s=200`, `12a+8s=2080`; substitute `s=200-a`: `12a+1600-8a=2080 → 4a=480 → a=120`.
 
 </details>
+
+---
+
+# 15. Transfer Questions
+
+1. Почему solution system должна удовлетворять обоим equations?
+2. Когда substitution быстрее elimination?
+3. Когда elimination очевидно лучше?
+4. Как same slope помогает определить no solution?
+5. Почему system word problem обычно требует двух независимых условий?
+6. Как intersection двух cost functions интерпретируется в реальной задаче?
+7. Когда Desmos действительно сокращает решение?
+
+---
+
+# 16. Checklist
+
+- [ ] Я понимаю system как одновременное выполнение двух условий.
+- [ ] Я выбираю substitution, когда variable уже isolated.
+- [ ] Я выбираю elimination, когда coefficients удобно сократить.
+- [ ] Я умею масштабировать equation перед elimination.
+- [ ] Я различаю one/no/infinite solutions.
+- [ ] Я понимаю solution как graph intersection.
+- [ ] Я строю systems из count + value word problems.
+- [ ] Я проверяю найденную pair в обоих equations.
+- [ ] Я знаю, когда использовать Desmos.
+- [ ] Я могу объяснить выбор метода до вычислений.
