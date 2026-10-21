@@ -1,141 +1,590 @@
 # Linear Equations in Two Variables — линейные уравнения с двумя переменными
 
-## 1. Заголовок и краткое описание
+> **Цель урока:** понять, что equation with two variables описывает **целую прямую**, и научиться читать эту прямую через slope, intercepts, points, parallel/perpendicular relationships.
 
-Линейные уравнения с двумя переменными — отдельный официальный skill домена **Algebra**. На Digital SAT нужно читать equations, graphs и tables, находить slope/intercepts, писать equation of a line и работать с **parallel/perpendicular lines**.
+Главная идея:
 
-> **Главная идея:** одно линейное уравнение с двумя переменными описывает целую прямую, а slope определяет её направление.
+> **One equation in x and y = infinitely many points on one line.**
 
 ---
 
-## 2. Ключевые понятия и формулы
+# 1. Pattern Map
 
-| Понятие | Формула / смысл | Якорь |
+| Что вижу | Паттерн | Что делаю |
 |---|---|---|
-| standard form | `Ax+By=C` | две переменные → одна прямая |
-| slope-intercept form | `y=mx+b` | `m` slope, `b` y-intercept |
-| slope | `m=(y₂-y₁)/(x₂-x₁)` | **rise over run** |
-| x-intercept | установить `y=0` | пересечение x-axis |
-| y-intercept | установить `x=0` | пересечение y-axis |
-| point-slope form | `y-y₁=m(x-x₁)` | линия через point с slope `m` |
-| parallel lines | одинаковые slopes | идут в одном направлении |
-| perpendicular lines | `m₁m₂=-1` для nonvertical lines | negative reciprocals |
+| `y=mx+b` | slope-intercept form | читаю slope и y-intercept |
+| `Ax+By=C` | standard form | удобно искать intercepts |
+| point `(x,y)` | point check | подставляю coordinates |
+| две points | line from points | slope → equation |
+| line through point parallel to given line | parallel | same slope |
+| line perpendicular to given line | perpendicular | negative reciprocal slope |
+| x-intercept | `y=0` | solve for x |
+| y-intercept | `x=0` | solve for y |
 
-### Проверка точки
+Перед вычислением спросите:
 
-Для
+> **«Какую информацию о линии мне уже показывает эта форма?»**
 
-```math
-y=3x+2
-```
+---
 
-точка `(1,5)` подходит:
+# 2. Что означает equation с двумя variables
 
-```math
-5=3(1)+2.
-```
-
-### Intercepts
-
-Для
-
-```math
-2x+3y=12
-```
-
-x-intercept: `y=0` → `x=6`.  
-y-intercept: `x=0` → `y=4`.
-
-### Parallel lines
+Рассмотрим:
 
 ```math
 y=2x+1
 ```
 
-и
+Подставим разные x:
 
-```math
-y=2x-7
+| x | y |
+|---:|---:|
+| 0 | 1 |
+| 1 | 3 |
+| 2 | 5 |
+| 3 | 7 |
+
+Получаем points:
+
+```text
+(0,1), (1,3), (2,5), (3,7), ...
 ```
 
-parallel, потому что slope обеих линий равен `2`.
+Все они лежат на одной line.
 
-### Perpendicular lines
-
-Если одна линия имеет slope `2/3`, perpendicular slope:
-
-```math
--\frac32.
-```
-
-Проверка:
-
-```math
-\frac23\cdot\left(-\frac32\right)=-1.
-```
-
-### Вопрос к читателю
-
-Какой slope имеет линия, perpendicular к линии `y=-4x+7`?
+В отличие от equation with one variable, здесь обычно не один solution, а infinitely many ordered pairs.
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+# 3. PATTERN 1 — Check whether a point lies on a line
 
-### Задача
+Очень простой, но частый SAT skill.
+
+## Worked Example
+
+Does `(2,7)` lie on
+
+```math
+y=3x+1?
+```
+
+Подставляем:
+
+```math
+7\stackrel{?}{=}3(2)+1
+```
+
+```math
+7=7
+```
+
+Да.
+
+### Pattern
+
+```text
+point given
+→ substitute x and y
+→ true equality = point is on line
+```
+
+---
+
+# 4. PATTERN 2 — Intercepts from standard form
+
+Standard form:
+
+```math
+Ax+By=C
+```
+
+очень удобна для intercepts.
+
+## X-intercept
+
+На x-axis:
+
+```text
+y=0
+```
+
+## Y-intercept
+
+На y-axis:
+
+```text
+x=0
+```
+
+---
+
+## Worked Example
+
+```math
+2x+3y=12
+```
+
+### x-intercept
+
+Set `y=0`:
+
+```math
+2x=12
+```
+
+```math
+x=6
+```
+
+Point:
+
+```text
+(6,0)
+```
+
+### y-intercept
+
+Set `x=0`:
+
+```math
+3y=12
+```
+
+```math
+y=4
+```
+
+Point:
+
+```text
+(0,4)
+```
+
+---
+
+# 5. Visual Anchor — intercept = where one coordinate becomes zero
+
+```text
+x-axis → y = 0
+
+y-axis → x = 0
+```
+
+Это проще, чем заучивать два отдельных правила.
+
+---
+
+# 6. PATTERN 3 — Convert standard form to slope-intercept form
+
+Иногда SAT даёт:
+
+```math
+2x+3y=12
+```
+
+а спрашивает slope.
+
+Тогда нужно выразить `y`.
+
+```math
+3y=-2x+12
+```
+
+```math
+y=-\frac23x+4
+```
+
+Теперь видно:
+
+```text
+slope = -2/3
+y-intercept = 4
+```
+
+---
+
+# 7. PATTERN 4 — Parallel lines
+
+Parallel lines имеют одинаковый slope.
+
+```math
+y=3x-4
+```
+
+Любая parallel line имеет:
+
+```math
+m=3
+```
+
+но другой intercept, если это действительно другая line.
+
+---
+
+## Worked Example
 
 A line passes through `(2,5)` and is parallel to
 
 ```math
-y=3x-4.
+y=3x-4
 ```
 
-Find the equation of the new line.
-
-### Шаг 1. Используем parallel condition
-
-Parallel lines имеют одинаковый slope.
-
-Значит:
+### Step 1 — copy slope
 
 ```math
-m=3.
+m=3
 ```
 
-### Шаг 2. Используем point-slope form
+### Step 2 — use point-slope form
 
 ```math
-y-y_1=m(x-x_1).
+y-5=3(x-2)
 ```
 
-Подставляем `(2,5)`:
+### Step 3 — simplify
 
 ```math
-y-5=3(x-2).
+y=3x-1
 ```
 
-### Шаг 3. Упрощаем
+### Check
+
+Same slope `3` → parallel.
+
+Point `(2,5)`:
 
 ```math
-y-5=3x-6
+5=6-1
 ```
 
-```math
-y=3x-1.
-```
-
-### Шаг 4. Проверяем
-
-- slope нового уравнения = 3 → линии parallel;
-- точка `(2,5)` удовлетворяет: `5=6-1`.
-
-Почему нельзя просто взять исходный y-intercept `-4`? Parallel condition фиксирует slope, но intercept обычно меняется.
+Correct.
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+# 8. PATTERN 5 — Perpendicular lines
 
-### Problem 1 — Easy — Multiple Choice
+For nonvertical lines, perpendicular slopes are **negative reciprocals**.
+
+If:
+
+```math
+m=\frac23
+```
+
+then perpendicular slope:
+
+```math
+-\frac32
+```
+
+Якорь:
+
+```text
+flip fraction
+change sign
+```
+
+или:
+
+```math
+m_1m_2=-1
+```
+
+---
+
+## Worked Example 1
+
+Given:
+
+```math
+y=-4x+7
+```
+
+Slope is `-4`, or:
+
+```math
+-\frac41
+```
+
+Flip:
+
+```math
+-\frac14
+```
+
+Change sign:
+
+```math
+\frac14
+```
+
+Perpendicular slope:
+
+```math
+\frac14
+```
+
+---
+
+## Error Clinic
+
+Students often think perpendicular means just change sign:
+
+```text
+2 → -2
+```
+
+Wrong.
+
+Correct:
+
+```text
+2 = 2/1
+flip → 1/2
+change sign → -1/2
+```
+
+---
+
+# 9. PATTERN 6 — Equation from two points
+
+This overlaps with Linear Functions and is worth mastering.
+
+Given:
+
+```text
+(2,5), (6,13)
+```
+
+### Step 1 — slope
+
+```math
+m=\frac{13-5}{6-2}=2
+```
+
+### Step 2 — use `y=mx+b`
+
+```math
+5=2(2)+b
+```
+
+```math
+b=1
+```
+
+Equation:
+
+```math
+y=2x+1
+```
+
+---
+
+# 10. Pattern: recognize same line in different forms
+
+These may look different:
+
+```math
+2x+y=7
+```
+
+and
+
+```math
+y=-2x+7
+```
+
+But they are the same line.
+
+SAT may hide simple relationships through rearrangement.
+
+Always simplify before deciding whether lines are parallel, perpendicular, or identical.
+
+---
+
+# 11. Method Selector
+
+```text
+Need point check?
+→ substitute coordinates
+
+Need x-intercept?
+→ set y=0
+
+Need y-intercept?
+→ set x=0
+
+Need slope from Ax+By=C?
+→ solve for y
+
+Parallel?
+→ same slope
+
+Perpendicular?
+→ negative reciprocal slope
+
+Need equation from points?
+→ slope → intercept
+```
+
+---
+
+# 12. Desmos Strategy
+
+Desmos is useful when you want to see line relationships quickly.
+
+Enter:
+
+```text
+y=2x+1
+y=2x-5
+```
+
+You immediately see parallel lines.
+
+Enter:
+
+```text
+y=2x+1
+y=-0.5x+4
+```
+
+Slopes multiply to `-1`, so lines are perpendicular.
+
+But for a question asking simply:
+
+> What is the slope of `y=5x-3`?
+
+manual reading is instant.
+
+---
+
+# 13. Error Clinic
+
+## Error 1 — x-intercept vs y-intercept
+
+```text
+x-intercept → y=0
+y-intercept → x=0
+```
+
+---
+
+## Error 2 — perpendicular = negative only
+
+Need reciprocal **and** sign change.
+
+---
+
+## Error 3 — assume same intercept for parallel line
+
+Parallel fixes slope, not intercept.
+
+---
+
+## Error 4 — not simplify before comparing
+
+```math
+2y=4x+6
+```
+
+must become:
+
+```math
+y=2x+3
+```
+
+before comparing slopes/intercepts.
+
+---
+
+# 14. Guided Practice
+
+## Level A — point check
+
+Does `(3,10)` lie on
+
+```math
+y=3x+1?
+```
+
+<details><summary>Answer</summary>
+
+Yes:
+
+```math
+10=3(3)+1
+```
+
+</details>
+
+---
+
+## Level B — intercept
+
+Find x-intercept of:
+
+```math
+3x+2y=18
+```
+
+<details><summary>Solution</summary>
+
+Set `y=0`:
+
+```math
+3x=18
+```
+
+```math
+x=6
+```
+
+</details>
+
+---
+
+## Level C — perpendicular
+
+What is slope of line perpendicular to slope `3/5`?
+
+<details><summary>Answer</summary>
+
+```math
+-\frac53
+```
+
+</details>
+
+---
+
+## Level D — build equation
+
+Find equation of line parallel to `y=-2x+7` and passing through `(3,1)`.
+
+<details><summary>Solution</summary>
+
+Slope `-2`.
+
+```math
+y-1=-2(x-3)
+```
+
+```math
+y=-2x+7
+```
+
+Interesting: this is actually the same line because `(3,1)` lies on the original line.
+
+This is a useful check: "parallel" can collapse to "same line" if point is already on it.
+
+</details>
+
+---
+
+# 15. SAT-style Practice
+
+## 1 — Easy — Multiple Choice
 
 Which point lies on
 
@@ -148,7 +597,7 @@ y=2x+1?
 **C)** `(2,4)`  
 **D)** `(3,8)`
 
-### Problem 2 — Easy — Grid-in
+## 2 — Easy — SPR
 
 For
 
@@ -156,97 +605,84 @@ For
 3x+2y=18,
 ```
 
-what is the x-coordinate of the x-intercept?
+what is x-coordinate of x-intercept?
 
-### Problem 3 — Medium — Multiple Choice
+## 3 — Medium — Multiple Choice
 
-A line passes through `(2,5)` and `(6,13)`. What is its slope?
+Which line is parallel to
 
-**A)** `1/2`  
-**B)** `2`  
-**C)** `4`  
-**D)** `8`
-
-### Problem 4 — Medium — Multiple Choice
-
-Which line is parallel to `y=-2x+5`?
+```math
+y=-2x+5?
+```
 
 **A)** `y=2x+1`  
 **B)** `y=-2x-7`  
 **C)** `y=(1/2)x+3`  
 **D)** `y=-(1/2)x+3`
 
-### Problem 5 — Hard — Grid-in
+## 4 — Medium — Multiple Choice
 
-A line is perpendicular to `y=(1/4)x+9`. What is the slope of the perpendicular line?
+Which slope is perpendicular to `2/3`?
+
+**A)** `3/2`  
+**B)** `-3/2`  
+**C)** `-2/3`  
+**D)** `2/3`
+
+## 5 — Hard — SPR
+
+A line passes through `(4,11)` and has slope `2`. Find its y-intercept.
+
+## 6 — 750–800 — Multiple Choice
+
+Line `L` is perpendicular to
+
+```math
+4x-2y=10.
+```
+
+What is the slope of `L`?
+
+**A)** `2`  
+**B)** `-2`  
+**C)** `1/2`  
+**D)** `-1/2`
 
 <details>
-<summary><strong>Ответы и краткие решения</strong></summary>
+<summary><strong>Answers</strong></summary>
 
-1. **B**, `3=2(1)+1`.  
-2. **6**, при `y=0`: `3x=18`.  
-3. **B**, `(13-5)/(6-2)=2`.  
-4. **B**, same slope `-2`.  
-5. **-4**, negative reciprocal of `1/4`.
+1. **B** — `3=2(1)+1`.
+2. **`6`**.
+3. **B** — same slope `-2`.
+4. **B** — negative reciprocal.
+5. **`3`** — `11=2(4)+b`, so `b=3`.
+6. **D** — rewrite original: `-2y=-4x+10 → y=2x-5`; perpendicular slope `-1/2`.
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
+# 16. Transfer Questions
 
-### Ловушка 1. Перепутать slope и intercept
-
-В `y=mx+b`, `m` — rate of change, `b` — значение `y` при `x=0`.
-
-### Ловушка 2. Перепутать parallel и perpendicular slopes
-
-- parallel → same slope;
-- perpendicular → negative reciprocal.
-
-### Ловушка 3. Неверно найти intercept
-
-- x-intercept → `y=0`;
-- y-intercept → `x=0`.
+1. Почему одно equation in two variables имеет infinitely many solutions?
+2. Почему x-intercept требует `y=0`?
+3. Почему parallel lines share slope?
+4. Почему perpendicular slope — negative reciprocal?
+5. Зачем иногда переводить standard form в slope-intercept form?
+6. Как проверить, что point действительно лежит на line?
+7. Когда Desmos полезнее algebra?
 
 ---
 
-## 6. Стратегия для Digital SAT
+# 17. Checklist
 
-Desmos удобно использовать для проверки:
-
-```text
-y=2x+1
-```
-
-и второй candidate line. По графику легко увидеть parallel/perpendicular relationship.
-
-Но для slope questions algebra обычно быстрее:
-
-1. приведите equation к `y=mx+b`;
-2. прочитайте `m`;
-3. примените same slope или negative reciprocal.
-
----
-
-## 7. Связи с другими темами
-
-**Опирается на:**
-- `linear_equations.md`;
-- coordinate plane;
-- ratios/rates.
-
-**Связано с:**
-- `linear_functions.md`;
-- `systems_of_equations.md` — intersections;
-- `linear_inequalities.md` — boundary lines;
-- geometry — perpendicular/parallel relationships.
-
----
-
-## 8. Мини-чек-лист для самопроверки
-
-- [ ] Я проверяю, лежит ли point на line.
-- [ ] Я нахожу slope и intercepts.
-- [ ] Я пишу equation по point и slope.
-- [ ] Я нахожу equations/slopes parallel и perpendicular lines.
+- [ ] Я понимаю equation in two variables как line.
+- [ ] Я проверяю point подстановкой.
+- [ ] Я нахожу x- и y-intercepts.
+- [ ] Я перевожу `Ax+By=C` в `y=mx+b`.
+- [ ] Я нахожу slope из equation.
+- [ ] Я строю equation по points.
+- [ ] Я понимаю parallel = same slope.
+- [ ] Я понимаю perpendicular = negative reciprocal.
+- [ ] Я упрощаю equation перед сравнением lines.
+- [ ] Я могу объяснить геометрический смысл каждого шага.
