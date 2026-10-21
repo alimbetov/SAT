@@ -1,8 +1,8 @@
-# Area and Volume — площади, объёмы и масштабирование
+# Area, Perimeter, Surface Area, and Volume — площадь, периметр, поверхность и объём
 
 ## 1. Заголовок и краткое описание
 
-**Area and volume** — официальный skill Geometry and Trigonometry. На SAT нужно применять формулы к прямоугольникам, треугольникам, кругам, призмам, цилиндрам и задачам со scale factor.
+**Area and volume** — официальный skill Geometry and Trigonometry. На SAT сюда входят не только площади и объёмы, но и **perimeter**, **surface area**, реальные модели фигур и scale factors. Нужно выбрать правильную формулу и понять, как изменение линейного размера влияет на площадь и объём.
 
 > **Главная идея:** длины масштабируются как `k`, площади как `k²`, объёмы как `k³`.
 
@@ -10,13 +10,17 @@
 
 ## 2. Ключевые понятия и формулы
 
-| Фигура | Формула |
+| Фигура / величина | Формула |
 |---|---|
+| rectangle perimeter | `P=2l+2w` |
 | rectangle area | `A=lw` |
 | triangle area | `A=1/2 bh` |
 | circle area | `A=πr²` |
+| circle circumference | `C=2πr` |
 | rectangular prism volume | `V=lwh` |
+| rectangular prism surface area | `SA=2lw+2lh+2wh` |
 | cylinder volume | `V=πr²h` |
+| cylinder surface area | `SA=2πr²+2πrh` |
 | prism volume | `V=(base area)·h` |
 
 ### Scale factors
@@ -39,37 +43,56 @@ volume\ factor=k^3.
 
 **Length → k, Area → k², Volume → k³.**
 
+Например, если side length увеличилась в 3 раза:
+
+- perimeter / length → ×3;
+- area → ×9;
+- volume → ×27.
+
+### Вопрос к читателю
+
+Если radius цилиндра удвоить, а height оставить прежней, во сколько раз изменится volume?
+
 ---
 
 ## 3. Пошаговый разбор — Guided Example
 
-A cylinder has radius 3 and height 8. What is its volume?
+A closed cylinder has radius `3` and height `8`. Find its volume and surface area.
 
-### Шаг 1. Выбираем правильную формулу
-
-Cylinder:
+### Шаг 1. Volume
 
 ```math
-V=\pi r^2h.
+V=\pi r^2h
 ```
-
-Почему не `2πr`? Это circumference, а задача спрашивает volume.
-
-### Шаг 2. Подставляем
 
 ```math
-V=\pi(3)^2(8).
+V=\pi(3)^2(8)=72\pi.
 ```
 
-### Шаг 3. Вычисляем
+### Шаг 2. Surface area
+
+У закрытого цилиндра есть две circular bases и боковая поверхность:
 
 ```math
-V=72\pi.
+SA=2\pi r^2+2\pi rh.
 ```
 
-### Шаг 4. Проверяем units
+Подставляем:
 
-Volume измеряется в **cubic units**, не square units.
+```math
+SA=2\pi(3)^2+2\pi(3)(8)
+```
+
+```math
+SA=18\pi+48\pi=66\pi.
+```
+
+### Шаг 3. Проверяем units
+
+- Volume → cubic units.
+- Surface area → square units.
+
+Почему это важная проверка? Неверная размерность часто сразу показывает, что выбрана неправильная формула.
 
 ---
 
@@ -81,9 +104,9 @@ A rectangle has length 9 and width 4. Find its area.
 
 ### Problem 2 — Easy — Multiple Choice
 
-What is the area of a triangle with base 10 and height 6?
+What is the perimeter of a rectangle with sides 7 and 5?
 
-**A)** 16  **B)** 30  **C)** 60  **D)** 120
+**A)** 12  **B)** 24  **C)** 35  **D)** 70
 
 ### Problem 3 — Medium — Multiple Choice
 
@@ -101,12 +124,13 @@ All dimensions of a solid are doubled. By what factor does its volume change?
 
 **A)** 2  **B)** 4  **C)** 6  **D)** 8
 
-<details><summary><strong>Ответы и краткие решения</strong></summary>
+<details>
+<summary><strong>Ответы и краткие решения</strong></summary>
 
-1. **36**.  
-2. **B**, `1/2·10·6=30`.  
+1. **36**, `9·4`.  
+2. **B**, `2(7)+2(5)=24`.  
 3. **C**, `π·5²=25π`.  
-4. **120**.  
+4. **120**, `3·4·10`.  
 5. **D**, volume factor `2³=8`.
 
 </details>
@@ -115,28 +139,50 @@ All dimensions of a solid are doubled. By what factor does its volume change?
 
 ## 5. Common Traps — типичные ловушки
 
-- Использовать diameter вместо radius без деления на 2.
-- Путать square units и cubic units.
-- При scale factor применять `k` к area/volume вместо `k²`/`k³`.
+### Ловушка 1. Путать perimeter, area и surface area
+
+- perimeter — длина границы 2D-фигуры;
+- area — площадь 2D-фигуры;
+- surface area — суммарная площадь внешних поверхностей 3D-фигуры.
+
+### Ловушка 2. Использовать diameter как radius
+
+Если `d=10`, то `r=5`.
+
+### Ловушка 3. Неверно масштабировать
+
+Scale factor `k=2` не означает, что area тоже увеличивается в 2 раза. Area изменяется в `2²=4` раза.
 
 ---
 
 ## 6. Стратегия для Digital SAT
 
-Desmos полезен как калькулятор для `π`, roots и сложных чисел, но ключевой шаг — выбрать правильную формулу. Перед вычислением выпишите, какая величина дана: radius, diameter, base area, height.
+Desmos полезен как вычислитель для `π`, powers и roots, но не заменяет выбор формулы.
+
+Перед вычислением задайте три вопроса:
+
+1. Что спрашивают: length, perimeter, area, surface area или volume?
+2. Какие dimensions даны?
+3. Какие units должен иметь ответ?
+
+Если задача про scale factor, часто вообще не нужно вычислять исходные площадь или объём — используйте `k`, `k²`, `k³` напрямую.
 
 ---
 
 ## 7. Связи с другими темами
 
-**Опирается на:** algebra, exponents, circles.  
-**Связано с:** similarity, scale factors, right triangles, unit conversions.
+**Опирается на:** algebra, exponents, unit conversions.  
+**Связано с:**
+- `circles.md`;
+- similarity and scale factor;
+- right triangles;
+- ratios, rates, and units.
 
 ---
 
 ## 8. Мини-чек-лист для самопроверки
 
-- [ ] Я выбираю правильную формулу area/volume.
-- [ ] Я различаю radius и diameter.
-- [ ] Я правильно работаю с units.
-- [ ] Я применяю `k²` и `k³` при масштабировании.
+- [ ] Я различаю perimeter, area, surface area и volume.
+- [ ] Я выбираю правильную формулу для standard figures.
+- [ ] Я проверяю square/cubic units.
+- [ ] Я применяю `k`, `k²`, `k³` при масштабировании.
