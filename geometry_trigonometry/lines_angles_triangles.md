@@ -2,9 +2,9 @@
 
 ## 1. Заголовок и краткое описание
 
-**Lines, angles, and triangles** — официальный skill Geometry and Trigonometry. На SAT проверяются vertical angles, parallel lines with transversals, triangle angle sums, similarity, congruence и геометрические отношения.
+**Lines, angles, and triangles** — официальный skill Geometry and Trigonometry. На SAT проверяются vertical angles, parallel lines with transversals, triangle angle sums, **similarity**, **congruence**, scale factor и достаточность условий для геометрических выводов.
 
-> **Главная идея:** большинство SAT-задач на углы решаются цепочкой равенств и сумм до 90°, 180° или 360°.
+> **Главная идея:** большинство SAT-задач на геометрию решаются не рисунком «на глаз», а цепочкой строгих отношений: равенство углов, сумма углов, пропорциональность сторон.
 
 ---
 
@@ -18,8 +18,9 @@
 | supplementary angles | сумма `180°` |
 | vertical angles | равны |
 | triangle angle sum | `180°` |
-| exterior angle | сумма двух удалённых внутренних углов |
-| similar triangles | равные углы, пропорциональные стороны |
+| exterior angle | сумма двух remote interior angles |
+| similar triangles | равные corresponding angles, proportional corresponding sides |
+| congruent triangles | одинаковые размер и форма |
 
 ### Parallel lines + transversal
 
@@ -29,10 +30,30 @@
 - alternate interior angles равны;
 - same-side interior angles supplementary.
 
+### Similarity
+
+Для similar triangles один scale factor `k` связывает все соответствующие sides:
+
+```math
+\frac{a_2}{a_1}=\frac{b_2}{b_1}=\frac{c_2}{c_1}=k.
+```
+
+Angles при масштабировании **не меняются**.
+
+### Congruence criteria
+
+Часто полезно знать:
+
+- **SSS** — three corresponding sides equal;
+- **SAS** — two sides and included angle;
+- **ASA/AAS** — two angles and a side.
+
+Для right triangles может применяться hypotenuse-leg reasoning.
+
 ### Визуальный якорь
 
-**Vertical = opposite = equal.**  
-**Triangle = always 180°.**
+**Similar = same shape, possibly different size.**  
+**Congruent = same shape and same size.**
 
 ---
 
@@ -40,7 +61,7 @@
 
 A triangle has angles `2x`, `3x`, and `4x`. Find the largest angle.
 
-### Шаг 1. Используем сумму углов треугольника
+### Шаг 1. Используем triangle angle sum
 
 ```math
 2x+3x+4x=180.
@@ -60,13 +81,11 @@ x=20.
 
 ### Шаг 4. Находим largest angle
 
-Largest angle is `4x`:
-
 ```math
-4(20)=80^\circ.
+4x=80^\circ.
 ```
 
-Почему мы сначала нашли `x`, а не отдельные углы? Все углы выражены через одну переменную, поэтому одно базовое геометрическое правило превращает задачу в linear equation.
+Почему этот подход надёжен? Геометрическое правило превращает задачу в linear equation, а не требует оценивать рисунок визуально.
 
 ---
 
@@ -94,17 +113,18 @@ Two similar triangles have corresponding side lengths 3 and 9. If another side o
 
 ### Problem 5 — Hard — Multiple Choice
 
-An exterior angle of a triangle is 130°. One remote interior angle is 48°. What is the other remote interior angle?
+Triangles ABC and DEF satisfy `AB=DE`, `BC=EF`, and angle `B` equals angle `E`. Which criterion proves the triangles congruent?
 
-**A)** 72°  **B)** 82°  **C)** 92°  **D)** 178°
+**A)** SSS  **B)** SAS  **C)** ASA  **D)** similarity only
 
-<details><summary><strong>Ответы и краткие решения</strong></summary>
+<details>
+<summary><strong>Ответы и краткие решения</strong></summary>
 
 1. **115**.  
 2. **C**, vertical angles are equal.  
-3. **80**, because triangle sum is 180°.  
-4. **C**, scale factor is `9/3=3`, so `5·3=15`.  
-5. **B**, exterior angle = sum remote interiors, so `130-48=82`.
+3. **80**, triangle sum is 180°.  
+4. **C**, scale factor `9/3=3`, so `5·3=15`.  
+5. **B**, two sides and the included angle → SAS.
 
 </details>
 
@@ -112,30 +132,49 @@ An exterior angle of a triangle is 130°. One remote interior angle is 48°. Wha
 
 ## 5. Common Traps — типичные ловушки
 
-- Путать vertical angles со смежными angles.
-- Использовать similarity без соблюдения соответствия сторон.
-- Забывать, что exterior angle равен сумме двух **remote** interior angles.
+### Ловушка 1. Доверять масштабу рисунка
+
+SAT diagrams могут быть **not drawn to scale**. Используйте только данные и теоремы.
+
+### Ловушка 2. Путать similarity и congruence
+
+У similar triangles стороны могут быть разной длины; у congruent — соответствующие sides равны.
+
+### Ловушка 3. Нарушать correspondence
+
+Если одна пара corresponding sides даёт scale factor 3, тот же factor применяется ко всем соответствующим sides.
 
 ---
 
 ## 6. Стратегия для Digital SAT
 
-На геометрических рисунках не доверяйте масштабу: SAT может явно указать, что diagram is not drawn to scale. Помечайте известные углы прямо на рисунке и превращайте геометрию в простое algebra equation.
+Помечайте на рисунке:
 
-Desmos здесь обычно вторичен; полезнее аккуратная схема и ratios.
+- равные angles;
+- parallel marks;
+- known side lengths;
+- scale factor.
+
+Для proof/sufficiency-style вопросов не спрашивайте «похоже ли это на равные треугольники?». Спросите: **какой конкретный theorem/criterion выполняется?**
+
+Desmos здесь обычно вторичен.
 
 ---
 
 ## 7. Связи с другими темами
 
 **Опирается на:** linear equations, ratios.  
-**Связано с:** right triangles, trigonometry, area, circles, similarity scale factors.
+**Связано с:**
+- `right_triangles_trigonometry.md`;
+- `area_volume.md`;
+- `circles.md`;
+- slope and similarity.
 
 ---
 
 ## 8. Мини-чек-лист для самопроверки
 
 - [ ] Я работаю с complementary/supplementary/vertical angles.
-- [ ] Я использую triangle angle sum.
-- [ ] Я решаю задачи с parallel lines and transversal.
-- [ ] Я использую similarity и scale factor.
+- [ ] Я применяю triangle angle sum и transversal rules.
+- [ ] Я различаю similarity и congruence.
+- [ ] Я использую SSS/SAS/ASA/AAS и scale factor.
