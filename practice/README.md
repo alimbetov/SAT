@@ -18,11 +18,11 @@
 
 | Layer | Questions |
 |---|---:|
-| Topic Drills Set 01 | 250 |
+| Topic Drills 01 + 02 | 500 |
 | Domain Question Bank Set 01 | 80 |
 | Timed Module 01 | 22 |
 | Timed Module 02 — Hard Route | 22 |
-| **Итого** | **374** |
+| **Итого** | **624** |
 
 Это не включает Practice Problems, уже встроенные в 25 теоретических уроков.
 
@@ -53,17 +53,25 @@ practice/
 
 [`topic_drills/README.md`](topic_drills/README.md) содержит полный индекс.
 
-Первый targeted batch:
+Targeted coverage:
 
 - 25 тем;
-- по 10 задач на каждую тему;
-- **250 topic-specific questions**.
+- `Drill 01` — 10 задач на тему;
+- `Drill 02` — ещё 10 задач на тему;
+- **20 задач на каждую тему**;
+- **500 topic-specific questions**.
 
 Рекомендуемый gate:
 
-- **9–10/10** → переходить к mixed practice;
+### Drill 01
+- **9–10/10** → переход к Drill 02;
 - **7–8/10** → targeted error review;
 - **≤6/10** → вернуться к lesson и Guided Example.
+
+### Drill 02
+- **8–10/10** → тема готова к mixed timed practice;
+- **6–7/10** → targeted review;
+- **≤5/10** → повторить методы решения и Desmos strategy.
 
 ## 2. Domain Question Bank
 
@@ -101,7 +109,11 @@ Lesson
   ↓
 Practice Problems внутри lesson
   ↓
-Topic Drill
+Topic Drill 01
+  ↓
+Error review
+  ↓
+Topic Drill 02
   ↓
 Domain Mixed Set
   ↓
@@ -138,14 +150,10 @@ Careless error
 
 ## Следующий quality gate
 
-Targeted coverage сейчас составляет **10 задач на тему**. Следующая планка — `Drill 02`, чтобы довести каждую тему до **20 задач**, причём второй набор должен быть смещён в сторону:
+Минимальная цель **20 questions/topic** закрыта. Следующий полезный слой — не ещё один общий набор Easy/Medium, а:
 
-- Medium;
-- Hard;
-- 750–800;
-- word problems;
-- parameter questions;
-- Desmos-efficient questions;
-- common SAT traps.
-
-После этого можно собирать полноценные **44-question Math simulations** из независимого банка задач.
+- `Challenge Drill 03` только для слабых/важных тем;
+- полноценные 44-question Math simulations;
+- дополнительные hard-route modules;
+- автоматический error-log / progress tracker;
+- отдельные Desmos speed drills.
