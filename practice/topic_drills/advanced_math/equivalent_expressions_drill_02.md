@@ -1,36 +1,34 @@
-# Equivalent Expressions — Topic Drill 02
+# Equivalent Expressions — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · MC.** To simplify `(x²-25)/(x-5)`, what should you do first? A) add 25 B) factor numerator C) cancel x D) square denominator
+2. **Medium · MC.** In `(x+p)(x+q)=x²+11x+24`, what does `p+q` equal? A) 24 B) 11 C) 35 D) 1
 
-1. **Medium · MC.** Expand `(2x-3)(x+4)`.  
-A) `2x^2+5x-12`  B) `2x^2-5x-12`  C) `2x^2+8x-3`  D) `x^2+x-12`
-2. **Medium · SPR.** Factor completely: `3x^2-12x`.
-3. **Medium · MC.** Factor `x^2-10x+25`.  
-A) `(x-5)^2`  B) `(x+5)^2`  C) `(x-25)(x+1)`  D) `(x-10)(x+5)`
-4. **Medium · MC.** For `x≠-2`, simplify `(x^2+5x+6)/(x+2)`.  
-A) `x+2`  B) `x+3`  C) `x+6`  D) `x^2+3`
-5. **Hard · MC.** Simplify `(x^4y^-2)/(xy)`.  
-A) `x^3/y^3`  B) `x^3y^3`  C) `x^5/y`  D) `x^4/y^2`
-6. **Medium · MC.** For `x≥0`, `x^(3/2)` equals  
-A) `x√x`  B) `√(3x)`  C) `x^3/2`  D) `3√x`
-7. **Hard · SPR.** If `2(3x+k)` is equivalent to `6x+10`, find `k`.
-8. **Hard · MC.** Which is equivalent to `x^2+6x+11`?  
-A) `(x+3)^2+2`  B) `(x+3)^2-2`  C) `(x-3)^2+2`  D) `(x+6)^2+11`
-9. **Hard · MC.** Factor `x^3-8`.  
-A) `(x-2)(x^2+2x+4)`  B) `(x-2)(x^2-2x+4)`  C) `(x-8)(x^2+1)`  D) `(x-2)^3`
-10. **750–800 · SPR.** Simplify `(x+1)^2-(x-1)^2` to `kx`. Find `k`.
+## B. Hard Variations
+3. **Medium · SPR.** `2x²+10x=2x(x+k)`. Find `k`.
+4. **Medium · SPR.** Simplify `(x²-25)/(x-5)` for `x≠5`. Enter the constant added to x.
+5. **Hard · SPR.** Expand `(2x-3)²`. Find the coefficient of `x`.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Hard · MC.** Can `x` be canceled in `(x+4)/x`? A) yes B) no, numerator is a sum C) yes if x>0 D) only in Desmos
+7. **Hard · MC.** After simplifying `(x²-25)/(x-5)` to `x+5`, which restriction remains? A) x≠-5 B) x≠0 C) x≠5 D) none
 
-1. **A**.
-2. **`3x(x-4)`**.
-3. **A**.
-4. **B**.
-5. **A**.
-6. **A**.
-7. **5**.
-8. **A**.
-9. **A**.
-10. **4**.
+## D. Transfer
+8. **Hard · SPR.** `x²+kx+16=(x+4)²`. Find `k`.
+9. **Hard · SPR.** `4x²-12x+9=(2x-a)²`. Find positive `a`.
 
+## E. 750–800 Challenge
+10. **750–800 · SPR.** `ax²+bx+12=3(x+2)(x+2)`. Find `a+b`.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — factor before canceling.
+2. **B** — middle coefficient from sum.
+3. **5** — factor GCF `2x`.
+4. **5** — simplifies to `x+5`.
+5. **-12** — `(2x)^2-12x+9`.
+6. **B** — only common factors cancel.
+7. **C** — original domain survives.
+8. **8** — coefficient match.
+9. **3** — middle term `-4ax=-12x`.
+10. **15** — RHS `3x²+12x+12`; `a=3,b=12`.
 </details>

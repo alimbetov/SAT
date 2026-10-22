@@ -1,34 +1,53 @@
-# Linear Equations in Two Variables — Topic Drill 01
+# Linear Equations in Two Variables — Practice V2 · Drill 01
 
-## Questions
+**Goal:** читать прямую через slope, intercepts, points и parallel/perpendicular relationships.
 
-1. **Easy · SPR.** Find the `x`-intercept of `3x+2y=18`.
-2. **Easy · SPR.** Find the `y`-intercept of `4x-y=8`.
-3. **Medium · MC.** What is the slope of `2x+4y=12`?  
-A) `-2`  B) `-1/2`  C) `1/2`  D) `2`
-4. **Easy · MC.** Which point lies on `x+2y=9`?  
-A) `(1,3)`  B) `(3,3)`  C) `(5,1)`  D) `(9,1)`
-5. **Medium · MC.** Which equation has slope `2` and `y`-intercept `-4`?  
-A) `y=2x-4`  B) `y=-2x+4`  C) `y=4x-2`  D) `y=2x+4`
-6. **Medium · SPR.** What is the slope of a line parallel to `3x-2y=8`?
-7. **Medium · SPR.** What is the slope of a line perpendicular to `y=-4x+1`?
-8. **Medium · MC.** Which equation is equivalent to `y-5=-2(x-3)`?  
-A) `y=-2x+11`  B) `y=-2x-1`  C) `y=2x-1`  D) `y=2x+11`
-9. **Medium · MC.** In `C=40+12h`, where `C` is total cost and `h` is hours, what does `12` represent?  
-A) initial fee  B) hours used  C) cost per hour  D) total cost
-10. **Hard · SPR.** The line `kx+2y=10` passes through `(2,1)`. What is `k`?
+## A. Recognition
 
-<details><summary><strong>Answers</strong></summary>
+1. **Easy · MC.** To find the x-intercept of `3x+2y=18`, which substitution should you make?  
+A) `x=0`  B) `y=0`  C) `x=y`  D) `y=1`
 
-1. **6** — set `y=0`.
-2. **-8** — set `x=0`: `-y=8`.
-3. **B, -1/2** — `y=-1/2x+3`.
-4. **B, (3,3)** — `3+2(3)=9`.
-5. **A**.
-6. **3/2** — rewrite as `y=3/2x-4`.
-7. **1/4** — negative reciprocal of `-4`.
-8. **A** — distribute and simplify.
-9. **C** — slope = cost per hour.
-10. **4** — `2k+2=10`.
+2. **Easy · MC.** Which point lies on `y=2x+1`?  
+A) `(1,2)`  B) `(1,3)`  C) `(2,4)`  D) `(3,8)`
+
+## B. Core Pattern
+
+3. **Easy · SPR.** Find the x-intercept of `3x+2y=18`.
+
+4. **Easy · SPR.** Find the y-intercept of `4x+5y=20`.
+
+5. **Medium · SPR.** Find the slope through `(2,5)` and `(6,13)`.
+
+## C. Guided Variation
+
+6. **Medium · SPR.** A line has slope `3` and passes through `(2,5)`. What is its y-intercept?
+
+7. **Medium · SPR.** A line is parallel to `y=-2x+5` and passes through `(1,4)`. What is its y-intercept?
+
+## D. Word/Context Pattern
+
+8. **Medium · MC.** A line `C(m)=4+2.5m` models taxi cost. What does `2.5` represent?  
+A) starting fee  B) cost per mile  C) total miles  D) total cost
+
+## E. Trap
+
+9. **Hard · SPR.** What is the slope of a line perpendicular to a line with slope `2/3`?
+
+## F. Transfer
+
+10. **Hard · SPR.** A line has x-intercept `4` and y-intercept `6`. Written as `Ax+By=12` with positive integer `A,B`, find `A+B`.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+
+1. **B.** Pattern: x-intercept means `y=0`.
+2. **B.** Pattern: point-on-line check. Substitute coordinates.
+3. **6.** `y=0 → 3x=18`.
+4. **4.** `x=0 → 5y=20`.
+5. **2.** Pattern: slope from two points, `Δy/Δx=8/4`.
+6. **-1.** Pattern: point + slope. `5=3(2)+b`.
+7. **6.** Pattern: parallel → same slope. `4=-2(1)+b`.
+8. **B.** Pattern: slope in context = output change per input unit.
+9. **-3/2.** Pattern: perpendicular slopes are negative reciprocals.
+10. **5.** Intercept form gives `x/4+y/6=1 → 3x+2y=12`; `A+B=5`.
 
 </details>

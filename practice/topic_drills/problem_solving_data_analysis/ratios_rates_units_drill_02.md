@@ -1,29 +1,34 @@
-# Ratios, Rates, Proportions, and Units — Topic Drill 02
+# Ratios, Rates & Units — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · SPR.** A car travels 60 km/h for 2.5 h. Find distance in km.
+2. **Hard · SPR.** Convert 72 km/h to m/s.
 
-1. **Medium · SPR.** Flour:sugar is `3:2`. A mixture uses 25 cups total. How many cups are flour?
-2. **Medium · SPR.** A train travels 450 km in 6 hours. Find the average rate in km/h.
-3. **Medium · SPR.** `y` is proportional to `x`. If `y=18` when `x=12`, find `y` when `x=20`.
-4. **Hard · SPR.** Convert `72 km/h` to meters per second.
-5. **Medium · SPR.** If `1 USD = 0.92 EUR`, how many euros equal `$250`?
-6. **Hard · SPR.** A map scale is `1:50,000`. A road measures 6 cm on the map. What is the real distance in kilometers?
-7. **Medium · SPR.** A machine produces 150 units in 2.5 hours. At the same rate, how many in 7 hours?
-8. **Hard · SPR.** Boys:girls is `4:5` in a 36-student group. Four boys join. What is the new boys:girls ratio in simplest form?
-9. **750–800 · SPR.** Pipe A fills `1/6` of a tank per hour and Pipe B fills `1/4` per hour. How many hours do they take together to fill one tank?
-10. **Hard · SPR.** A car uses 8 liters per 100 km. How many liters are needed for 375 km?
+## B. Hard Variations
+3. **Medium · SPR.** A similarity scale factor is 3. By what factor does area change?
+4. **Medium · SPR.** A recipe uses 300 g for 5 servings. At same rate, grams for 8 servings?
+5. **Hard · MC.** Pack A: `$12` for 3 items. Pack B: `$18` for 5. Cheaper per item? A) A B) B C) equal D) cannot tell
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Hard · MC.** Fuel efficiency is 30 miles/gallon. Which reciprocal is gallons/mile? A)30 B)1/30 C)3 D)1/3
+7. **Medium · SPR.** `y=7.5x`. Find y when x=12.
 
-1. **15**.
-2. **75**.
-3. **30**.
-4. **20 m/s**.
-5. **230 EUR**.
-6. **3 km**.
-7. **420**.
-8. **1:1**.
-9. **12/5 = 2.4 hours**.
-10. **30 L**.
+## D. Transfer
+8. **Medium · SPR.** Convert 2.5 days to hours.
+9. **Hard · SPR.** Density = mass/volume. A sample has mass 540 g and volume 60 cm³. Find density.
 
+## E. 750–800 Challenge
+10. **750–800 · SPR.** A car travels 180 miles on 6 gallons. At same rate, fuel costs `$3.80`/gallon. Find fuel cost for 300 miles.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **150** — rate×time.
+2. **20** — `72×1000/3600`; units cancel.
+3. **9** — area uses `k²`.
+4. **480** — unit rate 60 g/serving.
+5. **B** — $4 vs $3.60 per item.
+6. **B** — reciprocal rate; units matter.
+7. **90** — direct proportion.
+8. **60** — ×24.
+9. **9** — g/cm³.
+10. **38** — 30 mi/gal → 10 gal → $38.
 </details>

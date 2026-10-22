@@ -1,36 +1,34 @@
-# Two-Variable Data and Scatterplots — Topic Drill 02
+# Two-Variable Data & Scatterplots — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · MC.** Points fall left-to-right. Association? A) positive B) negative C) none D) causal
+2. **Medium · SPR.** Residual = observed 26 - predicted 30. Find residual.
 
-1. **Medium · SPR.** A regression line is `y=1.5x+6`. Predict `y` when `x=12`.
-2. **Medium · SPR.** A model predicts 27 and the observed value is 30. Find the residual.
-3. **Medium · MC.** A residual is negative. This means the model  
-A) underpredicted  B) overpredicted  C) was exact  D) proves causation
-4. **Medium · MC.** A correlation coefficient close to `-1` indicates  
-A) strong positive linear association  B) strong negative linear association  C) no association  D) causation
-5. **Medium · MC.** Values `(1,1)`, `(2,4)`, `(3,9)`, `(4,16)` are best modeled by  
-A) linear  B) quadratic  C) constant  D) inverse
-6. **Medium · MC.** Values `5,10,20,40` at equally spaced `x` values are best modeled by  
-A) linear  B) exponential  C) quadratic only  D) constant
-7. **Medium · MC.** A model is fitted on `x` from 0 to 20. Predicting at `x=50` is  
-A) interpolation  B) extrapolation  C) randomization  D) residual analysis
-8. **Medium · MC.** A correlation coefficient of `0.05` suggests  
-A) strong positive linear association  B) strong negative linear association  C) very weak linear association  D) perfect causation
-9. **Hard · MC.** Residuals from a linear model show a clear curved pattern. This suggests  
-A) linear model is ideal  B) a nonlinear model may fit better  C) correlation must be zero  D) data have no relationship
-10. **Hard · SPR.** A line of best fit passes through `(2,8)` and `(6,20)`. Find its slope.
+## B. Hard Variations
+3. **Medium · MC.** Prediction far outside observed x-range is: A) interpolation B) extrapolation C) residual D) random assignment
+4. **Medium · MC.** Equal first differences suggest: A) linear B) exponential C) quadratic D) random
+5. **Medium · MC.** Equal output ratios suggest: A) linear B) exponential C) constant D) box plot
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Hard · MC.** Residual plot shows clear curved pattern around 0. Best conclusion? A) linear model may miss structure B) perfect linear fit C) causation D) sample is random
+7. **Hard · MC.** Which correlation is stronger? A) -0.9 B) -0.3 C) equal D) sign determines strength
 
-1. **24**.
-2. **3**.
-3. **B** — observed minus predicted is negative, so predicted was too high.
-4. **B**.
-5. **B**.
-6. **B**.
-7. **B**.
-8. **C**.
-9. **B**.
-10. **3**.
+## D. Transfer
+8. **Medium · MC.** In `y=2.4x+15`, slope 2.4 means: A) predicted y at x=0 B) predicted y change per +1 x C) residual D) correlation
+9. **Hard · MC.** Extrapolation is generally: A) always safer than interpolation B) more uncertain because it leaves observed range C) exact D) causal
 
+## E. 750–800 Challenge
+10. **750–800 · MC.** At x=4, observed y=50. Linear model predicts47; exponential predicts51. Which fits this point more closely? A) linear B) exponential C) equal D) impossible
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — direction.
+2. **-4** — observed-predicted.
+3. **B** — outside data range.
+4. **A** — additive pattern.
+5. **B** — multiplicative pattern.
+6. **A** — systematic residuals indicate missed shape.
+7. **A** — strength uses absolute correlation.
+8. **B** — contextual slope.
+9. **B** — less evidence outside observed range.
+10. **B** — absolute residual 1 vs 3.
 </details>

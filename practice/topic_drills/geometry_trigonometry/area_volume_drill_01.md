@@ -1,32 +1,36 @@
-# Area, Surface Area, and Volume — Topic Drill 01
+# Area, Surface Area & Volume — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** Units `cm²` usually signal: A) length B) area C) volume D) rate
+2. **Easy · MC.** Units `m³` signal: A) perimeter B) area C) volume D) angle
 
-1. **Easy · SPR.** A rectangle is 9 by 14. Find its area.
-2. **Easy · SPR.** A triangle has base 12 and height 9. Find its area.
-3. **Medium · SPR.** A trapezoid has parallel bases 6 and 10 and height 5. Find its area.
-4. **Easy · SPR.** A cube has side length 3. Find its total surface area.
-5. **Easy · SPR.** A cube has side length 4. Find its volume.
-6. **Easy · SPR.** A rectangular prism is 5 by 3 by 8. Find its volume.
-7. **Medium · MC.** A cylinder has radius 2 and height 7. What is its volume?  
-A) `14π`  B) `28π`  C) `49π`  D) `56π`
-8. **Medium · MC.** Two similar figures have linear scale factor 2. What is the area scale factor?  
-A) 2  B) 4  C) 6  D) 8
-9. **Medium · MC.** Two similar solids have linear scale factor 3. What is the volume scale factor?  
-A) 3  B) 6  C) 9  D) 27
-10. **Hard · SPR.** A solid has volume 216. Every linear dimension is multiplied by `1/2`. What is the new volume?
+## B. Core Pattern
+3. **Easy · SPR.** Rectangle length 9, width 4. Find area.
+4. **Easy · SPR.** Rectangle sides 7 and 5. Find perimeter.
+5. **Easy · SPR.** Circle radius 5 has area `kπ`. Find k.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Easy · SPR.** Rectangular prism `3×4×10`. Find volume.
+7. **Medium · SPR.** Cylinder r=3,h=8 has volume `kπ`. Find k.
 
-1. **126**.
-2. **54**.
-3. **40** — `((6+10)/2)·5`.
-4. **54** — six faces of area 9.
-5. **64**.
-6. **120**.
-7. **B, 28π**.
-8. **B, 4** — area scales by `k^2`.
-9. **D, 27** — volume scales by `k^3`.
-10. **27** — `216(1/2)^3`.
+## D. Formula Choice
+8. **Medium · MC.** `base area × height` is a useful volume pattern for: A) prisms/cylinders B) lines C) angles D) percentages
 
+## E. Trap
+9. **Medium · SPR.** A circle has diameter 10. Find radius.
+
+## F. Transfer
+10. **Hard · SPR.** All dimensions of a solid double. By what factor does volume change?
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — squared units → area.
+2. **C** — cubic units → volume.
+3. **36** — `lw`.
+4. **24** — `2l+2w`.
+5. **25** — `πr²`.
+6. **120** — `lwh`.
+7. **72** — `πr²h`.
+8. **A** — structural volume pattern.
+9. **5** — diameter/radius trap.
+10. **8** — volume scales as `k³`.
 </details>

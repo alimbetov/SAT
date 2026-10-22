@@ -1,29 +1,36 @@
-# Ratios, Rates, Proportions, and Units — Topic Drill 01
+# Ratios, Rates & Units — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** A unit rate answers: A) total only B) how much per 1 unit C) percent only D) median
+2. **Easy · MC.** Which is a rate? A) `3:2` red:blue B) `60 km/h` C) `4/5` students D) `7:7`
 
-1. **Easy · SPR.** The ratio of red to blue items is `2:3`. There are 25 items total. How many are red?
-2. **Easy · SPR.** A car travels 210 miles in 3.5 hours. What is its unit rate in miles per hour?
-3. **Easy · SPR.** Solve the proportion `5/8=x/40`.
-4. **Medium · SPR.** On a map, 1 cm represents 12 km. What real distance is represented by 4.5 cm?
-5. **Medium · SPR.** A vehicle travels at 55 mph for 2.4 hours. How many miles does it travel?
-6. **Easy · SPR.** Convert `3.2` meters to centimeters.
-7. **Medium · SPR.** An object has mass 540 g and volume 60 cm³. What is its density in g/cm³?
-8. **Medium · SPR.** Six identical notebooks cost `$18`. At the same unit price, what do 14 notebooks cost?
-9. **Medium · SPR.** A mixture has concentrate-to-water ratio `1:4` and total volume 25 L. How many liters are concentrate?
-10. **Hard · SPR.** Machine A produces 120 units in 3 hours. Machine B produces 180 units in 4 hours. At constant rates, how many units do they produce together in 2 hours?
+## B. Core Pattern
+3. **Easy · SPR.** 5 notebooks cost `$15`. Find dollars per notebook.
+4. **Easy · SPR.** A runner covers 24 km in 3 h. Find km/h.
+5. **Medium · SPR.** Flour:sugar=`3:2`. If flour=12 cups, find sugar cups.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Easy · SPR.** Convert 2.5 hours to minutes.
+7. **Medium · SPR.** `y` is directly proportional to `x`, and `y=18` when `x=4`. Find `k` in `y=kx`.
 
-1. **10**.
-2. **60**.
-3. **25**.
-4. **54 km**.
-5. **132 miles**.
-6. **320 cm**.
-7. **9**.
-8. **$42**.
-9. **5 L**.
-10. **170** — rates are 40/h and 45/h; together 85/h.
+## D. Units
+8. **Medium · MC.** `distance ÷ time` gives: A) area B) speed C) volume D) percent
 
+## E. Trap
+9. **Hard · MC.** Which is NOT directly proportional? A) `y=5x` B) `y=0.2x` C) `y=5x+8` D) `y=x/3`
+
+## F. Transfer
+10. **Hard · SPR.** Map scale `1 cm : 8 km`. A map distance is 6.5 cm. Find actual km.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — “per 1” is the unit-rate cue.
+2. **B** — different units create a rate.
+3. **3** — 15/5 dollars per notebook.
+4. **8** — distance/time.
+5. **8** — scale ratio by factor 4.
+6. **150** — hours×60 min/hour.
+7. **4.5** — `k=y/x`.
+8. **B** — units reveal operation.
+9. **C** — nonzero fixed term breaks direct proportion.
+10. **52** — `6.5×8`.
 </details>

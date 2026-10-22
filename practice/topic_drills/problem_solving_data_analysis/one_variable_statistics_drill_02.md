@@ -1,34 +1,34 @@
-# One-Variable Statistics — Topic Drill 02
+# One-Variable Statistics — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · SPR.** Add 10 to every value. By how much does mean change?
+2. **Medium · SPR.** Add 10 to every value. By how much does standard deviation change?
 
-1. **Medium · SPR.** The mean of `5, 7, 9, x` is 8. Find `x`.
-2. **Medium · SPR.** Find the median of `3,5,8,10,12,20`.
-3. **Medium · SPR.** For `2,4,6,8,10,12,14,16`, find `Q3`.
-4. **Hard · SPR.** Ten students have mean 68 and twenty students have mean 77. Find the combined mean.
-5. **Hard · MC.** Every value in a data set is multiplied by 2. What happens to mean and standard deviation?  
-A) both double  B) mean doubles, SD unchanged  C) mean unchanged, SD doubles  D) both unchanged
-6. **Medium · MC.** Adding an extreme high outlier usually has the greatest direct effect on  
-A) range  B) sample size only  C) minimum  D) first quartile only
-7. **Easy · MC.** In a histogram, the height of a bar usually represents  
-A) frequency in an interval  B) median only  C) exact individual order  D) correlation
-8. **Medium · MC.** In a box plot, the interval from `Q1` to `Q3` contains approximately what percent of the data?  
-A) 25%  B) 50%  C) 75%  D) 100%
-9. **Hard · MC.** Adding 7 to every observation changes the standard deviation by  
-A) +7  B) ×7  C) no change  D) cannot determine
-10. **Hard · SPR.** Five numbers have mean 12. A sixth number 18 is added. Find the new mean.
+## B. Hard Variations
+3. **Medium · SPR.** Multiply every value by 2. By what factor does standard deviation change?
+4. **Medium · MC.** Add one huge high outlier. Which usually changes more? A) median B) mean C) both exactly same D) neither
+5. **Medium · SPR.** If Q1=12 and Q3=20, find IQR.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Data Displays & Traps
+6. **Medium · MC.** Histogram bars represent: A) individual labeled categories only B) frequencies in numeric intervals C) two-variable points D) probabilities only
+7. **Hard · MC.** Same median guarantees same IQR? A) yes B) no
 
-1. **11** — total needed 32; known sum 21.
-2. **9** — average of 8 and 10.
-3. **13** — upper half is 10,12,14,16.
-4. **74** — `(10·68+20·77)/30`.
-5. **A**.
-6. **A**.
-7. **A**.
-8. **B**.
-9. **C**.
-10. **13** — original sum 60, new sum 78, divide by 6.
+## D. Transfer
+8. **Hard · SPR.** 20 students average 70; 30 students average 80. Find combined mean.
+9. **Hard · SPR.** Five numbers have mean 12. Four are 10,11,13,14. Find fifth.
 
+## E. 750–800 Challenge
+10. **750–800 · SPR.** Five values have mean 18. A sixth value is added and new mean is 20. Find added value.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **10** — center shifts by same additive constant.
+2. **0** — spread unchanged by translation.
+3. **2** — multiplying scales spread.
+4. **B** — mean moves toward outlier.
+5. **8** — Q3-Q1.
+6. **B** — numeric bins.
+7. **B** — center and spread are independent features.
+8. **76** — weighted mean `(1400+2400)/50`.
+9. **12** — total 60, known sum48.
+10. **30** — old sum90, new sum120.
 </details>

@@ -1,33 +1,34 @@
-# Absolute Value — Topic Drill 02
+# Absolute Value — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · MC.** Best mental model for `|x-a|=d`? A) slope B) distance C) area D) probability
+2. **Medium · SPR.** Solve `|3x+1|=10`. Enter the larger solution.
 
-1. **Medium · MC.** Solve `|x|<4`.  
-A) `x<-4 or x>4`  B) `-4<x<4`  C) `x≤4`  D) `x≥-4`
-2. **Hard · MC.** Solve `|2x-6|≤8`.  
-A) `-1≤x≤7`  B) `x≤-1 or x≥7`  C) `1≤x≤7`  D) `-7≤x≤1`
-3. **Hard · MC.** Solve `|x+5|>2`.  
-A) `-7<x<-3`  B) `x<-7 or x>-3`  C) `x>-7`  D) `x<-3`
-4. **Medium · SPR.** What is the maximum value of `y=-|x|+6`?
-5. **Medium · SPR.** What is the larger zero of `y=|x-3|-4`?
-6. **Medium · MC.** What is the vertex of `y=|2x-8|+1`?  
-A) `(8,1)`  B) `(4,1)`  C) `(4,0)`  D) `(-4,1)`
-7. **Medium · SPR.** The distance from `x` to `-2` is 5. What is the sum of possible `x` values?
-8. **Hard · SPR.** `y=|x-a|+2` has vertex `(-3,2)`. Find `a`.
-9. **750–800 · SPR.** Solve `|x-2|=2x+1`.
-10. **Hard · SPR.** Find the minimum value of `|x-1|+|x-5|`.
+## B. Hard Variations
+3. **Hard · SPR.** Solve `|2x-4|≤6`. Enter the greatest possible x.
+4. **Hard · MC.** `|x+2|>5` means: A) `-7<x<3` B) `x<-7 or x>3` C) `x>7` D) `x<3`
+5. **Medium · SPR.** What is the maximum value of `y=-2|x+1|+4`?
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Medium · MC.** Vertex of `y=|x+4|-3`? A)(4,-3) B)(-4,-3) C)(-4,3) D)(4,3)
+7. **Hard · SPR.** `|x-a|=4` has solutions 1 and 9. Find `a`.
 
-1. **B**.
-2. **A**.
-3. **B**.
-4. **6**.
-5. **7**.
-6. **B**.
-7. **-4** — solutions 3 and -7.
-8. **-3**.
-9. **1/3**.
-10. **4** — for any `x` between 1 and 5, total distance is 4.
+## D. Transfer
+8. **Medium · MC.** “Temperature is within 3° of 20°” means: A) `T≥23` B) `17≤T≤23` C) `T≤17` D) `T=20`
+9. **Hard · SPR.** Solve `|2x+3|=|x-1|`. Enter the larger solution.
 
+## E. 750–800 Challenge
+10. **750–800 · SPR.** How many integer solutions satisfy `|x-2|≤3`?
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — absolute value is distance.
+2. **3** — two cases.
+3. **5** — divide by 2: `|x-2|≤3`.
+4. **B** — outside interval.
+5. **4** — downward V vertex is maximum.
+6. **B** — horizontal sign trap.
+7. **5** — center is midpoint of solutions.
+8. **B** — distance from 20 at most 3.
+9. **-2/3** — cases give -4 and -2/3.
+10. **7** — integers -1 through 5.
 </details>

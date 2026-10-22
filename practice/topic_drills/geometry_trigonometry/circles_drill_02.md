@@ -1,34 +1,34 @@
-# Circles — Topic Drill 02
+# Circles — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · SPR.** Convert `3π/4` radians to degrees.
+2. **Medium · SPR.** Arc formula `s=rθ`, r=6, θ=π/3. Arc=`kπ`; find k.
 
-1. **Medium · MC.** A circle has diameter 12. What is its circumference?  
-A) `6π`  B) `12π`  C) `24π`  D) `36π`
-2. **Medium · SPR.** A circle has area `81π`. Find its radius.
-3. **Hard · MC.** A circle has radius 5 and central angle `2π/3` radians. What is the arc length?  
-A) `5π/3`  B) `10π/3`  C) `10π`  D) `15π`
-4. **Hard · MC.** A sector has radius 6 and central angle `π/2` radians. What is its area?  
-A) `6π`  B) `9π`  C) `18π`  D) `36π`
-5. **Hard · SPR.** A circle has radius 10 and an arc length of `5π`. Find the central angle in degrees.
-6. **Medium · MC.** Which unit-circle point corresponds to angle `π/2`?  
-A) `(1,0)`  B) `(0,1)`  C) `(-1,0)`  D) `(0,-1)`
-7. **Easy · SPR.** For `x^2+y^2=36`, find the radius.
-8. **Medium · MC.** A circle has center `(1,2)` and radius 5. Which point lies on it?  
-A) `(4,6)`  B) `(5,5)`  C) `(1,8)`  D) `(-3,2)`
-9. **Medium · SPR.** An inscribed angle subtends an arc of `140°`. Find the angle.
-10. **750–800 · SPR.** Find the radius of `x^2+y^2-8x+2y-8=0`.
+## B. Hard Variations
+3. **Medium · SPR.** Sector radius6, angle90°. Area=`kπ`; find k.
+4. **Hard · SPR.** `x²+y²-6x+4y-12=0`. Find radius.
+5. **Medium · MC.** Point `(3,4)` relative to circle `x²+y²=25`: A) on B) inside C) outside D) center
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Hard · SPR.** Circle radius5. External point is13 from center. Tangent length from point to circle?
+7. **Medium · MC.** In `s=rθ`, θ must be: A) degrees only B) radians C) percent D) slope
 
-1. **B, 12π**.
-2. **9**.
-3. **B, 10π/3** — `s=rθ`.
-4. **B, 9π** — sector area `1/2 r^2θ`.
-5. **90°** — `θ=s/r=π/2` radians.
-6. **B**.
-7. **6**.
-8. **A** — displacement `(3,4)` has length 5.
-9. **70°**.
-10. **5** — completing squares gives `(x-4)^2+(y+1)^2=25`.
+## D. Transfer
+8. **Medium · MC.** Unit circle at θ=π/4 has x-coordinate: A)1/2 B)√2/2 C)√3/2 D)1
+9. **Hard · MC.** Circle center(-2,3), radius4. Which equation? A)`(x+2)²+(y-3)²=16` B)`(x-2)²+(y+3)²=16` C)`(x+2)²+(y-3)²=4` D)`x²+y²=16`
 
+## E. 750–800 Challenge
+10. **750–800 · SPR.** `x²+y²+4x-6y-12=0` has center `(h,k)`. Find `h+k`.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **135** — ×180/π.
+2. **2** — `6π/3`.
+3. **9** — quarter of36π.
+4. **5** — complete square → `(x-3)²+(y+2)²=25`.
+5. **A** — distance5.
+6. **12** — right triangle 5-12-13.
+7. **B** — radian requirement.
+8. **B** — `(cos,sin)`.
+9. **A** — standard form.
+10. **1** — complete square center(-2,3).
 </details>

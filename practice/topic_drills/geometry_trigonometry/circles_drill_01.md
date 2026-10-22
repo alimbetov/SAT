@@ -1,39 +1,36 @@
-# Circles — Topic Drill 01
+# Circles — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · SPR.** Circle radius7. Find diameter.
+2. **Easy · SPR.** Circle radius5 has circumference `kπ`. Find k.
 
-1. **Easy · MC.** A circle has radius 7. What is its circumference?  
-A) `7π`  B) `14π`  C) `28π`  D) `49π`
-2. **Easy · MC.** A circle has radius 4. What is its area?  
-A) `4π`  B) `8π`  C) `16π`  D) `32π`
-3. **Easy · MC.** Which radian measure equals `180°`?  
-A) `π/2`  B) `π`  C) `2π`  D) `3π/2`
-4. **Medium · MC.** A circle has radius 6. What is the length of a `120°` arc?  
-A) `2π`  B) `4π`  C) `6π`  D) `8π`
-5. **Medium · MC.** A circle has radius 10. What is the area of a `90°` sector?  
-A) `10π`  B) `20π`  C) `25π`  D) `50π`
-6. **Easy · MC.** Which point on the unit circle corresponds to angle `0` radians?  
-A) `(0,1)`  B) `(1,0)`  C) `(-1,0)`  D) `(0,-1)`
-7. **Medium · SPR.** An inscribed angle subtends an arc measuring `100°`. Find the angle measure.
-8. **Easy · SPR.** A tangent meets a radius at the point of tangency. What angle is formed?
-9. **Medium · MC.** Which equation has center `(-2,3)` and radius 4?  
-A) `(x-2)^2+(y+3)^2=16`  
-B) `(x+2)^2+(y-3)^2=16`  
-C) `(x+2)^2+(y-3)^2=4`  
-D) `(x-2)^2+(y+3)^2=4`
-10. **Hard · SPR.** The circle `x^2+y^2+4x-6y-3=0` has what radius?
+## B. Core Pattern
+3. **Easy · SPR.** Circle radius5 has area `kπ`. Find k.
+4. **Easy · MC.** 60° in radians? A)π/6 B)π/3 C)2π/3 D)3π
+5. **Medium · MC.** Center of `(x-3)²+(y+2)²=25`? A)(3,2) B)(-3,2) C)(3,-2) D)(-3,-2)
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Easy · SPR.** Radius of `(x-3)²+(y+2)²=25`?
+7. **Medium · SPR.** Radius10, central angle72°. Arc length=`kπ`. Find k.
 
-1. **B, 14π**.
-2. **C, 16π**.
-3. **B, π**.
-4. **B, 4π** — one third of circumference `12π`.
-5. **C, 25π** — one quarter of `100π`.
-6. **B, (1,0)**.
-7. **50°** — inscribed angle is half its intercepted arc.
-8. **90°**.
-9. **B**.
-10. **4** — completing squares gives `(x+2)^2+(y-3)^2=16`.
+## D. Circle Geometry
+8. **Medium · SPR.** Central angle100° and inscribed angle intercept same arc. Find inscribed angle.
 
+## E. Trap
+9. **Medium · MC.** Radius to tangent point is: A) parallel to tangent B) perpendicular to tangent C) same line D) unrelated
+
+## F. Transfer
+10. **Hard · SPR.** On unit circle θ=π/3. Find y-coordinate coefficient in `√3/2`; enter numerator under the radical.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **14** — d=2r.
+2. **10** — `2πr`.
+3. **25** — `πr²`.
+4. **B** — degrees×π/180.
+5. **C** — center signs reverse inside parentheses.
+6. **5** — sqrt RHS.
+7. **4** — 72/360 of20π.
+8. **50** — inscribed half central.
+9. **B** — tangent-radius theorem.
+10. **3** — point `(1/2,√3/2)`.
 </details>

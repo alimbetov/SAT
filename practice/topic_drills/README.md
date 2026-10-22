@@ -1,98 +1,79 @@
-# Topic Drills — Index
+# Topic Drills — Practice V2 Index
 
-Targeted-practice слой завершён до базового целевого уровня:
+**25 topics × 20 questions = 500 targeted questions.**
 
-- **25 учебных тем**;
-- **20 оригинальных задач на каждую тему**;
-- `Drill 01` — Foundation/Easy/Medium с переходом к Hard;
-- `Drill 02` — преимущественно Medium/Hard/750–800;
-- всего **500 topic-specific questions**.
-
----
-
-## Algebra — 100 questions
-
-| Topic | Drill 01 | Drill 02 | Total |
-|---|---|---|---:|
-| Linear equations | [`01`](algebra/linear_equations_drill_01.md) | [`02`](algebra/linear_equations_drill_02.md) | 20 |
-| Linear equations in two variables | [`01`](algebra/linear_equations_two_variables_drill_01.md) | [`02`](algebra/linear_equations_two_variables_drill_02.md) | 20 |
-| Linear functions | [`01`](algebra/linear_functions_drill_01.md) | [`02`](algebra/linear_functions_drill_02.md) | 20 |
-| Systems of equations | [`01`](algebra/systems_of_equations_drill_01.md) | [`02`](algebra/systems_of_equations_drill_02.md) | 20 |
-| Linear inequalities | [`01`](algebra/linear_inequalities_drill_01.md) | [`02`](algebra/linear_inequalities_drill_02.md) | 20 |
-
-## Advanced Math — 180 questions
-
-| Topic | Drill 01 | Drill 02 | Total |
-|---|---|---|---:|
-| Equivalent expressions | [`01`](advanced_math/equivalent_expressions_drill_01.md) | [`02`](advanced_math/equivalent_expressions_drill_02.md) | 20 |
-| Quadratics | [`01`](advanced_math/quadratics_drill_01.md) | [`02`](advanced_math/quadratics_drill_02.md) | 20 |
-| Polynomial functions | [`01`](advanced_math/polynomial_functions_drill_01.md) | [`02`](advanced_math/polynomial_functions_drill_02.md) | 20 |
-| Exponential functions | [`01`](advanced_math/exponential_functions_drill_01.md) | [`02`](advanced_math/exponential_functions_drill_02.md) | 20 |
-| Rational expressions/equations | [`01`](advanced_math/rational_expressions_equations_drill_01.md) | [`02`](advanced_math/rational_expressions_equations_drill_02.md) | 20 |
-| Radicals/radical equations | [`01`](advanced_math/radicals_and_radical_equations_drill_01.md) | [`02`](advanced_math/radicals_and_radical_equations_drill_02.md) | 20 |
-| Absolute value | [`01`](advanced_math/absolute_value_drill_01.md) | [`02`](advanced_math/absolute_value_drill_02.md) | 20 |
-| Nonlinear functions | [`01`](advanced_math/nonlinear_functions_drill_01.md) | [`02`](advanced_math/nonlinear_functions_drill_02.md) | 20 |
-| Nonlinear equations/systems | [`01`](advanced_math/nonlinear_equations_systems_drill_01.md) | [`02`](advanced_math/nonlinear_equations_systems_drill_02.md) | 20 |
-
-## Problem-Solving and Data Analysis — 140 questions
-
-| Topic | Drill 01 | Drill 02 | Total |
-|---|---|---|---:|
-| Ratios, rates, units | [`01`](problem_solving_data_analysis/ratios_rates_units_drill_01.md) | [`02`](problem_solving_data_analysis/ratios_rates_units_drill_02.md) | 20 |
-| Percentages | [`01`](problem_solving_data_analysis/percentages_drill_01.md) | [`02`](problem_solving_data_analysis/percentages_drill_02.md) | 20 |
-| One-variable statistics | [`01`](problem_solving_data_analysis/one_variable_statistics_drill_01.md) | [`02`](problem_solving_data_analysis/one_variable_statistics_drill_02.md) | 20 |
-| Two-variable data/scatterplots | [`01`](problem_solving_data_analysis/two_variable_data_scatterplots_drill_01.md) | [`02`](problem_solving_data_analysis/two_variable_data_scatterplots_drill_02.md) | 20 |
-| Probability/conditional probability | [`01`](problem_solving_data_analysis/probability_conditional_probability_drill_01.md) | [`02`](problem_solving_data_analysis/probability_conditional_probability_drill_02.md) | 20 |
-| Sampling/margin of error | [`01`](problem_solving_data_analysis/sampling_margin_of_error_drill_01.md) | [`02`](problem_solving_data_analysis/sampling_margin_of_error_drill_02.md) | 20 |
-| Observational studies/experiments | [`01`](problem_solving_data_analysis/observational_studies_experiments_drill_01.md) | [`02`](problem_solving_data_analysis/observational_studies_experiments_drill_02.md) | 20 |
-
-## Geometry and Trigonometry — 80 questions
-
-| Topic | Drill 01 | Drill 02 | Total |
-|---|---|---|---:|
-| Area/volume | [`01`](geometry_trigonometry/area_volume_drill_01.md) | [`02`](geometry_trigonometry/area_volume_drill_02.md) | 20 |
-| Lines/angles/triangles | [`01`](geometry_trigonometry/lines_angles_triangles_drill_01.md) | [`02`](geometry_trigonometry/lines_angles_triangles_drill_02.md) | 20 |
-| Right triangles/trigonometry | [`01`](geometry_trigonometry/right_triangles_trigonometry_drill_01.md) | [`02`](geometry_trigonometry/right_triangles_trigonometry_drill_02.md) | 20 |
-| Circles | [`01`](geometry_trigonometry/circles_drill_01.md) | [`02`](geometry_trigonometry/circles_drill_02.md) | 20 |
-
----
-
-# Как использовать
-
-Для каждой темы:
+## How every topic works
 
 ```text
-Lesson
+Lesson V2
   ↓
-Practice Problems внутри lesson
+Drill 01: Recognition → Core → Variation → Word → Trap → Transfer
   ↓
-Drill 01 — accuracy
+Error Clinic
   ↓
-Error review
+Drill 02: Method Selection → Hard Variations → Trap → Transfer → 750–800
   ↓
-Drill 02 — hardening
-  ↓
-Domain mixed set
-  ↓
-Timed module
+Domain Mixed Set
 ```
 
-Рекомендуемые gates:
+### Algebra — 100
 
-### Drill 01
-- **9–10/10** → переход к Drill 02;
-- **7–8/10** → разобрать ошибки и повторить;
-- **≤6/10** → вернуться к lesson.
+| Topic | Drill 01 | Drill 02 |
+|---|---|---|
+| Linear equations | [01](algebra/linear_equations_drill_01.md) | [02](algebra/linear_equations_drill_02.md) |
+| Equations in two variables | [01](algebra/linear_equations_two_variables_drill_01.md) | [02](algebra/linear_equations_two_variables_drill_02.md) |
+| Linear functions | [01](algebra/linear_functions_drill_01.md) | [02](algebra/linear_functions_drill_02.md) |
+| Systems | [01](algebra/systems_of_equations_drill_01.md) | [02](algebra/systems_of_equations_drill_02.md) |
+| Inequalities | [01](algebra/linear_inequalities_drill_01.md) | [02](algebra/linear_inequalities_drill_02.md) |
 
-### Drill 02
-- **8–10/10** → тема готова к mixed timed practice;
-- **6–7/10** → targeted review;
-- **≤5/10** → повторить методы решения и Desmos strategy.
+### Advanced Math — 180
 
-## Coverage status
+| Topic | Drill 01 | Drill 02 |
+|---|---|---|
+| Equivalent expressions | [01](advanced_math/equivalent_expressions_drill_01.md) | [02](advanced_math/equivalent_expressions_drill_02.md) |
+| Quadratics | [01](advanced_math/quadratics_drill_01.md) | [02](advanced_math/quadratics_drill_02.md) |
+| Polynomials | [01](advanced_math/polynomial_functions_drill_01.md) | [02](advanced_math/polynomial_functions_drill_02.md) |
+| Exponentials | [01](advanced_math/exponential_functions_drill_01.md) | [02](advanced_math/exponential_functions_drill_02.md) |
+| Rational | [01](advanced_math/rational_expressions_equations_drill_01.md) | [02](advanced_math/rational_expressions_equations_drill_02.md) |
+| Radicals | [01](advanced_math/radicals_and_radical_equations_drill_01.md) | [02](advanced_math/radicals_and_radical_equations_drill_02.md) |
+| Absolute value | [01](advanced_math/absolute_value_drill_01.md) | [02](advanced_math/absolute_value_drill_02.md) |
+| Nonlinear functions | [01](advanced_math/nonlinear_functions_drill_01.md) | [02](advanced_math/nonlinear_functions_drill_02.md) |
+| Nonlinear equations/systems | [01](advanced_math/nonlinear_equations_systems_drill_01.md) | [02](advanced_math/nonlinear_equations_systems_drill_02.md) |
+
+### PSDA — 140
+
+| Topic | Drill 01 | Drill 02 |
+|---|---|---|
+| Ratios/rates/units | [01](problem_solving_data_analysis/ratios_rates_units_drill_01.md) | [02](problem_solving_data_analysis/ratios_rates_units_drill_02.md) |
+| Percentages | [01](problem_solving_data_analysis/percentages_drill_01.md) | [02](problem_solving_data_analysis/percentages_drill_02.md) |
+| One-variable statistics | [01](problem_solving_data_analysis/one_variable_statistics_drill_01.md) | [02](problem_solving_data_analysis/one_variable_statistics_drill_02.md) |
+| Two-variable data | [01](problem_solving_data_analysis/two_variable_data_scatterplots_drill_01.md) | [02](problem_solving_data_analysis/two_variable_data_scatterplots_drill_02.md) |
+| Probability | [01](problem_solving_data_analysis/probability_conditional_probability_drill_01.md) | [02](problem_solving_data_analysis/probability_conditional_probability_drill_02.md) |
+| Sampling/MOE | [01](problem_solving_data_analysis/sampling_margin_of_error_drill_01.md) | [02](problem_solving_data_analysis/sampling_margin_of_error_drill_02.md) |
+| Studies/experiments | [01](problem_solving_data_analysis/observational_studies_experiments_drill_01.md) | [02](problem_solving_data_analysis/observational_studies_experiments_drill_02.md) |
+
+### Geometry & Trigonometry — 80
+
+| Topic | Drill 01 | Drill 02 |
+|---|---|---|
+| Area/volume | [01](geometry_trigonometry/area_volume_drill_01.md) | [02](geometry_trigonometry/area_volume_drill_02.md) |
+| Lines/angles/triangles | [01](geometry_trigonometry/lines_angles_triangles_drill_01.md) | [02](geometry_trigonometry/lines_angles_triangles_drill_02.md) |
+| Right triangles/trig | [01](geometry_trigonometry/right_triangles_trigonometry_drill_01.md) | [02](geometry_trigonometry/right_triangles_trigonometry_drill_02.md) |
+| Circles | [01](geometry_trigonometry/circles_drill_01.md) | [02](geometry_trigonometry/circles_drill_02.md) |
+
+## Scoring
+
+Do not count a guessed correct answer as mastery. Track two scores:
 
 ```text
-25 topics × 20 questions = 500 targeted questions
+Answer accuracy: ___ / 10
+Pattern recognition: ___ / 10
 ```
 
-Минимальная цель `20 questions/topic` закрыта. Дальнейшее расширение до 30 вопросов на тему имеет смысл делать уже как отдельный `Challenge Drill 03` уровня Hard/750–800, а не увеличивать объём базовых упражнений без необходимости.
+Drill 02 adds:
+
+```text
+Efficient method choice: ___ / 10
+```
+
+See [`../../docs/PRACTICE_V2.md`](../../docs/PRACTICE_V2.md) for the full standard.

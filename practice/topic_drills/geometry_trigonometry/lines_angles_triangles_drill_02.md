@@ -1,30 +1,34 @@
-# Lines, Angles, and Triangles — Topic Drill 02
+# Lines, Angles & Triangles — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · SPR.** Alternate interior angle is68° on parallel lines. Find its equal partner.
+2. **Medium · SPR.** Isosceles triangle vertex angle40°. Find each base angle.
 
-1. **Medium · SPR.** What angle is complementary to `37°`?
-2. **Medium · SPR.** Two angles form a linear pair. One is `25°`. Find the other.
-3. **Medium · SPR.** Two parallel lines are cut by a transversal. A corresponding angle is `68°`. Find the matching corresponding angle.
-4. **Hard · SPR.** The angles of a triangle are `x`, `x+20`, and `2x`. Find the largest angle.
-5. **Medium · SPR.** An isosceles triangle has vertex angle `100°`. Find each base angle.
-6. **Medium · SPR.** Two triangles are similar. A side of 6 in the smaller triangle corresponds to 9 in the larger. What length corresponds to a side of 8?
-7. **Hard · SPR.** Two sides of a triangle are 10 and 15. What is the smallest integer possible for the third side?
-8. **Medium · MC.** Which condition is a valid triangle congruence criterion?  
-A) SAS  B) AAA  C) same area only  D) same perimeter only
-9. **Hard · SPR.** An exterior angle is `5x`; the two remote interior angles are `2x+20` and `x+10`. Find the exterior angle.
-10. **750–800 · SPR.** Same-side interior angles formed by parallel lines are `(3x+15)°` and `(5x-11)°`. Find `x`.
+## B. Hard Variations
+3. **Medium · SPR.** Exterior angle130°, one remote interior50°. Find other remote interior angle.
+4. **Hard · SPR.** Similar triangles have side scale factor2.5. Smaller perimeter24. Find larger perimeter.
+5. **Medium · MC.** Three corresponding sides equal proves: A)SSS B)SAS C)AAA D)similarity only
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Hard · MC.** AAA proves: A) congruence B) similarity C) perpendicularity D) equal side lengths
+7. **Medium · SPR.** Same-side interior angles on parallel lines: one is117°. Find the other.
 
-1. **53°**.
-2. **155°**.
-3. **68°**.
-4. **80°** — `4x+20=180`, so `x=40`.
-5. **40°**.
-6. **12**.
-7. **6** — triangle inequality requires `5<x<25`.
-8. **A**.
-9. **75°** — `5x=3x+30`, so `x=15`.
-10. **22** — supplementary: `8x+4=180`.
+## D. Transfer
+8. **Hard · SPR.** Similar triangles have small sides4,6,10 and larger side corresponding to4 equal14. Find larger side corresponding to6.
+9. **Medium · MC.** Parallel lines in coordinate plane have: A) equal slopes B) negative reciprocal slopes C) equal intercepts always D) slopes product -1
 
+## E. 750–800 Challenge
+10. **750–800 · SPR.** Similar triangles have area ratio25:1. A corresponding small side is7. Find large corresponding side.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **68** — alternate interior equal.
+2. **70** — remaining140 split equally.
+3. **80** — remote interior sum130.
+4. **60** — perimeter scales linearly.
+5. **A** — SSS.
+6. **B** — AAA preserves shape, not size.
+7. **63** — supplementary.
+8. **21** — scale factor14/4=3.5.
+9. **A** — parallel slope pattern.
+10. **35** — length factor sqrt25=5.
 </details>

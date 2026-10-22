@@ -1,33 +1,36 @@
-# Nonlinear Equations and Systems — Topic Drill 01
+# Nonlinear Equations & Systems — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** How many real solutions does `x²=9` have? A)0 B)1 C)2 D)3
+2. **Easy · SPR.** Solve `3^x=27`.
 
-1. **Easy · SPR.** Solve `x^2=16`. What is the positive solution?
-2. **Easy · SPR.** Solve `x^2+1=10`. What is the positive solution?
-3. **Medium · SPR.** Solve `x^2=2x+3`. What is the larger solution?
-4. **Easy · MC.** How many intersections do `y=x^2` and `y=9` have?  
-A) 0  B) 1  C) 2  D) 3
-5. **Easy · MC.** How many real intersections do `y=x^2` and `y=-1` have?  
-A) 0  B) 1  C) 2  D) infinitely many
-6. **Medium · MC.** How many real solutions does the system `x+y=5`, `y=x^2` have?  
-A) 0  B) 1  C) 2  D) 5
-7. **Medium · SPR.** The graphs `y=x^2` and `y=4x-3` intersect at two points. What is the sum of their `x`-coordinates?
-8. **Medium · MC.** How many real solutions does `x^2+y^2=25` with `y=0` have?  
-A) 0  B) 1  C) 2  D) 25
-9. **750–800 · SPR.** For what value of `k` is the line `y=2x+k` tangent to the parabola `y=x^2`?
-10. **Hard · SPR.** Solve the system `y=√x` and `y=x-2`. What is the `x`-coordinate of the intersection?
+## B. Core Pattern
+3. **Easy · MC.** Graphs `y=x²` and `y=4` intersect at x-values: A)0 B)2 only C)±2 D)±4
+4. **Medium · SPR.** For `y=x+1` and `y=x²-1`, find the positive x-coordinate of an intersection.
+5. **Hard · MC.** A line and parabola intersect exactly once. The resulting quadratic must have: A)`D<0` B)`D=0` C)`D>0` D)`a=0`
 
-<details><summary><strong>Answers</strong></summary>
+## C. Method Recognition
+6. **Medium · MC.** Radical equation best workflow? A) isolate→square→check B) divide by x always C) factor first always D) ignore domain
+7. **Medium · MC.** Rational equation first requires: A) restrictions B) square root C) vertex D) unit conversion
 
-1. **4**.
-2. **3**.
-3. **3** — `(x-3)(x+1)=0`.
-4. **C, 2**.
-5. **A, 0**.
-6. **C, 2** — `x^2+x-5=0` has positive discriminant.
-7. **4** — roots of `x^2-4x+3=0` are 1 and 3.
-8. **C, 2** — points `(5,0)` and `(-5,0)`.
-9. **-1** — `x^2=2x+k` must have discriminant zero: `4+4k=0`.
-10. **4** — squaring gives candidates 1 and 4; only 4 satisfies `x-2≥0`.
+## D. Guided Variation
+8. **Easy · MC.** For `2^x=32`, fastest manual method is: A) common base B) quadratic formula C) elimination D) slope
 
+## E. Trap
+9. **Medium · MC.** A point solving a nonlinear system must: A) satisfy one equation B) satisfy both equations C) have positive x D) lie on x-axis
+
+## F. Transfer
+10. **Hard · SPR.** For `y=x²` and `y=2x+3`, find the sum of the x-coordinates of intersections.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **C** — ±3.
+2. **3** — common base.
+3. **C** — x²=4.
+4. **2** — solve `x+1=x²-1`.
+5. **B** — tangent/one root.
+6. **A** — then verify candidates.
+7. **A** — denominator domain first.
+8. **A** — `32=2^5`.
+9. **B** — system means simultaneous.
+10. **2** — roots of `x²-2x-3=0` are 3,-1.
 </details>

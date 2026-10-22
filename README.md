@@ -1,335 +1,163 @@
-# SAT Math — полный учебный курс на русском языке
+# SAT Math — русскоязычный курс подготовки к Digital SAT
 
-Этот репозиторий — системный курс подготовки к **Digital SAT Math** для старшеклассников 15–18 лет. Материалы объясняют математику простым русским языком, но сохраняют экзаменационную английскую терминологию: *slope*, *intercept*, *vertex*, *discriminant*, *margin of error*, *student-produced response* и другие термины.
+Этот репозиторий построен как учебная система, а не как набор формул и случайных задач.
 
-## Актуальный формат SAT Math
+## Учебная модель
 
-- **44 задания** за **70 минут**.
-- **2 адаптивных модуля** по 35 минут.
-- В каждом модуле представлены все четыре Math domains.
-- Используются **Multiple Choice** и **Student-Produced Response (SPR / grid-in)**.
-- Примерно 30% вопросов — contextual / word problems.
-- Калькулятор доступен на всём Math section; в Bluebook встроен Desmos.
+Теоретические уроки используют **Pedagogy V2**:
 
-## Официальные Math content domains
+```text
+Recognize → Pattern → Choose → Solve → Check → Transfer
+```
 
-| Domain | Доля | Официальные skills |
+Практика использует **Practice V2**:
+
+```text
+Recognition → Core Pattern → Guided Variation → Word Problem → Trap → Transfer → Hard/750–800
+```
+
+Полные стандарты:
+
+- [`docs/PEDAGOGY_V2.md`](docs/PEDAGOGY_V2.md)
+- [`docs/PRACTICE_V2.md`](docs/PRACTICE_V2.md)
+
+## SAT Math coverage
+
+Курс покрывает все четыре content domains Digital SAT Math:
+
+| Domain | Lessons |
+|---|---:|
+| Algebra | 5 |
+| Advanced Math | 9 |
+| Problem-Solving and Data Analysis | 7 |
+| Geometry and Trigonometry | 4 |
+| **Total** | **25** |
+
+## Теория — 25 V2 lessons
+
+### Algebra
+
+- [`linear_equations.md`](algebra/linear_equations.md)
+- [`linear_equations_two_variables.md`](algebra/linear_equations_two_variables.md)
+- [`linear_functions.md`](algebra/linear_functions.md)
+- [`systems_of_equations.md`](algebra/systems_of_equations.md)
+- [`linear_inequalities.md`](algebra/linear_inequalities.md)
+
+### Advanced Math
+
+- [`equivalent_expressions.md`](advanced_math/equivalent_expressions.md)
+- [`quadratics.md`](advanced_math/quadratics.md)
+- [`polynomial_functions.md`](advanced_math/polynomial_functions.md)
+- [`exponential_functions.md`](advanced_math/exponential_functions.md)
+- [`rational_expressions_equations.md`](advanced_math/rational_expressions_equations.md)
+- [`radicals_and_radical_equations.md`](advanced_math/radicals_and_radical_equations.md)
+- [`absolute_value.md`](advanced_math/absolute_value.md)
+- [`nonlinear_functions.md`](advanced_math/nonlinear_functions.md)
+- [`nonlinear_equations_systems.md`](advanced_math/nonlinear_equations_systems.md)
+
+### Problem-Solving and Data Analysis
+
+- [`ratios_rates_units.md`](problem_solving_data_analysis/ratios_rates_units.md)
+- [`percentages.md`](problem_solving_data_analysis/percentages.md)
+- [`one_variable_statistics.md`](problem_solving_data_analysis/one_variable_statistics.md)
+- [`two_variable_data_scatterplots.md`](problem_solving_data_analysis/two_variable_data_scatterplots.md)
+- [`probability_conditional_probability.md`](problem_solving_data_analysis/probability_conditional_probability.md)
+- [`sampling_margin_of_error.md`](problem_solving_data_analysis/sampling_margin_of_error.md)
+- [`observational_studies_experiments.md`](problem_solving_data_analysis/observational_studies_experiments.md)
+
+### Geometry and Trigonometry
+
+- [`lines_angles_triangles.md`](geometry_trigonometry/lines_angles_triangles.md)
+- [`area_volume.md`](geometry_trigonometry/area_volume.md)
+- [`right_triangles_trigonometry.md`](geometry_trigonometry/right_triangles_trigonometry.md)
+- [`circles.md`](geometry_trigonometry/circles.md)
+
+## Practice V2 — 624 questions
+
+| Layer | Questions | Purpose |
 |---|---:|---|
-| **Algebra** | ≈35% | Linear equations in 1 variable; linear equations in 2 variables; linear functions; systems; linear inequalities |
-| **Advanced Math** | ≈35% | Equivalent expressions; nonlinear equations; systems in 2 variables; nonlinear functions |
-| **Problem-Solving and Data Analysis** | ≈15% | Ratios/rates/units; percentages; one-variable data; two-variable data; probability; inference & margin of error; statistical claims |
-| **Geometry and Trigonometry** | ≈15% | Area & volume; lines/angles/triangles; right triangles & trigonometry; circles |
+| Topic Drills | **500** | pattern learning + method choice |
+| Domain Mixed Sets | **80** | independent transfer |
+| Timed Modules | **44** | exam-like performance |
+| **Total** | **624** | |
 
-## Как устроен каждый урок
+Start here: [`practice/README.md`](practice/README.md).
 
-Каждая тема — отдельный Markdown-файл с единым 8-секционным шаблоном:
+### Topic Drills
 
-1. **Заголовок и краткое описание** — зачем тема нужна на SAT.
-2. **Ключевые понятия и формулы** — таблицы, определения, визуальные якоря.
-3. **Guided Example** — пошаговое решение с объяснением, почему выполняется каждый шаг.
-4. **Practice Problems** — Easy → Medium → Hard, Multiple Choice и Grid-in.
-5. **Common Traps** — типичные ошибки и способы их избежать.
-6. **Digital SAT Strategy** — когда решать вручную, когда использовать Desmos.
-7. **Связи с другими темами** — зависимости внутри курса.
-8. **Мини-чек-лист** — «Я умею…» для самопроверки.
-
-Ответы к упражнениям скрыты в `<details>`, чтобы ученик сначала сделал собственную попытку.
-
----
-
-# Полная карта курса
-
-## 1. Algebra
-
-Официальный домен закрыт по всем пяти skills.
-
-| Тема | Файл | Статус |
-|---|---|---|
-| Linear equations in one variable | [`algebra/linear_equations.md`](algebra/linear_equations.md) | ✅ |
-| Linear equations in two variables | [`algebra/linear_equations_two_variables.md`](algebra/linear_equations_two_variables.md) | ✅ |
-| Linear functions | [`algebra/linear_functions.md`](algebra/linear_functions.md) | ✅ |
-| Systems of two linear equations | [`algebra/systems_of_equations.md`](algebra/systems_of_equations.md) | ✅ |
-| Linear inequalities in one or two variables | [`algebra/linear_inequalities.md`](algebra/linear_inequalities.md) | ✅ |
-
-### Рекомендуемый порядок
+Каждая из 25 тем имеет 20 targeted questions:
 
 ```text
-Linear equations (1 variable)
-        ↓
-Linear equations (2 variables)
-        ↓
-Linear functions
-        ↓
-Systems
-        ↓
-Linear inequalities
+Drill 01
+Recognition → Core → Variation → Word → Trap → Transfer
+
+Drill 02
+Method Selection → Hard Variations → Trap Clinic → Transfer → 750–800
 ```
 
----
+Index: [`practice/topic_drills/README.md`](practice/topic_drills/README.md).
 
-## 2. Advanced Math
+### Mixed Domain Sets
 
-Официальные skills раскрыты отдельными тематическими уроками, чтобы quadratic, exponential, polynomial, rational, radical и absolute-value задачи не смешивались в один перегруженный файл.
+Pattern hints скрыты во время попытки. После выполнения используются отдельные diagnostic maps:
 
-| Тема | Файл | Статус |
-|---|---|---|
-| Equivalent expressions | [`advanced_math/equivalent_expressions.md`](advanced_math/equivalent_expressions.md) | ✅ |
-| Quadratics | [`advanced_math/quadratics.md`](advanced_math/quadratics.md) | ✅ |
-| Polynomial functions | [`advanced_math/polynomial_functions.md`](advanced_math/polynomial_functions.md) | ✅ |
-| Exponential functions | [`advanced_math/exponential_functions.md`](advanced_math/exponential_functions.md) | ✅ |
-| Rational expressions and equations | [`advanced_math/rational_expressions_equations.md`](advanced_math/rational_expressions_equations.md) | ✅ |
-| Radicals and radical equations | [`advanced_math/radicals_and_radical_equations.md`](advanced_math/radicals_and_radical_equations.md) | ✅ |
-| Absolute value | [`advanced_math/absolute_value.md`](advanced_math/absolute_value.md) | ✅ |
-| Nonlinear functions | [`advanced_math/nonlinear_functions.md`](advanced_math/nonlinear_functions.md) | ✅ |
-| Nonlinear equations and systems | [`advanced_math/nonlinear_equations_systems.md`](advanced_math/nonlinear_equations_systems.md) | ✅ |
+- Algebra — 20
+- Advanced Math — 20
+- PSDA — 20
+- Geometry & Trigonometry — 20
 
-### Рекомендуемый порядок
+Index: [`practice/question_bank/README.md`](practice/question_bank/README.md).
+
+### Timed Modules
+
+- Module 01 — 22 questions / 35 minutes
+- Module 02 Hard Route — 22 questions / 35 minutes
+
+Timed questions intentionally contain no scaffolding. Practice V2 learning happens in the post-test diagnostics.
+
+## Error taxonomy
+
+Курс отслеживает не только «правильно/неправильно», но и причину ошибки:
 
 ```text
-Equivalent expressions
-        ↓
-Quadratics → Polynomials
-        ↓
-Exponentials
-        ↓
-Rational + Radical + Absolute Value
-        ↓
-Nonlinear Functions
-        ↓
-Nonlinear Equations & Systems
+R — Recognition
+M — Method choice
+A — Algebra / Arithmetic
+L — Language
+C — Constraint / Domain
+G — Graph / Data
+T — Trap
+K — Check / Interpretation
 ```
 
----
-
-## 3. Problem-Solving and Data Analysis
-
-Все официальные SAT skills этого домена вынесены в отдельные уроки.
-
-| Тема | Файл | Статус |
-|---|---|---|
-| Ratios, rates, proportional relationships, units | [`problem_solving_data_analysis/ratios_rates_units.md`](problem_solving_data_analysis/ratios_rates_units.md) | ✅ |
-| Percentages | [`problem_solving_data_analysis/percentages.md`](problem_solving_data_analysis/percentages.md) | ✅ |
-| One-variable data: center and spread | [`problem_solving_data_analysis/one_variable_statistics.md`](problem_solving_data_analysis/one_variable_statistics.md) | ✅ |
-| Two-variable data: models and scatterplots | [`problem_solving_data_analysis/two_variable_data_scatterplots.md`](problem_solving_data_analysis/two_variable_data_scatterplots.md) | ✅ |
-| Probability and conditional probability | [`problem_solving_data_analysis/probability_conditional_probability.md`](problem_solving_data_analysis/probability_conditional_probability.md) | ✅ |
-| Inference and margin of error | [`problem_solving_data_analysis/sampling_margin_of_error.md`](problem_solving_data_analysis/sampling_margin_of_error.md) | ✅ |
-| Observational studies and experiments | [`problem_solving_data_analysis/observational_studies_experiments.md`](problem_solving_data_analysis/observational_studies_experiments.md) | ✅ |
-
-### Рекомендуемый порядок
+## Recommended learning loop
 
 ```text
-Ratios / Rates / Units
-        ↓
-Percentages
-        ↓
-One-variable Statistics
-        ↓
-Scatterplots & Models
-        ↓
-Probability
-        ↓
-Sampling & Margin of Error
-        ↓
-Studies / Experiments / Statistical Claims
-```
-
----
-
-## 4. Geometry and Trigonometry
-
-Все четыре официальных skills покрыты.
-
-| Тема | Файл | Статус |
-|---|---|---|
-| Area and volume | [`geometry_trigonometry/area_volume.md`](geometry_trigonometry/area_volume.md) | ✅ |
-| Lines, angles, and triangles | [`geometry_trigonometry/lines_angles_triangles.md`](geometry_trigonometry/lines_angles_triangles.md) | ✅ |
-| Right triangles and trigonometry | [`geometry_trigonometry/right_triangles_trigonometry.md`](geometry_trigonometry/right_triangles_trigonometry.md) | ✅ |
-| Circles | [`geometry_trigonometry/circles.md`](geometry_trigonometry/circles.md) | ✅ |
-
-### Рекомендуемый порядок
-
-```text
-Lines / Angles / Triangles
-        ↓
-Area / Volume / Scale
-        ↓
-Right Triangles
-        ↓
-Trigonometry
-        ↓
-Circles
-```
-
----
-
-# Practice System
-
-Теория связана с отдельным практическим слоем в [`practice/`](practice/README.md).
-
-## Topic Drills — complete baseline
-
-Каждый из 25 lessons получил два targeted drills:
-
-- `Drill 01` — 10 задач;
-- `Drill 02` — ещё 10 задач;
-- **20 вопросов на каждую тему**;
-- **500 topic-specific questions**;
-- полный индекс: [`practice/topic_drills/README.md`](practice/topic_drills/README.md).
-
-Quality gates:
-
-```text
-Drill 01: 9–10/10 → Drill 02
-Drill 02: 8–10/10 → mixed timed practice
-```
-
-## Domain Question Bank — Set 01
-
-Mixed-domain пакет содержит **80 оригинальных задач** — по 20 на каждый официальный домен.
-
-| Domain | Practice set | Questions |
-|---|---|---:|
-| Algebra | [`practice/question_bank/algebra_set_01.md`](practice/question_bank/algebra_set_01.md) | 20 |
-| Advanced Math | [`practice/question_bank/advanced_math_set_01.md`](practice/question_bank/advanced_math_set_01.md) | 20 |
-| Problem-Solving and Data Analysis | [`practice/question_bank/psda_set_01.md`](practice/question_bank/psda_set_01.md) | 20 |
-| Geometry and Trigonometry | [`practice/question_bank/geometry_trigonometry_set_01.md`](practice/question_bank/geometry_trigonometry_set_01.md) | 20 |
-
-## Timed Modules
-
-Собраны два самостоятельных модуля по **22 вопроса / 35 минут**.
-
-| Module | Роль | Questions |
-|---|---|---:|
-| [`Math Module 01`](practice/timed_modules/math_module_01.md) | базовый mixed module | 22 |
-| [`Module 01 Answers`](practice/timed_modules/math_module_01_answers.md) | решения + error log | — |
-| [`Math Module 02 — Hard Route`](practice/timed_modules/math_module_02_hard.md) | усложнённый adaptive-style route | 22 |
-| [`Module 02 Answers`](practice/timed_modules/math_module_02_hard_answers.md) | решения + diagnostic interpretation | — |
-
-## Текущий объём
-
-```text
-500  Topic Drill questions
- 80  Domain Question Bank questions
- 44  Timed Module questions
----
-624  original practice questions
-```
-
-Это число **не включает** Practice Problems, встроенные в сами теоретические уроки.
-
-## Учебный цикл
-
-```text
-Lesson
-  ↓
-Practice Problems внутри урока
-  ↓
+Lesson V2
+   ↓
 Topic Drill 01
-  ↓
-Error review
-  ↓
+   ↓
+Error Clinic
+   ↓
 Topic Drill 02
-  ↓
-Domain Question Bank
-  ↓
-Mixed Timed Module
-  ↓
-Error Log
-  ↓
-Targeted Review
-  ↓
-Hard Route / повторный модуль
+   ↓
+Domain Mixed Set
+   ↓
+Diagnostic Map
+   ↓
+Timed Module 01
+   ↓
+Targeted Repair
+   ↓
+Hard Route Module 02
 ```
 
-Для каждой ошибки фиксируется причина:
+Главная метрика курса — не количество решённых задач, а способность ученика:
 
-- Concept gap
-- Wrong model
-- Algebra/arithmetic error
-- Misread question
-- Desmos misuse
-- Time pressure
-- Careless error
+1. распознать pattern;
+2. выбрать короткий метод;
+3. решить без технической ошибки;
+4. проверить результат;
+5. перенести метод на новую формулировку.
 
----
-
-# Рекомендуемый маршрут подготовки
-
-## Stage 1 — Foundation
-
-```text
-Linear Equations → Linear Functions → Systems → Inequalities
-```
-
-## Stage 2 — Advanced Math
-
-```text
-Equivalent Expressions → Quadratics → Polynomials → Exponentials
-→ Rational/Radical/Absolute Value → Nonlinear Systems
-```
-
-## Stage 3 — Data Reasoning
-
-```text
-Ratios → Percentages → Statistics → Scatterplots → Probability
-→ Sampling → Experimental Design
-```
-
-## Stage 4 — Geometry & Trigonometry
-
-```text
-Angles/Triangles → Area/Volume → Right Triangles/Trig → Circles
-```
-
-## Stage 5 — Mixed Digital SAT Practice
-
-1. untimed accuracy;
-2. Topic Drill 01;
-3. Topic Drill 02;
-4. domain question banks;
-5. timed mixed modules;
-6. hard-route modules;
-7. full Bluebook tests;
-8. error log → targeted review → повторный тест.
-
----
-
-# Как работать с Desmos
-
-Desmos — не замена математике, а инструмент ускорения.
-
-**Особенно полезен для:**
-
-- intersections of equations;
-- systems;
-- quadratic roots and vertex;
-- nonlinear equations;
-- regression;
-- graph interpretation;
-- checking equivalent functions.
-
-**Часто быстрее вручную:**
-
-- simple linear equations;
-- basic factoring;
-- ratios and percentages;
-- angle relationships;
-- straightforward probability.
-
-Главный вопрос перед использованием калькулятора:
-
-> Что быстрее и надёжнее именно для этой задачи: algebra, graph или numerical calculation?
-
----
-
-# Официальные источники
-
-Карта курса сверяется с текущей структурой College Board:
-
-- [SAT Math Overview](https://satsuite.collegeboard.org/sat/whats-on-the-test/math/overview)
-- [Math Content Domains and Skills](https://satsuite.collegeboard.org/practice/content-domains)
-- [Math Specifications](https://satsuite.collegeboard.org/k12-educators/about/alignment/math)
-
----
-
-> **Цель курса:** не заучить набор формул, а научиться распознавать математическую модель, выбирать самый эффективный способ решения, проверять результат и стабильно работать в условиях Digital SAT.
+После устойчивого освоения этого слоя следующий уровень курса — **Desmos Speed Drills → 750–800 Challenge Sets → full 44-question simulations**.
