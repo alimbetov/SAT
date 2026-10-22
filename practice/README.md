@@ -1,159 +1,86 @@
-# SAT Math Practice — Question Bank и timed practice
+# SAT Math Practice — Practice V2
 
-Этот раздел превращает теорию репозитория в системную практику.
-
-## Формат
-
-Каждая задача использует единый набор метаданных:
-
-- **Domain** — официальный Math content domain College Board;
-- **Skill** — конкретный навык;
-- **Difficulty** — `Foundation`, `Easy`, `Medium`, `Hard`, `750–800`;
-- **Type** — `Multiple Choice` или `Student-Produced Response (SPR / Grid-in)`;
-- **Tool** — `Manual`, `Desmos useful`, `Desmos recommended`.
-
-Все задачи — **оригинальные учебные задачи**, написанные в стиле Digital SAT. Они не являются копиями вопросов College Board.
-
-## Текущий объём практики
-
-| Layer | Questions |
-|---|---:|
-| Topic Drills 01 + 02 | 500 |
-| Domain Question Bank Set 01 | 80 |
-| Timed Module 01 | 22 |
-| Timed Module 02 — Hard Route | 22 |
-| **Итого** | **624** |
-
-Это не включает Practice Problems, уже встроенные в 25 теоретических уроков.
-
-## Структура
+Практический слой теперь следует той же педагогике, что и 25 V2 lessons:
 
 ```text
-practice/
-├── README.md
-├── topic_drills/
-│   ├── README.md
-│   ├── algebra/
-│   ├── advanced_math/
-│   ├── problem_solving_data_analysis/
-│   └── geometry_trigonometry/
-├── question_bank/
-│   ├── algebra_set_01.md
-│   ├── advanced_math_set_01.md
-│   ├── psda_set_01.md
-│   └── geometry_trigonometry_set_01.md
-└── timed_modules/
-    ├── math_module_01.md
-    ├── math_module_01_answers.md
-    ├── math_module_02_hard.md
-    └── math_module_02_hard_answers.md
+Recognize → Pattern → Choose → Solve → Check → Transfer
 ```
 
-## 1. Topic Drills
+## Coverage
 
-[`topic_drills/README.md`](topic_drills/README.md) содержит полный индекс.
+| Layer | Questions | V2 role |
+|---|---:|---|
+| Topic Drills | **500** | explicit pattern training |
+| Domain Mixed Sets | **80** | independent pattern selection + post-attempt diagnostics |
+| Timed Modules | **44** | no scaffolding during attempt + diagnostic debrief |
+| **Total** | **624** | complete practice system |
 
-Targeted coverage:
+## 1. Topic Drills — learning mode
 
-- 25 тем;
-- `Drill 01` — 10 задач на тему;
-- `Drill 02` — ещё 10 задач на тему;
-- **20 задач на каждую тему**;
-- **500 topic-specific questions**.
-
-Рекомендуемый gate:
-
-### Drill 01
-- **9–10/10** → переход к Drill 02;
-- **7–8/10** → targeted error review;
-- **≤6/10** → вернуться к lesson и Guided Example.
-
-### Drill 02
-- **8–10/10** → тема готова к mixed timed practice;
-- **6–7/10** → targeted review;
-- **≤5/10** → повторить методы решения и Desmos strategy.
-
-## 2. Domain Question Bank
-
-После точечной отработки темы переходите к смешанным вопросам внутри домена:
-
-- [`question_bank/algebra_set_01.md`](question_bank/algebra_set_01.md)
-- [`question_bank/advanced_math_set_01.md`](question_bank/advanced_math_set_01.md)
-- [`question_bank/psda_set_01.md`](question_bank/psda_set_01.md)
-- [`question_bank/geometry_trigonometry_set_01.md`](question_bank/geometry_trigonometry_set_01.md)
-
-Каждый set содержит 20 вопросов.
-
-## 3. Timed Modules
-
-Digital SAT Math содержит два модуля по **22 вопроса / 35 минут**. Поэтому тренировочные модули используют тот же размер.
-
-- [`Math Module 01`](timed_modules/math_module_01.md) — mixed baseline;
-- [`Module 01 Answers`](timed_modules/math_module_01_answers.md);
-- [`Math Module 02 — Hard Route`](timed_modules/math_module_02_hard.md) — усложнённый adaptive-style route;
-- [`Module 02 Answers`](timed_modules/math_module_02_hard_answers.md).
-
-Режим:
+25 topics × 20 questions. Each topic has:
 
 ```text
-35:00 — старт
-20:00 — контроль: примерно половина вопросов завершена
-05:00 — оставить время на marked questions
-00:00 — остановиться
+Drill 01
+Recognition → Core Pattern → Guided Variation → Word Problem → Trap → Transfer
+
+Drill 02
+Method Selection → Hard Variations → Trap Clinic → Transfer → 750–800
 ```
 
-## Полный учебный цикл
+Start here after reading a lesson: [`topic_drills/README.md`](topic_drills/README.md).
 
-```text
-Lesson
-  ↓
-Practice Problems внутри lesson
-  ↓
-Topic Drill 01
-  ↓
-Error review
-  ↓
-Topic Drill 02
-  ↓
-Domain Mixed Set
-  ↓
-Timed Module
-  ↓
-Error Log
-  ↓
-Targeted Review
-  ↓
-Hard Route / повторный модуль
-```
+## 2. Domain Mixed Sets — transfer mode
 
-После модуля анализируйте не только score, но и причину каждой ошибки:
+No pattern cues are shown inside the set. Student must identify the skill independently.
 
-```text
-Concept gap
-Algebra/arithmetic error
-Misread question
-Wrong model
-Desmos misuse
-Time pressure
-Careless error
-```
+- [`Algebra Set 01`](question_bank/algebra_set_01.md) → [`diagnostics`](question_bank/algebra_set_01_diagnostics.md)
+- [`Advanced Math Set 01`](question_bank/advanced_math_set_01.md) → [`diagnostics`](question_bank/advanced_math_set_01_diagnostics.md)
+- [`PSDA Set 01`](question_bank/psda_set_01.md) → [`diagnostics`](question_bank/psda_set_01_diagnostics.md)
+- [`Geometry/Trig Set 01`](question_bank/geometry_trigonometry_set_01.md) → [`diagnostics`](question_bank/geometry_trigonometry_set_01_diagnostics.md)
 
-## Шкала сложности
+Use diagnostics **only after completing the set**.
 
-| Уровень | Что проверяется |
+## 3. Timed Modules — exam mode
+
+Timed modules intentionally remain free of scaffolding.
+
+- [`Math Module 01`](timed_modules/math_module_01.md) → [`answers`](timed_modules/math_module_01_answers.md) → [`V2 diagnostics`](timed_modules/math_module_01_diagnostics.md)
+- [`Math Module 02 Hard Route`](timed_modules/math_module_02_hard.md) → [`answers`](timed_modules/math_module_02_hard_answers.md) → [`V2 diagnostics`](timed_modules/math_module_02_hard_diagnostics.md)
+
+During a timed attempt, do **not** open pattern maps or lessons.
+
+## Error codes
+
+| Code | Meaning |
 |---|---|
-| Foundation | определение, формула, один прямой шаг |
-| Easy | стандартная SAT-модель, 1–2 шага |
-| Medium | несколько действий или перевод текста в модель |
-| Hard | скрытая структура, параметр, несколько представлений |
-| 750–800 | оптимизация метода, параметр, ловушка, нетривиальная интерпретация |
+| `R` | Recognition — did not identify the problem family |
+| `M` | Method — chose wrong/slow method |
+| `A` | Algebra/Arithmetic |
+| `L` | Language/wording |
+| `C` | Constraint/domain restriction |
+| `G` | Graph/data interpretation |
+| `T` | Typical SAT trap |
+| `K` | Check/interpretation failure |
 
-## Следующий quality gate
+## Required error-log entry
 
-Минимальная цель **20 questions/topic** закрыта. Следующий полезный слой — не ещё один общий набор Easy/Medium, а:
+For every incorrect or guessed question record:
 
-- `Challenge Drill 03` только для слабых/важных тем;
-- полноценные 44-question Math simulations;
-- дополнительные hard-route modules;
-- автоматический error-log / progress tracker;
-- отдельные Desmos speed drills.
+```text
+Question:
+Pattern I should have recognized:
+Method I used:
+Shortest method:
+Error code:
+One sentence I will remember next time:
+Review file:
+```
+
+## Mastery gates
+
+**Drill 01:** ≥9/10 answers + ≥9/10 pattern recognition.  
+**Drill 02:** ≥8/10 answers + ≥8/10 efficient method choice.  
+**Mixed set:** ≥17/20 and no repeated error code ≥3 times.  
+**Timed module:** use raw score diagnostically; never convert these original sets directly to an official SAT scaled score.
+
+The goal is not to accumulate solved questions. The goal is to make the correct pattern and method increasingly automatic.
