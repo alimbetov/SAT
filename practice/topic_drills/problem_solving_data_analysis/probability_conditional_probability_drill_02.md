@@ -1,30 +1,36 @@
-# Probability and Conditional Probability — Topic Drill 02
+# Probability & Conditional Probability — Practice V2 · Drill 02
 
-## Questions
+Use this data for Q1–Q4: 40 students total. 24 study Spanish. 15 of those 24 play on a team. Among the 16 non-Spanish students, 5 play on a team.
 
-1. **Easy · SPR.** If `P(A)=0.60`, find `P(not A)`.
-2. **Medium · SPR.** Mutually exclusive events have probabilities `0.30` and `0.40`. Find the probability that either occurs.
-3. **Hard · SPR.** If `P(A)=0.50`, `P(B)=0.40`, and `P(A∩B)=0.20`, find `P(A∪B)`.
-4. **Medium · SPR.** Of 30 women in a sample, 18 support a proposal. Find `P(support | woman)`.
-5. **Hard · MC.** If `P(A)=0.5`, `P(B)=0.4`, and `P(A∩B)=0.2`, are A and B independent?  
-A) yes  B) no  C) only if mutually exclusive  D) cannot determine
-6. **Medium · SPR.** Two fair dice are rolled. What is the probability the sum is 7?
-7. **Medium · SPR.** Two fair coins are tossed. What is the probability of at least one head?
-8. **Hard · SPR.** A bag contains 5 red and 5 blue balls. Two are drawn without replacement. Find the probability of red then blue.
-9. **Medium · SPR.** Three fair coins are tossed. What is the probability of exactly two heads?
-10. **750–800 · SPR.** Of 100 students, 60 took a prep course and 48 of those passed. Of the 40 who did not take the course, 20 passed. Find `P(prep | passed)`.
+## A. Method Selection
+1. **Medium · SPR.** Find P(team) as decimal.
+2. **Medium · SPR.** Find P(team | Spanish). Enter denominator of the unsimplified fraction.
 
-<details><summary><strong>Answers</strong></summary>
+## B. Hard Variations
+3. **Hard · SPR.** Find P(Spanish | team) as decimal.
+4. **Hard · MC.** Are P(team|Spanish) and P(Spanish|team) necessarily equal? A) yes B) no
+5. **Medium · SPR.** Independent events have P(A)=.6, P(B)=.3. Find P(A and B).
 
-1. **0.40**.
-2. **0.70**.
-3. **0.70** — add probabilities and subtract overlap.
-4. **0.60**.
-5. **A** — `0.5·0.4=0.2`.
-6. **1/6**.
-7. **3/4**.
-8. **5/18** — `5/10·5/9`.
-9. **3/8**.
-10. **12/17** — 68 passed total, 48 of them took prep.
+## C. Trap Clinic
+6. **Medium · SPR.** Mutually exclusive events have P(A)=.4, P(B)=.2. Find P(A or B).
+7. **Easy · SPR.** If P(A)=.72, find P(not A).
 
+## D. Transfer
+8. **Hard · SPR.** Bag has 3 red,2 blue. Without replacement, find P(red then red) as decimal.
+9. **Hard · MC.** Draws without replacement are generally: A) independent B) dependent
+
+## E. 750–800 Challenge
+10. **750–800 · MC.** P(A)=.5, P(B)=.4, P(A and B)=.2. Are A and B independent? A) yes B) no
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **0.5** — team total20/40.
+2. **24** — condition shrinks denominator to Spanish group.
+3. **0.75** — 15/20.
+4. **B** — denominators differ.
+5. **0.18** — independence product.
+6. **0.6** — no overlap, add probabilities.
+7. **0.28** — complement.
+8. **0.3** — `3/5×2/4`.
+9. **B** — first draw changes second probabilities.
+10. **A** — `.5×.4=.2`.
 </details>

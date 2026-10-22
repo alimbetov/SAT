@@ -1,29 +1,34 @@
-# Percentages — Topic Drill 02
+# Percentages — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · SPR.** After a 25% increase, a value is 125. Find original.
+2. **Medium · SPR.** Start 100, increase 20%, then decrease 20%. Find final value.
 
-1. **Medium · SPR.** A `$200` item is discounted 20%, then discounted another 10%. What is the final price?
-2. **Hard · SPR.** A price increases 25%, then decreases 20%. Starting from 100, what is the final value?
-3. **Medium · SPR.** A population of 500 increases by 12%. What is the new population?
-4. **Hard · SPR.** A total price of `$230` includes a 15% tax. What was the pre-tax price?
-5. **Medium · SPR.** A quantity decreases from 240 to 180. What is the percent decrease?
-6. **Medium · SPR.** 40% of a group has a property, and 30% of those also have a second property. What percent of the whole group has both?
-7. **Medium · SPR.** `$500` earns 6% interest for one year. What is the value after one year?
-8. **Hard · SPR.** `$1000` grows by 10% per year for 2 years. What is the final amount?
-9. **Medium · SPR.** After a 25% decrease, a value is 75. What was the original value?
-10. **750–800 · SPR.** A is 40% greater than B. B is what percent less than A? Round to the nearest tenth of a percent.
+## B. Hard Variations
+3. **Medium · SPR.** Population rises 800→920. Find percent increase.
+4. **Medium · SPR.** `$80` increased 25%, then discounted 20%. Find final price.
+5. **Hard · SPR.** A rate rises from 40% to 50%. Find the relative percent increase, not percentage-point increase.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Hard · SPR.** Price is discounted 30%, then 10% tax is added. Compared with original, what percent lower is final price?
+7. **Hard · SPR.** A quantity grows 5% for 3 periods. Find total percent increase, to 4 decimal places.
 
-1. **144**.
-2. **100**.
-3. **560**.
-4. **200**.
-5. **25%**.
-6. **12%**.
-7. **530**.
-8. **1210**.
-9. **100**.
-10. **28.6%** — if `B=100`, then `A=140`; difference is `40/140` of A.
+## D. Transfer
+8. **Medium · SPR.** After a 15% decrease, value is 170. Find original.
+9. **Hard · SPR.** A is 25% greater than B. If A=100, find B.
 
+## E. 750–800 Challenge
+10. **750–800 · SPR.** A price is increased by `p%`, then discounted 20%, returning exactly to original. Find `p`.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **100** — divide by 1.25.
+2. **96** — `1.2×.8=.96`.
+3. **15** — `120/800`.
+4. **80** — `80×1.25×.8`.
+5. **25** — change/base=`10/40`.
+6. **23** — multiplier `.7×1.1=.77`.
+7. **15.7625** — `1.05³-1`.
+8. **200** — `170/.85`.
+9. **80** — `1.25B=100`.
+10. **25** — `(1+p/100)×.8=1`.
 </details>

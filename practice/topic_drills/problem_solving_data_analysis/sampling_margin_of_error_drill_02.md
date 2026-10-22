@@ -1,37 +1,34 @@
-# Sampling and Margin of Error — Topic Drill 02
+# Sampling, Inference & Margin of Error — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · MC.** Surveying only students leaving the gym is mainly a risk of: A) selection bias B) random assignment C) causation D) arithmetic
+2. **Medium · MC.** Same random method: n=200 vs n=800. Which generally has smaller margin of error? A)200 B)800 C)equal D)cannot say anything
 
-1. **Medium · SPR.** A random sample finds 52% support. In a population of 10,000, about how many people would this estimate correspond to?
-2. **Easy · MC.** An estimate is `61% ± 2.5` percentage points. Which interval is consistent?  
-A) 56–58.5%  B) 58.5–63.5%  C) 61–66%  D) 63.5–66%
-3. **Medium · MC.** Under similar conditions, which sample should generally have smaller margin of error?  
-A) `n=100`  B) `n=900`  C) same  D) sample size is irrelevant
-4. **Hard · MC.** A very large voluntary-response sample is necessarily unbiased because it is large.  
-A) true  B) false  C) true if n>1000  D) true if margin of error is small
-5. **Medium · MC.** To ensure representation from each grade level, the most natural design is  
-A) convenience sample  B) stratified random sample by grade  C) voluntary response  D) sample only seniors
-6. **Medium · MC.** Random sampling mainly helps researchers  
-A) establish causation  B) generalize to the population  C) eliminate all measurement error  D) guarantee equal treatment groups
-7. **Medium · MC.** If many selected people do not respond and nonresponders differ systematically from responders, the concern is  
-A) nonresponse bias  B) placebo effect  C) random assignment  D) residual error
-8. **Easy · MC.** A numerical value calculated from a sample is a  
-A) parameter  B) statistic  C) treatment  D) confounder
-9. **Hard · SPR.** Under the rough rule `MOE∝1/√n`, increasing sample size from 250 to 1000 changes margin of error by what factor?
-10. **Hard · MC.** Two independent polls estimate 50%. Poll A has interval 47–53%; Poll B has interval 49–51%. Which is more precise?  
-A) A  B) B  C) equal  D) cannot compare
+## B. Hard Variations
+3. **Medium · SPR.** Estimate 55% ±4 points. Find interval width in percentage points.
+4. **Hard · MC.** Doubling sample size always exactly halves margin of error? A) yes B) no
+5. **Medium · MC.** Many selected people refuse to answer. Potential issue? A) nonresponse bias B) random assignment C) factor theorem D) residual
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Hard · MC.** Random sample only from grade 12 can justify claims about all grades? A) yes automatically B) no, target frame is limited
+7. **Medium · MC.** Random sample mainly supports: A) causation B) generalization C) tangent lines D) factoring
 
-1. **5200**.
-2. **B**.
-3. **B**.
-4. **B** — large n does not repair selection bias.
-5. **B**.
-6. **B**.
-7. **A**.
-8. **B**.
-9. **1/2** — sample size ×4, so MOE roughly ÷2.
-10. **B** — narrower interval means greater precision.
+## D. Transfer
+8. **Medium · MC.** Is 50% consistent with 52% ±3 points? A) yes B) no
+9. **Hard · MC.** Margin ±5 percentage points means 5% of respondents answered incorrectly? A) yes B) no
 
+## E. 750–800 Challenge
+10. **750–800 · MC.** Two well-designed random surveys use same population/method; n=400 vs n=1600. Which estimate is generally more precise? A)n=400 B)n=1600 C)always identical D)precision unrelated to n
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **A** — convenience/location bias.
+2. **B** — larger random sample generally smaller MOE.
+3. **8** — interval 51–59.
+4. **B** — relationship is not exact halving rule.
+5. **A** — responders may differ from nonresponders.
+6. **B** — sampling frame mismatch.
+7. **B** — selection→population.
+8. **A** — interval49–55.
+9. **B** — MOE describes estimate uncertainty.
+10. **B** — more observations → less sampling variability generally.
 </details>

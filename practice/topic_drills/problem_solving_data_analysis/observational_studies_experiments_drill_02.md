@@ -1,45 +1,34 @@
-# Observational Studies and Experiments — Topic Drill 02
+# Observational Studies & Experiments — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · MC.** Researchers assign a treatment. Study type? A) observational B) experiment C) survey only D) census
+2. **Medium · MC.** Random sample but no random assignment supports: A) causal claim B) population association more than causation C) nothing D) only arithmetic
 
-1. **Medium · MC.** Researchers compare existing smokers and nonsmokers without assigning smoking behavior. This is  
-A) randomized experiment  B) observational study  C) double-blind trial  D) census
-2. **Medium · MC.** Researchers randomly assign participants to two diets. This is  
-A) observational study  B) randomized experiment  C) voluntary survey  D) convenience sample
-3. **Medium · MC.** Random assignment helps balance  
-A) confounding variables across treatment groups  B) population size  C) response rate only  D) margin of error to zero
-4. **Medium · MC.** A placebo is useful because it can help isolate  
-A) expectation effects  B) population size  C) sampling frame  D) regression slope
-5. **Hard · MC.** In a double-blind experiment  
-A) neither participants nor evaluators know treatment assignments during the study  
-B) no control group is needed  
-C) participants choose their treatment  
-D) researchers do not collect outcomes
-6. **Medium · MC.** Which statement is correct?  
-A) Random sampling supports causation; random assignment supports generalization.  
-B) Random sampling supports generalization; random assignment supports causation.  
-C) Both mean the same thing.  
-D) Neither matters.
-7. **Hard · MC.** Ice cream sales and drownings both increase in summer. A likely lurking variable is  
-A) temperature/season  B) ice cream flavor  C) sample size  D) median income necessarily
-8. **Medium · MC.** A correlation found in an observational study  
-A) always proves causation  B) can be explained by confounding  C) is impossible  D) guarantees random assignment
-9. **Hard · MC.** A well-randomized experiment finds a significant treatment effect. The strongest supported claim is usually about  
-A) causation within the study context  B) every human population automatically  C) exact future outcomes  D) elimination of all uncertainty
-10. **750–800 · MC.** A study uses a random sample from a city and then random assignment to treatment/control. If execution is sound, it best supports  
-A) causation only  B) generalization only  C) both generalization and causation  D) neither
+## B. Hard Variations
+3. **Hard · MC.** Volunteers are randomly assigned to treatments. Best statement? A) causation may be supported for participants, broad generalization limited B) generalizes to everyone C) no causation D) assignment=sample
+4. **Hard · MC.** Random sample + random assignment, well-run study, best supports: A) neither inference B) generalization and causation C) causation only D) graph shape only
+5. **Medium · MC.** A third variable related to both explanatory and response variables is a: A) confounder B) residual C) quartile D) tangent
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Medium · MC.** Control group mainly provides: A) comparison baseline B) bigger population C) guaranteed generalization D) no variability
+7. **Medium · MC.** Placebo/control design can help isolate: A) treatment effect B) sample size formula C) slope D) units
 
-1. **B**.
-2. **B**.
-3. **A**.
-4. **A**.
-5. **A**.
-6. **B**.
-7. **A**.
-8. **B**.
-9. **A**.
-10. **C**.
+## D. Transfer
+8. **Hard · MC.** Huge observational sample proves causation? A) yes B) no
+9. **Hard · MC.** Researchers analyze past medical records without assigning treatment. A) observational B) randomized experiment
 
+## E. 750–800 Challenge
+10. **750–800 · MC.** Students are randomly sampled from a school district, then randomly assigned to two study methods. If one group scores higher, strongest supported claim? A) method may cause improvement and result may generalize to district students B) association only C) no generalization D) random assignment prevents causation
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — intervention/treatment assignment.
+2. **B** — sample→who, assignment→why.
+3. **A** — internal vs external validity.
+4. **B** — strongest design when both mechanisms are appropriate.
+5. **A** — confounding.
+6. **A** — comparison baseline.
+7. **A** — isolate treatment effect.
+8. **B** — size does not convert observation into experiment.
+9. **A** — no assigned treatment.
+10. **A** — random selection + random assignment.
 </details>
