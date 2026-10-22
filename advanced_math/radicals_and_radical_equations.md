@@ -1,40 +1,143 @@
 # Radicals and Radical Equations — корни и уравнения с радикалами
 
-## 1. Заголовок и краткое описание
+## 1. Зачем эта тема нужна на SAT
 
-Radical expressions и radical equations относятся к Advanced Math. На SAT проверяются упрощение корней, связь radical/exponent forms, решение уравнений и обязательная проверка на **extraneous solutions**.
+Radicals проверяют три разных навыка, которые важно не смешивать:
 
-> **Главная идея:** возведение в квадрат помогает убрать корень, но может создать лишний ответ.
+1. упрощать radical expressions;
+2. переводить между radical и fractional exponent forms;
+3. решать radical equations и отсеивать extraneous solutions.
+
+> **Главная идея:** squaring может убрать radical, но может создать лишний candidate.
 
 ---
 
-## 2. Ключевые понятия и формулы
+## 2. Pattern Map — что вижу и что делать
 
-| Правило | Формула |
-|---|---|
-| product rule | `√(ab)=√a·√b` для допустимых значений |
-| fractional exponent | `a^(1/2)=√a` |
-| nth root | `a^(1/n)=ⁿ√a` |
-| power of root | `a^(m/n)=ⁿ√(a^m)` |
-| square | `(√a)²=a` для `a≥0` |
+| Что вы видите | Паттерн | Что делать |
+|---|---|---|
+| `√72` | simplify radical | extract largest perfect square |
+| `x^(1/2)` | radical/exponent conversion | rewrite as `√x` |
+| `x^(m/n)` | nth root power | `ⁿ√(x^m)` |
+| `√(expression)=number` | simple radical equation | isolate, square, solve |
+| radical on one side, expression on other | possible extraneous roots | square, then check |
+| even root | domain restriction | radicand `≥0` |
 
-Пример:
+### Mental model: squaring is not reversible for free
 
-```math
-\sqrt{72}=\sqrt{36\cdot2}=6\sqrt2.
+```text
+original equation
+   ↓ square both sides
+new equation with more candidates
+   ↓ check candidates
+valid solutions only
 ```
 
-### Визуальный якорь
-
-Ищите внутри radical **самый большой perfect-square factor**.
-
-### Вопрос к читателю
-
-Почему после squaring both sides нужно обязательно вернуть найденное значение в исходное уравнение?
+Почему? Потому что squaring loses sign information.
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+## 3. Учимся решать по паттернам
+
+### Pattern A — Simplify a radical
+
+#### Worked Example
+
+Simplify:
+
+```math
+\sqrt{72}.
+```
+
+Find largest perfect-square factor:
+
+```math
+72=36\cdot2.
+```
+
+So:
+
+```math
+\sqrt{72}=\sqrt{36}\sqrt2=6\sqrt2.
+```
+
+### Recognition trick
+
+Look for:
+
+```text
+4, 9, 16, 25, 36, 49, 64, 81, 100
+```
+
+inside the radicand.
+
+---
+
+### Pattern B — Fractional exponents
+
+```math
+a^{1/2}=\sqrt a
+```
+
+```math
+a^{1/3}=\sqrt[3]a
+```
+
+```math
+a^{m/n}=\sqrt[n]{a^m}.
+```
+
+#### Worked Example
+
+```math
+x^{2/3}
+```
+
+means:
+
+```math
+\sqrt[3]{x^2}.
+```
+
+The denominator of exponent tells the root.
+
+> **Memory anchor:** denominator = root, numerator = power.
+
+---
+
+### Pattern C — Simple radical equation
+
+#### Worked Example
+
+Solve:
+
+```math
+\sqrt{x+1}=5.
+```
+
+Square both sides:
+
+```math
+x+1=25.
+```
+
+```math
+x=24.
+```
+
+Check:
+
+```math
+\sqrt{25}=5.
+```
+
+Valid.
+
+---
+
+### Pattern D — Radical equation with extraneous solution
+
+#### Worked Example
 
 Solve:
 
@@ -42,21 +145,25 @@ Solve:
 \sqrt{x+5}=x-1.
 ```
 
-### Шаг 1. Замечаем ограничение
+### Step 1 — domain / sign reasoning
 
-Левая часть неотрицательна, поэтому правая тоже должна быть неотрицательной:
+Left side is nonnegative, so right side must be nonnegative:
 
 ```math
-x-1\ge0\Rightarrow x\ge1.
+x-1\ge0
 ```
 
-### Шаг 2. Возводим обе части в квадрат
+```math
+x\ge1.
+```
+
+### Step 2 — square
 
 ```math
 x+5=(x-1)^2.
 ```
 
-### Шаг 3. Получаем quadratic equation
+### Step 3 — solve quadratic
 
 ```math
 x+5=x^2-2x+1
@@ -70,88 +177,299 @@ x^2-3x-4=0
 (x-4)(x+1)=0.
 ```
 
-Candidates: `x=4` и `x=-1`.
+Candidates:
 
-### Шаг 4. Проверяем исходное уравнение
-
-`x=4`:
-
-```math
-\sqrt9=3=4-1.
+```text
+4, -1
 ```
 
-Подходит.
+### Step 4 — check original equation
 
-`x=-1` нарушает `x≥1` и исходное равенство. Это extraneous solution.
+`x=4` works.
 
-**Ответ: `4`.**
+`x=-1` fails and also violates `x≥1`.
+
+Answer:
+
+```math
+x=4.
+```
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+### Pattern E — Why extraneous roots appear
+
+Suppose:
+
+```math
+A=B.
+```
+
+Then certainly:
+
+```math
+A^2=B^2.
+```
+
+But reverse is not always true.
+
+Example:
+
+```math
+3^2=(-3)^2,
+```
+
+but:
+
+```math
+3\ne-3.
+```
+
+That is the logic behind extraneous solutions.
+
+---
+
+## 4. Method Selector + SAT Language Decoder
+
+### Decision Tree
+
+```text
+Need to simplify √N?
+  → extract perfect-square factors
+
+Fractional exponent?
+  → denominator = root, numerator = power
+
+Equation with one radical?
+  → isolate radical first
+  → square
+  → solve
+  → CHECK original equation
+
+Even root?
+  → radicand must be ≥0
+```
+
+### SAT English Decoder
+
+| Phrase | What it means |
+|---|---|
+| `simplify the expression` | extract factors / rewrite form |
+| `equivalent expression` | radical ↔ fractional exponent |
+| `valid solution` | reject extraneous candidates |
+| `real solution` | respect radical domain |
+| `principal square root` | nonnegative square root |
+
+---
+
+## 5. Guided Practice — fading support
+
+### Example 1 — full support
+
+Simplify:
+
+```math
+\sqrt{50}.
+```
+
+```math
+50=25\cdot2
+```
+
+```math
+\sqrt{50}=5\sqrt2.
+```
+
+### Example 2 — partial support
+
+Rewrite:
+
+```math
+x^{3/2}
+```
+
+as a radical.
+
+- denominator `2` → square root;
+- numerator `3` → cube.
+
+<details><summary>Answer</summary>
+
+```math
+\sqrt{x^3}
+```
+
+</details>
+
+### Example 3 — solve with check
+
+```math
+\sqrt{2x+3}=x.
+```
+
+Square:
+
+```math
+2x+3=x^2.
+```
+
+```math
+x^2-2x-3=0.
+```
+
+```math
+(x-3)(x+1)=0.
+```
+
+Candidates: `3`, `-1`.
+
+Check original:
+
+- `3` works;
+- `-1` does not because left side is nonnegative while right side is negative.
+
+Answer: `3`.
+
+### Example 4 — recognition only
+
+Why must
+
+```math
+\sqrt{x-4}
+```
+
+satisfy `x≥4` for real values?
+
+Because radicand of an even root cannot be negative in the real-number system.
+
+---
+
+## 6. Error Clinic + Desmos Strategy
+
+### Error 1 — `√(a+b)=√a+√b`
+
+Usually false.
+
+Example:
+
+```math
+\sqrt{9+16}=5,
+```
+
+but:
+
+```math
+\sqrt9+\sqrt{16}=3+4=7.
+```
+
+### Error 2 — skipping the check
+
+After squaring, candidates are not automatically solutions.
+
+### Error 3 — squaring before isolating radical
+
+Usually isolate the radical first; otherwise algebra becomes needlessly complicated.
+
+### Desmos
+
+For
+
+```math
+\sqrt{x+5}=x-1,
+```
+
+enter:
+
+```text
+y=sqrt(x+5)
+y=x-1
+```
+
+The intersections show valid real solutions directly.
+
+But still understand why an algebraic candidate may be extraneous.
+
+---
+
+## 7. SAT-Style Practice
 
 ### Problem 1 — Easy — Multiple Choice
 
-Simplify `√50`.
+Simplify:
 
-**A)** `5√2`  **B)** `10√5`  **C)** `25√2`  **D)** `2√25`
+```math
+\sqrt{98}.
+```
+
+**A)** `7√2`  
+**B)** `14√7`  
+**C)** `49√2`  
+**D)** `2√49`
 
 ### Problem 2 — Easy — Multiple Choice
 
-Which is equivalent to `x^(1/2)` for `x≥0`?
+Which is equivalent to
 
-**A)** `x/2`  **B)** `2x`  **C)** `√x`  **D)** `x²`
+```math
+x^{1/3}?
+```
+
+**A)** `x/3`  
+**B)** `3x`  
+**C)** `∛x`  
+**D)** `x³`
 
 ### Problem 3 — Medium — Grid-in
 
-Solve `√(x+1)=5`.
+Solve:
+
+```math
+\sqrt{x+4}=6.
+```
 
 ### Problem 4 — Medium — Multiple Choice
 
-Which expression equals `∛(x²)`?
+Which is equivalent to
 
-**A)** `x^(2/3)`  **B)** `x^(3/2)`  **C)** `x²/3`  **D)** `x^6`
+```math
+x^{5/2}?
+```
+
+**A)** `√(x^5)`  
+**B)** `x^(2/5)`  
+**C)** `5√x`  
+**D)** `x²/5`
 
 ### Problem 5 — Hard — Grid-in
 
-Solve `√(2x+3)=x` for the valid real solution.
+Solve for the valid real solution:
 
-<details><summary><strong>Ответы и краткие решения</strong></summary>
+```math
+\sqrt{2x+8}=x.
+```
 
-1. **A**, `√50=√25·√2=5√2`.  
-2. **C**.  
-3. **24**, `x+1=25`.  
-4. **A**.  
-5. **3**, после squaring: `2x+3=x²` → `(x-3)(x+1)=0`; `-1` не подходит исходному уравнению.
+<details><summary><strong>Answers</strong></summary>
+
+1. **A**  
+2. **C**  
+3. `32`  
+4. **A**  
+5. `4`
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
+## 8. Мини-чек-лист и Transfer
 
-- Ошибочно писать `√(a+b)=√a+√b`.
-- Забывать ограничения domain для even roots.
-- Не проверять candidates после squaring.
+- [ ] Я упрощаю radicals через perfect-square factors.
+- [ ] Я перевожу radical ↔ fractional exponent.
+- [ ] Я понимаю domain even roots.
+- [ ] Я изолирую radical перед squaring.
+- [ ] Я всегда проверяю candidates в original equation.
 
----
+### Transfer Question
 
-## 6. Стратегия для Digital SAT
+Почему squaring both sides может увеличить число solutions, а taking a square root может уменьшить information about sign?
 
-Desmos удобно использовать для radical equations: постройте обе стороны как функции и найдите intersections. Это особенно полезно для проверки extraneous solutions, но algebraic reasoning всё равно нужно для понимания domain.
-
----
-
-## 7. Связи с другими темами
-
-**Опирается на:** exponents, quadratics, equivalent expressions.  
-**Связано с:** nonlinear equations, geometry distance formulas, right triangles.
-
----
-
-## 8. Мини-чек-лист для самопроверки
-
-- [ ] Я упрощаю radicals.
-- [ ] Я перевожу между radical и fractional exponent forms.
-- [ ] Я решаю radical equations.
-- [ ] Я проверяю extraneous solutions.
+Потому что both `a` and `-a` produce the same square `a²`; squaring merges sign information.
