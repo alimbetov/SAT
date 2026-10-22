@@ -1,32 +1,36 @@
-# Right Triangles and Trigonometry — Topic Drill 01
+# Right Triangles & Trigonometry — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** Hypotenuse is always: A) opposite90° B) shortest side C) adjacent to every angle D) vertical
+2. **Easy · SPR.** Right triangle legs3 and4. Find hypotenuse.
 
-1. **Easy · SPR.** A right triangle has legs 5 and 12. Find the hypotenuse.
-2. **Easy · SPR.** A right triangle has hypotenuse 10 and one leg 6. Find the other leg.
-3. **Medium · MC.** In a `45°-45°-90°` triangle with leg 9, the hypotenuse is  
-A) `9`  B) `9√2`  C) `18`  D) `18√2`
-4. **Medium · MC.** In a `30°-60°-90°` triangle, the shortest side is 4. What is the longer leg?  
-A) `4√2`  B) `4√3`  C) `8`  D) `8√3`
-5. **Easy · SPR.** In a `30°-60°-90°` triangle, the shortest side is 7. Find the hypotenuse.
-6. **Easy · SPR.** Relative to angle `θ`, opposite = 8 and hypotenuse = 17. Find `sin θ`.
-7. **Easy · SPR.** Relative to angle `θ`, adjacent = 15 and hypotenuse = 17. Find `cos θ`.
-8. **Easy · SPR.** Relative to angle `θ`, opposite = 9 and adjacent = 12. Find `tan θ`.
-9. **Medium · MC.** Which equals `sin(28°)`?  
-A) `cos(28°)`  B) `cos(62°)`  C) `sin(62°)`  D) `tan(62°)`
-10. **Medium · SPR.** For an acute angle, `tan θ=1`. What is `θ` in degrees?
+## B. Core Pattern
+3. **Easy · MC.** Opposite=5,hypotenuse=13. `sinθ`? A)5/12 B)5/13 C)12/13 D)13/5
+4. **Medium · SPR.** 45-45-90 triangle legs7. Hypotenuse=`a√2`; find a.
+5. **Medium · SPR.** 30-60-90 shortest side4. Find hypotenuse.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Medium · SPR.** Opposite6, adjacent8. Find `tanθ` as decimal.
+7. **Medium · MC.** If `sin32°=k`, which equals k? A)cos32 B)cos58 C)sin58 D)tan58
 
-1. **13**.
-2. **8**.
-3. **B**.
-4. **B**.
-5. **14**.
-6. **8/17**.
-7. **15/17**.
-8. **3/4**.
-9. **B** — complementary angles.
-10. **45°**.
+## D. Word Problem
+8. **Medium · SPR.** A 13-ft ladder stands5 ft from wall. Find height reached.
 
+## E. Trap
+9. **Hard · MC.** Adjacent side relative to θ is: A) side next to θ excluding hypotenuse B) hypotenuse always C) opposite side D) longest leg always
+
+## F. Transfer
+10. **Hard · SPR.** Right triangle legs6,8; θ opposite side6. Find `sinθ` as decimal.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **A** — identify 90° first.
+2. **5** — 3-4-5/Pythagorean.
+3. **B** — SOH.
+4. **7** — special triangle ratio.
+5. **8** — hypotenuse2x.
+6. **0.75** — TOA.
+7. **B** — complementary angles.
+8. **12** — 5-12-13.
+9. **A** — adjacent is not hypotenuse.
+10. **0.6** — hypotenuse10; 6/10.
 </details>
