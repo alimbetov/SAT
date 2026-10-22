@@ -1,10 +1,77 @@
-# SAT Math — русскоязычный курс подготовки к Digital SAT
+# SAT Math — русскоязычный курс с двумя уровнями входа
 
-Этот репозиторий построен как учебная система, а не как набор формул и случайных задач.
+Этот репозиторий теперь разделяет две разные задачи:
 
-## Учебная модель
+1. **построить математический фундамент**;
+2. **подготовиться к Digital SAT Math**.
 
-Теоретические уроки используют **Pedagogy V2**:
+Это важно: наличие SAT-темы в репозитории не означает, что каждый школьник должен изучать её прямо сейчас.
+
+---
+
+# Сначала выберите маршрут
+
+## Foundation Track
+
+Для ученика, который ещё строит школьную базу и которому важнее понимание, чем экзаменационная скорость.
+
+**Начать здесь:** [`study_paths/grade_6_foundation.md`](study_paths/grade_6_foundation.md)
+
+Подача:
+
+```text
+CONCRETE
+реальная ситуация
+    ↓
+VISUAL
+рисунок / таблица / весы / bar model
+    ↓
+VERBAL
+объяснение своими словами
+    ↓
+SYMBOLIC
+x, y, formula
+    ↓
+SAT ENGLISH
+короткая экзаменационная формулировка
+```
+
+Foundation modules:
+
+1. [`Equation Balance`](foundation/01_equation_balance.md)
+2. [`Ratios, Rates, Percentages`](foundation/02_ratios_rates_percentages.md)
+3. [`Geometry Visual Reasoning`](foundation/03_geometry_visual_reasoning.md)
+4. [`Coordinates and Linear Patterns`](foundation/04_coordinates_and_linear_patterns.md)
+5. [`Squares, Roots, Quadratic Bridge`](foundation/05_squares_roots_quadratic_bridge.md)
+
+Для этого маршрута **не нужен ранний таймер**. Сначала понимание и accuracy.
+
+---
+
+## SAT Bridge Track
+
+Для ученика, который уже владеет базовой школьной алгеброй и геометрией и готов связывать их с SAT patterns, English wording, Desmos и временем.
+
+**Начать здесь:** [`study_paths/grade_9_sat_bridge.md`](study_paths/grade_9_sat_bridge.md)
+
+Подача:
+
+```text
+Prerequisite Check
+→ Pattern
+→ Method Choice
+→ Worked Example
+→ Variation
+→ SAT Wording
+→ Transfer
+→ Timed Practice
+```
+
+---
+
+# Учебные стандарты
+
+Теоретические SAT-уроки используют **Pedagogy V2**:
 
 ```text
 Recognize → Pattern → Choose → Solve → Check → Transfer
@@ -16,14 +83,28 @@ Recognize → Pattern → Choose → Solve → Check → Transfer
 Recognition → Core Pattern → Guided Variation → Word Problem → Trap → Transfer → Hard/750–800
 ```
 
-Полные стандарты:
+Возрастно-адаптивная подача добавляет:
+
+```text
+Prerequisite Gate
+→ Concrete / Visual Bridge
+→ Think-Aloud Example
+→ Faded Example
+→ Mastery Gate
+```
+
+Документы:
 
 - [`docs/PEDAGOGY_V2.md`](docs/PEDAGOGY_V2.md)
 - [`docs/PRACTICE_V2.md`](docs/PRACTICE_V2.md)
+- [`docs/AGE_ADAPTIVE_PEDAGOGY.md`](docs/AGE_ADAPTIVE_PEDAGOGY.md)
+- [`docs/PEDAGOGICAL_AUDIT_AGE_ADAPTIVE.md`](docs/PEDAGOGICAL_AUDIT_AGE_ADAPTIVE.md)
 
-## SAT Math coverage
+---
 
-Курс покрывает все четыре content domains Digital SAT Math:
+# SAT Math coverage
+
+Курс покрывает четыре content domains Digital SAT Math.
 
 | Domain | Lessons |
 |---|---:|
@@ -33,9 +114,9 @@ Recognition → Core Pattern → Guided Variation → Word Problem → Trap → 
 | Geometry and Trigonometry | 4 |
 | **Total** | **25** |
 
-## Теория — 25 V2 lessons
+---
 
-### Algebra
+# 1. Algebra
 
 - [`linear_equations.md`](algebra/linear_equations.md)
 - [`linear_equations_two_variables.md`](algebra/linear_equations_two_variables.md)
@@ -43,7 +124,19 @@ Recognition → Core Pattern → Guided Variation → Word Problem → Trap → 
 - [`systems_of_equations.md`](algebra/systems_of_equations.md)
 - [`linear_inequalities.md`](algebra/linear_inequalities.md)
 
-### Advanced Math
+### Если Algebra пока тяжёлая
+
+Сначала:
+
+```text
+foundation/01_equation_balance
+→ foundation/04_coordinates_and_linear_patterns
+→ Algebra lessons
+```
+
+---
+
+# 2. Advanced Math
 
 - [`equivalent_expressions.md`](advanced_math/equivalent_expressions.md)
 - [`quadratics.md`](advanced_math/quadratics.md)
@@ -55,7 +148,19 @@ Recognition → Core Pattern → Guided Variation → Word Problem → Trap → 
 - [`nonlinear_functions.md`](advanced_math/nonlinear_functions.md)
 - [`nonlinear_equations_systems.md`](advanced_math/nonlinear_equations_systems.md)
 
-### Problem-Solving and Data Analysis
+### Readiness warning
+
+Advanced Math не должен быть первым входом для младшего ученика.
+
+Перед Quadratics желательно пройти:
+
+[`foundation/05_squares_roots_quadratic_bridge.md`](foundation/05_squares_roots_quadratic_bridge.md)
+
+Rational equations, nonlinear systems и другие поздние темы изучаются только после уверенной Algebra foundation.
+
+---
+
+# 3. Problem-Solving and Data Analysis
 
 - [`ratios_rates_units.md`](problem_solving_data_analysis/ratios_rates_units.md)
 - [`percentages.md`](problem_solving_data_analysis/percentages.md)
@@ -65,14 +170,32 @@ Recognition → Core Pattern → Guided Variation → Word Problem → Trap → 
 - [`sampling_margin_of_error.md`](problem_solving_data_analysis/sampling_margin_of_error.md)
 - [`observational_studies_experiments.md`](problem_solving_data_analysis/observational_studies_experiments.md)
 
-### Geometry and Trigonometry
+### Foundation entry
+
+Для ratios/percentages сначала:
+
+[`foundation/02_ratios_rates_percentages.md`](foundation/02_ratios_rates_percentages.md)
+
+---
+
+# 4. Geometry and Trigonometry
 
 - [`lines_angles_triangles.md`](geometry_trigonometry/lines_angles_triangles.md)
 - [`area_volume.md`](geometry_trigonometry/area_volume.md)
 - [`right_triangles_trigonometry.md`](geometry_trigonometry/right_triangles_trigonometry.md)
 - [`circles.md`](geometry_trigonometry/circles.md)
 
-## Practice V2 — 624 questions
+### Foundation entry
+
+Сначала:
+
+[`foundation/03_geometry_visual_reasoning.md`](foundation/03_geometry_visual_reasoning.md)
+
+Trig, radians и unit circle можно изучать позднее, когда базовая geometry и algebra уже устойчивы.
+
+---
+
+# Practice V2 — 624 questions
 
 | Layer | Questions | Purpose |
 |---|---:|---|
@@ -81,11 +204,9 @@ Recognition → Core Pattern → Guided Variation → Word Problem → Trap → 
 | Timed Modules | **44** | exam-like performance |
 | **Total** | **624** | |
 
-Start here: [`practice/README.md`](practice/README.md).
+Start: [`practice/README.md`](practice/README.md)
 
-### Topic Drills
-
-Каждая из 25 тем имеет 20 targeted questions:
+## Topic Drills
 
 ```text
 Drill 01
@@ -95,29 +216,24 @@ Drill 02
 Method Selection → Hard Variations → Trap Clinic → Transfer → 750–800
 ```
 
-Index: [`practice/topic_drills/README.md`](practice/topic_drills/README.md).
+Для Foundation learner Topic Drill 01 начинается **после соответствующего foundation bridge и mastery gate**.
 
-### Mixed Domain Sets
+## Mixed Sets
 
-Pattern hints скрыты во время попытки. После выполнения используются отдельные diagnostic maps:
+Mixed sets intentionally hide pattern hints. Они проверяют, узнаёт ли ученик метод самостоятельно.
 
-- Algebra — 20
-- Advanced Math — 20
-- PSDA — 20
-- Geometry & Trigonometry — 20
+После попытки используются diagnostic maps.
 
-Index: [`practice/question_bank/README.md`](practice/question_bank/README.md).
-
-### Timed Modules
+## Timed Modules
 
 - Module 01 — 22 questions / 35 minutes
 - Module 02 Hard Route — 22 questions / 35 minutes
 
-Timed questions intentionally contain no scaffolding. Practice V2 learning happens in the post-test diagnostics.
+Таймер подключается только после устойчивой accuracy.
 
-## Error taxonomy
+---
 
-Курс отслеживает не только «правильно/неправильно», но и причину ошибки:
+# Error taxonomy
 
 ```text
 R — Recognition
@@ -130,34 +246,58 @@ T — Trap
 K — Check / Interpretation
 ```
 
-## Recommended learning loop
+Ошибка используется как диагноз:
+
+```text
+wrong answer
+→ why?
+→ repair exact gap
+→ solve variation
+→ retrieval check later
+```
+
+---
+
+# Recommended learning loops
+
+## Foundation
+
+```text
+Foundation Bridge
+→ worked example together
+→ 3–5 untimed problems
+→ explain one solution aloud
+→ mastery gate
+→ SAT lesson when ready
+```
+
+## SAT Bridge
 
 ```text
 Lesson V2
-   ↓
-Topic Drill 01
-   ↓
-Error Clinic
-   ↓
-Topic Drill 02
-   ↓
-Domain Mixed Set
-   ↓
-Diagnostic Map
-   ↓
-Timed Module 01
-   ↓
-Targeted Repair
-   ↓
-Hard Route Module 02
+→ Topic Drill 01
+→ Error Clinic
+→ Topic Drill 02
+→ Domain Mixed Set
+→ Diagnostic Map
+→ Timed Module
+→ Targeted Repair
 ```
 
-Главная метрика курса — не количество решённых задач, а способность ученика:
+---
 
-1. распознать pattern;
-2. выбрать короткий метод;
-3. решить без технической ошибки;
-4. проверить результат;
-5. перенести метод на новую формулировку.
+# Главная метрика
 
-После устойчивого освоения этого слоя следующий уровень курса — **Desmos Speed Drills → 750–800 Challenge Sets → full 44-question simulations**.
+Не количество прочитанных тем и не количество решённых вопросов.
+
+Ученик должен уметь:
+
+1. понять, что дано;
+2. объяснить математический смысл;
+3. распознать pattern;
+4. выбрать method;
+5. решить контролируемыми шагами;
+6. проверить ответ;
+7. перенести идею на новую формулировку.
+
+Только после этого скорость становится полезной метрикой.
