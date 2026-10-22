@@ -1,172 +1,517 @@
 # Nonlinear Equations and Systems — нелинейные уравнения и системы
 
-## 1. Заголовок и краткое описание
+## 1. Зачем эта тема нужна на SAT
 
-**Nonlinear equations in one variable and systems of equations in two variables** — официальный skill Advanced Math. На SAT встречаются quadratic, radical, rational, exponential equations и системы, где хотя бы одно уравнение нелинейное.
+Это итоговая тема Advanced Math: здесь ученик должен не только уметь решать разные nonlinear equations, но и **выбирать метод по структуре задачи**.
 
-> **Главная идея:** solution системы — точка, которая одновременно удовлетворяет обоим уравнениям; на графике это intersection.
+На SAT могут встретиться:
+
+- quadratic equations;
+- radical equations;
+- rational equations;
+- exponential equations;
+- linear–quadratic systems;
+- parameter questions about number of intersections.
+
+> **Главная идея:** сначала распознай тип equation/system, затем выбери самый короткий надёжный метод.
 
 ---
 
-## 2. Ключевые понятия и формулы
+## 2. Pattern Map — тип задачи → метод
 
-| Тип | Пример | Частый метод |
+| Что вы видите | Тип | Обычно лучший первый метод |
 |---|---|---|
-| quadratic equation | `x²-5x+6=0` | factoring / formula / graph |
-| radical equation | `√(x+1)=x-1` | isolate radical, square, check |
-| rational equation | `1/x=2/(x+3)` | restrictions + LCD |
-| exponential equation | `2^x=8` | common base / graph |
-| linear-quadratic system | `y=x+2`, `y=x²` | substitution / intersections |
+| `x²-5x+6=0` | quadratic | factoring if easy |
+| ugly quadratic | quadratic | formula / Desmos |
+| `√(x+1)=x-1` | radical | isolate, square, check |
+| variable in denominator | rational | restrictions + LCD/cross multiply |
+| `2^x=8` | exponential | common base |
+| `y=x+2`, `y=x²-4` | linear–quadratic system | substitution / intersections |
+| exactly one intersection | parameter/tangent | discriminant `D=0` |
+| asks only number of solutions | graphical | count intersections |
 
-### Количество решений системы
+### Mental model
 
-Графически:
-
-- 0 intersections → 0 real solutions;
-- 1 intersection → 1 solution;
-- 2 intersections → 2 solutions;
-- иногда больше для higher-degree curves.
-
-### Визуальный якорь
-
-**System = одновременно.** Точка должна лежать на обоих графиках.
+```text
+EQUATION TYPE
+    ↓
+METHOD
+    ↓
+CANDIDATES
+    ↓
+CHECK / INTERPRET
+```
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+## 3. Учимся выбирать и применять методы
 
-Solve the system:
+### Pattern A — Quadratic: factor when structure is friendly
+
+#### Worked Example
+
+Solve:
 
 ```math
-y=x+2
+x^2-7x+12=0.
 ```
 
-```math
-y=x^2-4.
+Need two numbers with product `12` and sum `-7`:
+
+```text
+-3 and -4
 ```
 
-### Шаг 1. Используем равенство двух выражений для `y`
-
-Так как обе правые части равны одному и тому же `y`:
+So:
 
 ```math
-x+2=x^2-4.
-```
-
-### Шаг 2. Переносим всё в одну сторону
-
-```math
-x^2-x-6=0.
-```
-
-### Шаг 3. Factor
-
-```math
-(x-3)(x+2)=0.
-```
-
-Отсюда:
-
-```math
-x=3\quad\text{или}\quad x=-2.
-```
-
-### Шаг 4. Находим `y`
-
-Для `x=3`:
-
-```math
-y=5.
-```
-
-Для `x=-2`:
-
-```math
-y=0.
+(x-3)(x-4)=0.
 ```
 
 Solutions:
 
 ```math
-(3,5),\quad(-2,0).
+x=3,4.
 ```
 
-Почему substitution здесь эффективна? Потому что `y` уже выражен в обоих уравнениях.
+**Method choice:** factoring was faster than quadratic formula.
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+### Pattern B — Exponential: use common base first
+
+#### Worked Example
+
+```math
+3^x=27.
+```
+
+Recognize:
+
+```math
+27=3^3.
+```
+
+Therefore:
+
+```math
+x=3.
+```
+
+No graph or logarithms needed.
+
+---
+
+### Pattern C — Radical: square, then check
+
+#### Worked Example
+
+```math
+\sqrt{x+5}=x-1.
+```
+
+1. left side ≥0, so `x≥1`;
+2. square both sides;
+3. solve resulting quadratic;
+4. test candidates in original equation.
+
+This is the radical-equation pattern learned earlier.
+
+---
+
+### Pattern D — Rational: domain first
+
+#### Worked Example
+
+```math
+\frac1x=\frac2{x+3}.
+```
+
+Restrictions:
+
+```math
+x\ne0,-3.
+```
+
+Cross multiply:
+
+```math
+x+3=2x.
+```
+
+```math
+x=3.
+```
+
+Check restriction: valid.
+
+---
+
+### Pattern E — Linear–quadratic system = intersection
+
+Solve:
+
+```math
+y=x+2
+```
+
+and
+
+```math
+y=x^2-4.
+```
+
+Since both equal `y`:
+
+```math
+x+2=x^2-4.
+```
+
+Move all terms:
+
+```math
+x^2-x-6=0.
+```
+
+Factor:
+
+```math
+(x-3)(x+2)=0.
+```
+
+So:
+
+```math
+x=3,-2.
+```
+
+Find corresponding y-values:
+
+```math
+(3,5),\quad(-2,0).
+```
+
+### Key interpretation
+
+These are exactly the **intersection points** of the line and parabola.
+
+---
+
+### Pattern F — Number of intersections via discriminant
+
+A line and parabola may intersect 0, 1 or 2 times.
+
+After substitution you get a quadratic:
+
+```math
+ax^2+bx+c=0.
+```
+
+Then:
+
+```text
+D < 0 → 0 real intersections
+D = 0 → 1 intersection (tangent)
+D > 0 → 2 intersections
+```
+
+#### Worked Example
+
+For what `k` does
+
+```math
+y=x+k
+```
+
+meet
+
+```math
+y=x^2
+```
+
+at exactly one point?
+
+Set equal:
+
+```math
+x^2=x+k
+```
+
+```math
+x^2-x-k=0.
+```
+
+Exactly one solution means:
+
+```math
+D=0.
+```
+
+```math
+(-1)^2-4(1)(-k)=0
+```
+
+```math
+1+4k=0
+```
+
+```math
+k=-\frac14.
+```
+
+---
+
+## 4. Method Selector + SAT Language Decoder
+
+### Decision Tree
+
+```text
+Can it factor easily?
+  → factor
+
+Same exponential base available?
+  → rewrite to common base
+
+Radical present?
+  → isolate, square, check
+
+Variable in denominator?
+  → restrictions, then clear denominators
+
+System with y already isolated?
+  → set expressions equal / substitute
+
+Question asks number of intersections?
+  → graph or discriminant
+
+Question asks parameter for one intersection?
+  → D = 0
+```
+
+### SAT English Decoder
+
+| Phrase | What it signals |
+|---|---|
+| `solution to the system` | point satisfying both equations |
+| `point of intersection` | system solution |
+| `exactly one real solution` | often `D=0` |
+| `no real solutions` | often `D<0` |
+| `valid solution` | check domain/extraneous candidates |
+| `how many solutions` | count algebraic roots or graph intersections |
+
+---
+
+## 5. Guided Practice — fading support
+
+### Example 1 — identify method
+
+```math
+x^2-9=0.
+```
+
+Best method?
+
+Difference of squares / square root.
+
+Solutions:
+
+```math
+x=\pm3.
+```
+
+### Example 2 — partial support
+
+```math
+2^x=32.
+```
+
+Rewrite 32 as a power of 2:
+
+```math
+32=2^{___}.
+```
+
+<details><summary>Answer</summary>
+
+`2^5`, so `x=5`.
+
+</details>
+
+### Example 3 — system
+
+```math
+y=x+1
+```
+
+```math
+y=x^2-1.
+```
+
+Set equal:
+
+```math
+x+1=x^2-1.
+```
+
+Then solve:
+
+```math
+x^2-x-2=0.
+```
+
+```math
+(x-2)(x+1)=0.
+```
+
+Intersections have x-values `2` and `-1`.
+
+### Example 4 — transfer
+
+A line and parabola have exactly one common point. After substitution you obtain
+
+```math
+x^2+6x+k=0.
+```
+
+What condition should you use?
+
+<details><summary>Answer</summary>
+
+```math
+D=0.
+```
+
+</details>
+
+---
+
+## 6. Error Clinic + Desmos Strategy
+
+### Error 1 — using one method for every equation
+
+Not every quadratic deserves quadratic formula. Not every system deserves substitution. Choose method by structure.
+
+### Error 2 — forgetting y-coordinate
+
+For a system, `x` alone is usually not the complete solution. Return to an equation and find `y`.
+
+### Error 3 — ignoring invalid candidates
+
+Radical and rational equations require checks.
+
+### Error 4 — assuming one intersection
+
+Nonlinear systems may have 0, 1, 2 or more intersections.
+
+### Desmos — where it is strongest
+
+For systems:
+
+```text
+y=x+2
+y=x^2-4
+```
+
+Click intersection points.
+
+For «how many solutions?» problems, Desmos may be the fastest method.
+
+For parameter questions, algebra/discriminant often gives cleaner exact reasoning.
+
+---
+
+## 7. SAT-Style Practice
 
 ### Problem 1 — Easy — Multiple Choice
 
-How many real solutions does `x²=9` have?
+How many real solutions does
 
-**A)** 0  **B)** 1  **C)** 2  **D)** 3
+```math
+x^2=16
+```
 
-### Problem 2 — Easy/Medium — Grid-in
+have?
 
-Solve `3^x=27`.
+**A)** 0  
+**B)** 1  
+**C)** 2  
+**D)** 4
+
+### Problem 2 — Easy — Grid-in
+
+Solve:
+
+```math
+5^x=125.
+```
 
 ### Problem 3 — Medium — Multiple Choice
 
-The graphs `y=x²` and `y=4` intersect at which x-values?
+The graphs
+
+```math
+y=x^2
+```
+
+and
+
+```math
+y=9
+```
+
+intersect at which x-values?
 
 **A)** `0 only`  
-**B)** `2 only`  
-**C)** `-2 and 2`  
-**D)** `-4 and 4`
+**B)** `3 only`  
+**C)** `-3 and 3`  
+**D)** `-9 and 9`
 
 ### Problem 4 — Medium — Grid-in
 
-For the system `y=x+1` and `y=x²-1`, what is the positive x-coordinate of an intersection?
+For the system
+
+```math
+y=x+2,
+```
+
+```math
+y=x^2,
+```
+
+what is the positive x-coordinate of an intersection?
 
 ### Problem 5 — Hard — Multiple Choice
 
-A line and a parabola have exactly one point of intersection. After substitution, the resulting quadratic equation must have:
+A line and parabola have exactly one point of intersection. After substitution, the resulting quadratic must satisfy:
 
 **A)** `D<0`  
 **B)** `D=0`  
 **C)** `D>0`  
 **D)** `a=0`
 
-<details><summary><strong>Ответы и краткие решения</strong></summary>
+<details><summary><strong>Answers</strong></summary>
 
-1. **C**, `x=±3`.  
-2. **3**, потому что `27=3³`.  
-3. **C**.  
-4. **2**: `x+1=x²-1` → `x²-x-2=0` → `(x-2)(x+1)=0`.  
-5. **B**, один real root означает discriminant zero.
+1. **C**  
+2. `3`  
+3. **C**  
+4. `2`  
+5. **B**
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
+## 8. Мини-чек-лист и Transfer
 
-- Найти только x-coordinate и забыть, что solution системы — пара `(x,y)`.
-- Не проверить extraneous solution после squaring или rational manipulation.
-- Предполагать, что система всегда имеет один solution.
+- [ ] Я сначала распознаю equation type, а не применяю метод автоматически.
+- [ ] Я выбираю factoring / common base / squaring / LCD по структуре.
+- [ ] Я понимаю system solutions как intersections.
+- [ ] Я нахожу полный ordered pair `(x,y)`.
+- [ ] Я использую discriminant для числа quadratic intersections.
+- [ ] Я знаю, когда Desmos быстрее algebra.
 
----
+### Transfer Question
 
-## 6. Стратегия для Digital SAT
+Почему tangent line to a parabola соответствует `D=0` после substitution?
 
-Это одна из тем, где Desmos особенно эффективен. Введите оба уравнения и найдите точки пересечения. Если SAT спрашивает только число решений, иногда достаточно просто посчитать intersections.
-
-Однако parameter questions могут требовать algebra: например, «при каком `k` line касается parabola?» Тогда условие tangent часто превращается в `D=0`.
-
----
-
-## 7. Связи с другими темами
-
-**Опирается на:** systems of linear equations, quadratics, exponential/radical/rational equations.  
-**Связано с:** parameter problems, graph interpretation, modeling.
-
----
-
-## 8. Мини-чек-лист для самопроверки
-
-- [ ] Я решаю основные nonlinear equations.
-- [ ] Я решаю linear–nonlinear systems substitution методом.
-- [ ] Я интерпретирую solutions как intersections.
-- [ ] Я использую discriminant для вопросов о числе intersections.
+Потому что tangent имеет с parabola ровно одну общую точку, а quadratic equation с exactly one real root имеет discriminant zero.

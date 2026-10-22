@@ -1,42 +1,48 @@
 # Absolute Value — модуль числа и функции с модулем
 
-## 1. Заголовок и краткое описание
+## 1. Зачем эта тема нужна на SAT
 
-Absolute value на SAT встречается внутри Advanced Math как один из типов nonlinear equations/functions. Нужно понимать модуль как расстояние, решать equations/inequalities и читать V-shaped graphs.
+Absolute value — это не «смена знака». На SAT он появляется как язык **расстояния**, двух возможных branches, интервалов и V-shaped graphs.
 
-> **Главная идея:** `|x-a|` — это расстояние от `x` до `a` на числовой прямой.
+> **Главная идея:** `|x-a|` — расстояние от `x` до `a`.
 
----
-
-## 2. Ключевые понятия и формулы
-
-| Выражение | Смысл |
-|---|---|
-| `|x|` | расстояние от `x` до 0 |
-| `|x-a|=d` | расстояние от `x` до `a` равно `d` |
-| `|x-a|<d` | `x` внутри интервала вокруг `a` |
-| `|x-a|>d` | `x` вне интервала вокруг `a` |
-| `y=a|x-h|+k` | vertex `(h,k)` |
-
-Если `d≥0`:
-
-```math
-|x-a|=d
-```
-
-даёт
-
-```math
-x=a+d\quad\text{или}\quad x=a-d.
-```
-
-### Визуальный якорь
-
-Absolute value = **distance**, поэтому результат модуля не бывает отрицательным.
+Если ученик понимает distance model, equations и inequalities с modulus перестают быть набором отдельных правил.
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+## 2. Pattern Map — как распознавать задачу
+
+| Что вы видите | Значение | Что делать |
+|---|---|---|
+| `|x|` | distance from 0 | result ≥0 |
+| `|x-a|=d` | distance = d | two points: `a±d` |
+| `|x-a|<d` | distance less than d | inside interval |
+| `|x-a|>d` | distance greater than d | outside interval |
+| `y=a|x-h|+k` | V-shaped graph | vertex `(h,k)` |
+| `|A|=-3` | impossible | no solution |
+
+### Visual Anchor — distance on a number line
+
+```text
+      distance 5
+<---------|---------|---------|--------->
+         -2         3         8
+                    center
+```
+
+`|x-3|=5` means points 5 units away from 3:
+
+```math
+x=-2\quad\text{or}\quad x=8.
+```
+
+---
+
+## 3. Учимся решать по паттернам
+
+### Pattern A — Equation means two branches
+
+#### Worked Example
 
 Solve:
 
@@ -44,104 +50,418 @@ Solve:
 |2x-5|=9.
 ```
 
-### Шаг 1. Создаём два случая
+**Notice:** absolute value equals a positive number.
 
-Расстояние 9 означает, что выражение внутри модуля может быть `9` или `-9`:
+So inside can be `9` or `-9`:
 
 ```math
 2x-5=9
 ```
 
-или
+or
 
 ```math
 2x-5=-9.
 ```
 
-### Шаг 2. Решаем первый случай
+First branch:
 
 ```math
 2x=14\Rightarrow x=7.
 ```
 
-### Шаг 3. Решаем второй случай
+Second branch:
 
 ```math
 2x=-4\Rightarrow x=-2.
 ```
 
-### Шаг 4. Проверяем
+Answer:
 
-Оба значения дают модуль 9.
-
-**Ответы: `-2` и `7`.**
+```text
+-2 and 7
+```
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+### Pattern B — Use distance directly
 
-### Problem 1 — Easy — Multiple Choice
+#### Worked Example
 
-What is `|-8|`?
+Solve:
 
-**A)** -8  **B)** 0  **C)** 8  **D)** 16
+```math
+|x-4|=6.
+```
 
-### Problem 2 — Easy — Grid-in
+Think:
 
-Solve `|x-3|=5`. Enter the positive solution.
+> Which points are 6 units from 4?
 
-### Problem 3 — Medium — Multiple Choice
+```math
+4-6=-2
+```
 
-What is the vertex of `y=|x-4|+2`?
+```math
+4+6=10.
+```
 
-**A)** `(-4,2)`  **B)** `(4,2)`  **C)** `(2,4)`  **D)** `(4,-2)`
+So:
 
-### Problem 4 — Medium — Multiple Choice
+```math
+x=-2,10.
+```
 
-Which inequality is equivalent to `|x|<6`?
+This is often faster than formal branch writing.
 
-**A)** `x<6`  **B)** `x>-6`  **C)** `-6<x<6`  **D)** `x<-6 or x>6`
+---
 
-### Problem 5 — Hard — Grid-in
+### Pattern C — Less than means inside
 
-The equation `|3x+1|=10` has two solutions. What is the larger solution?
+#### Worked Example
 
-<details><summary><strong>Ответы и краткие решения</strong></summary>
+```math
+|x-3|<5.
+```
 
-1. **C**.  
-2. **8**, потому что `x=3±5`.  
-3. **B**.  
-4. **C**.  
-5. **3**, из `3x+1=10` получаем `x=3`; второй root `-11/3`.
+Distance from 3 is less than 5.
+
+Endpoints:
+
+```math
+3-5=-2,
+```
+
+```math
+3+5=8.
+```
+
+Therefore:
+
+```math
+-2<x<8.
+```
+
+### Memory Anchor
+
+```text
+LESS THAN  → INSIDE
+GREATER THAN → OUTSIDE
+```
+
+---
+
+### Pattern D — Greater than means outside
+
+#### Worked Example
+
+```math
+|x+1|>4.
+```
+
+Center is `-1`.
+
+Distance greater than 4 means outside:
+
+```math
+x<-5
+```
+
+or
+
+```math
+x>3.
+```
+
+---
+
+### Pattern E — Impossible negative distance
+
+```math
+|3x-1|=-4
+```
+
+No solution.
+
+Why? Absolute value is a distance and distance cannot be negative.
+
+---
+
+### Pattern F — Read a V-shaped graph from equation
+
+General form:
+
+```math
+y=a|x-h|+k.
+```
+
+Vertex:
+
+```math
+(h,k).
+```
+
+#### Worked Example
+
+```math
+y=2|x-5|-3.
+```
+
+Vertex:
+
+```math
+(5,-3).
+```
+
+Since `a=2>0`, graph opens upward.
+
+If `a<0`, V is reflected downward.
+
+---
+
+## 4. Method Selector + SAT Language Decoder
+
+### Decision Tree
+
+```text
+|A| = positive number?
+  → two branches
+
+|A| = 0?
+  → A = 0 only
+
+|A| = negative number?
+  → no solution
+
+|x-a| < d?
+  → inside interval
+
+|x-a| > d?
+  → outside interval
+
+Need graph feature?
+  → read vertex from a|x-h|+k
+```
+
+### SAT English Decoder
+
+| Phrase | Think |
+|---|---|
+| `distance from` | absolute value |
+| `within 5 units of` | `<` or `≤` absolute-value inequality |
+| `more than 5 units from` | `>` absolute-value inequality |
+| `vertex of the graph` | `(h,k)` in `a|x-h|+k` |
+| `two solutions` | positive distance usually creates two branches |
+
+---
+
+## 5. Guided Practice — fading support
+
+### Example 1 — full support
+
+```math
+|x-2|=7
+```
+
+Center = `2`, distance = `7`.
+
+```math
+x=2±7.
+```
+
+Answers:
+
+```math
+-5,9.
+```
+
+### Example 2 — partial support
+
+```math
+|3x+1|=10.
+```
+
+Branches:
+
+```math
+3x+1=____
+```
+
+or
+
+```math
+3x+1=____.
+```
+
+<details><summary>Answer</summary>
+
+`10` and `-10`; solutions `3` and `-11/3`.
+
+</details>
+
+### Example 3 — interval reasoning
+
+```math
+|x|<6.
+```
+
+Distance from 0 less than 6:
+
+```math
+-6<x<6.
+```
+
+### Example 4 — transfer
+
+```math
+|x-10|\le3.
+```
+
+What interval does this describe?
+
+<details><summary>Solution</summary>
+
+Within 3 units of 10:
+
+```math
+7\le x\le13.
+```
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
+## 6. Error Clinic + Desmos Strategy
 
-- Считать, что `|x|` просто «меняет знак». Это distance, а не операция смены знака.
-- Забывать второй случай в equation `|A|=d`.
-- Пытаться решить `|A|=-3`: решений нет, потому что absolute value неотрицателен.
+### Error 1 — “absolute value flips the sign”
+
+Not always. `|5|=5` and `|-5|=5`.
+
+Think distance, not sign change.
+
+### Error 2 — forgetting the second branch
+
+`|A|=d` with `d>0` usually gives two equations.
+
+### Error 3 — confusing inside/outside
+
+```text
+<  → inside
+>  → outside
+```
+
+### Error 4 — wrong vertex sign
+
+In
+
+```math
+y=|x-4|+2,
+```
+
+vertex is `(4,2)`, not `(-4,2)`.
+
+### Desmos
+
+Enter:
+
+```text
+y=abs(2x-5)
+y=9
+```
+
+Intersections show both solutions.
+
+Desmos is especially useful when coefficients are awkward or graph interpretation is asked.
 
 ---
 
-## 6. Стратегия для Digital SAT
+## 7. SAT-Style Practice
 
-В Desmos `y=abs(x-4)+2` строит V-shaped graph. Для equations удобно построить `y=abs(...)` и горизонтальную линию. Количество intersections показывает количество решений.
+### Problem 1 — Easy — Multiple Choice
+
+What is
+
+```math
+|-12|?
+```
+
+**A)** `-12`  
+**B)** `0`  
+**C)** `12`  
+**D)** `24`
+
+### Problem 2 — Easy — Grid-in
+
+Solve
+
+```math
+|x-5|=4.
+```
+
+Enter the larger solution.
+
+### Problem 3 — Medium — Multiple Choice
+
+Which inequality is equivalent to
+
+```math
+|x|<7?
+```
+
+**A)** `x<7`  
+**B)** `x>-7`  
+**C)** `-7<x<7`  
+**D)** `x<-7 or x>7`
+
+### Problem 4 — Medium — Multiple Choice
+
+What is the vertex of
+
+```math
+y=3|x+2|-5?
+```
+
+**A)** `(2,-5)`  
+**B)** `(-2,-5)`  
+**C)** `(-5,-2)`  
+**D)** `(2,5)`
+
+### Problem 5 — Hard — Grid-in
+
+The equation
+
+```math
+|4x-3|=13
+```
+
+has two solutions. What is the larger solution?
+
+<details><summary><strong>Answers</strong></summary>
+
+1. **C**  
+2. `9`  
+3. **C**  
+4. **B**  
+5. `4`
+
+</details>
 
 ---
 
-## 7. Связи с другими темами
+## 8. Мини-чек-лист и Transfer
 
-**Опирается на:** linear equations, inequalities, functions.  
-**Связано с:** nonlinear functions, distance models, piecewise reasoning.
+- [ ] Я понимаю absolute value как distance.
+- [ ] Я решаю positive absolute-value equations через two branches.
+- [ ] Я мгновенно распознаю no-solution case with negative distance.
+- [ ] Я читаю `<` как inside и `>` как outside.
+- [ ] Я нахожу vertex `a|x-h|+k`.
 
----
+### Transfer Question
 
-## 8. Мини-чек-лист для самопроверки
+A measurement must stay within `2.5` units of target `100`. Write an absolute-value inequality.
 
-- [ ] Я понимаю absolute value как расстояние.
-- [ ] Я решаю equations с двумя случаями.
-- [ ] Я решаю базовые absolute-value inequalities.
-- [ ] Я читаю vertex V-shaped graph.
+Answer:
+
+```math
+|x-100|\le2.5.
+```

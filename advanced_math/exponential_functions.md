@@ -1,193 +1,439 @@
 # Exponential Functions — экспоненциальные функции
 
-## 1. Заголовок и краткое описание
+## 1. Зачем эта тема нужна на SAT
 
-Экспоненциальные модели появляются в Advanced Math, когда величина изменяется на **одинаковый процент**, а не на одинаковую абсолютную величину. SAT проверяет рост, decay, процентные изменения, интерпретацию параметров и сравнение linear vs exponential models.
+Экспоненциальные задачи появляются, когда величина меняется на **одинаковый процент** за каждый период. Главный навык — не запомнить формулу, а научиться быстро отличать exponential growth от linear growth и правильно читать параметры модели.
 
-> **Главная идея:** linear добавляет одно и то же число; exponential умножает на один и тот же коэффициент.
+> **Главная идея:** linear добавляет одно и то же число; exponential умножает на один и тот же factor.
 
 ---
 
-## 2. Ключевые понятия и формулы
+## 2. Pattern Map — что вижу и что это значит
 
-| Ситуация | Формула | Смысл |
+| Что в условии | Модель | Что делать |
 |---|---|---|
-| общий вид | `y=a(b)^x` | `a` initial value, `b` growth factor |
-| рост на `r` | `y=a(1+r)^x` | `r` в десятичной форме |
-| уменьшение на `r` | `y=a(1-r)^x` | decay factor |
-| рост `p%` | multiply by `1+p/100` | `20% → 1.20` |
-| уменьшение `p%` | multiply by `1-p/100` | `20% → 0.80` |
+| `increases by 8 each year` | linear | add 8 |
+| `increases by 8% each year` | exponential | multiply by `1.08` |
+| `decreases by 20%` | exponential decay | factor `0.80` |
+| `doubles every 3 hours` | exponential | factor `2` per 3 hours |
+| `halves every 5 days` | exponential decay | factor `0.5` per 5 days |
+| `a(b)^x` | exponential model | `a` initial, `b` factor |
+| exponent `t/k` | period = `k` units | factor applies every `k` units |
 
-### Как читать коэффициент
+### Mental model
 
-```math
-P(t)=500(1.08)^t
+```text
+LINEAR:
+100 → 110 → 120 → 130
+add +10 each step
+
+EXPONENTIAL:
+100 → 110 → 121 → 133.1
+multiply ×1.10 each step
 ```
 
-- `500` — initial value;
-- `1.08` — growth factor;
-- `0.08=8%` — growth rate per period.
-
-### Визуальный якорь
-
-`1.12` означает **+12%**, а не 112% роста.  
-`0.88` означает **−12%**.
-
-### Вопрос к читателю
-
-Если количество ежегодно уменьшается на 30%, какой множитель используется каждый год: `0.30`, `0.70` или `1.30`?
+Если изменение считается от **нового текущего значения**, это главный сигнал exponential model.
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+## 3. Учимся решать по паттернам
 
-### Задача
+### Pattern A — Convert percent to factor
 
-A population of bacteria starts at `800` and increases by `25%` every hour. Write a model for the population after `h` hours and find the population after 2 hours.
-
-### Шаг 1. Находим initial value
-
-В начале:
+Growth by `r%`:
 
 ```math
-P(0)=800.
+1+\frac{r}{100}
 ```
 
-Поэтому `a=800`.
-
-### Шаг 2. Переводим процент в growth factor
-
-Рост 25% означает, что после каждого периода остаётся 100% старого количества плюс 25% нового:
+Decay by `r%`:
 
 ```math
-1+0.25=1.25.
+1-\frac{r}{100}
 ```
 
-### Шаг 3. Строим модель
+#### Worked Example
+
+Increase by `12%`:
+
+```math
+1+0.12=1.12.
+```
+
+Decrease by `12%`:
+
+```math
+1-0.12=0.88.
+```
+
+### Visual Anchor
+
+```text
+1.12 → 112% remains → +12%
+0.88 → 88% remains  → -12%
+```
+
+---
+
+### Pattern B — Build the model
+
+General form:
+
+```math
+y=a(b)^t
+```
+
+where:
+
+- `a` = initial value;
+- `b` = growth/decay factor;
+- `t` = number of periods.
+
+#### Worked Example
+
+A bacteria population starts at `800` and grows by `25%` each hour.
+
+Initial value:
+
+```math
+a=800.
+```
+
+Growth factor:
+
+```math
+b=1.25.
+```
+
+Model:
 
 ```math
 P(h)=800(1.25)^h.
 ```
 
-### Шаг 4. Подставляем `h=2`
+After 2 hours:
 
 ```math
-P(2)=800(1.25)^2=800(1.5625)=1250.
+P(2)=800(1.25)^2=1250.
 ```
-
-Почему мы не используем `800+0.25h`? Потому что 25% каждый раз берутся от **нового текущего значения**, а не от фиксированного первоначального значения.
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+### Pattern C — Read a model backwards
+
+#### Worked Example
+
+```math
+V(t)=24000(0.82)^t.
+```
+
+What does `0.82` mean?
+
+`82%` remains each period.
+
+So decrease is:
+
+```math
+100%-82%=18%.
+```
+
+**SAT trap:** factor `0.82` does **not** mean decrease of 82%.
+
+---
+
+### Pattern D — Period hidden in the exponent
+
+#### Worked Example
+
+```math
+P(t)=1200(1.5)^{t/3}.
+```
+
+The exponent increases by `1` whenever `t` increases by `3`.
+
+Therefore the population multiplies by `1.5` every **3 time units**.
+
+Growth every 3 units:
+
+```math
+50%.
+```
+
+### Recognition rule
+
+```text
+(b)^(t/k)
+→ b is the factor for k units of time
+```
+
+---
+
+### Pattern E — Doubling and halving
+
+#### Worked Example
+
+A quantity starts at `300` and doubles every 4 hours.
+
+After `t` hours:
+
+```math
+Q(t)=300\cdot2^{t/4}.
+```
+
+Why `t/4`?
+
+Because every 4 hours counts as one doubling period.
+
+---
+
+### Pattern F — Linear or exponential?
+
+#### Worked Example
+
+Which is exponential?
+
+1. A tank loses 5 liters per minute.
+2. A car loses 15% of its value per year.
+
+Case 1: same amount → linear.
+
+Case 2: same percentage → exponential.
+
+### Fast recognition
+
+```text
+same AMOUNT     → linear
+same PERCENT    → exponential
+same MULTIPLIER → exponential
+```
+
+---
+
+## 4. Method Selector + SAT Language Decoder
+
+### Decision Tree
+
+```text
+Does the quantity change by a fixed amount?
+  → linear
+
+Does it change by a fixed percent/factor?
+  → exponential
+
+Does it double/halve?
+  → exponential
+
+Is exponent t/k?
+  → factor applies every k units
+
+Need unknown time?
+  → algebra if simple; Desmos intersection if messy
+```
+
+### SAT English Decoder
+
+| Phrase | Meaning |
+|---|---|
+| `increases by 7%` | factor `1.07` |
+| `decreases by 7%` | factor `0.93` |
+| `is 80% of its previous value` | factor `0.80` |
+| `doubles every 5 years` | factor `2`, period 5 |
+| `halves every 3 hours` | factor `0.5`, period 3 |
+| `initial value` | `a` in `a(b)^t` |
+| `growth factor` | `b` |
+
+---
+
+## 5. Guided Practice — от полной опоры к самостоятельности
+
+### Example 1 — full support
+
+A value starts at `500` and grows by `6%` each year.
+
+Pattern: percent growth.
+
+Factor:
+
+```math
+1.06.
+```
+
+Model:
+
+```math
+V(t)=500(1.06)^t.
+```
+
+### Example 2 — partial support
+
+A machine worth `$20,000` loses `12%` of its value each year.
+
+1. Initial value = `__________`
+2. Decay factor = `__________`
+3. Model = `__________`
+
+<details><summary>Answer</summary>
+
+```math
+V(t)=20000(0.88)^t
+```
+
+</details>
+
+### Example 3 — recognition
+
+Which is exponential?
+
+- `C=50+8t`
+- `P=50(1.08)^t`
+
+Answer: second model, because output is repeatedly multiplied by `1.08`.
+
+### Example 4 — transfer
+
+```math
+A(t)=900(1.21)^{t/2}.
+```
+
+By what percent does the quantity grow every 2 time units?
+
+<details><summary>Solution</summary>
+
+Factor `1.21` → growth `21%` every 2 units.
+
+</details>
+
+---
+
+## 6. Error Clinic + Desmos Strategy
+
+### Error 1 — using `0.08` for 8% growth
+
+Wrong:
+
+```math
+y=a(0.08)^t.
+```
+
+Right:
+
+```math
+y=a(1.08)^t.
+```
+
+### Error 2 — reading factor as percent change
+
+`0.75` means 75% remains, so decrease = 25%.
+
+### Error 3 — ignoring the period
+
+In
+
+```math
+2^{t/6},
+```
+
+factor `2` applies every 6 units, not every 1 unit.
+
+### Desmos
+
+Use Desmos when target value is given and time is unknown.
+
+Example:
+
+```text
+y=1000(1.08)^x
+y=1500
+```
+
+Intersection gives the time when the population reaches 1500.
+
+For simple factor interpretation, manual reasoning is faster.
+
+---
+
+## 7. SAT-Style Practice
 
 ### Problem 1 — Easy — Multiple Choice
 
-A quantity increases by 6% each year. Which factor represents one year of growth?
+A quantity increases by `9%` per year. What is the growth factor?
 
-**A)** `0.06`  
-**B)** `0.94`  
-**C)** `1.06`  
-**D)** `1.60`
+**A)** `0.09`  
+**B)** `0.91`  
+**C)** `1.09`  
+**D)** `1.90`
 
 ### Problem 2 — Easy — Multiple Choice
 
 For
 
 ```math
-f(x)=300(0.8)^x,
+f(x)=400(0.7)^x,
 ```
 
 what percent decrease occurs per unit increase in `x`?
 
-**A)** `8%`  
-**B)** `20%`  
-**C)** `80%`  
-**D)** `120%`
+**A)** 7%  
+**B)** 30%  
+**C)** 70%  
+**D)** 130%
 
 ### Problem 3 — Medium — Grid-in
 
-An account contains `$1000` and grows by `10%` for one year. What is the balance after one year?
+A population starts at `600` and grows by `20%` for one period. What is the new population?
 
 ### Problem 4 — Medium — Multiple Choice
 
-Which situation is best modeled exponentially?
+Which situation is exponential?
 
-**A)** A tank loses exactly 5 liters every minute.  
-**B)** A worker earns `$20` for each hour worked.  
-**C)** A car loses 15% of its value each year.  
-**D)** A taxi charges `$4` plus `$2` per mile.
+**A)** salary increases by `$1000` each year  
+**B)** tank loses `3` liters each minute  
+**C)** investment grows by `5%` each year  
+**D)** taxi costs `$5 + $2/mile`
 
 ### Problem 5 — Hard — Grid-in
 
-A population is modeled by
-
 ```math
-P(t)=1200(1.5)^{t/3}.
+P(t)=500(1.4)^{t/5}.
 ```
 
-By what percent does the population increase every 3 time units?
+By what percent does `P` increase every 5 time units?
 
-<details>
-<summary><strong>Ответы и краткие решения</strong></summary>
+<details><summary><strong>Answers</strong></summary>
 
-1. **C.** `1+0.06=1.06`.  
-2. **B.** `0.8=1-0.2`, значит decay 20%.  
-3. **1100.** `1000(1.10)=1100`.  
-4. **C.** Один и тот же процент ежегодно → exponential.  
-5. **50.** При увеличении `t` на 3 показатель степени увеличивается на 1, то есть величина умножается на `1.5`, рост 50%.
+1. **C**  
+2. **B**  
+3. `720`  
+4. **C**  
+5. `40`
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
+## 8. Мини-чек-лист и Transfer
 
-### Ловушка 1. Использовать процент вместо factor
+- [ ] Я мгновенно различаю fixed amount и fixed percent.
+- [ ] Я перевожу percentage change в growth/decay factor.
+- [ ] Я читаю initial value и factor из `a(b)^t`.
+- [ ] Я понимаю exponent `t/k` как период.
+- [ ] Я умею строить модель по тексту.
+- [ ] Я знаю, когда Desmos быстрее ручного решения.
 
-Рост 7% → factor `1.07`, не `0.07`.
+### Transfer Question
 
-### Ловушка 2. Путать linear и exponential
+Почему
 
-`+50` каждый год — linear.  
-`+5%` каждый год — exponential.
-
-### Ловушка 3. Не заметить масштаб времени
-
-В выражении `(1.2)^(t/4)` factor `1.2` относится к **4 единицам времени**, а не к одной.
-
----
-
-## 6. Стратегия для Digital SAT
-
-В Desmos можно сравнить модели:
-
-```text
-y=100(1.1)^x
-y=100+10x
+```math
+100(1.1)^t
 ```
 
-Это помогает увидеть различие exponential и linear growth.
+и
 
-Для задач с неизвестным временем часто удобно построить exponential model и горизонтальную линию `y=target`, затем найти intersection.
+```math
+100+10t
+```
 
----
+дают одинаковое значение при `t=1`, но дальше расходятся?
 
-## 7. Связи с другими темами
-
-**Опирается на:** percentages, exponent rules, functions.
-
-**Связано с:**
-- `nonlinear_functions.md`;
-- `equivalent_expressions.md`;
-- `percentages.md`;
-- word problems on growth and decay.
-
----
-
-## 8. Мини-чек-лист для самопроверки
-
-- [ ] Я различаю linear и exponential change.
-- [ ] Я перевожу процент роста/снижения в growth/decay factor.
-- [ ] Я понимаю параметры `a` и `b` в `a(b)^x`.
-- [ ] Я учитываю период времени в показателе степени.
+Потому что в первой модели 10% каждый раз берутся от нового текущего значения, а во второй каждый шаг добавляется фиксированное число 10.

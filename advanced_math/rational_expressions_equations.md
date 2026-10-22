@@ -1,45 +1,118 @@
 # Rational Expressions and Equations — рациональные выражения и уравнения
 
-## 1. Заголовок и краткое описание
+## 1. Зачем эта тема нужна на SAT
 
-Rational expressions содержат переменную в знаменателе. На SAT нужно уметь факторизовать, сокращать допустимые множители, находить ограничения domain и решать rational equations без потери логики.
+Rational expressions содержат переменную в denominator. Главная сложность SAT здесь — не арифметика, а дисциплина:
 
-> **Главная идея:** сначала найди запрещённые значения, потом упрощай.
+1. увидеть запрещённые значения;
+2. понять, что можно сокращать;
+3. выбрать LCD или cross multiplication;
+4. проверить, не появился ли invalid / extraneous answer.
 
----
-
-## 2. Ключевые понятия и формулы
-
-| Понятие | Смысл |
-|---|---|
-| rational expression | отношение двух polynomial expressions |
-| domain restriction | знаменатель не может быть 0 |
-| LCD | least common denominator |
-| extraneous solution | значение, появившееся при преобразованиях, но не подходящее исходному уравнению |
-
-Пример:
-
-```math
-\frac{x^2-9}{x-3}=\frac{(x-3)(x+3)}{x-3}=x+3,
-```
-
-но только при
-
-```math
-x\ne3.
-```
-
-### Визуальный якорь
-
-**Сокращаем множители, не слагаемые.**
-
-Нельзя сокращать `x` в `(x+2)/x`.
+> **Главная идея:** сначала domain restrictions, потом algebra.
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+## 2. Pattern Map — как распознавать задачу
 
-### Задача
+| Что вы видите | Паттерн | Что делать |
+|---|---|---|
+| variable in denominator | domain restriction | denominator `≠0` |
+| factor appears top and bottom | simplification | factor, then cancel |
+| two simple fractions equal | proportion | cross multiply |
+| several denominators | rational equation | use LCD |
+| solution equals forbidden value | extraneous/invalid | reject |
+| hole after cancellation | removable discontinuity | original restriction stays |
+
+### Visual Anchor
+
+```text
+DENOMINATOR = DANGER ZONE
+```
+
+Перед любыми преобразованиями спросите:
+
+> При каких x denominator становится 0?
+
+---
+
+## 3. Учимся решать по паттернам
+
+### Pattern A — Domain restriction
+
+#### Worked Example
+
+For
+
+```math
+\frac{5}{x-7},
+```
+
+find the forbidden value.
+
+Set denominator equal to zero:
+
+```math
+x-7=0
+```
+
+```math
+x=7.
+```
+
+Therefore:
+
+```math
+x\ne7.
+```
+
+---
+
+### Pattern B — Factor before canceling
+
+#### Worked Example
+
+Simplify:
+
+```math
+\frac{x^2-16}{x-4}.
+```
+
+**Notice:** numerator is difference of squares.
+
+```math
+x^2-16=(x-4)(x+4).
+```
+
+So:
+
+```math
+\frac{(x-4)(x+4)}{x-4}=x+4,
+```
+
+but original restriction remains:
+
+```math
+x\ne4.
+```
+
+### Error Clinic
+
+Wrong:
+
+```math
+\frac{x+4}{x}=4.
+```
+
+Why wrong? `x+4` is a sum, not a product of factors.
+
+> **Rule:** cancel factors, never terms inside addition/subtraction.
+
+---
+
+### Pattern C — Cross multiplication for a proportion
+
+#### Worked Example
 
 Solve:
 
@@ -47,21 +120,19 @@ Solve:
 \frac{3}{x-1}=\frac{6}{x+2}.
 ```
 
-### Шаг 1. Ограничения
+#### Step 1 — restrictions
 
 ```math
-x\ne1,\quad x\ne-2.
+x\ne1,-2.
 ```
 
-Почему сначала? Эти значения никогда не могут быть ответами.
-
-### Шаг 2. Cross multiplication
+#### Step 2 — cross multiply
 
 ```math
 3(x+2)=6(x-1).
 ```
 
-### Шаг 3. Решаем linear equation
+#### Step 3 — solve
 
 ```math
 3x+6=6x-6
@@ -75,80 +146,306 @@ x\ne1,\quad x\ne-2.
 x=4.
 ```
 
-### Шаг 4. Проверяем restriction
+#### Step 4 — check restriction
 
-`4` не запрещено, значит решение допустимо.
+`4` is allowed.
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+### Pattern D — LCD for several fractions
 
-### Problem 1 — Easy — Multiple Choice
+#### Worked Example
 
-For which value is `5/(x-7)` undefined?
+Solve:
 
-**A)** -7  **B)** 0  **C)** 5  **D)** 7
+```math
+\frac1x+\frac1{x+2}=\frac34.
+```
 
-### Problem 2 — Easy — Multiple Choice
+Restrictions:
 
-Simplify `(x²-16)/(x-4)` for `x≠4`.
+```math
+x\ne0,-2.
+```
 
-**A)** `x-4`  **B)** `x+4`  **C)** `x²+4`  **D)** `1`
+LCD:
 
-### Problem 3 — Medium — Grid-in
+```math
+4x(x+2).
+```
 
-Solve `2/x = 6/9`.
+Multiply every term by LCD:
 
-### Problem 4 — Medium — Multiple Choice
+```math
+4(x+2)+4x=3x(x+2).
+```
 
-Which is the least common denominator of `1/x` and `1/(x+2)`?
+Then solve the resulting quadratic.
 
-**A)** `2x`  **B)** `x+2`  **C)** `x(x+2)`  **D)** `x²+2`
+**Key idea:** LCD is not magic. It clears denominators by multiplying **every term**.
 
-### Problem 5 — Hard — Grid-in
+---
 
-Solve
+### Pattern E — Candidate is forbidden
+
+Suppose after solving you obtain:
+
+```math
+x=3,
+```
+
+but original denominator contains `(x-3)`.
+
+Then `x=3` is invalid even if later simplified algebra seems to accept it.
+
+> Original expression controls the domain.
+
+---
+
+## 4. Method Selector + SAT Language Decoder
+
+### Choose the method
+
+```text
+One denominator?
+  → note restriction
+
+Same factor top/bottom?
+  → factor, cancel, keep restriction
+
+Fraction = fraction?
+  → cross multiply
+
+Several different denominators?
+  → use LCD
+
+Found candidate?
+  → check original restrictions
+```
+
+### SAT English Decoder
+
+| Phrase | What to think |
+|---|---|
+| `undefined` | denominator = 0 |
+| `equivalent for x ≠ ...` | cancellation with restriction |
+| `solve the equation` | clear denominators safely |
+| `which value must be excluded` | domain restriction |
+| `least common denominator` | product of necessary denominator factors |
+
+---
+
+## 5. Guided Practice — fading support
+
+### Example 1 — full support
+
+Simplify:
+
+```math
+\frac{x^2-25}{x-5}.
+```
+
+Factor numerator:
+
+```math
+(x-5)(x+5).
+```
+
+Cancel common factor:
+
+```math
+x+5,
+```
+
+with `x≠5`.
+
+### Example 2 — partial support
+
+Solve:
+
+```math
+\frac2x=\frac69.
+```
+
+1. Restriction: `x≠___`
+2. Cross multiply: `2·9=6x`
+3. Solution: `x=___`
+
+<details><summary>Answer</summary>
+
+`x=3`.
+
+</details>
+
+### Example 3 — transfer
+
+Solve:
 
 ```math
 \frac{x+1}{x-2}=2.
 ```
 
-<details><summary><strong>Ответы и краткие решения</strong></summary>
+<details><summary>Solution</summary>
 
-1. **D**, denominator zero at 7.  
-2. **B**, difference of squares.  
-3. **3**, `18=6x`.  
-4. **C**.  
-5. **5**, `x+1=2x-4`, значит `x=5`.
+Restriction `x≠2`.
+
+```math
+x+1=2x-4
+```
+
+```math
+x=5.
+```
+
+Valid.
+
+</details>
+
+### Example 4 — recognition only
+
+What must you do **before** simplifying
+
+```math
+\frac{(x-3)(x+7)}{x-3}?
+```
+
+Answer: record `x≠3`.
+
+---
+
+## 6. Error Clinic + Desmos Strategy
+
+### Error 1 — forgetting original restrictions
+
+After cancellation, simplified expression may be defined where original one was not.
+
+### Error 2 — canceling terms instead of factors
+
+You can cancel:
+
+```math
+\frac{(x+2)(x-5)}{x+2}
+```
+
+but not:
+
+```math
+\frac{x+2}{x}.
+```
+
+### Error 3 — multiplying only one term by LCD
+
+LCD multiplication applies to **every term in the equation**.
+
+### Desmos
+
+For an equation such as:
+
+```math
+\frac3{x-1}=\frac6{x+2},
+```
+
+enter both sides as graphs and inspect intersections.
+
+But Desmos can visually hide forbidden x-values, so domain reasoning must still be done manually.
+
+---
+
+## 7. SAT-Style Practice
+
+### Problem 1 — Easy — Multiple Choice
+
+For which value is
+
+```math
+\frac{7}{x+4}
+```
+
+undefined?
+
+**A)** `-4`  
+**B)** `0`  
+**C)** `4`  
+**D)** `7`
+
+### Problem 2 — Easy — Multiple Choice
+
+Simplify
+
+```math
+\frac{x^2-9}{x-3}
+```
+
+for `x≠3`.
+
+**A)** `x-3`  
+**B)** `x+3`  
+**C)** `x²+3`  
+**D)** `1`
+
+### Problem 3 — Medium — Grid-in
+
+Solve:
+
+```math
+\frac4x=\frac8{10}.
+```
+
+### Problem 4 — Medium — Multiple Choice
+
+What is an LCD of
+
+```math
+\frac1x\quad\text{and}\quad\frac1{x-5}?
+```
+
+**A)** `x-5`  
+**B)** `x(x-5)`  
+**C)** `2x-5`  
+**D)** `x²-5`
+
+### Problem 5 — Hard — Grid-in
+
+Solve:
+
+```math
+\frac{x+2}{x-1}=3.
+```
+
+<details><summary><strong>Answers</strong></summary>
+
+1. **A**  
+2. **B**  
+3. `5`  
+4. **B**  
+5. `5/2`
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
+## 8. Мини-чек-лист и Transfer
 
-- Забыть domain restriction после сокращения.
-- Сокращать отдельные terms вместо factors.
-- Не проверить solution, если при решении умножали на выражение с переменной.
-
----
-
-## 6. Стратегия для Digital SAT
-
-Desmos может решить rational equation через пересечение двух графиков. Но обязательно проверьте, не находится ли найденная x-coordinate в точке, где исходный denominator равен нулю.
-
----
-
-## 7. Связи с другими темами
-
-**Опирается на:** factoring, equivalent expressions, linear equations.  
-**Связано с:** nonlinear equations, asymptotic behavior, domain questions.
-
----
-
-## 8. Мини-чек-лист для самопроверки
-
-- [ ] Я нахожу domain restrictions.
+- [ ] Я нахожу forbidden values до преобразований.
 - [ ] Я сокращаю только factors.
-- [ ] Я решаю rational equations через LCD/cross multiplication.
-- [ ] Я проверяю ответы в исходном уравнении.
+- [ ] Я выбираю cross multiplication для simple proportion.
+- [ ] Я использую LCD для нескольких denominators.
+- [ ] Я проверяю кандидаты в original equation/domain.
+
+### Transfer Question
+
+Почему выражения
+
+```math
+\frac{x^2-4}{x-2}
+```
+
+и
+
+```math
+x+2
+```
+
+не имеют полностью одинаковый domain?
+
+Потому что первое выражение undefined at `x=2`, даже после algebraic cancellation.
