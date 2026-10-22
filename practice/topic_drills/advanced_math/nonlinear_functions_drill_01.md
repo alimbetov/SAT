@@ -1,35 +1,36 @@
-# Nonlinear Functions — Topic Drill 01
+# Nonlinear Functions — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** Which is nonlinear? A) `y=3x+2` B) `y=-5x` C) `y=x²+1` D) `y=7`
+2. **Easy · MC.** `y=3(1.2)^x` belongs to which family? A) linear B) exponential C) rational D) absolute
 
-1. **Easy · MC.** Which function is nonlinear?  
-A) `f(x)=3x+2`  B) `f(x)=x^2+1`  C) `f(x)=-4x`  D) `f(x)=7`
-2. **Easy · SPR.** If `f(x)=x^2-3`, find `f(4)`.
-3. **Medium · MC.** Which type of function eventually grows faster for large positive `x`: `x^2` or `2^x`?  
-A) `x^2`  B) `2^x`  C) always equal  D) cannot compare
-4. **Medium · MC.** Relative to `y=x^2`, the graph `y=(x+2)^2-3` is shifted  
-A) right 2, up 3  B) left 2, down 3  C) right 3, down 2  D) left 3, up 2
-5. **Medium · MC.** What is the domain of `f(x)=√(x-5)`?  
-A) `x≤5`  B) `x≥5`  C) `x≠5`  D) all real numbers
-6. **Medium · MC.** What is the domain restriction of `g(x)=1/(x+4)`?  
-A) `x≠4`  B) `x≠-4`  C) `x≥-4`  D) `x≤4`
-7. **Medium · MC.** What is the range of `y=|x|+2`?  
-A) `y≤2`  B) `y≥2`  C) `y≠2`  D) all real values
-8. **Easy · SPR.** What is the `y`-intercept of `y=3·2^x`?
-9. **Medium · SPR.** At `x=4`, compare `f(x)=x^2` and `g(x)=2^x`. What is `f(4)-g(4)`?
-10. **Hard · SPR.** `q(x)=a(x-1)^2+2` and `q(3)=10`. Find `a`.
+## B. Core Pattern
+3. **Easy · MC.** `y=1/x` is: A) rational B) quadratic C) radical D) linear
+4. **Easy · SPR.** If `f(x)=x²+4`, find `f(3)`.
+5. **Medium · MC.** `y=(x-4)²+1` shifts `y=x²`: A) left4 up1 B) right4 up1 C) right1 up4 D) left1 down4
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Easy · SPR.** Find the initial value of `10(1.2)^x`.
+7. **Easy · MC.** Which family has a basic V-shaped graph? A) absolute value B) radical C) exponential D) rational
 
-1. **B**.
-2. **13**.
-3. **B** — exponential growth eventually dominates polynomial growth.
-4. **B**.
-5. **B**.
-6. **B**.
-7. **B**.
-8. **3** — set `x=0`.
-9. **0** — both equal 16.
-10. **2** — `10=4a+2`.
+## D. Domain
+8. **Medium · SPR.** Find the least x in the domain of `√(x-2)`.
 
+## E. Trap
+9. **Medium · MC.** `f(x-3)` shifts the graph: A) left3 B) right3 C) up3 D) down3
+
+## F. Transfer
+10. **Hard · SPR.** `f(x)=a(x-2)²+7` passes through `(4,15)`. Find `a`.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **C** — squared variable.
+2. **B** — variable in exponent.
+3. **A** — variable in denominator.
+4. **13** — evaluate.
+5. **B** — inside opposite, outside same.
+6. **10** — x=0.
+7. **A** — `|x|`.
+8. **2** — radicand ≥0.
+9. **B** — horizontal shift sign trap.
+10. **2** — substitute point.
 </details>

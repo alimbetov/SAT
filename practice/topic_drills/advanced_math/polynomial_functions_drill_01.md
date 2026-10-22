@@ -1,34 +1,36 @@
-# Polynomial Functions — Topic Drill 01
+# Polynomial Functions — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · SPR.** What is the degree of `4x^5-2x²+7`?
+2. **Easy · SPR.** What is the leading coefficient of `-3x^4+x-8`?
 
-1. **Easy · MC.** What is the degree of `3x^4-2x^2+x-7`?  
-A) 1  B) 2  C) 3  D) 4
-2. **Easy · SPR.** For `P(x)=x^3-2x+1`, find `P(2)`.
-3. **Medium · SPR.** If `(x-3)` is a factor of `x^2+kx-18`, find `k`.
-4. **Medium · SPR.** What is the remainder when `x^2+2x+5` is divided by `(x+1)`?
-5. **Easy · MC.** Expand `(x+2)(x-5)`.  
-A) `x^2-3x-10`  B) `x^2+3x-10`  C) `x^2-7x+10`  D) `x^2+7x-10`
-6. **Medium · MC.** Factor completely: `x^3-4x`.  
-A) `x(x-4)`  B) `x(x-2)(x+2)`  C) `(x-2)^2(x+2)`  D) `x(x^2+4)`
-7. **Medium · MC.** What are the zeros of `(x+1)^2(x-4)`?  
-A) `1,4`  B) `-1,4`  C) `-1,-4`  D) `1,-4`
-8. **Medium · MC.** For a polynomial with positive leading term `x^3`, what happens as `x→∞`?  
-A) `P(x)→∞`  B) `P(x)→-∞`  C) `P(x)→0`  D) cannot determine
-9. **Hard · SPR.** If `x^2+ax+12=(x+3)(x+4)`, find `a`.
-10. **Hard · SPR.** A monic cubic has roots `1`, `2`, and `3`. What is its value at `x=0`?
+## B. Core Pattern
+3. **Easy · SPR.** If `(x-3)` is a factor of `f(x)`, find `f(3)`.
+4. **Medium · MC.** Which is a factor of `x²-7x+12`? A) `x+3` B) `x-3` C) `x+4` D) `x-12`
+5. **Medium · SPR.** For `f(x)=x³-2x+5`, find the remainder when divided by `(x-2)`.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Medium · MC.** Root `-4` corresponds to which factor? A) `x-4` B) `x+4` C) `4x+1` D) `x²-4`
+7. **Easy · SPR.** In `(x+2)(x+5)=x²+kx+10`, find `k`.
 
-1. **D, 4**.
-2. **5**.
-3. **3** — set `P(3)=0`.
-4. **4** — evaluate at `x=-1`.
-5. **A**.
-6. **B** — `x(x^2-4)`.
-7. **B** — `-1` has multiplicity 2; other zero is 4.
-8. **A**.
-9. **7**.
-10. **-6** — `(0-1)(0-2)(0-3)=-6`.
+## D. Structure
+8. **Hard · MC.** Which factor appears in `x³-4x²-x+4`? A) `x-4` B) `x-2` C) `x+4` D) none
 
+## E. Trap
+9. **Medium · SPR.** What is the degree of `x²·x³`?
+
+## F. Transfer
+10. **Hard · SPR.** For `f(x)=x³-6x²+11x-6`, find `f(4)`.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **5** — highest exponent.
+2. **-3** — coefficient of highest-degree term.
+3. **0** — factor theorem.
+4. **B** — factorization `(x-3)(x-4)`.
+5. **9** — remainder theorem: `f(2)`.
+6. **B** — root `r` ↔ factor `(x-r)`.
+7. **7** — expand or use sum of constants.
+8. **A** — grouping gives `(x²-1)(x-4)`.
+9. **5** — add exponents in multiplication.
+10. **6** — direct evaluation.
 </details>

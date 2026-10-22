@@ -1,33 +1,34 @@
-# Absolute Value — Topic Drill 01
+# Absolute Value — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · SPR.** Find `|-8|`.
+2. **Easy · MC.** `|x-3|` represents distance from: A) -3 B) 0 C) 3 D) x
 
-1. **Easy · MC.** How many solutions does `|x|=5` have?  
-A) 0  B) 1  C) 2  D) infinitely many
-2. **Easy · SPR.** Solve `|x-3|=4`. What is the larger solution?
-3. **Medium · SPR.** Solve `|2x+1|=5`. What is the sum of the solutions?
-4. **Medium · MC.** Solve `|x+2|<3`.  
-A) `-5<x<1`  B) `x<-5 or x>1`  C) `-1<x<5`  D) `x>1`
-5. **Medium · MC.** Solve `|x-4|≥2`.  
-A) `2≤x≤6`  B) `x≤2 or x≥6`  C) `x≥2`  D) `x≤6`
-6. **Easy · SPR.** If `|x-10|=3`, what is the smaller solution?
-7. **Easy · MC.** What is the vertex of `y=|x-2|+5`?  
-A) `(2,5)`  B) `(-2,5)`  C) `(2,-5)`  D) `(-2,-5)`
-8. **Medium · SPR.** What is the minimum value of `|3x-6|+1`?
-9. **Medium · SPR.** If `|x-k|=0` has solution `x=4`, find `k`.
-10. **Hard · SPR.** Solve `|x-1|=|x-7|`.
+## B. Core Pattern
+3. **Easy · SPR.** Solve `|x-3|=5`. Enter the positive solution.
+4. **Medium · SPR.** Solve `|2x-5|=9`. Enter the larger solution.
+5. **Easy · SPR.** Find the x-coordinate of the vertex of `y=|x-4|+2`.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Medium · MC.** `|x|<6` is: A) `x<6` B) `x>-6` C) `-6<x<6` D) `x<-6 or x>6`
+7. **Medium · MC.** `|x|>4` is: A) `-4<x<4` B) `x<-4 or x>4` C) `x>4` D) `x<4`
 
-1. **C, 2**.
-2. **7** — solutions are -1 and 7.
-3. **-1** — solutions are 2 and -3.
-4. **A**.
-5. **B**.
-6. **7**.
-7. **A**.
-8. **1** — absolute-value term can reach zero.
-9. **4**.
-10. **4** — the point equidistant from 1 and 7 is their midpoint.
+## D. Trap
+8. **Easy · MC.** How many solutions does `|x+2|=-3` have? A) 0 B) 1 C) 2 D) infinitely many
 
+## E. Transfer
+9. **Hard · SPR.** `|x-2|=7`. Find the sum of both solutions.
+10. **Hard · SPR.** Solve `|3x+1|=10`. Enter the larger solution.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **8** — absolute value is distance.
+2. **C** — center is 3.
+3. **8** — `3±5`.
+4. **7** — two cases.
+5. **4** — vertex form.
+6. **C** — inside interval.
+7. **B** — outside interval.
+8. **A** — distance cannot be negative.
+9. **4** — solutions 9,-5.
+10. **3** — cases give 3 and -11/3.
 </details>

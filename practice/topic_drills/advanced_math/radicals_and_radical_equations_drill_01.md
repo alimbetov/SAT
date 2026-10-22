@@ -1,32 +1,34 @@
-# Radicals and Radical Equations — Topic Drill 01
+# Radicals & Radical Equations — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** Simplify `√50`. A) `5√2` B) `10√5` C) `25√2` D) 50
+2. **Easy · MC.** `x^(1/2)` equals: A) `x/2` B) `√x` C) `x²` D) `2x`
 
-1. **Easy · SPR.** Evaluate `√49`.
-2. **Easy · MC.** Simplify `√72`.  
-A) `6√2`  B) `8√2`  C) `12√2`  D) `36√2`
-3. **Easy · SPR.** Solve `√(x+4)=5`.
-4. **Medium · SPR.** Solve `√(2x-1)=3`.
-5. **Easy · MC.** Which expression equals `x^(1/2)` for `x≥0`?  
-A) `x/2`  B) `2x`  C) `√x`  D) `x^2`
-6. **Hard · SPR.** Solve `√x=x-6`.
-7. **Medium · SPR.** Solve `√(x+1)+1=4`.
-8. **Easy · SPR.** Evaluate `∛27`.
-9. **Medium · MC.** If `a≥0`, simplify `√(a^6)`.  
-A) `a^2`  B) `a^3`  C) `a^6`  D) `3a`
-10. **Hard · SPR.** The equation `√(x+k)=4` has solution `x=7`. Find `k`.
+## B. Core Pattern
+3. **Easy · MC.** `∛(x²)` equals: A) `x^(2/3)` B) `x^(3/2)` C) `x^6` D) `x²/3`
+4. **Easy · SPR.** Solve `√(x+1)=5`.
+5. **Medium · SPR.** Solve `√(2x+3)=x` for the valid real solution.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Easy · SPR.** What is the least x in the domain of `√(x-4)`?
+7. **Easy · SPR.** Simplify `√72 = a√2`. Find `a`.
 
-1. **7**.
-2. **A** — `√(36·2)=6√2`.
-3. **21**.
-4. **5**.
-5. **C**.
-6. **9** — squaring gives candidates 4 and 9; only 9 satisfies the original equation.
-7. **8**.
-8. **3**.
-9. **B**.
-10. **9** — `7+k=16`.
+## D. Trap
+8. **Medium · MC.** Which is generally false? A) `√(ab)=√a√b` for suitable nonnegative values B) `√(a+b)=√a+√b` C) `(√a)²=a` for a≥0 D) `a^(1/2)=√a`
 
+## E. Core Transfer
+9. **Easy · SPR.** Solve `√x=7`.
+10. **Hard · SPR.** Solve `√(x+5)=x-1`.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **A** — extract perfect square 25.
+2. **B** — fractional exponent.
+3. **A** — denominator of exponent is root index.
+4. **24** — square both sides.
+5. **3** — candidates 3,-1; check original.
+6. **4** — radicand must be nonnegative.
+7. **6** — `√36·√2`.
+8. **B** — classic radical trap.
+9. **49** — square.
+10. **4** — squaring gives candidates 4,-1; check domain/sign.
 </details>
