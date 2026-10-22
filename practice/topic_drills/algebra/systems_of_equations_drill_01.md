@@ -1,37 +1,55 @@
-# Systems of Equations — Topic Drill 01
+# Systems of Equations — Practice V2 · Drill 01
 
-## Questions
+**Anchor:** system = two conditions true at the same time.
 
-1. **Easy · SPR.** Solve for `x`: `x+y=10`, `x-y=2`.
-2. **Easy · SPR.** Solve for `y`: `2x+y=7`, `x-y=2`.
-3. **Medium · SPR.** Solve for `x`: `3x+2y=16`, `3x-2y=8`.
-4. **Medium · MC.** Which system has no solution?  
-A) `y=3x+1`, `y=3x-4`  
-B) `y=x+1`, `y=-x+5`  
-C) `y=2x`, `y=x+3`  
-D) `x+y=5`, `x-y=1`
-5. **Medium · MC.** Which system has infinitely many solutions?  
-A) `y=2x+6`, `2y=4x+12`  
-B) `y=x`, `y=x+1`  
-C) `y=3x`, `y=-3x`  
-D) `x+y=2`, `x-y=2`
-6. **Medium · SPR.** Two plans cost `20+5m` and `8+8m`. For what `m` are the costs equal?
-7. **Hard · SPR.** Adult tickets cost `$12`, child tickets cost `$7`. Twenty tickets bring `$195`. How many adult tickets were sold?
-8. **Hard · SPR.** For what `k` does `y=-kx+3` together with `y=-x+4` have no solution?
-9. **Hard · SPR.** For what `k` do `2x+ky=6` and `4x+6y=12` represent the same line?
-10. **Medium · SPR.** Find `x` for `y=2x+1` and `x+2y=17`.
+## A. Recognition
 
-<details><summary><strong>Answers</strong></summary>
+1. **Easy · MC.** If one equation is already `y=2x+1`, which method is usually most natural?  
+A) substitution  B) elimination  C) quadratic formula  D) unit conversion
 
-1. **6** — add equations: `2x=12`.
-2. **1** — substitute `x=y+2`.
-3. **4** — add equations: `6x=24`.
-4. **A** — equal slopes, different intercepts.
-5. **A** — second equation simplifies to the first.
-6. **4** — `20+5m=8+8m`.
-7. **11** — `a+c=20`, `12a+7c=195`.
-8. **1** — same slope `-1`, different intercepts.
-9. **3** — divide second equation by 2: `2x+3y=6`.
-10. **3** — substitute: `x+2(2x+1)=17`.
+2. **Easy · MC.** If one equation has `+y` and the other `-y`, which method is immediately attractive?  
+A) substitution  B) elimination  C) factoring  D) percentage change
+
+## B. Core Pattern
+
+3. **Easy · SPR.** For `x+y=9` and `x-y=1`, find `x`.
+
+4. **Medium · SPR.** For `2x+3y=13` and `x+y=5`, find `y`.
+
+5. **Medium · MC.** How many solutions do `y=2x+1` and `y=2x-4` have?  
+A) 0  B) 1  C) 2  D) infinitely many
+
+## C. Guided Variation
+
+6. **Medium · MC.** How many solutions do `y=3x-1` and `2y=6x-2` have?  
+A) 0  B) 1  C) 2  D) infinitely many
+
+7. **Medium · SPR.** Solve `y=x+2` and `2x+y=11`. Find `x`.
+
+## D. Word Problem
+
+8. **Medium · SPR.** A school sold 120 tickets. Student tickets cost `$6`, adult tickets `$10`, and revenue was `$920`. How many student tickets were sold?
+
+## E. Trap
+
+9. **Hard · MC.** Two lines have the same slope but different y-intercepts. The system has:  
+A) one solution  B) no solution  C) infinitely many solutions  D) always `(0,0)`
+
+## F. Transfer
+
+10. **Hard · SPR.** For what `k` do `y=kx+2` and `y=3x-4` have no solution?
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+
+1. **A.** Pattern: isolated variable → substitution.
+2. **B.** Opposite coefficients → elimination.
+3. **5.** Add equations: `2x=10`.
+4. **3.** Substitute `x=5-y`.
+5. **A.** Same slope, different intercepts → parallel.
+6. **D.** Second equation simplifies to first.
+7. **3.** Substitute `y=x+2`: `3x+2=11`.
+8. **70.** Model `s+a=120`, `6s+10a=920`.
+9. **B.** Geometry of systems: parallel distinct lines.
+10. **3.** No solution requires equal slopes and different intercepts.
 
 </details>

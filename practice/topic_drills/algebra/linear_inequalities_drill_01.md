@@ -1,34 +1,55 @@
-# Linear Inequalities — Topic Drill 01
+# Linear Inequalities — Practice V2 · Drill 01
 
-## Questions
+**Anchor:** equation = exact value; inequality = allowed range.
 
-1. **Easy · MC.** Solve `3x+2>14`.  
-A) `x>4`  B) `x<4`  C) `x>12`  D) `x<12`
-2. **Easy · SPR.** Solve `-5x≤20`.
-3. **Medium · SPR.** Solve `2(x-1)≥x+5`.
-4. **Medium · MC.** Solve `-2<3x+1≤10`.  
-A) `-1<x≤3`  B) `-1≤x<3`  C) `x≤3`  D) `x>-1`
-5. **Medium · SPR.** A fixed cost is `$50` plus `$15` per item. If total spending cannot exceed `$200`, what is the greatest whole number of items?
-6. **Medium · MC.** Which point satisfies `y<x+2`?  
-A) `(2,4)`  B) `(2,3)`  C) `(3,5)`  D) `(0,2)`
-7. **Easy · MC.** For `y>2x-1`, how should the boundary line be drawn?  
-A) solid  B) dashed  C) vertical  D) no boundary
-8. **Medium · MC.** Which point satisfies all three inequalities `x≥0`, `y≥0`, `x+y≤5`?  
-A) `(4,3)`  B) `(-1,2)`  C) `(2,2)`  D) `(3,-1)`
-9. **Hard · SPR.** What is the greatest integer satisfying `-3x+7>19`?
-10. **750–800 · SPR.** A student has test scores `78`, `84`, and `91`. What minimum score is needed on a fourth test to have an average of at least `85`?
+## A. Recognition
 
-<details><summary><strong>Answers</strong></summary>
+1. **Easy · MC.** “At least 18” translates to:  
+A) `x>18`  B) `x≥18`  C) `x<18`  D) `x≤18`
 
-1. **A, x>4**.
-2. **x≥-4** — reverse the sign when dividing by `-5`.
-3. **x≥7**.
-4. **A** — subtract 1, then divide by 3.
-5. **10** — `50+15n≤200`.
-6. **B, (2,3)** — `3<4`.
-7. **B** — strict inequality means dashed boundary.
-8. **C, (2,2)**.
-9. **-5** — inequality gives `x<-4`; greatest integer is `-5`.
-10. **87** — total needed is `4×85=340`; existing sum is `253`.
+2. **Easy · MC.** “No more than 50” translates to:  
+A) `x≥50`  B) `x>50`  C) `x≤50`  D) `x<50`
+
+## B. Core Pattern
+
+3. **Easy · SPR.** Solve `3x+5<20`. Enter the boundary value.
+
+4. **Easy · SPR.** Solve `-2x>8`. Enter the boundary value.
+
+5. **Medium · MC.** Which describes `2<x≤7`?  
+A) x is outside 2 and 7  B) x is greater than 2 and at most 7  C) x≥7  D) x≤2
+
+## C. Guided Variation
+
+6. **Medium · MC.** Which point satisfies `y>2x-1`?  
+A) `(2,2)`  B) `(2,3)`  C) `(2,4)`  D) `(3,4)`
+
+7. **Medium · SPR.** Solve `5-3x≤17`. Enter the boundary value.
+
+## D. Word Problem
+
+8. **Medium · SPR.** A student has `$120`. A calculator costs `$48`, notebooks `$9` each. What is the greatest number of notebooks that can be bought?
+
+## E. Trap
+
+9. **Hard · MC.** Why does the sign reverse in `-4x≥20`?  
+A) because 20 is positive  B) because we divide by a negative number  C) because x is unknown  D) it should not reverse
+
+## F. Transfer
+
+10. **Hard · SPR.** A club charges `$15` plus `$7` per visit. A member can spend at most `$64`. What is the greatest number of visits?
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+
+1. **B.** Language cue: at least → `≥`.
+2. **C.** Language cue: no more than → `≤`.
+3. **5.** Solution is `x<5`.
+4. **-4.** Solution is `x<-4`; sign reverses after division by `-2`.
+5. **B.** Read both inequalities at once.
+6. **C.** `4>3`; strict boundary excludes equality.
+7. **-4.** `-3x≤12 → x≥-4`.
+8. **8.** `48+9n≤120`.
+9. **B.** Pattern: negative multiplication/division reverses order.
+10. **7.** `15+7v≤64 → v≤7`.
 
 </details>
