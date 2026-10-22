@@ -1,152 +1,451 @@
 # Polynomial Functions — полиномы и полиномиальные функции
 
-## 1. Заголовок и краткое описание
+## 1. Зачем эта тема нужна на SAT
 
-Polynomial questions на SAT проверяют работу со степенями, коэффициентами, zeros, factorization и структурой выражений. Чаще всего встречаются квадратичные полиномы, но навыки распространяются и на выражения более высокой степени.
+Polynomial questions проверяют не вычислительную выносливость, а умение видеть структуру: degree, zeros, factors, remainder, end behavior и связь между algebra и graph.
 
-> **Главная идея:** если `f(r)=0`, то `(x-r)` — фактор полинома.
+> **Главная идея:** `root ↔ factor ↔ x-intercept` — три языка для одной идеи.
 
----
+На экзамене ученик должен быстро распознавать, что именно дано:
 
-## 2. Ключевые понятия и формулы
-
-| Понятие | Смысл |
-|---|---|
-| polynomial | сумма членов `a_n x^n` с целыми неотрицательными степенями |
-| degree | наибольшая степень переменной |
-| leading coefficient | коэффициент при члене наибольшей степени |
-| zero / root | значение `x`, при котором `f(x)=0` |
-| factor theorem | `f(r)=0` ⇔ `(x-r)` является фактором |
-| remainder theorem | остаток при делении на `(x-r)` равен `f(r)` |
-
-### Операции
-
-```math
-(x+2)(x+5)=x^2+7x+10
-```
-
-```math
-x^3\cdot x^2=x^5
-```
-
-### Визуальный якорь
-
-**Root `r` ↔ factor `(x-r)` ↔ x-intercept `(r,0)`.**
+- polynomial expression;
+- factored form;
+- zero;
+- graph intercept;
+- value `f(a)`;
+- parameter inside a factorization.
 
 ---
 
-## 3. Пошаговый разбор — Guided Example
+## 2. Pattern Map — что вижу и что делать
 
-### Задача
+| Что дано | Что это значит | Следующий шаг |
+|---|---|---|
+| `f(r)=0` | `r` — root | `(x-r)` factor |
+| `(x-r)` is a factor | `r` — root | `f(r)=0` |
+| graph crosses x-axis at `r` | x-intercept | root `r` |
+| divide by `(x-r)` | remainder theorem | compute `f(r)` |
+| factored polynomial | roots visible | set each factor = 0 |
+| expanded polynomial | coefficients visible | compare / factor if needed |
+| parameter in factorization | identity | expand and match coefficients |
+| highest exponent | degree | read directly |
+
+### Core connection
+
+```text
+root r
+  ⇅
+f(r)=0
+  ⇅
+factor (x-r)
+  ⇅
+x-intercept (r,0)
+```
+
+Это один из самых полезных SAT-паттернов Advanced Math.
+
+---
+
+## 3. Учимся решать по паттернам
+
+### Pattern A — Degree and leading term
+
+#### Worked Example
 
 For
 
 ```math
-f(x)=x^3-4x^2-x+4,
+f(x)=7x^4-3x^2+8,
 ```
 
-show that `x=1` is a zero and factor the polynomial completely.
+- degree = `4`;
+- leading coefficient = `7`;
+- leading term = `7x^4`.
 
-### Шаг 1. Проверяем zero
-
-```math
-f(1)=1-4-1+4=0.
-```
-
-По factor theorem `(x-1)` — фактор.
-
-### Шаг 2. Используем grouping
-
-```math
-x^3-4x^2-x+4=x^2(x-4)-1(x-4).
-```
-
-### Шаг 3. Выносим общий binomial
-
-```math
-=(x^2-1)(x-4).
-```
-
-### Шаг 4. Difference of squares
-
-```math
-x^2-1=(x-1)(x+1).
-```
-
-Итог:
-
-```math
-f(x)=(x-1)(x+1)(x-4).
-```
-
-Zeros: `-1`, `1`, `4`.
+**Ловушка:** degree — это exponent, а не самый большой coefficient.
 
 ---
 
-## 4. Practice Problems — задачи для закрепления
+### Pattern B — Root → Factor
 
-### Problem 1 — Easy — Multiple Choice
+#### Worked Example
 
-What is the degree of `4x^5-2x^2+7`?
+If `x=5` is a zero of `f(x)`, which factor must divide `f(x)`?
 
-**A)** 2  **B)** 4  **C)** 5  **D)** 7
+Root `5` означает:
 
-### Problem 2 — Easy — Grid-in
+```math
+f(5)=0.
+```
 
-If `(x-3)` is a factor of `f(x)`, what is `f(3)`?
+По Factor Theorem:
 
-### Problem 3 — Medium — Multiple Choice
+```math
+(x-5)
+```
 
-Which is a factor of `x²-7x+12`?
+is a factor.
 
-**A)** `x+3`  **B)** `x-3`  **C)** `x+4`  **D)** `x-12`
+### Visual Anchor
 
-### Problem 4 — Medium — Grid-in
+```text
+root +5  → factor (x-5)
+root -5  → factor (x+5)
+```
 
-For `f(x)=x³-2x+5`, what is the remainder when divided by `(x-2)`?
+Знак внутри factor всегда противоположный root.
 
-### Problem 5 — Hard — Multiple Choice
+---
 
-If `x²+kx+18=(x+3)(x+6)`, what is `k`?
+### Pattern C — Factor → Root
 
-**A)** 3  **B)** 9  **C)** 18  **D)** 24
+#### Worked Example
 
-<details><summary><strong>Ответы и краткие решения</strong></summary>
+```math
+f(x)=2(x+3)(x-7)
+```
 
-1. **C**, degree 5.  
-2. **0**, по factor theorem.  
-3. **B**, `x²-7x+12=(x-3)(x-4)`.  
-4. **9**, потому что `f(2)=8-4+5=9`.  
-5. **B**, раскрытие даёт `x²+9x+18`.
+Roots:
+
+```math
+x=-3,
+```
+
+```math
+x=7.
+```
+
+**Почему?** Product equals zero only when at least one factor equals zero.
+
+---
+
+### Pattern D — Remainder theorem
+
+If a polynomial is divided by `(x-a)`, remainder = `f(a)`.
+
+#### Worked Example
+
+For
+
+```math
+f(x)=x^3-2x+5,
+```
+
+find the remainder when divided by `(x-2)`.
+
+Не нужно polynomial long division.
+
+Просто:
+
+```math
+f(2)=8-4+5=9.
+```
+
+Remainder = `9`.
+
+### Pattern Recognition
+
+Если вопрос содержит:
+
+> remainder when divided by `(x-4)`
+
+ваша первая мысль должна быть:
+
+```text
+Compute f(4).
+```
+
+---
+
+### Pattern E — Factor by grouping
+
+#### Worked Example
+
+Factor completely:
+
+```math
+x^3-4x^2-x+4.
+```
+
+Group:
+
+```math
+x^2(x-4)-1(x-4)
+```
+
+Common factor:
+
+```math
+(x^2-1)(x-4)
+```
+
+Difference of squares:
+
+```math
+(x-1)(x+1)(x-4).
+```
+
+Roots:
+
+```text
+1, -1, 4
+```
+
+Здесь сразу работают два знакомых паттерна: grouping + difference of squares.
+
+---
+
+### Pattern F — Parameter through coefficient matching
+
+#### Worked Example
+
+If
+
+```math
+(x+3)(x+k)=x^2+10x+21,
+```
+
+find `k`.
+
+Expand left:
+
+```math
+x^2+(k+3)x+3k.
+```
+
+Compare coefficients:
+
+```math
+k+3=10
+```
+
+```math
+k=7.
+```
+
+Check constant:
+
+```math
+3(7)=21.
+```
+
+---
+
+## 4. Method Selector + SAT Language Decoder
+
+### Быстрый выбор метода
+
+```text
+Question says zero/root?
+  → think factor
+
+Question says factor?
+  → think root
+
+Question says remainder after division by (x-a)?
+  → compute f(a)
+
+Polynomial already factored?
+  → do NOT expand unless necessary
+
+Need coefficients?
+  → expanded form is often better
+
+Need roots?
+  → factored form is often better
+```
+
+### SAT English Decoder
+
+| Phrase | Translation into action |
+|---|---|
+| `zero of f` | `f(x)=0` |
+| `root` | same as zero |
+| `x-intercept` | root on graph |
+| `factor of f(x)` | corresponding root makes function zero |
+| `remainder when divided by (x-a)` | compute `f(a)` |
+| `degree` | highest exponent |
+
+---
+
+## 5. Guided Practice — faded examples
+
+### Example 1 — full support
+
+If `(x-4)` is a factor of `f(x)`, what is `f(4)`?
+
+Pattern: factor theorem.
+
+```math
+f(4)=0.
+```
+
+### Example 2 — less support
+
+If `f(-2)=0`, name a factor.
+
+Think: root `-2` means factor with opposite sign.
+
+<details><summary>Answer</summary>
+
+```math
+x+2
+```
+
+</details>
+
+### Example 3 — transfer
+
+For
+
+```math
+f(x)=x^3+3x^2-4x-12,
+```
+
+show that `x=2` is a root.
+
+Compute:
+
+```math
+f(2)=8+12-8-12=0.
+```
+
+Therefore `(x-2)` is a factor.
+
+### Example 4 — independent
+
+Find remainder when
+
+```math
+f(x)=2x^3-x+1
+```
+
+is divided by `(x+1)`.
+
+<details><summary>Solution</summary>
+
+`x+1 = x-(-1)`, so compute:
+
+```math
+f(-1)=2(-1)^3-(-1)+1=-2+1+1=0.
+```
+
+Remainder = `0`.
 
 </details>
 
 ---
 
-## 5. Common Traps — типичные ловушки
+## 6. Error Clinic + Desmos Strategy
 
-- Root `3` соответствует фактору `(x-3)`, а не `(x+3)`.
-- Degree определяется степенью, а не величиной коэффициента.
-- При умножении степеней одинакового основания показатели складываются; при сложении членов — нет.
+### Error 1 — wrong sign in factor
+
+Root `3` → factor `(x-3)`, not `(x+3)`.
+
+### Error 2 — unnecessary long division
+
+If denominator is `(x-a)` and question asks remainder, use `f(a)` first.
+
+### Error 3 — expand too early
+
+From
+
+```math
+(x-2)(x+5)(x-7),
+```
+
+roots are already visible. Expanding only creates work.
+
+### Desmos
+
+Use graphing to verify roots:
+
+```text
+y=(x-2)(x+5)(x-7)
+```
+
+Look for x-intercepts.
+
+But for factor/remainder theorem, substitution is usually faster than graphing.
 
 ---
 
-## 6. Стратегия для Digital SAT
+## 7. SAT-Style Practice
 
-Desmos быстро показывает zeros графика `y=f(x)`. Но если вопрос спрашивает factor или coefficient, algebraic structure обычно быстрее. Для проверки factor подставьте соответствующий root: если результат 0, фактор подходит.
+### Problem 1 — Easy — Multiple Choice
+
+What is the degree of
+
+```math
+5x^6-2x^3+1?
+```
+
+**A)** 3  
+**B)** 5  
+**C)** 6  
+**D)** 8
+
+### Problem 2 — Easy — Grid-in
+
+If `(x-7)` is a factor of `f(x)`, what is `f(7)`?
+
+### Problem 3 — Medium — Multiple Choice
+
+If `x=-4` is a zero of `f(x)`, which must be a factor?
+
+**A)** `x-4`  
+**B)** `x+4`  
+**C)** `x²-4`  
+**D)** `4x+1`
+
+### Problem 4 — Medium — Grid-in
+
+For
+
+```math
+f(x)=x^3-3x+6,
+```
+
+find the remainder when divided by `(x-2)`.
+
+### Problem 5 — Hard — Grid-in
+
+If
+
+```math
+(x+4)(x+k)=x^2+11x+28,
+```
+
+find `k`.
+
+<details><summary><strong>Answers</strong></summary>
+
+1. **C**, degree 6.  
+2. **0**.  
+3. **B**.  
+4. `f(2)=8-6+6=8`.  
+5. `k=7`.
+
+</details>
 
 ---
 
-## 7. Связи с другими темами
+## 8. Мини-чек-лист и Transfer
 
-**Опирается на:** exponent rules, equivalent expressions, quadratics.  
-**Дальше:** nonlinear functions, rational expressions, systems with nonlinear equations.
+- [ ] Я связываю root, factor и x-intercept.
+- [ ] Я использую Factor Theorem без лишних вычислений.
+- [ ] Я использую Remainder Theorem вместо long division, когда можно.
+- [ ] Я понимаю, когда factored form полезнее expanded form.
+- [ ] Я умею находить parameter через coefficient matching.
 
----
+### Transfer Question
 
-## 8. Мини-чек-лист для самопроверки
+Если график polynomial function пересекает x-axis в `x=-2`, что вы можете сказать об одном из factors?
 
-- [ ] Я нахожу degree и leading coefficient.
-- [ ] Я связываю zero с factor.
-- [ ] Я использую factor/remainder theorem.
-- [ ] Я умею раскрывать и факторизовать polynomial expressions.
+Ответ:
+
+```math
+(x+2)
+```
+
+must be a factor.
