@@ -1,39 +1,36 @@
-# Sampling and Margin of Error — Topic Drill 01
+# Sampling, Inference & Margin of Error — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** Study estimates average height of all students at a school. Population? A) surveyed students B) all students at school C) tallest students D) all city residents
+2. **Easy · MC.** Best way to support generalization? A) random sample from target population B) volunteers only C) largest club D) top scorers
 
-1. **Easy · MC.** The entire group a study wants to understand is the  
-A) sample  B) population  C) statistic  D) residual
-2. **Easy · MC.** Which sampling method is best for estimating student opinion across a whole school?  
-A) ask only athletes  B) ask volunteers online  C) randomly sample from the full roster  D) ask one classroom
-3. **Medium · MC.** All else equal, increasing random sample size usually makes margin of error  
-A) larger  B) smaller  C) exactly zero  D) unchanged
-4. **Easy · MC.** An estimate is `52% ± 3` percentage points. Which interval is consistent?  
-A) 46–49%  B) 49–55%  C) 52–58%  D) 55–61%
-5. **Easy · SPR.** In a random sample of 120 people, 84 answer yes. What is the sample proportion?
-6. **Medium · MC.** Which method is most vulnerable to voluntary-response bias?  
-A) random-digit sampling  B) required census  C) optional website poll  D) stratified random sample
-7. **Medium · MC.** A school wants representation from every grade. Which method is especially useful?  
-A) convenience sample  B) stratified random sample by grade  C) voluntary poll  D) one-cluster sample from a single grade
-8. **Medium · MC.** A confidence interval is best interpreted as  
-A) an exact guarantee of the population value  
-B) a range of plausible population values based on sample data  
-C) the range of all sample values  
-D) proof of causation
-9. **Hard · SPR.** Under similar conditions, a sample of 100 has margin of error about 6 percentage points. If sample size grows to 400, an approximate margin of error is what value, using the `1/√n` rule?
-10. **Medium · SPR.** In a sample of 600 people, 48% support a proposal. Approximately how many sampled people support it?
+## B. Core Pattern
+3. **Easy · SPR.** Estimate 62% with margin ±3 points. Find lower endpoint.
+4. **Easy · SPR.** Estimate 54% with margin ±4 points. Find upper endpoint.
+5. **Medium · MC.** Larger random sample usually gives: A) larger margin B) smaller margin C) more bias automatically D) causation
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Medium · MC.** A huge but biased sample is automatically representative? A) yes B) no
+7. **Medium · MC.** Random selection mainly helps: A) causation B) generalization C) factoring D) graphing
 
-1. **B**.
-2. **C**.
-3. **B**.
-4. **B**.
-5. **0.70**.
-6. **C**.
-7. **B**.
-8. **B**.
-9. **3 percentage points** — quadrupling `n` roughly halves MOE.
-10. **288**.
+## D. Interpretation
+8. **Medium · MC.** Margin of error is best viewed as: A) number of dishonest respondents B) uncertainty around estimate C) exact population error D) sample size
 
+## E. Trap
+9. **Hard · MC.** Sample A n=100, sample B n=1000, same random method. Which usually more precise? A) A B) B C) equal D) neither
+
+## F. Transfer
+10. **Hard · MC.** 48% ±5 points. Which value is consistent? A)39 B)42 C)51 D)56
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — target group.
+2. **A** — random selection supports representativeness.
+3. **59** — 62-3.
+4. **58** — 54+4.
+5. **B** — larger n reduces sampling variability.
+6. **B** — size cannot repair systematic bias.
+7. **B** — sample→population.
+8. **B** — interval uncertainty.
+9. **B** — larger random sample, smaller MOE generally.
+10. **C** — interval 43–53.
 </details>

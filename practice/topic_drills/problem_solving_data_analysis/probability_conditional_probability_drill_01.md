@@ -1,29 +1,36 @@
-# Probability and Conditional Probability — Topic Drill 01
+# Probability & Conditional Probability — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** Basic probability is: A) favorable/total B) total/favorable C) mean/range D) percent change
+2. **Easy · MC.** Phrase **given that** means: A) enlarge denominator B) restrict sample space C) multiply all counts D) ignore condition
 
-1. **Easy · SPR.** A fair six-sided die is rolled. What is the probability of an even result?
-2. **Easy · SPR.** A bag contains 4 red and 6 blue balls. What is the probability of drawing red?
-3. **Easy · SPR.** If `P(rain)=0.30`, what is `P(no rain)`?
-4. **Medium · SPR.** Two fair coins are tossed. What is the probability of two heads?
-5. **Medium · SPR.** A bag has 3 red and 2 blue balls. Two are drawn without replacement. What is the probability both are red?
-6. **Medium · SPR.** There are 12 girls; 5 play soccer. What is `P(soccer | girl)`?
-7. **Medium · SPR.** One integer is chosen uniformly from 1 through 10. What is the probability it is divisible by 2 or 5?
-8. **Medium · SPR.** Independent events have `P(A)=0.4` and `P(B)=0.5`. Find `P(A and B)`.
-9. **Hard · SPR.** Of 18 students who play music, 10 are boys. What is `P(boy | plays music)`?
-10. **Hard · SPR.** Three fair coins are tossed. What is the probability of getting exactly one head?
+## B. Core Pattern
+3. **Easy · SPR.** Fair die: probability of rolling 5. Enter fraction numerator when denominator is 6.
+4. **Easy · SPR.** Bag has 3 red, 7 blue. Find probability red as decimal.
+5. **Easy · SPR.** If `P(A)=0.35`, find `P(not A)`.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Medium · SPR.** 20 juniors; 8 take physics. Given junior, find probability of physics as decimal.
+7. **Medium · MC.** For `P(A|B)`, denominator is: A) all outcomes B) outcomes in B C) outcomes in A only D) 1 always
 
-1. **1/2**.
-2. **2/5 = 0.4**.
-3. **0.70**.
-4. **1/4**.
-5. **3/10** — `3/5·2/4`.
-6. **5/12**.
-7. **3/5** — favorable values: 2,4,5,6,8,10.
-8. **0.20**.
-9. **5/9**.
-10. **3/8**.
+## D. Independence
+8. **Medium · SPR.** Independent events have P(A)=.4, P(B)=.5. Find P(A and B).
 
+## E. Trap
+9. **Hard · MC.** Independent and mutually exclusive mean the same thing? A) yes B) no
+
+## F. Transfer
+10. **Hard · SPR.** Of 24 Spanish students, 15 play on a team. Given Spanish, find probability team as a fraction in simplest form; enter numerator.
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **A** — favorable over relevant total.
+2. **B** — “shrink the room.”
+3. **1** — probability `1/6`.
+4. **0.3** — 3/10.
+5. **0.65** — complement.
+6. **0.4** — 8/20.
+7. **B** — condition defines denominator.
+8. **0.2** — multiply independent probabilities.
+9. **B** — distinct concepts.
+10. **5** — `15/24=5/8`.
 </details>

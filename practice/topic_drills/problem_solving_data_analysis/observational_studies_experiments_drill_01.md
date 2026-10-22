@@ -1,45 +1,36 @@
-# Observational Studies and Experiments — Topic Drill 01
+# Observational Studies & Experiments — Practice V2 · Drill 01
 
-## Questions
+## A. Recognition
+1. **Easy · MC.** Researchers record sleep and grades without assigning behavior. A) experiment B) observational study C) random assignment D) control treatment
+2. **Easy · MC.** Feature most directly supporting causation? A) random assignment B) large graph C) high correlation D) volunteer survey
 
-1. **Easy · MC.** In which type of study do researchers observe subjects without assigning a treatment?  
-A) experiment  B) observational study  C) randomized block experiment  D) simulation only
-2. **Easy · MC.** Random assignment is a defining feature of a well-designed  
-A) observational study  B) experiment  C) census  D) convenience sample
-3. **Medium · MC.** Random assignment primarily strengthens which conclusion?  
-A) causation  B) population representativeness  C) arithmetic accuracy  D) response rate
-4. **Medium · MC.** Random sampling primarily strengthens the ability to  
-A) establish causation  B) generalize from sample to population  C) remove all confounding  D) guarantee equal groups
-5. **Easy · MC.** A variable associated with both the explanatory and response variables that can distort an observed relationship is called a  
-A) residual  B) confounding variable  C) median  D) parameter
-6. **Medium · MC.** Why is a control group useful?  
-A) It provides a comparison baseline.  
-B) It guarantees a representative sample.  
-C) It removes all measurement error.  
-D) It makes randomization unnecessary.
-7. **Medium · MC.** Blinding participants can reduce  
-A) placebo/expectation effects  B) sample size  C) margin of error to zero  D) the need for a control group
-8. **Easy · MC.** A strong association in an observational study, by itself, proves causation.  
-A) true  B) false  C) true only when correlation is positive  D) true when sample size >1000
-9. **Medium · MC.** A survey asks only users who voluntarily click a banner to respond. The main concern is  
-A) voluntary-response bias  B) random assignment  C) placebo effect  D) double blinding
-10. **Hard · MC.** Researchers randomly sample adults from a city, then randomly assign sampled adults to treatment/control groups. If executed well, this design supports  
-A) neither generalization nor causation  
-B) causation only  
-C) generalization only  
-D) both population generalization and causal inference
+## B. Core Pattern
+3. **Medium · MC.** Random sample of city residents shows exercise associated with health. Best claim? A) exercise definitely causes health B) association can be generalized more reasonably C) all exercisers healthy D) experiment
+4. **Medium · MC.** Main purpose of control group? A) comparison baseline B) guarantee random sample C) remove all error D) increase correlation
+5. **Medium · MC.** Random sampling mainly answers: A) who can results generalize to B) what caused outcome C) how to factor D) which graph
 
-<details><summary><strong>Answers</strong></summary>
+## C. Guided Variation
+6. **Medium · MC.** Random assignment mainly strengthens: A) causal inference B) representativeness C) margin formula D) unit conversion
+7. **Medium · MC.** Strong correlation alone proves causation? A) yes B) no
 
-1. **B**.
-2. **B**.
-3. **A**.
-4. **B**.
-5. **B**.
-6. **A**.
-7. **A**.
-8. **B**.
-9. **A**.
-10. **D** — random sampling supports generalization; random assignment supports causation.
+## D. Design
+8. **Hard · MC.** Randomized experiment uses volunteers from one sports club. Strongest conclusion? A) causal inference may apply to participants; broad generalization limited B) applies to all adults C) no causal inference D) volunteers are random sample
 
+## E. Trap
+9. **Hard · MC.** Random assignment guarantees representative sampling? A) yes B) no
+
+## F. Transfer
+10. **Hard · MC.** A random sample is observed but no treatment assigned. Which is justified? A) population association may be estimated B) causation is proven C) nothing can be generalized D) treatment effect proven
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — no assigned treatment.
+2. **A** — assignment→causation.
+3. **B** — sampling supports generalization, not causation.
+4. **A** — baseline comparison.
+5. **A** — selection→who.
+6. **A** — assignment→why/cause.
+7. **B** — association ≠ causation.
+8. **A** — separate causal validity from external generalization.
+9. **B** — sampling and assignment solve different problems.
+10. **A** — random sample supports population association.
 </details>
