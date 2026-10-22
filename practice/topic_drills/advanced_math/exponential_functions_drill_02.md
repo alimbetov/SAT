@@ -1,30 +1,34 @@
-# Exponential Functions — Topic Drill 02
+# Exponential Functions — Practice V2 · Drill 02
 
-## Questions
+## A. Method Selection
+1. **Medium · MC.** A table has constant ratio between outputs. Test first: A) linear B) exponential C) quadratic D) absolute
+2. **Medium · SPR.** Outputs 100,120,144 correspond to consecutive inputs. Find the common growth factor.
 
-1. **Medium · SPR.** A quantity follows `150(1.2)^t`. Find its value at `t=3`.
-2. **Medium · SPR.** A substance has initial amount 320 and half-life 4 hours. How much remains after 8 hours?
-3. **Medium · SPR.** Solve `5·2^x=40`.
-4. **Hard · SPR.** Solve `9^x=27`.
-5. **Medium · MC.** Which represents exponential growth?  
-A) `y=8x+2`  B) `y=50(1.08)^x`  C) `y=x^2+5`  D) `y=100-8x`
-6. **Hard · SPR.** In `200(1.03)^(2t)`, what is the growth factor for each 1-unit increase in `t`?
-7. **Medium · SPR.** For `P(t)=50·2^(t/6)`, what is the doubling time?
-8. **Hard · SPR.** If `f(x)=a·3^x` and `f(2)=45`, find `a`.
-9. **Hard · SPR.** If `f(x)=ab^x`, `f(0)=8`, and `f(2)=18`, find positive `b`.
-10. **750–800 · SPR.** Solve `4^(x+1)=8^(x-1)`.
+## B. Hard Variations
+3. **Medium · SPR.** 400 grows 5% per period for 2 periods. Find the final value.
+4. **Hard · SPR.** After a 20% increase, a value is 240. Find the original value.
+5. **Hard · SPR.** `P(t)=1600(0.5)^(t/4)`. Find `P(8)`.
 
-<details><summary><strong>Answers</strong></summary>
+## C. Trap Clinic
+6. **Hard · SPR.** A value increases 10% then decreases 10%. What percent net change occurs?
+7. **Hard · SPR.** Compare `L(x)=100+20x` and `E(x)=100(1.2)^x` at x=2. Find `E(2)-L(2)`.
 
-1. **259.2**.
-2. **80**.
-3. **3**.
-4. **3/2**.
-5. **B**.
-6. **1.0609** — `(1.03)^2`.
-7. **6**.
-8. **5**.
-9. **1.5**.
-10. **5** — rewrite bases as powers of 2.
+## D. Transfer
+8. **Medium · SPR.** Solve `2^x=32`.
+9. **Medium · MC.** Annual depreciation 15% uses factor: A) .15 B) .85 C) 1.15 D) 15
 
+## E. 750–800 Challenge
+10. **750–800 · SPR.** `P(t)=500(1.44)^(t/2)`. By what percent does P increase per 1 time unit?
+
+<details><summary><strong>Practice V2 answer key</strong></summary>
+1. **B** — constant multiplicative change.
+2. **1.2** — `120/100`.
+3. **441** — `400(1.05)^2`.
+4. **200** — reverse percent: divide by 1.2.
+5. **400** — two half-life intervals.
+6. **-1%** — multiplier `.99`; equal opposite percentages do not cancel.
+7. **4** — 144-140.
+8. **5** — common base.
+9. **B** — `1-.15`.
+10. **20** — per-unit factor `sqrt(1.44)=1.2`.
 </details>
