@@ -4,7 +4,7 @@
 
 ## EN-B1-02 — Past Continuous vs Past Simple
 
-**EN-B1-02-Q1 — Recognition**
+**EN-B1-02-Q1**
 
 I ___ dinner when the phone rang.
 
@@ -13,7 +13,7 @@ B) was cooking
 C) am cooking  
 D) have cooked
 
-**EN-B1-02-Q2 — Basic application**
+**EN-B1-02-Q2**
 
 At exactly 7 p.m. yesterday, they ___ football.
 
@@ -22,7 +22,7 @@ B) played
 C) were playing  
 D) have played
 
-**EN-B1-02-Q3 — Independent application**
+**EN-B1-02-Q3**
 
 While I was walking home, I ___ an old friend.
 
@@ -31,7 +31,7 @@ B) met
 C) was meeting  
 D) have met
 
-**EN-B1-02-Q4 — Misconception / trap**
+**EN-B1-02-Q4**
 
 Choose the correct sentence.
 
@@ -40,7 +40,7 @@ B) When the phone was ringing, she sleeping.
 C) When the phone rang, she were sleeping.  
 D) When the phone rang, she has slept.
 
-**EN-B1-02-Q5 — Transfer / context**
+**EN-B1-02-Q5**
 
 The lights went out while we ___ for the exam.
 
@@ -65,7 +65,7 @@ D) have studied
 
 ## EN-B1-03 — First and second conditionals
 
-**EN-B1-03-Q1 — Recognition**
+**EN-B1-03-Q1**
 
 If it rains tomorrow, we ___ the picnic indoors.
 
@@ -74,7 +74,7 @@ B) moved
 C) will move  
 D) would moved
 
-**EN-B1-03-Q2 — Basic application**
+**EN-B1-03-Q2**
 
 If I had more free time, I ___ another language.
 
@@ -83,7 +83,7 @@ B) would learn
 C) learned  
 D) have learned
 
-**EN-B1-03-Q3 — Independent application**
+**EN-B1-03-Q3**
 
 Unless you study, you ___ the test.
 
@@ -92,7 +92,7 @@ B) will fail
 C) failed yesterday  
 D) failing
 
-**EN-B1-03-Q4 — Misconception / trap**
+**EN-B1-03-Q4**
 
 If I ___ you, I would check the instructions twice.
 
@@ -101,7 +101,7 @@ B) was being
 C) were  
 D) will be
 
-**EN-B1-03-Q5 — Transfer / context**
+**EN-B1-03-Q5**
 
 If she ___ regularly, she will improve her vocabulary.
 
@@ -126,7 +126,7 @@ D) practiced
 
 ## EN-B1-04 — Relative clauses and basic passive
 
-**EN-B1-04-Q1 — Recognition**
+**EN-B1-04-Q1**
 
 The teacher ___ helped us yesterday is very patient.
 
@@ -135,7 +135,7 @@ B) who
 C) where  
 D) whose
 
-**EN-B1-04-Q2 — Basic application**
+**EN-B1-04-Q2**
 
 This is the book ___ I borrowed from the library.
 
@@ -144,7 +144,7 @@ B) whose
 C) which  
 D) who
 
-**EN-B1-04-Q3 — Independent application**
+**EN-B1-04-Q3**
 
 The bridge ___ in 2010.
 
@@ -153,7 +153,7 @@ B) was built
 C) is build  
 D) has build
 
-**EN-B1-04-Q4 — Misconception / trap**
+**EN-B1-04-Q4**
 
 English ___ in many countries.
 
@@ -162,7 +162,7 @@ B) is spoken
 C) spoke  
 D) is speaking by
 
-**EN-B1-04-Q5 — Transfer / context**
+**EN-B1-04-Q5**
 
 Choose the correct sentence.
 
@@ -187,7 +187,7 @@ D) The letters sent by yesterday.
 
 ## EN-B1-05 — Reported speech and verb patterns
 
-**EN-B1-05-Q1 — Recognition**
+**EN-B1-05-Q1**
 
 Yesterday Anna said, 'I am tired.' Reported later in the past, Anna said she ___ tired.
 
@@ -196,7 +196,7 @@ B) was
 C) be  
 D) has
 
-**EN-B1-05-Q2 — Basic application**
+**EN-B1-05-Q2**
 
 He ___ me that the meeting was canceled.
 
@@ -205,7 +205,7 @@ B) told
 C) spoke  
 D) talked
 
-**EN-B1-05-Q3 — Independent application**
+**EN-B1-05-Q3**
 
 She enjoys ___ books on weekends.
 
@@ -214,7 +214,7 @@ B) to read
 C) reading  
 D) reads
 
-**EN-B1-05-Q4 — Misconception / trap**
+**EN-B1-05-Q4**
 
 They decided ___ early to avoid traffic.
 
@@ -223,7 +223,7 @@ B) leaving
 C) to leave  
 D) left
 
-**EN-B1-05-Q5 — Transfer / context**
+**EN-B1-05-Q5**
 
 He asked me ___ I was ready for the exam.
 
