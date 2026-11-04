@@ -42,7 +42,7 @@ D) I knowing the answer.
 
 **EN-A2-01-Q5**
 
-Nina normally works in the office, but this week she ___ from home.
+Look at Nina on the video call right now. She normally works in the office, but she ___ from home at this moment.
 
 A) work  
 B) works  
@@ -59,7 +59,7 @@ D) has work
 
 4. <u>**B) I know the answer.**</u>. The stative verb 'know' normally uses Present Simple, not the progressive for this meaning.
 
-5. <u>**C) is working**</u>. 'This week' contrasts a temporary arrangement with habitual office work, favoring 'is working'.
+5. <u>**C) is working**</u>. 'At this moment' points to an action happening now, so 'is working' describes what Nina is doing; 'works' refers to a general routine.
 
 </details>
 
