@@ -29,6 +29,18 @@ EXPECTED_IDS = {
     "KZ-FND-01", "KZ-FND-02", "ALG-01", "ALG-02", "PSD-01", "PSD-02",
     "EN-A1-01", "EN-A1-02", "EN-A2-01", "EN-B1-02",
 }
+EXPECTED_KEYS = {
+    "KZ-FND-01": "CBDBC",
+    "KZ-FND-02": "CBACB",
+    "ALG-01": "BBCDC",
+    "ALG-02": "BBCCC",
+    "PSD-01": "ACCCC",
+    "PSD-02": "BBCBC",
+    "EN-A1-01": "BAACC",
+    "EN-A1-02": "BCACB",
+    "EN-A2-01": "BCBBC",
+    "EN-B1-02": "BCBAB",
+}
 
 def load_bank():
     bank = {}
@@ -77,6 +89,10 @@ def load_bank():
     for grade, ids in TRACKS.items():
         if not set(ids).issubset(bank) or len(ids) != 5 or len(set(ids)) != 5:
             raise ValueError(f"Bad track {grade}")
+    for topic_id, expected_keys in EXPECTED_KEYS.items():
+        actual = "".join(q["key"] for q in bank[topic_id]["questions"])
+        if actual != expected_keys:
+            raise ValueError(f"{topic_id}: changed answer sequence {actual}, expected {expected_keys}")
     return bank
 
 def label(grade, locale):
@@ -163,6 +179,31 @@ def teacher_sheet(bank, grade):
     ])
     return "\n".join(out)
 
+def validate_published_print(bank):
+    published = D / "print"
+    for grade, ids in TRACKS.items():
+        expected = [q["id"] for tid in ids for q in bank[tid]["questions"]]
+        for locale in ["kk", "ru"]:
+            path = published / f"{grade}_student_{locale}.md"
+            text = path.read_text(encoding="utf-8")
+            found = re.findall(r"^\*\*([A-Z0-9-]+-Q[1-5])\*\*$", text, re.M)
+            if found != expected:
+                raise ValueError(f"{path}: published student IDs do not match JSON")
+            if re.search(r"<u>|<details>|<strong>|teacher-only|answer key", text, re.I):
+                raise ValueError(f"{path}: teacher keys accidentally leaked")
+            for tid in ids:
+                topic = bank[tid]
+                for q in topic["questions"]:
+                    stem = q["stem_en"] if topic["subject"] == "english" else q[f"stem_{locale}"]
+                    if stem not in text:
+                        raise ValueError(f"{path}: missing or outdated student stem {q['id']}")
+        key_path = published / f"{grade}_teacher_kk_ru.md"
+        key_text = key_path.read_text(encoding="utf-8")
+        key_rows = re.findall(r"^\*\*([A-Z0-9-]+-Q[1-5])\*\* — <u>\*\*([ABCD])\)", key_text, re.M)
+        if key_rows != [(q["id"], q["key"]) for tid in ids for q in bank[tid]["questions"]]:
+            raise ValueError(f"{key_path}: published teacher IDs/answer letters do not match JSON")
+
+
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--grade", choices=["grade6","grade9","all"],default="all")
@@ -171,6 +212,7 @@ def main():
     p.add_argument("--check-only",action="store_true")
     args=p.parse_args()
     bank=load_bank()
+    validate_published_print(bank)
     grades=list(TRACKS) if args.grade=="all" else [args.grade]
     locales=["kk","ru"] if args.locale=="both" else [args.locale]
     if not args.check_only:
