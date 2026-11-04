@@ -4,7 +4,7 @@
 
 ## EN-B2-01 — Perfect aspect and narrative sequence
 
-**EN-B2-01-Q1 — Recognition**
+**EN-B2-01-Q1**
 
 By the time I arrived at the station, the train ___.
 
@@ -13,7 +13,7 @@ B) has left
 C) had left  
 D) will leave
 
-**EN-B2-01-Q2 — Basic application**
+**EN-B2-01-Q2**
 
 By next Friday, she ___ the entire project.
 
@@ -22,7 +22,7 @@ B) has completed yesterday
 C) had completed  
 D) completing
 
-**EN-B2-01-Q3 — Independent application**
+**EN-B2-01-Q3**
 
 They ___ for two hours when the bus finally arrived.
 
@@ -31,7 +31,7 @@ B) had been waiting
 C) have waited tomorrow  
 D) will be waiting
 
-**EN-B2-01-Q4 — Misconception / trap**
+**EN-B2-01-Q4**
 
 By the time she graduated in 2020, she ___ two internships.
 
@@ -40,7 +40,7 @@ B) will complete
 C) had completed  
 D) is completing
 
-**EN-B2-01-Q5 — Transfer / context**
+**EN-B2-01-Q5**
 
 When I got home last night, I realized I ___ my keys at the office.
 
@@ -65,7 +65,7 @@ D) am leaving
 
 ## EN-B2-02 — Third and mixed conditionals
 
-**EN-B2-02-Q1 — Recognition**
+**EN-B2-02-Q1**
 
 If she had studied harder, she ___ the exam last week.
 
@@ -74,7 +74,7 @@ B) will have passed
 C) would have passed  
 D) had passed
 
-**EN-B2-02-Q2 — Basic application**
+**EN-B2-02-Q2**
 
 If I had known about the delay yesterday, I ___ you immediately.
 
@@ -83,7 +83,7 @@ B) would call
 C) would have called  
 D) had called
 
-**EN-B2-02-Q3 — Independent application**
+**EN-B2-02-Q3**
 
 If I had gone to bed earlier last night, I ___ so tired now.
 
@@ -92,7 +92,7 @@ B) wouldn't have been yesterday
 C) won't be yesterday  
 D) am not
 
-**EN-B2-02-Q4 — Misconception / trap**
+**EN-B2-02-Q4**
 
 If he were more careful generally, he ___ that vase yesterday.
 
@@ -101,7 +101,7 @@ B) wouldn't have broken
 C) hadn't broken  
 D) doesn't break
 
-**EN-B2-02-Q5 — Transfer / context**
+**EN-B2-02-Q5**
 
 If they had studied English for years, they ___ this article easily now.
 
@@ -126,7 +126,7 @@ D) had understood
 
 ## EN-B2-03 — Advanced passive and causative
 
-**EN-B2-03-Q1 — Recognition**
+**EN-B2-03-Q1**
 
 I ___ at a salon yesterday; a professional did it for me.
 
@@ -135,7 +135,7 @@ B) had my hair cut
 C) have cut my hair tomorrow  
 D) was my hair cutting
 
-**EN-B2-03-Q2 — Basic application**
+**EN-B2-03-Q2**
 
 The report ___ by the committee yesterday afternoon.
 
@@ -144,7 +144,7 @@ B) has approve
 C) is approving  
 D) was approve
 
-**EN-B2-03-Q3 — Independent application**
+**EN-B2-03-Q3**
 
 Last week, Clara ___ by a mechanic after her car broke down.
 
@@ -153,7 +153,7 @@ B) got her car repair
 C) had repaired her car by herself  
 D) was got her car repair
 
-**EN-B2-03-Q4 — Misconception / trap**
+**EN-B2-03-Q4**
 
 He was made ___ publicly for his mistake.
 
@@ -162,7 +162,7 @@ B) apologizing
 C) to apologize  
 D) apologized
 
-**EN-B2-03-Q5 — Transfer / context**
+**EN-B2-03-Q5**
 
 The old bridge ___ right now, so drivers must use the detour.
 
@@ -187,7 +187,7 @@ D) was repairing
 
 ## EN-B2-05 — Complex clauses, inversion and emphasis
 
-**EN-B2-05-Q1 — Recognition**
+**EN-B2-05-Q1**
 
 ___ it was raining heavily, the team continued playing.
 
@@ -196,7 +196,7 @@ B) Despite
 C) In spite  
 D) However
 
-**EN-B2-05-Q2 — Basic application**
+**EN-B2-05-Q2**
 
 ___ the heavy rain, the match continued.
 
@@ -205,7 +205,7 @@ B) Even though
 C) Despite  
 D) Whereas
 
-**EN-B2-05-Q3 — Independent application**
+**EN-B2-05-Q3**
 
 Not only ___ finish early, but he also helped his classmates.
 
@@ -214,7 +214,7 @@ B) did he
 C) he has  
 D) he does
 
-**EN-B2-05-Q4 — Misconception / trap**
+**EN-B2-05-Q4**
 
 Hardly ___ we arrived when the lights went out.
 
@@ -223,7 +223,7 @@ B) have
 C) will  
 D) are
 
-**EN-B2-05-Q5 — Transfer / context**
+**EN-B2-05-Q5**
 
 It was Maria ___ solved the puzzle, not the other students.
 
