@@ -39,7 +39,7 @@ def check(ok: bool, message: str) -> None:
 
 def student_options(fragment: str, label: str, required_q: int) -> None:
     """Check exactly four nonduplicated lettered options per question."""
-    starts = list(re.finditer(r"^\*\*(?:[A-Z0-9-]+-)?Q[1-5] —.+\*\*\s*$", fragment, re.M))
+    starts = list(re.finditer(r"^\*\*(?:[A-Z0-9-]+-)?Q[1-5]\*\*[ \t]*$", fragment, re.M))
     check(len(starts) == required_q, f"{label}: student question headings {len(starts)} != {required_q}")
     for i, match in enumerate(starts):
         chunk = fragment[match.end() : (starts[i + 1].start() if i + 1 < len(starts) else len(fragment))]
@@ -64,7 +64,7 @@ def check_bank(path: str, expected_topic_count: int) -> None:
         if "<details>" not in body:
             continue
         student, teacher = body.split("<details>", 1)
-        ids = re.findall(rf"^\*\*({re.escape(topic)}-Q[1-5]) —", student, re.M)
+        ids = re.findall(rf"^\*\*({re.escape(topic)}-Q[1-5])\*\*[ \t]*$", student, re.M)
         expected_ids = [f"{topic}-Q{i}" for i in range(1, 6)]
         check(ids == expected_ids, f"{topic}: question IDs expected {expected_ids}, got {ids}")
         for qid in ids:
@@ -84,7 +84,7 @@ def check_pilot_math() -> None:
     # Student test precedes answer sheet.
     student = before.split("## Student test", 1)[1].split("## Answer sheet", 1)[0]
     student_options(student, "math pilot", 5)
-    ids = re.findall(r"^\*\*(ALG-01-Q[1-5]) —", student, re.M)
+    ids = re.findall(r"^\*\*(ALG-01-Q[1-5])\*\*[ \t]*$", student, re.M)
     check(ids == [f"ALG-01-Q{i}" for i in range(1, 6)], "math pilot: Q1–Q5 missing")
     check("ALG-01" not in seen_topics, "math pilot duplicate topic")
     seen_topics.add("ALG-01")
@@ -107,7 +107,7 @@ def check_pilot_english() -> None:
             continue
         student, teacher = body.split("<details>", 1)
         student_options(student, topic, 5)
-        check(len(re.findall(r"^\*\*Q[1-5] —", student, re.M)) == 5, f"{topic}: student Q1–Q5 missing")
+        check(len(re.findall(r"^\*\*Q[1-5]\*\*[ \t]*$", student, re.M)) == 5, f"{topic}: student Q1–Q5 missing")
         check(topic not in seen_topics, f"english pilot duplicate topic {topic}")
         seen_topics.add(topic)
         for j in range(1, 6):
