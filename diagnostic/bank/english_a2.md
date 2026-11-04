@@ -4,7 +4,7 @@
 
 ## EN-A2-01 — Present Simple vs Present Continuous
 
-**EN-A2-01-Q1 — Recognition**
+**EN-A2-01-Q1**
 
 Tom usually ___ to school, but today his father is driving him.
 
@@ -13,7 +13,7 @@ B) walks
 C) is walking  
 D) walking
 
-**EN-A2-01-Q2 — Basic application**
+**EN-A2-01-Q2**
 
 Please be quiet! The students ___ an exam right now.
 
@@ -22,7 +22,7 @@ B) takes
 C) are taking  
 D) took
 
-**EN-A2-01-Q3 — Independent application**
+**EN-A2-01-Q3**
 
 Listen! A baby ___ next door.
 
@@ -31,7 +31,7 @@ B) is crying
 C) cry  
 D) cried
 
-**EN-A2-01-Q4 — Misconception / trap**
+**EN-A2-01-Q4**
 
 Choose the standard sentence for the meaning 'I have this knowledge now'.
 
@@ -40,7 +40,7 @@ B) I know the answer.
 C) I knows the answer.  
 D) I knowing the answer.
 
-**EN-A2-01-Q5 — Transfer / context**
+**EN-A2-01-Q5**
 
 Nina normally works in the office, but this week she ___ from home.
 
@@ -65,7 +65,7 @@ D) has work
 
 ## EN-A2-03 — Future forms and intentions
 
-**EN-A2-03-Q1 — Recognition**
+**EN-A2-03-Q1**
 
 Look at those black storm clouds! It ___ soon.
 
@@ -74,7 +74,7 @@ B) rained
 C) rains yesterday  
 D) to rain
 
-**EN-A2-03-Q2 — Basic application**
+**EN-A2-03-Q2**
 
 The phone is ringing. I ___ it!
 
@@ -83,7 +83,7 @@ B) am answering yesterday
 C) will answer  
 D) answering
 
-**EN-A2-03-Q3 — Independent application**
+**EN-A2-03-Q3**
 
 They have decided to buy a new bicycle next month. They ___ one.
 
@@ -92,7 +92,7 @@ B) are going to buy
 C) bought  
 D) have buy
 
-**EN-A2-03-Q4 — Misconception / trap**
+**EN-A2-03-Q4**
 
 I promise I ___ you the notes tomorrow.
 
@@ -101,7 +101,7 @@ B) sent
 C) am send  
 D) was sending
 
-**EN-A2-03-Q5 — Transfer / context**
+**EN-A2-03-Q5**
 
 If you press this button, the screen ___ on.
 
@@ -126,7 +126,7 @@ D) have turned
 
 ## EN-A2-04 — Quantifiers, comparatives and superlatives
 
-**EN-A2-04-Q1 — Recognition**
+**EN-A2-04-Q1**
 
 How ___ apples do you need?
 
@@ -135,7 +135,7 @@ B) many
 C) little  
 D) any of
 
-**EN-A2-04-Q2 — Basic application**
+**EN-A2-04-Q2**
 
 There is very ___ milk left; we need to buy more.
 
@@ -144,7 +144,7 @@ B) many
 C) little  
 D) a few
 
-**EN-A2-04-Q3 — Independent application**
+**EN-A2-04-Q3**
 
 This room is ___ than that one.
 
@@ -153,7 +153,7 @@ B) bigger
 C) most big  
 D) as biger
 
-**EN-A2-04-Q4 — Misconception / trap**
+**EN-A2-04-Q4**
 
 Of all the runners, Mina was the ___.
 
@@ -162,7 +162,7 @@ B) fast
 C) fastest  
 D) most fast
 
-**EN-A2-04-Q5 — Transfer / context**
+**EN-A2-04-Q5**
 
 This year there are ___ students in the class than last year.
 
@@ -187,7 +187,7 @@ D) much
 
 ## EN-A2-05 — Modals and linking clauses
 
-**EN-A2-05-Q1 — Recognition**
+**EN-A2-05-Q1**
 
 At a red traffic light, drivers ___ stop.
 
@@ -196,7 +196,7 @@ B) must
 C) might  
 D) can
 
-**EN-A2-05-Q2 — Basic application**
+**EN-A2-05-Q2**
 
 You look exhausted. You ___ get some rest.
 
@@ -205,7 +205,7 @@ B) can to
 C) mustn't  
 D) may not
 
-**EN-A2-05-Q3 — Independent application**
+**EN-A2-05-Q3**
 
 When she was four years old, she ___ already count to twenty.
 
@@ -214,7 +214,7 @@ B) could
 C) can to  
 D) was can
 
-**EN-A2-05-Q4 — Misconception / trap**
+**EN-A2-05-Q4**
 
 If it ___ tomorrow, we will stay at home.
 
@@ -223,9 +223,9 @@ B) rained
 C) rains  
 D) raining
 
-**EN-A2-05-Q5 — Transfer / context**
+**EN-A2-05-Q5**
 
-We stayed inside ___ it was raining heavily.
+Choose a word that expresses the reason: We stayed inside ___ it was raining heavily.
 
 A) although  
 B) because  
