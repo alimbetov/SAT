@@ -6,7 +6,7 @@
 
 **EN-B1-02-Q1**
 
-I ___ dinner when the phone rang.
+I was already at the stove preparing dinner. I ___ when the phone suddenly rang.
 
 A) cooked  
 B) was cooking  
@@ -42,7 +42,7 @@ D) When the phone rang, she has slept.
 
 **EN-B1-02-Q5**
 
-The lights went out while we ___ for the exam.
+We had started preparing for the exam and were still in the middle of it. The lights went out while we ___ for the exam.
 
 A) study  
 B) were studying  
@@ -51,7 +51,7 @@ D) have studied
 
 <details><summary>Teacher-only answer key and explanations — EN-B1-02</summary>
 
-1. <u>**B) was cooking**</u>. Ongoing background action in the past takes Past Continuous; the short interrupting event uses Past Simple.
+1. <u>**B) was cooking**</u>. The first sentence explicitly establishes an action in progress when the phone rang. Past Continuous 'was cooking' describes the ongoing activity; the ringing is the interrupting event.
 
 2. <u>**C) were playing**</u>. Action in progress at a specified past time: 'were playing'.
 
@@ -59,7 +59,7 @@ D) have studied
 
 4. <u>**A) When the phone rang, she was sleeping.**</u>. Past Simple for the interruption 'rang'; Past Continuous for background 'was sleeping'.
 
-5. <u>**B) were studying**</u>. Background ongoing action when the interruption occurred: 'were studying'.
+5. <u>**B) were studying**</u>. The context explicitly says the studying was already in progress when the lights went out, so the background action uses Past Continuous 'were studying'.
 
 </details>
 
