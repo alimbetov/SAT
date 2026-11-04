@@ -116,7 +116,7 @@ D) C(n)=4+10/n
 
 2. <u>**D) 7**</u>. At x=0, y=7, so the y-intercept is 7.
 
-3. <u>**B) −7**</u>. f(−2)=4·(−2)+1=−8+1=−7.
+3. <u>**B) −7**</u>. f(−2)=4·(−2)+1=−8+1=−7. Multiply the negative input first; then add the constant term 1.
 
 4. <u>**C) They are parallel distinct lines**</u>. Equal slopes (2) but different y-intercepts give parallel, nonidentical lines.
 
