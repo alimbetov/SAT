@@ -4,7 +4,7 @@
 
 ## ADV-01 — Equivalent expressions
 
-**ADV-01-Q1 — Recognition**
+**ADV-01-Q1**
 
 Which expression is equivalent to 3(x + 4)?
 
@@ -13,7 +13,7 @@ B) 3x + 12
 C) x + 12  
 D) 12x
 
-**ADV-01-Q2 — Basic application**
+**ADV-01-Q2**
 
 Expand (x + 2)(x + 3).
 
@@ -22,7 +22,7 @@ B) x² + 5x + 6
 C) x² + 6x + 5  
 D) 2x + 5
 
-**ADV-01-Q3 — Independent application**
+**ADV-01-Q3**
 
 Simplify 2x + 4x − 5.
 
@@ -31,7 +31,7 @@ B) 6x + 5
 C) 8x − 5  
 D) 6x
 
-**ADV-01-Q4 — Misconception / trap**
+**ADV-01-Q4**
 
 Simplify −(2x − 3) + x.
 
@@ -40,7 +40,7 @@ B) −3x + 3
 C) −x + 3  
 D) −x − 3
 
-**ADV-01-Q5 — Transfer / context**
+**ADV-01-Q5**
 
 A rectangle has length 7 and width x. Which expression represents its perimeter?
 
@@ -65,7 +65,7 @@ D) 14x
 
 ## ADV-02 — Quadratic equations and functions
 
-**ADV-02-Q1 — Recognition**
+**ADV-02-Q1**
 
 What are all real solutions of x² = 9?
 
@@ -74,7 +74,7 @@ B) −3 only
 C) −3 and 3  
 D) 9 only
 
-**ADV-02-Q2 — Basic application**
+**ADV-02-Q2**
 
 Solve x² − 5x + 6 = 0.
 
@@ -83,7 +83,7 @@ B) 1, 6
 C) 2, 3  
 D) −1, −6
 
-**ADV-02-Q3 — Independent application**
+**ADV-02-Q3**
 
 What is the vertex of y = (x − 4)² + 1?
 
@@ -92,7 +92,7 @@ B) (4,1)
 C) (1,4)  
 D) (4,−1)
 
-**ADV-02-Q4 — Misconception / trap**
+**ADV-02-Q4**
 
 How many real roots does x² + 2x + 5 = 0 have?
 
@@ -101,7 +101,7 @@ B) 1
 C) 2  
 D) Infinitely many
 
-**ADV-02-Q5 — Transfer / context**
+**ADV-02-Q5**
 
 A toy's height is h(t) = −5t² + 20t + 1, for t≥0. At what time does it reach maximum height?
 
@@ -126,7 +126,7 @@ D) 5 seconds
 
 ## ADV-03 — Polynomial functions
 
-**ADV-03-Q1 — Recognition**
+**ADV-03-Q1**
 
 What is the degree of p(x) = 3x⁴ − 2x + 1?
 
@@ -135,7 +135,7 @@ B) 2
 C) 3  
 D) 4
 
-**ADV-03-Q2 — Basic application**
+**ADV-03-Q2**
 
 If (x − 2) is a factor of p(x), what must be true?
 
@@ -144,7 +144,7 @@ B) p(2)=0
 C) p(−2)=0  
 D) p(2)=2
 
-**ADV-03-Q3 — Independent application**
+**ADV-03-Q3**
 
 Evaluate p(2) for p(x)=x³−4x.
 
@@ -153,7 +153,7 @@ B) 0
 C) 4  
 D) 8
 
-**ADV-03-Q4 — Misconception / trap**
+**ADV-03-Q4**
 
 For p(x)=−2x³+x, what happens to p(x) as x approaches positive infinity?
 
@@ -162,7 +162,7 @@ B) It approaches negative infinity
 C) It approaches 0  
 D) It stays equal to −2
 
-**ADV-03-Q5 — Transfer / context**
+**ADV-03-Q5**
 
 Revenue from x items is R(x)=x(20−x). What is R(4)?
 
@@ -187,7 +187,7 @@ D) 80
 
 ## ADV-04 — Exponential functions
 
-**ADV-04-Q1 — Recognition**
+**ADV-04-Q1**
 
 For f(x)=3·2ˣ, what is f(2)?
 
@@ -196,7 +196,7 @@ B) 9
 C) 12  
 D) 24
 
-**ADV-04-Q2 — Basic application**
+**ADV-04-Q2**
 
 A $100 investment grows by 5% each year. Which model gives its value after t years?
 
@@ -205,7 +205,7 @@ B) 100(0.95)ᵗ
 C) 100(1.05)ᵗ  
 D) 5(100)ᵗ
 
-**ADV-04-Q3 — Independent application**
+**ADV-04-Q3**
 
 Solve 2ˣ = 16.
 
@@ -214,7 +214,7 @@ B) 3
 C) 4  
 D) 8
 
-**ADV-04-Q4 — Misconception / trap**
+**ADV-04-Q4**
 
 A quantity starts at 80 and halves every hour. How much remains after 3 hours?
 
@@ -223,7 +223,7 @@ B) 10
 C) 20  
 D) 40
 
-**ADV-04-Q5 — Transfer / context**
+**ADV-04-Q5**
 
 A bacteria culture starts with 7 cells and doubles each day. How many cells are there after 3 days?
 
@@ -248,7 +248,7 @@ D) 56
 
 ## ADV-05 — Rational expressions and equations
 
-**ADV-05-Q1 — Recognition**
+**ADV-05-Q1**
 
 For which real x is x/(x−2) undefined?
 
@@ -257,7 +257,7 @@ B) 0
 C) 1  
 D) 2
 
-**ADV-05-Q2 — Basic application**
+**ADV-05-Q2**
 
 For x≠3, simplify (x²−9)/(x−3).
 
@@ -266,7 +266,7 @@ B) x+3
 C) x²+3  
 D) 1
 
-**ADV-05-Q3 — Independent application**
+**ADV-05-Q3**
 
 Solve 1/x = 1/4.
 
@@ -275,7 +275,7 @@ B) 1/4
 C) 4  
 D) 0
 
-**ADV-05-Q4 — Misconception / trap**
+**ADV-05-Q4**
 
 Solve (x+1)/(x−1)=2.
 
@@ -284,7 +284,7 @@ B) 2
 C) 3  
 D) −3
 
-**ADV-05-Q5 — Transfer / context**
+**ADV-05-Q5**
 
 One machine completes a task in t hours. If two identical machines work at the same constant rate simultaneously, how long do they take together?
 
@@ -309,7 +309,7 @@ D) t² hours
 
 ## ADV-06 — Radicals and radical equations
 
-**ADV-06-Q1 — Recognition**
+**ADV-06-Q1**
 
 What is the principal square root of 49?
 
@@ -318,7 +318,7 @@ B) 7
 C) ±7  
 D) 14
 
-**ADV-06-Q2 — Basic application**
+**ADV-06-Q2**
 
 Solve √(x+1) = 4.
 
@@ -327,7 +327,7 @@ B) 8
 C) 15  
 D) 17
 
-**ADV-06-Q3 — Independent application**
+**ADV-06-Q3**
 
 Solve √(3x+1)=5.
 
@@ -336,7 +336,7 @@ B) 8
 C) 9  
 D) 12
 
-**ADV-06-Q4 — Misconception / trap**
+**ADV-06-Q4**
 
 Which expression equals √(x²) for every real x?
 
@@ -345,7 +345,7 @@ B) −x
 C) |x|  
 D) x²
 
-**ADV-06-Q5 — Transfer / context**
+**ADV-06-Q5**
 
 A square has area 72 square units. What is its exact positive side length?
 
@@ -370,7 +370,7 @@ D) 72
 
 ## ADV-07 — Absolute value
 
-**ADV-07-Q1 — Recognition**
+**ADV-07-Q1**
 
 What is |−7|?
 
@@ -379,7 +379,7 @@ B) 0
 C) 7  
 D) 14
 
-**ADV-07-Q2 — Basic application**
+**ADV-07-Q2**
 
 What are all real solutions of |x|=5?
 
@@ -388,7 +388,7 @@ B) −5 only
 C) −5 and 5  
 D) 0 and 5
 
-**ADV-07-Q3 — Independent application**
+**ADV-07-Q3**
 
 Solve |x−2|=3.
 
@@ -397,7 +397,7 @@ B) 1 and 5
 C) −3 and 3  
 D) 2 and 3
 
-**ADV-07-Q4 — Misconception / trap**
+**ADV-07-Q4**
 
 How many real solutions does |x+1|=−2 have?
 
@@ -406,7 +406,7 @@ B) 1
 C) 2  
 D) Infinitely many
 
-**ADV-07-Q5 — Transfer / context**
+**ADV-07-Q5**
 
 On a number line, which points are 7 units away from 4?
 
@@ -431,7 +431,7 @@ D) −11 and 3
 
 ## ADV-08 — Nonlinear functions
 
-**ADV-08-Q1 — Recognition**
+**ADV-08-Q1**
 
 What kind of graph does y=x² have?
 
@@ -440,7 +440,7 @@ B) Parabola
 C) Circle  
 D) Horizontal line
 
-**ADV-08-Q2 — Basic application**
+**ADV-08-Q2**
 
 For f(x)=x²+3, find f(−2).
 
@@ -449,7 +449,7 @@ B) 1
 C) 5  
 D) 7
 
-**ADV-08-Q3 — Independent application**
+**ADV-08-Q3**
 
 Which function is nonlinear?
 
@@ -458,7 +458,7 @@ B) y=5
 C) y=x³  
 D) y=−x
 
-**ADV-08-Q4 — Misconception / trap**
+**ADV-08-Q4**
 
 What are the x-intercepts of y=x²−4?
 
@@ -467,7 +467,7 @@ B) −2 and 2
 C) 0 and 4  
 D) 2 only
 
-**ADV-08-Q5 — Transfer / context**
+**ADV-08-Q5**
 
 A square's side is (x+1) cm. When x=3, what is its area?
 
@@ -492,7 +492,7 @@ D) 16 cm²
 
 ## ADV-09 — Nonlinear equations and systems
 
-**ADV-09-Q1 — Recognition**
+**ADV-09-Q1**
 
 For y=x² and y=4, what x-values occur at intersections?
 
@@ -501,7 +501,7 @@ B) 2 only
 C) −2 and 2  
 D) −4 and 4
 
-**ADV-09-Q2 — Basic application**
+**ADV-09-Q2**
 
 Which intersection points solve y=x² and y=x+2?
 
@@ -510,7 +510,7 @@ B) (1,1) and (2,4)
 C) (−2,4) and (1,1)  
 D) (0,0) and (2,4)
 
-**ADV-09-Q3 — Independent application**
+**ADV-09-Q3**
 
 How many real intersections do y=x² and y=−1 have?
 
@@ -519,7 +519,7 @@ B) 1
 C) 2  
 D) Infinitely many
 
-**ADV-09-Q4 — Misconception / trap**
+**ADV-09-Q4**
 
 How many intersections do y=x² and y=2x−1 have?
 
@@ -528,7 +528,7 @@ B) 1
 C) 2  
 D) 3
 
-**ADV-09-Q5 — Transfer / context**
+**ADV-09-Q5**
 
 The system y=2x+3 and y=x² has which x-coordinates of intersections?
 
