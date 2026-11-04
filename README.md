@@ -316,4 +316,4 @@ Lesson V2
 - [Pilot Math — 5 questions](diagnostic/PILOT_MATH_LINEAR_EQUATIONS.md)
 - [Pilot English A1–B2 — 20 questions](diagnostic/PILOT_ENGLISH_A1_B2.md)
 
-**Статус:** дизайн + пилотные задания. Полный банк из 225 новых диагностических вопросов и автоматический сбор результатов — следующие этапы, не готовый функционал.
+**Статус:** D1 содержит **225 заданий** (125 Math и 100 English Grammar), студентские тесты и закрытые пояснения. Структурная CI-проверка добавлена; независимая экспертная рецензия ожидается. Для D2 подготовлены [протокол пилота](diagnostic/D2_FIELD_PROTOCOL.md), [форма регистрации](diagnostic/templates/session_capture.csv) и [шаблон отчёта](diagnostic/templates/gap_report_template.md). **Реальные тестирования детей ещё не проводились; автоматизация D3–D5 не реализована.**
