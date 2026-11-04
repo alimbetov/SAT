@@ -186,7 +186,7 @@ def main():
             doc = student_sheet(bank,grade,locale)
             if len(re.findall(rf"^\*\*(?:KZ-FND|ALG|PSD|EN-)[A-Z0-9-]*-Q[1-5]\*\*$",doc,re.M)) != 25:
                 raise ValueError(f"{grade}/{locale}: expected 25 student questions")
-        if len(re.findall(r"^\\*\\*(?:KZ-FND|ALG|PSD|EN-)", teacher_sheet(bank,grade),re.M)) != 25:
+        if len(re.findall(r"^\*\*(?:KZ-FND|ALG|PSD|EN-)", teacher_sheet(bank,grade),re.M)) != 25:
             # Teacher keys each have one bold question header; fail on missing.
             raise ValueError(f"{grade}: teacher key incomplete")
     print(f"PASS: 10 topics/50 localized items; {len(grades)} learner tracks, no student answer leakage.")
