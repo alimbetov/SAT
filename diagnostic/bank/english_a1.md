@@ -4,7 +4,7 @@
 
 ## EN-A1-02 — Present Simple
 
-**EN-A1-02-Q1 — Recognition**
+**EN-A1-02-Q1**
 
 Every morning Sara ___ to school by bus.
 
@@ -13,7 +13,7 @@ B) goes
 C) going  
 D) is go
 
-**EN-A1-02-Q2 — Basic application**
+**EN-A1-02-Q2**
 
 My parents ___ coffee in the morning.
 
@@ -22,7 +22,7 @@ B) is drink
 C) drink  
 D) drinking
 
-**EN-A1-02-Q3 — Independent application**
+**EN-A1-02-Q3**
 
 Does he ___ English at home?
 
@@ -31,7 +31,7 @@ B) speaks
 C) speaking  
 D) spoke
 
-**EN-A1-02-Q4 — Misconception / trap**
+**EN-A1-02-Q4**
 
 My brother ___ not like spicy food.
 
@@ -40,7 +40,7 @@ B) is
 C) does  
 D) has
 
-**EN-A1-02-Q5 — Transfer / context**
+**EN-A1-02-Q5**
 
 Laura works at a hospital. Which question correctly asks for her workplace?
 
@@ -65,7 +65,7 @@ D) Where is Laura work?
 
 ## EN-A1-03 — Articles, plurals and demonstratives
 
-**EN-A1-03-Q1 — Recognition**
+**EN-A1-03-Q1**
 
 I ate ___ apple after lunch.
 
@@ -74,7 +74,7 @@ B) an
 C) the one  
 D) any
 
-**EN-A1-03-Q2 — Basic application**
+**EN-A1-03-Q2**
 
 One child is outside. Two ___ are inside.
 
@@ -83,7 +83,7 @@ B) childes
 C) children  
 D) childrens
 
-**EN-A1-03-Q3 — Independent application**
+**EN-A1-03-Q3**
 
 ___ books over there are mine, not these books here.
 
@@ -92,7 +92,7 @@ B) That
 C) Those  
 D) A
 
-**EN-A1-03-Q4 — Misconception / trap**
+**EN-A1-03-Q4**
 
 She is ___ engineer.
 
@@ -101,7 +101,7 @@ B) an
 C) the one  
 D) some
 
-**EN-A1-03-Q5 — Transfer / context**
+**EN-A1-03-Q5**
 
 ___ sun rises in the east.
 
@@ -126,7 +126,7 @@ D) Some
 
 ## EN-A1-04 — There is/are and basic prepositions
 
-**EN-A1-04-Q1 — Recognition**
+**EN-A1-04-Q1**
 
 ___ a book on the desk.
 
@@ -135,7 +135,7 @@ B) There is
 C) They is  
 D) It have
 
-**EN-A1-04-Q2 — Basic application**
+**EN-A1-04-Q2**
 
 ___ three chairs in this room.
 
@@ -144,7 +144,7 @@ B) It are
 C) There are  
 D) There have
 
-**EN-A1-04-Q3 — Independent application**
+**EN-A1-04-Q3**
 
 The cat is sleeping ___ the table, below its surface.
 
@@ -153,7 +153,7 @@ B) under
 C) above  
 D) between
 
-**EN-A1-04-Q4 — Misconception / trap**
+**EN-A1-04-Q4**
 
 There ___ any apples left in the basket.
 
@@ -162,7 +162,7 @@ B) aren't
 C) don't  
 D) doesn't
 
-**EN-A1-04-Q5 — Transfer / context**
+**EN-A1-04-Q5**
 
 Choose the grammatically correct sentence.
 
@@ -187,7 +187,7 @@ D) There be two windows.
 
 ## EN-A1-05 — Possessives, can and basic questions
 
-**EN-A1-05-Q1 — Recognition**
+**EN-A1-05-Q1**
 
 This notebook belongs to me. It is ___ notebook.
 
@@ -196,7 +196,7 @@ B) mine
 C) me  
 D) I
 
-**EN-A1-05-Q2 — Basic application**
+**EN-A1-05-Q2**
 
 Those shoes belong to Omar. They are ___.
 
@@ -205,7 +205,7 @@ B) him
 C) his  
 D) her
 
-**EN-A1-05-Q3 — Independent application**
+**EN-A1-05-Q3**
 
 She ___ swim very well.
 
@@ -214,7 +214,7 @@ B) can
 C) is can  
 D) can to
 
-**EN-A1-05-Q4 — Misconception / trap**
+**EN-A1-05-Q4**
 
 Choose the correct question.
 
@@ -223,7 +223,7 @@ B) You can ride a bicycle?
 C) Do can you ride a bicycle?  
 D) Can ride you a bicycle?
 
-**EN-A1-05-Q5 — Transfer / context**
+**EN-A1-05-Q5**
 
 ___ your parents live nearby?
 
