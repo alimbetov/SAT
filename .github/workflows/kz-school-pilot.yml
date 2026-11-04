@@ -1,0 +1,53 @@
+name: KZ School Bilingual Pilot
+
+on:
+  push:
+    branches:
+      - feat/kz-school-bilingual-pilot
+    paths:
+      - 'diagnostic/kz_school/**'
+      - 'scripts/build_kz_school_pilot.py'
+      - '.github/workflows/kz-school-pilot.yml'
+  pull_request:
+    paths:
+      - 'diagnostic/kz_school/**'
+      - 'scripts/build_kz_school_pilot.py'
+      - '.github/workflows/kz-school-pilot.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-kz-school:
+    name: Kazakh school diagnostic package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate 50 localized questions and two learner tracks
+        run: python scripts/build_kz_school_pilot.py --check-only
+      - name: Generate six separate student/teacher documents
+        run: python scripts/build_kz_school_pilot.py
+      - name: Verify generated artifacts and no answer leaks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          root = Path("build/kz_school")
+          for grade in ("grade6", "grade9"):
+              student_files = [root / grade / f"student_{locale}.md" for locale in ("kk", "ru")]
+              teacher = root / grade / "teacher_key_kk_ru.md"
+              assert teacher.is_file()
+              for student in student_files:
+                  text = student.read_text(encoding="utf-8")
+                  assert student.is_file() and len(text) > 1000
+                  assert not re.search(r"<u>|<strong>|<details>|teacher-only|answer key", text, re.I)
+                  assert len(re.findall(r"^\*\*[^\n]+-Q[1-5]\*\*$",text,re.M)) == 25
+              assert teacher.read_text(encoding="utf-8").count("<u>**") == 25
+          print("PASS: six artifacts; 50 graded student questions per two language variants and isolated answer keys.")
+          PY
