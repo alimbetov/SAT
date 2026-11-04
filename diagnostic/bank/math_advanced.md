@@ -177,7 +177,7 @@ D) 80
 
 2. <u>**B) p(2)=0**</u>. Factor theorem: x−2 divides p(x) exactly if p(2)=0.
 
-3. <u>**B) 0**</u>. p(2)=2³−4·2=8−8=0.
+3. <u>**B) 0**</u>. p(2)=2³−4·2=8−8=0. Evaluate the cubic term and the multiplication before subtracting.
 
 4. <u>**B) It approaches negative infinity**</u>. Leading term −2x³ dominates for large positive x, so p(x) becomes very negative.
 
@@ -234,11 +234,11 @@ D) 56
 
 <details><summary>Teacher-only answer key and explanations — ADV-04</summary>
 
-1. <u>**C) 12**</u>. f(2)=3·2²=12.
+1. <u>**C) 12**</u>. f(2)=3·2²=12. The exponent applies to base 2, while the coefficient 3 multiplies the result.
 
 2. <u>**C) 100(1.05)ᵗ**</u>. Each year multiplies the current amount by 1.05, hence repeated compound growth.
 
-3. <u>**C) 4**</u>. 16=2⁴, so x=4.
+3. <u>**C) 4**</u>. 16=2⁴, so x=4. With the same positive base, equal powers require equal exponents.
 
 4. <u>**B) 10**</u>. After three halvings: 80·(1/2)³=80/8=10.
 
@@ -484,7 +484,7 @@ D) 16 cm²
 
 3. <u>**C) y=x³**</u>. The cubic x³ does not have constant slope; the others are linear (including the constant function).
 
-4. <u>**B) −2 and 2**</u>. Set y=0: x²=4, so x=±2.
+4. <u>**B) −2 and 2**</u>. Set y=0: x²=4, so x=±2. The corresponding intercepts are (−2,0) and (2,0).
 
 5. <u>**D) 16 cm²**</u>. Side is 3+1=4 cm; area is (x+1)²=16 cm².
 
