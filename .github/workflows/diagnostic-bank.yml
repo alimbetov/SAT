@@ -7,11 +7,13 @@ on:
     paths:
       - 'diagnostic/**'
       - 'scripts/validate_diagnostic_bank.py'
+      - 'scripts/build_d2_pilot.py'
       - '.github/workflows/diagnostic-bank.yml'
   pull_request:
     paths:
       - 'diagnostic/**'
       - 'scripts/validate_diagnostic_bank.py'
+      - 'scripts/build_d2_pilot.py'
       - '.github/workflows/diagnostic-bank.yml'
   workflow_dispatch:
 
@@ -31,3 +33,21 @@ jobs:
           python-version: '3.12'
       - name: Validate Math and English diagnostic bank
         run: python scripts/validate_diagnostic_bank.py
+
+      - name: Build all 45 isolated student and teacher review packets
+        run: python scripts/build_d2_pilot.py --topics all --out-dir build/d2
+      - name: Verify no teacher key in student packets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          student = list(Path("build/d2/student").glob("*.md"))
+          teacher = list(Path("build/d2/teacher").glob("*.md"))
+          ledger = Path("build/d2/review/blind_review_225.csv").read_text(encoding="utf-8").splitlines()
+          assert len(student) == len(teacher) == 45, (len(student), len(teacher))
+          assert len(ledger) == 226, len(ledger)
+          for file in student:
+              contents = file.read_text(encoding="utf-8")
+              assert not re.search(r"<details>|<u>|<strong>|Teacher-only|answer key", contents, re.I), file
+          print("PASS: 45 student packets, 45 teacher packets, 225 blind review rows; no key markup in student files.")
+          PY
