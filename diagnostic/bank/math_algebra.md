@@ -4,7 +4,7 @@
 
 ## ALG-02 — Linear equations in two variables
 
-**ALG-02-Q1 — Recognition**
+**ALG-02-Q1**
 
 Which point satisfies the equation 2x + y = 9?
 
@@ -13,7 +13,7 @@ B) (2, 5)
 C) (3, 4)  
 D) (1, 6)
 
-**ALG-02-Q2 — Basic application**
+**ALG-02-Q2**
 
 If y = 3x − 2, what is y when x = 4?
 
@@ -22,7 +22,7 @@ B) 10
 C) 12  
 D) 14
 
-**ALG-02-Q3 — Independent application**
+**ALG-02-Q3**
 
 A line passes through (1, 3) and (3, 7). Which equation describes it?
 
@@ -31,7 +31,7 @@ B) y = 3x
 C) y = 2x + 1  
 D) y = 2x − 1
 
-**ALG-02-Q4 — Misconception / trap**
+**ALG-02-Q4**
 
 Which is an equivalent form of 2x − 3y = 12?
 
@@ -40,7 +40,7 @@ B) y = −(2/3)x − 4
 C) y = (2/3)x − 4  
 D) y = 2x − 4
 
-**ALG-02-Q5 — Transfer / context**
+**ALG-02-Q5**
 
 A club charges a $12 registration fee and $5 per visit. Its total cost is y = 12 + 5x. What is y for 9 visits?
 
@@ -65,7 +65,7 @@ D) 108
 
 ## ALG-03 — Linear functions, slope and intercept
 
-**ALG-03-Q1 — Recognition**
+**ALG-03-Q1**
 
 What is the slope of the line through (2, 5) and (6, 13)?
 
@@ -74,7 +74,7 @@ B) 2
 C) 4  
 D) 8
 
-**ALG-03-Q2 — Basic application**
+**ALG-03-Q2**
 
 What is the y-intercept of y = −3x + 7?
 
@@ -83,7 +83,7 @@ B) 0
 C) 3  
 D) 7
 
-**ALG-03-Q3 — Independent application**
+**ALG-03-Q3**
 
 For f(x) = 4x + 1, what is f(−2)?
 
@@ -92,7 +92,7 @@ B) −7
 C) 7  
 D) 9
 
-**ALG-03-Q4 — Misconception / trap**
+**ALG-03-Q4**
 
 How are the graphs of y = 2x + 1 and y = 2x − 4 related?
 
@@ -101,7 +101,7 @@ B) They are the same line
 C) They are parallel distinct lines  
 D) They are perpendicular
 
-**ALG-03-Q5 — Transfer / context**
+**ALG-03-Q5**
 
 A gym charges $10 once plus $4 per class. Which function gives the cost C(n) after n classes?
 
@@ -126,7 +126,7 @@ D) C(n)=4+10/n
 
 ## ALG-04 — Systems of linear equations
 
-**ALG-04-Q1 — Recognition**
+**ALG-04-Q1**
 
 Solve x + y = 8 and x − y = 2.
 
@@ -135,7 +135,7 @@ B) (4,4)
 C) (5,3)  
 D) (6,2)
 
-**ALG-04-Q2 — Basic application**
+**ALG-04-Q2**
 
 Solve y = 2x and x + y = 12.
 
@@ -144,7 +144,7 @@ B) (4,8)
 C) (6,12)  
 D) (8,4)
 
-**ALG-04-Q3 — Independent application**
+**ALG-04-Q3**
 
 The system is 3x + y = 11 and x − y = 1. What is x?
 
@@ -153,7 +153,7 @@ B) 3
 C) 4  
 D) 5
 
-**ALG-04-Q4 — Misconception / trap**
+**ALG-04-Q4**
 
 How many solutions does the system y = 2x + 1 and y = 2x − 4 have?
 
@@ -162,7 +162,7 @@ B) Exactly one
 C) Exactly two  
 D) Infinitely many
 
-**ALG-04-Q5 — Transfer / context**
+**ALG-04-Q5**
 
 A theater sold 13 tickets: adult tickets cost $8, child tickets $5, and total receipts were $83. How many adult tickets were sold?
 
@@ -187,7 +187,7 @@ D) 7
 
 ## ALG-05 — Linear inequalities
 
-**ALG-05-Q1 — Recognition**
+**ALG-05-Q1**
 
 Solve 3x + 2 < 11.
 
@@ -196,7 +196,7 @@ B) x > 3
 C) x < 9  
 D) x > 9
 
-**ALG-05-Q2 — Basic application**
+**ALG-05-Q2**
 
 Solve −2x ≥ 8.
 
@@ -205,7 +205,7 @@ B) x ≤ −4
 C) x ≥ 4  
 D) x ≤ 4
 
-**ALG-05-Q3 — Independent application**
+**ALG-05-Q3**
 
 Which interval represents x > 2?
 
@@ -214,7 +214,7 @@ B) (−∞, 2)
 C) (2, ∞)  
 D) (−∞, 2]
 
-**ALG-05-Q4 — Misconception / trap**
+**ALG-05-Q4**
 
 Solve 5 − 3x < −1.
 
@@ -223,7 +223,7 @@ B) x > 2
 C) x < −2  
 D) x > −2
 
-**ALG-05-Q5 — Transfer / context**
+**ALG-05-Q5**
 
 A ticket service adds a $15 fixed fee to $6 per ticket. If the budget is at most $57, what is the maximum number of tickets?
 
