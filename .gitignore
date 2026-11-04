@@ -1,0 +1,7 @@
+# Locally generated D2 student and teacher packets and private pilot data
+/build/
+/diagnostic/private/
+/diagnostic/results/
+/*.local.csv
+*.student-results.csv
+__pycache__/
