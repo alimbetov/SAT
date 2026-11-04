@@ -4,7 +4,7 @@
 
 ## PSD-01 — Ratios, rates and units
 
-**PSD-01-Q1 — Recognition**
+**PSD-01-Q1**
 
 A basket contains 3 red apples and 5 green apples. What is the ratio of red to green apples?
 
@@ -13,7 +13,7 @@ B) 5:3
 C) 3:8  
 D) 8:5
 
-**PSD-01-Q2 — Basic application**
+**PSD-01-Q2**
 
 A car travels 240 kilometers in 4 hours at a constant speed. What is its speed?
 
@@ -22,7 +22,7 @@ B) 50 km/h
 C) 60 km/h  
 D) 960 km/h
 
-**PSD-01-Q3 — Independent application**
+**PSD-01-Q3**
 
 Paint is mixed with blue and white in the ratio 2:3. If blue paint is 8 liters, how much white paint is needed?
 
@@ -31,7 +31,7 @@ B) 8 liters
 C) 12 liters  
 D) 24 liters
 
-**PSD-01-Q4 — Misconception / trap**
+**PSD-01-Q4**
 
 How many meters are in 2.5 kilometers?
 
@@ -40,7 +40,7 @@ B) 250
 C) 2500  
 D) 25000
 
-**PSD-01-Q5 — Transfer / context**
+**PSD-01-Q5**
 
 A recipe uses 2 cups of rice for 3 servings. How many cups are needed for 9 servings at the same ratio?
 
@@ -65,7 +65,7 @@ D) 9
 
 ## PSD-02 — Percentages and percent change
 
-**PSD-02-Q1 — Recognition**
+**PSD-02-Q1**
 
 What is 25% of 80?
 
@@ -74,7 +74,7 @@ B) 20
 C) 25  
 D) 40
 
-**PSD-02-Q2 — Basic application**
+**PSD-02-Q2**
 
 Increase 50 by 10%. What is the new value?
 
@@ -83,7 +83,7 @@ B) 55
 C) 60  
 D) 65
 
-**PSD-02-Q3 — Independent application**
+**PSD-02-Q3**
 
 A $120 jacket is discounted by 25%. What is the sale price?
 
@@ -92,7 +92,7 @@ B) $75
 C) $90  
 D) $95
 
-**PSD-02-Q4 — Misconception / trap**
+**PSD-02-Q4**
 
 A price rises 20% and then falls 20%. Starting from $100, what is the final price?
 
@@ -101,7 +101,7 @@ B) $96
 C) $100  
 D) $104
 
-**PSD-02-Q5 — Transfer / context**
+**PSD-02-Q5**
 
 An item costs $45 after a 10% discount. What was the original price?
 
@@ -126,7 +126,7 @@ D) $55
 
 ## PSD-03 — One-variable statistics
 
-**PSD-03-Q1 — Recognition**
+**PSD-03-Q1**
 
 What is the median of the values 1, 3, 5?
 
@@ -135,7 +135,7 @@ B) 3
 C) 4  
 D) 5
 
-**PSD-03-Q2 — Basic application**
+**PSD-03-Q2**
 
 Find the mean of 2, 4, 8, 10.
 
@@ -144,7 +144,7 @@ B) 5
 C) 6  
 D) 8
 
-**PSD-03-Q3 — Independent application**
+**PSD-03-Q3**
 
 Find the range of 4, 7, 10, 14.
 
@@ -153,7 +153,7 @@ B) 10
 C) 11  
 D) 14
 
-**PSD-03-Q4 — Misconception / trap**
+**PSD-03-Q4**
 
 Which summary is generally more resistant to a single extremely large outlier?
 
@@ -162,7 +162,7 @@ B) Median
 C) Maximum  
 D) Range
 
-**PSD-03-Q5 — Transfer / context**
+**PSD-03-Q5**
 
 Three students scored 10 points each and two students scored 20 points each. What is their mean score?
 
@@ -187,7 +187,7 @@ D) 16
 
 ## PSD-04 — Two-variable data and scatterplots
 
-**PSD-04-Q1 — Recognition**
+**PSD-04-Q1**
 
 In a scatterplot, points tend to rise from left to right. What association does this suggest?
 
@@ -196,7 +196,7 @@ B) Negative
 C) No association  
 D) A constant value for all points
 
-**PSD-04-Q2 — Basic application**
+**PSD-04-Q2**
 
 A model for y is y=2x+3. What is predicted at x=4?
 
@@ -205,7 +205,7 @@ B) 9
 C) 11  
 D) 14
 
-**PSD-04-Q3 — Independent application**
+**PSD-04-Q3**
 
 A line of best fit passes through (1,2) and (3,6). What is its slope?
 
@@ -214,7 +214,7 @@ B) 2
 C) 3  
 D) 4
 
-**PSD-04-Q4 — Misconception / trap**
+**PSD-04-Q4**
 
 A city observes that ice cream sales and swimming accidents both increase in summer. What conclusion is justified by this association alone?
 
@@ -223,7 +223,7 @@ B) Accidents cause ice cream sales
 C) Both variables may respond to warmer weather  
 D) The two variables must be independent
 
-**PSD-04-Q5 — Transfer / context**
+**PSD-04-Q5**
 
 A fitted line is y=5+1.5x, where x is hours practiced and y is expected points. What is predicted for 10 hours?
 
@@ -248,7 +248,7 @@ D) 25
 
 ## PSD-05 — Probability and conditional probability
 
-**PSD-05-Q1 — Recognition**
+**PSD-05-Q1**
 
 A fair spinner has 4 equal sectors, one colored red. What is P(red)?
 
@@ -257,7 +257,7 @@ B) 1/4
 C) 1/2  
 D) 3/4
 
-**PSD-05-Q2 — Basic application**
+**PSD-05-Q2**
 
 What is the probability of rolling an even number on a fair six-sided die?
 
@@ -266,7 +266,7 @@ B) 1/3
 C) 1/2  
 D) 2/3
 
-**PSD-05-Q3 — Independent application**
+**PSD-05-Q3**
 
 A bag has 3 blue and 2 red marbles. One is chosen at random. P(blue)=?
 
@@ -275,7 +275,7 @@ B) 3/5
 C) 3/2  
 D) 2/3
 
-**PSD-05-Q4 — Misconception / trap**
+**PSD-05-Q4**
 
 Of 5 students who play sports, 3 wear glasses. If a sports player is selected at random, P(glasses | sports)=?
 
@@ -284,7 +284,7 @@ B) 3/5
 C) 5/8  
 D) 5/3
 
-**PSD-05-Q5 — Transfer / context**
+**PSD-05-Q5**
 
 A fair coin is tossed twice independently. What is the probability of two heads?
 
@@ -309,7 +309,7 @@ D) 3/4
 
 ## PSD-06 — Sampling and margin of error
 
-**PSD-06-Q1 — Recognition**
+**PSD-06-Q1**
 
 Which sampling method gives each individual in a population an equal chance of selection?
 
@@ -318,7 +318,7 @@ B) Simple random sample
 C) Voluntary-response sample  
 D) Choosing only top students
 
-**PSD-06-Q2 — Basic application**
+**PSD-06-Q2**
 
 All else equal, how does a larger well-designed random sample usually affect sampling margin of error?
 
@@ -327,7 +327,7 @@ B) It tends to decrease
 C) It always becomes zero  
 D) It becomes the sample mean
 
-**PSD-06-Q3 — Independent application**
+**PSD-06-Q3**
 
 A poll estimates 60% support with a margin of error ±4 percentage points. Which interval matches the estimate?
 
@@ -336,7 +336,7 @@ B) 56%–64%
 C) 60%–64%  
 D) 64%–68%
 
-**PSD-06-Q4 — Misconception / trap**
+**PSD-06-Q4**
 
 A school surveys only members of its chess club about all students' after-school interests. What is the main concern?
 
@@ -345,7 +345,7 @@ B) It is always a perfect random sample
 C) The sample is too large  
 D) No question can be asked about interests
 
-**PSD-06-Q5 — Transfer / context**
+**PSD-06-Q5**
 
 A poll estimates support at 52% with margin of error ±5 percentage points. Does this alone establish that true support is above 50%?
 
@@ -370,7 +370,7 @@ D) No, because support must equal 47%
 
 ## PSD-07 — Observational studies and experiments
 
-**PSD-07-Q1 — Recognition**
+**PSD-07-Q1**
 
 Which study design most directly supports a causal claim about an intervention when well executed?
 
@@ -379,7 +379,7 @@ B) A randomized controlled experiment
 C) A voluntary online poll  
 D) A simple correlation graph
 
-**PSD-07-Q2 — Basic application**
+**PSD-07-Q2**
 
 Which feature most directly helps a sample generalize to the population it represents?
 
@@ -388,7 +388,7 @@ B) Assigning all participants the same treatment
 C) A colorful graph  
 D) Removing all low results
 
-**PSD-07-Q3 — Independent application**
+**PSD-07-Q3**
 
 A study finds an association between extra tutoring and higher grades. Without controlling for other factors, what can be concluded?
 
@@ -397,7 +397,7 @@ B) Higher grades cause tutoring
 C) There is an association; causation is not established  
 D) The variables are unrelated
 
-**PSD-07-Q4 — Misconception / trap**
+**PSD-07-Q4**
 
 Why might both sunscreen sales and ice cream sales rise on hot days?
 
@@ -406,7 +406,7 @@ B) Temperature is a possible confounding factor
 C) The data must be incorrect  
 D) No variable influences either outcome
 
-**PSD-07-Q5 — Transfer / context**
+**PSD-07-Q5**
 
 A school randomly assigns 60 students to either a new math course or a standard course, then compares later test scores. What is the main purpose of random assignment?
 
