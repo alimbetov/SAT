@@ -4,7 +4,7 @@
 
 ## GEO-01 — Lines, angles and triangles
 
-**GEO-01-Q1 — Recognition**
+**GEO-01-Q1**
 
 Two angles form a straight line. If one angle is 110°, what is the other?
 
@@ -13,7 +13,7 @@ B) 70°
 C) 90°  
 D) 110°
 
-**GEO-01-Q2 — Basic application**
+**GEO-01-Q2**
 
 Two lines intersect, making vertical opposite angles. One angle is 42°. What is its vertical opposite angle?
 
@@ -22,7 +22,7 @@ B) 48°
 C) 138°  
 D) 180°
 
-**GEO-01-Q3 — Independent application**
+**GEO-01-Q3**
 
 A triangle has angles of 50° and 60°. What is its third angle?
 
@@ -31,7 +31,7 @@ B) 70°
 C) 80°  
 D) 110°
 
-**GEO-01-Q4 — Misconception / trap**
+**GEO-01-Q4**
 
 An exterior angle of a triangle is 120°. One remote interior angle is 50°. Find the other remote interior angle.
 
@@ -40,7 +40,7 @@ B) 60°
 C) 70°  
 D) 120°
 
-**GEO-01-Q5 — Transfer / context**
+**GEO-01-Q5**
 
 Two parallel lines are cut by a transversal. One corresponding angle is 75°. What is the matching corresponding angle?
 
@@ -65,7 +65,7 @@ D) 180°
 
 ## GEO-02 — Area, volume and scale
 
-**GEO-02-Q1 — Recognition**
+**GEO-02-Q1**
 
 Find the area of a rectangle 8 units long and 5 units wide.
 
@@ -74,7 +74,7 @@ B) 26
 C) 40  
 D) 80
 
-**GEO-02-Q2 — Basic application**
+**GEO-02-Q2**
 
 Find the area of a triangle with base 10 cm and perpendicular height 7 cm.
 
@@ -83,7 +83,7 @@ B) 35 cm²
 C) 70 cm²  
 D) 140 cm²
 
-**GEO-02-Q3 — Independent application**
+**GEO-02-Q3**
 
 What is the area of a circle with radius 3 units?
 
@@ -92,7 +92,7 @@ B) 6π
 C) 9π  
 D) 18π
 
-**GEO-02-Q4 — Misconception / trap**
+**GEO-02-Q4**
 
 What is the volume of a rectangular prism of side lengths 2, 3 and 4?
 
@@ -101,7 +101,7 @@ B) 18
 C) 24  
 D) 36
 
-**GEO-02-Q5 — Transfer / context**
+**GEO-02-Q5**
 
 A square has side length 2 cm and is enlarged by a linear scale factor of 3. What is the new area?
 
@@ -126,7 +126,7 @@ D) 36 cm²
 
 ## GEO-03 — Right triangles and trigonometry
 
-**GEO-03-Q1 — Recognition**
+**GEO-03-Q1**
 
 A right triangle has legs of length 3 and 4. Find its hypotenuse.
 
@@ -135,7 +135,7 @@ B) 6
 C) 7  
 D) 12
 
-**GEO-03-Q2 — Basic application**
+**GEO-03-Q2**
 
 For acute angle θ in a right triangle, the opposite side is 6 and hypotenuse 10. What is sin θ?
 
@@ -144,7 +144,7 @@ B) 3/4
 C) 5/3  
 D) 4/5
 
-**GEO-03-Q3 — Independent application**
+**GEO-03-Q3**
 
 For an acute angle θ, the opposite leg is 4 and the adjacent leg is 3. What is tan θ?
 
@@ -153,7 +153,7 @@ B) 3/4
 C) 4/3  
 D) 5/4
 
-**GEO-03-Q4 — Misconception / trap**
+**GEO-03-Q4**
 
 What is sin 30°?
 
@@ -162,7 +162,7 @@ B) 1/2
 C) √2/2  
 D) 1
 
-**GEO-03-Q5 — Transfer / context**
+**GEO-03-Q5**
 
 A 10-meter ladder rests against a vertical wall. Its foot is 6 meters from the wall. How high does it reach?
 
@@ -187,7 +187,7 @@ D) 12 m
 
 ## GEO-04 — Circles and arcs
 
-**GEO-04-Q1 — Recognition**
+**GEO-04-Q1**
 
 A circle has radius 5 cm. What is its circumference?
 
@@ -196,7 +196,7 @@ B) 10π cm
 C) 25π cm  
 D) 50π cm
 
-**GEO-04-Q2 — Basic application**
+**GEO-04-Q2**
 
 A circle has diameter 10 cm. What is its area?
 
@@ -205,7 +205,7 @@ B) 20π cm²
 C) 25π cm²  
 D) 100π cm²
 
-**GEO-04-Q3 — Independent application**
+**GEO-04-Q3**
 
 A sector has central angle 90° and circle radius 4 cm. What is its area?
 
@@ -214,7 +214,7 @@ B) 4π cm²
 C) 8π cm²  
 D) 16π cm²
 
-**GEO-04-Q4 — Misconception / trap**
+**GEO-04-Q4**
 
 If a circle's radius doubles, what happens to its circumference?
 
@@ -223,7 +223,7 @@ B) It doubles
 C) It triples  
 D) It quadruples
 
-**GEO-04-Q5 — Transfer / context**
+**GEO-04-Q5**
 
 Find the length of a 60° arc in a circle of radius 6 cm.
 
