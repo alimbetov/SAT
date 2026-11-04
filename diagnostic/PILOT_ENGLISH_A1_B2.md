@@ -11,7 +11,7 @@
 
 ## A1 / EN-A1-01 — Verb to be, agreement
 
-**Q1 — Recognition**  
+**Q1**
 I ___ ready for class.
 
 A) is  
@@ -19,7 +19,7 @@ B) am
 C) are  
 D) be
 
-**Q2 — Agreement**  
+**Q2**
 My friends ___ in the library now.
 
 A) are  
@@ -27,7 +27,7 @@ B) is
 C) am  
 D) be
 
-**Q3 — Negation**  
+**Q3**
 This answer ___ correct; the calculation has an error.
 
 A) isn't  
@@ -35,7 +35,7 @@ B) aren't
 C) don't  
 D) not
 
-**Q4 — Question form**  
+**Q4**
 ___ the problem difficult?
 
 A) Do  
@@ -43,7 +43,7 @@ B) Are
 C) Is  
 D) Am
 
-**Q5 — Compound subject**  
+**Q5**
 My sister and I ___ ready for the exam.
 
 A) am  
@@ -66,7 +66,7 @@ D) be
 
 ## A2 / EN-A2-02 — Past Simple
 
-**Q1 — Irregular verb**  
+**Q1**
 Yesterday we ___ to the museum.
 
 A) go  
@@ -74,7 +74,7 @@ B) went
 C) gone  
 D) going
 
-**Q2 — Question after did**  
+**Q2**
 Did Maya ___ the message?
 
 A) sent  
@@ -82,7 +82,7 @@ B) send
 C) sends  
 D) sending
 
-**Q3 — Negative past**  
+**Q3**
 We ___ visit our grandparents last weekend because they were away.
 
 A) didn't  
@@ -90,7 +90,7 @@ B) weren't
 C) doesn't  
 D) aren't
 
-**Q4 — Finished-time marker**  
+**Q4**
 I ___ the assignment two hours ago.
 
 A) finish  
@@ -98,7 +98,7 @@ B) have finished
 C) finished  
 D) finishes
 
-**Q5 — Positive and negative past in context**  
+**Q5**
 Last summer they ___ a small house, but they ___ there for long.
 
 A) rented / didn't stay  
@@ -121,7 +121,7 @@ D) renting / not stayed
 
 ## B1 / EN-B1-01 — Present Perfect vs Past Simple
 
-**Q1 — Experience up to now**  
+**Q1**
 I ___ that film three times so far.
 
 A) saw  
@@ -129,7 +129,7 @@ B) have seen
 C) was seeing  
 D) see
 
-**Q2 — Finished period**  
+**Q2**
 We ___ to Astana in 2024.
 
 A) have traveled  
@@ -137,7 +137,7 @@ B) travel
 C) traveled  
 D) had traveled
 
-**Q3 — Since + still true**  
+**Q3**
 She ___ here since 2022 and still enjoys her job.
 
 A) worked  
@@ -145,7 +145,7 @@ B) has worked
 C) works  
 D) had worked
 
-**Q4 — Past participle**  
+**Q4**
 Have you ever ___ sushi?
 
 A) eat  
@@ -153,7 +153,7 @@ B) ate
 C) eaten  
 D) eating
 
-**Q5 — Duration**  
+**Q5**
 We have lived in this city ___ five years.
 
 A) since  
@@ -176,7 +176,7 @@ D) from
 
 ## B2 / EN-B2-04 — Modals of deduction, possibility and regret
 
-**Q1 — Present impossibility**  
+**Q1**
 Alex is sitting next to me in Almaty right now. He ___ be in Paris right now.
 
 A) can't  
@@ -184,7 +184,7 @@ B) must
 C) might  
 D) should
 
-**Q2 — Strong past deduction**  
+**Q2**
 The exam results are excellent; after months of studying, Mira ___ prepared very thoroughly.
 
 A) can't have  
@@ -192,7 +192,7 @@ B) must have
 C) must  
 D) shouldn't have
 
-**Q3 — Regret about the past**  
+**Q3**
 I failed the quiz because I ignored the instructions. I ___ read them more carefully.
 
 A) must have  
@@ -200,7 +200,7 @@ B) should have
 C) can have  
 D) may
 
-**Q4 — Uncertain past possibility**  
+**Q4**
 I don't know why the lights are on. Someone ___ have left them on by accident.
 
 A) must  
@@ -208,7 +208,7 @@ B) might
 C) can't  
 D) should
 
-**Q5 — Past impossibility**  
+**Q5**
 I saw Sam physically in our office at exactly 10 a.m., so he ___ have been on a flight departing from another city at the same moment.
 
 A) must  
