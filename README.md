@@ -301,3 +301,19 @@ Lesson V2
 7. перенести идею на новую формулировку.
 
 Только после этого скорость становится полезной метрикой.
+
+---
+
+# Diagnostic Assessment V1 — начальная диагностика знаний
+
+**Начинайте обучение с диагностики, а не со случайных задач.** Новый модуль охватывает 25 SAT Math тем и 20 тем English Grammar (A1–B2), с проектным форматом 5 вопросов на тему и учётом начала/окончания каждого блока.
+
+- [Вход в диагностику](diagnostic/README.md)
+- [ТЗ и roadmap](docs/DIAGNOSTIC_ASSESSMENT_V1.md)
+- [Math diagnostic blueprint](diagnostic/MATH_BLUEPRINT.md)
+- [English grammar blueprint](diagnostic/ENGLISH_BLUEPRINT.md)
+- [Scoring, time capture, parent report](diagnostic/SCORING_AND_TIMING.md)
+- [Pilot Math — 5 questions](diagnostic/PILOT_MATH_LINEAR_EQUATIONS.md)
+- [Pilot English A1–B2 — 20 questions](diagnostic/PILOT_ENGLISH_A1_B2.md)
+
+**Статус:** дизайн + пилотные задания. Полный банк из 225 новых диагностических вопросов и автоматический сбор результатов — следующие этапы, не готовый функционал.
