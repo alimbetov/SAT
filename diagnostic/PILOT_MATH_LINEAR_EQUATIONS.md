@@ -8,7 +8,7 @@
 
 ## Student test — 5 Multiple Choice questions
 
-**ALG-01-Q1 — Concept / direct (Easy)**  
+**ALG-01-Q1**
 Solve: `3x + 7 = 22`.
 
 A) `4`  
@@ -16,7 +16,7 @@ B) `5`
 C) `7`  
 D) `9`
 
-**ALG-01-Q2 — Basic application (Easy)**  
+**ALG-01-Q2**
 Solve: `4(x − 2) = 20`.
 
 A) `5`  
@@ -24,7 +24,7 @@ B) `7`
 C) `8`  
 D) `10`
 
-**ALG-01-Q3 — Independent method (Medium)**  
+**ALG-01-Q3**
 Solve: `5x + 8 = 2x + 20`.
 
 A) `2`  
@@ -32,7 +32,7 @@ B) `3`
 C) `4`  
 D) `6`
 
-**ALG-01-Q4 — Misconception trap (Medium)**  
+**ALG-01-Q4**
 How many solutions does `2(x + 3) = 2x + 7` have?
 
 A) Exactly one: `x = 1`  
@@ -40,7 +40,7 @@ B) Exactly one: `x = 7`
 C) Infinitely many solutions  
 D) No solution
 
-**ALG-01-Q5 — Transfer / word problem (Medium)**  
+**ALG-01-Q5**
 A taxi charges **$12** as a fixed fee and **$3 per mile**. The total fare is **$39**. How many miles were traveled?
 
 A) `7`  
