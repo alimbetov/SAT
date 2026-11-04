@@ -1,0 +1,33 @@
+name: Diagnostic Bank Qualification
+
+on:
+  push:
+    branches:
+      - feat/diagnostic-assessment-v1
+    paths:
+      - 'diagnostic/**'
+      - 'scripts/validate_diagnostic_bank.py'
+      - '.github/workflows/diagnostic-bank.yml'
+  pull_request:
+    paths:
+      - 'diagnostic/**'
+      - 'scripts/validate_diagnostic_bank.py'
+      - '.github/workflows/diagnostic-bank.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-bank:
+    name: D1 structure and coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Math and English diagnostic bank
+        run: python scripts/validate_diagnostic_bank.py
