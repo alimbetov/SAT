@@ -1,0 +1,319 @@
+{
+  "schema_version": "kz-school-pilot/1",
+  "bank_revision": "kz-pilot-0.1",
+  "subject": "english",
+  "topics": [
+    {
+      "topic_id": "EN-A1-01",
+      "title_kk": "To be етістігі: am / is / are",
+      "title_ru": "Глагол to be: согласование",
+      "sat_terms": [
+        "subject",
+        "verb",
+        "agreement"
+      ],
+      "source_id": "diagnostic/PILOT_ENGLISH_A1_B2.md",
+      "questions": [
+        {
+          "id": "EN-A1-01-Q1",
+          "stem_en": "I ___ ready for class.",
+          "options_en": [
+            "is",
+            "am",
+            "are",
+            "be"
+          ],
+          "key": "B",
+          "explanation_kk": "I есімдігімен am қолданылады: I am ready. Is/are бұл жерде дұрыс емес.",
+          "explanation_ru": "С подлежащим I используется am: I am ready, а не is или are."
+        },
+        {
+          "id": "EN-A1-01-Q2",
+          "stem_en": "My friends ___ in the library now.",
+          "options_en": [
+            "are",
+            "is",
+            "am",
+            "be"
+          ],
+          "key": "A",
+          "explanation_kk": "My friends — көпше түр, сондықтан are қолданылады.",
+          "explanation_ru": "My friends — множественное число; используется are."
+        },
+        {
+          "id": "EN-A1-01-Q3",
+          "stem_en": "This answer ___ correct; the calculation has an error.",
+          "options_en": [
+            "isn't",
+            "aren't",
+            "don't",
+            "not"
+          ],
+          "key": "A",
+          "explanation_kk": "This answer — жекеше түр. Болымсыз нұсқа: is not = isn't.",
+          "explanation_ru": "This answer — единственное число; отрицательная форма is not = isn't."
+        },
+        {
+          "id": "EN-A1-01-Q4",
+          "stem_en": "___ the problem difficult?",
+          "options_en": [
+            "Do",
+            "Are",
+            "Is",
+            "Am"
+          ],
+          "key": "C",
+          "explanation_kk": "The problem — жекеше, сондықтан сұрақ Is the problem difficult? деп басталады.",
+          "explanation_ru": "The problem — единственное число, вопрос начинается с Is."
+        },
+        {
+          "id": "EN-A1-01-Q5",
+          "stem_en": "My sister and I ___ ready for the exam.",
+          "options_en": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "key": "C",
+          "explanation_kk": "My sister and I — екі адам, сондықтан are керек.",
+          "explanation_ru": "My sister and I — составное подлежащее, поэтому are."
+        }
+      ]
+    },
+    {
+      "topic_id": "EN-A1-02",
+      "title_kk": "Present Simple: күнделікті әрекеттер",
+      "title_ru": "Present Simple: привычные действия",
+      "sat_terms": [
+        "third-person singular",
+        "do/does",
+        "base form"
+      ],
+      "source_id": "diagnostic/bank/english_a1.md",
+      "questions": [
+        {
+          "id": "EN-A1-02-Q1",
+          "stem_en": "Every morning Sara ___ to school by bus.",
+          "options_en": [
+            "go",
+            "goes",
+            "going",
+            "is go"
+          ],
+          "key": "B",
+          "explanation_kk": "Every morning — әдет. Sara үшін етістікке -es жалғанады: goes.",
+          "explanation_ru": "Every morning указывает на привычку; с Sara — goes."
+        },
+        {
+          "id": "EN-A1-02-Q2",
+          "stem_en": "My parents ___ coffee in the morning.",
+          "options_en": [
+            "drinks",
+            "is drink",
+            "drink",
+            "drinking"
+          ],
+          "key": "C",
+          "explanation_kk": "My parents — көпше түр. Етістік негізгі түрде болады: drink.",
+          "explanation_ru": "My parents — множественное число; нужна форма drink."
+        },
+        {
+          "id": "EN-A1-02-Q3",
+          "stem_en": "Does he ___ English at home?",
+          "options_en": [
+            "speak",
+            "speaks",
+            "speaking",
+            "spoke"
+          ],
+          "key": "A",
+          "explanation_kk": "Does көмекші етістігінен кейін speak негізгі түрінде қолданылады.",
+          "explanation_ru": "После does смысловой глагол ставится в начальной форме: speak."
+        },
+        {
+          "id": "EN-A1-02-Q4",
+          "stem_en": "My brother ___ not like spicy food.",
+          "options_en": [
+            "do",
+            "is",
+            "does",
+            "has"
+          ],
+          "key": "C",
+          "explanation_kk": "My brother үшін Present Simple болымсыз түрі does not + like.",
+          "explanation_ru": "Для my brother отрицание строится через does not + like."
+        },
+        {
+          "id": "EN-A1-02-Q5",
+          "stem_en": "Laura works at a hospital. Which question correctly asks for her workplace?",
+          "options_en": [
+            "Where Laura works?",
+            "Where does Laura work?",
+            "Where do Laura work?",
+            "Where is Laura work?"
+          ],
+          "key": "B",
+          "explanation_kk": "Сұрақта Where + does + Laura + work үлгісі қолданылады.",
+          "explanation_ru": "Порядок слов: Where + does + подлежащее + смысловой глагол."
+        }
+      ]
+    },
+    {
+      "topic_id": "EN-A2-01",
+      "title_kk": "Present Simple және Present Continuous айырмашылығы",
+      "title_ru": "Различие Present Simple и Present Continuous",
+      "sat_terms": [
+        "habit",
+        "now",
+        "stative verbs"
+      ],
+      "source_id": "diagnostic/bank/english_a2.md",
+      "questions": [
+        {
+          "id": "EN-A2-01-Q1",
+          "stem_en": "Tom usually ___ to school, but today his father is driving him.",
+          "options_en": [
+            "walk",
+            "walks",
+            "is walking",
+            "walking"
+          ],
+          "key": "B",
+          "explanation_kk": "Usually — әдеттегі әрекет, сондықтан walks қолданылады.",
+          "explanation_ru": "Usually указывает на регулярное действие: walks."
+        },
+        {
+          "id": "EN-A2-01-Q2",
+          "stem_en": "Please be quiet! The students ___ an exam right now.",
+          "options_en": [
+            "take",
+            "takes",
+            "are taking",
+            "took"
+          ],
+          "key": "C",
+          "explanation_kk": "Right now — дәл қазір. Are taking — қазір жүріп жатқан әрекет.",
+          "explanation_ru": "Right now обозначает действие в момент речи: are taking."
+        },
+        {
+          "id": "EN-A2-01-Q3",
+          "stem_en": "Listen! A baby ___ next door.",
+          "options_en": [
+            "cries",
+            "is crying",
+            "cry",
+            "cried"
+          ],
+          "key": "B",
+          "explanation_kk": "Listen! — дыбыс қазір естіліп тұр. Is crying дұрыс.",
+          "explanation_ru": "Listen! обращает внимание на происходящее сейчас: is crying."
+        },
+        {
+          "id": "EN-A2-01-Q4",
+          "stem_en": "Choose the standard sentence for the meaning 'I have this knowledge now'.",
+          "options_en": [
+            "I am knowing the answer.",
+            "I know the answer.",
+            "I knows the answer.",
+            "I knowing the answer."
+          ],
+          "key": "B",
+          "explanation_kk": "Know — қалып-күй етістігі; осы мағынада I know the answer қолданылады.",
+          "explanation_ru": "Know — глагол состояния, поэтому I know the answer."
+        },
+        {
+          "id": "EN-A2-01-Q5",
+          "stem_en": "Look at Nina on the video call right now. She normally works in the office, but she ___ from home at this moment.",
+          "options_en": [
+            "work",
+            "works",
+            "is working",
+            "has work"
+          ],
+          "key": "C",
+          "explanation_kk": "At this moment — іс дәл қазір болып жатыр, сондықтан is working.",
+          "explanation_ru": "At this moment требует формы длительного настоящего: is working."
+        }
+      ]
+    },
+    {
+      "topic_id": "EN-B1-02",
+      "title_kk": "Past Simple және Past Continuous айырмашылығы",
+      "title_ru": "Различие Past Simple и Past Continuous",
+      "sat_terms": [
+        "past",
+        "interruption",
+        "ongoing action"
+      ],
+      "source_id": "diagnostic/bank/english_b1.md",
+      "questions": [
+        {
+          "id": "EN-B1-02-Q1",
+          "stem_en": "I was already at the stove preparing dinner. I ___ when the phone suddenly rang.",
+          "options_en": [
+            "cooked",
+            "was cooking",
+            "am cooking",
+            "have cooked"
+          ],
+          "key": "B",
+          "explanation_kk": "Телефон шырылдаған кезде тамақ пісіру жүріп жатқан; was cooking керек.",
+          "explanation_ru": "При звонке телефона приготовление уже продолжалось: was cooking."
+        },
+        {
+          "id": "EN-B1-02-Q2",
+          "stem_en": "At exactly 7 p.m. yesterday, they were in the middle of a football match. They ___ football.",
+          "options_en": [
+            "play",
+            "played",
+            "were playing",
+            "have played"
+          ],
+          "key": "C",
+          "explanation_kk": "Бұрынғы нақты сәтте әрекет жүріп жатқан: were playing.",
+          "explanation_ru": "В конкретный момент в прошлом действие было в процессе: were playing."
+        },
+        {
+          "id": "EN-B1-02-Q3",
+          "stem_en": "While I was walking home, I unexpectedly ___ an old friend.",
+          "options_en": [
+            "meet",
+            "met",
+            "was meeting",
+            "have met"
+          ],
+          "key": "B",
+          "explanation_kk": "Күтпеген, аяқталған кездесу Past Simple арқылы беріледі: met.",
+          "explanation_ru": "Неожиданная завершённая встреча передаётся Past Simple: met."
+        },
+        {
+          "id": "EN-B1-02-Q4",
+          "stem_en": "Choose the correct sentence.",
+          "options_en": [
+            "When the phone rang, she was sleeping.",
+            "When the phone was ringing, she sleeping.",
+            "When the phone rang, she were sleeping.",
+            "When the phone rang, she has slept."
+          ],
+          "key": "A",
+          "explanation_kk": "Rang — қысқа өткен оқиға; was sleeping — сол сәтте жүріп жатқан әрекет.",
+          "explanation_ru": "Rang — краткое событие, was sleeping — фоновое продолжающееся действие."
+        },
+        {
+          "id": "EN-B1-02-Q5",
+          "stem_en": "We had started preparing for the exam and were still in the middle of it. The lights went out while we ___ for the exam.",
+          "options_en": [
+            "study",
+            "were studying",
+            "studied yesterday",
+            "have studied"
+          ],
+          "key": "B",
+          "explanation_kk": "Жарық сөнгенге дейін дайындық басталып, жалғасып жатқан: were studying.",
+          "explanation_ru": "Подготовка уже шла, когда выключился свет: were studying."
+        }
+      ]
+    }
+  ]
+}
