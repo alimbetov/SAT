@@ -177,7 +177,7 @@ D) 16
 
 2. <u>**C) 6**</u>. Mean=(2+4+8+10)/4=24/4=6.
 
-3. <u>**B) 10**</u>. Range=max−min=14−4=10.
+3. <u>**B) 10**</u>. Range=max−min=14−4=10. This summary measures the distance between the smallest and largest observed values.
 
 4. <u>**B) Median**</u>. The median depends on order and is usually less sensitive to extreme values than the mean.
 
@@ -236,7 +236,7 @@ D) 25
 
 1. <u>**A) Positive**</u>. As x grows, y generally grows: positive association.
 
-2. <u>**C) 11**</u>. Substitute 4: 2·4+3=11.
+2. <u>**C) 11**</u>. Substitute 4: 2·4+3=11. The line predicts this value; a real observation may differ from the fitted model.
 
 3. <u>**B) 2**</u>. Rise/run=(6−2)/(3−1)=4/2=2.
 
