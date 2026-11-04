@@ -8,12 +8,14 @@ on:
       - 'diagnostic/**'
       - 'scripts/validate_diagnostic_bank.py'
       - 'scripts/build_d2_pilot.py'
+      - 'scripts/assess_d2_pilot.py'
       - '.github/workflows/diagnostic-bank.yml'
   pull_request:
     paths:
       - 'diagnostic/**'
       - 'scripts/validate_diagnostic_bank.py'
       - 'scripts/build_d2_pilot.py'
+      - 'scripts/assess_d2_pilot.py'
       - '.github/workflows/diagnostic-bank.yml'
   workflow_dispatch:
 
@@ -34,6 +36,8 @@ jobs:
       - name: Validate Math and English diagnostic bank
         run: python scripts/validate_diagnostic_bank.py
 
+      - name: Verify local blind confirmation aggregation on synthetic data
+        run: python scripts/assess_d2_pilot.py --self-test
       - name: Build all 45 isolated student and teacher review packets
         run: python scripts/build_d2_pilot.py --topics all --out-dir build/d2
       - name: Verify no teacher key in student packets
